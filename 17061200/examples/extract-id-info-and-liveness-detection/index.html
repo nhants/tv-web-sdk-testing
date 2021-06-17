@@ -255,7 +255,7 @@
           );
           const cardSide = selectCardSideEl.value;
           if (cardSide === TVWebSDK.Constants.IDCardSide.FRONT) {
-            const frontCardId = apiResult?.cardInfo?.image1?.id;
+            const frontCardId = apiResult.cardInfo.image1.id;
             inputFrontIdEl.value = frontCardId;
           }
         }
