@@ -13206,25 +13206,17 @@
 	      };
 	    });
 	  },
-	  resizeExact: function resizeExact(e) {
-	    var t = e.src.canvas,
-	        r = e.options,
-	        n = void 0 === r ? {
-	      exact: {
-	        width: null,
-	        height: null
+	  createResizer: function createResizer(e) {
+	    var t = e.width,
+	        r = e.height,
+	        n = document.createElement("canvas"),
+	        i = n.getContext("2d");
+	    return n.width = t, n.height = r, {
+	      resize: function resize(e) {
+	        var t = e.srcCanvas;
+	        return i.drawImage(t, 0, 0, n.width, n.height), n;
 	      }
-	    } : r,
-	        i = n.exact.width,
-	        o = n.exact.height;
-	    return new Promise(function (e) {
-	      if (i && o) {
-	        var r = document.createElement("canvas");
-	        r.width = i, r.height = o, bt.resize(t, r).then(function (t) {
-	          return e(t);
-	        });
-	      } else e(null);
-	    });
+	    };
 	  }
 	});
 
@@ -74389,37 +74381,30 @@
 	    return react.useEffect(function () {
 	      var e = o.current,
 	          n = null,
-	          r = null;
+	          r = null,
+	          a = It.createResizer({
+	        width: 960,
+	        height: 640
+	      });
 
-	      function a(e) {
-	        return m.apply(this, arguments);
+	      function m(e) {
+	        return y.apply(this, arguments);
 	      }
 
-	      function m() {
-	        return (m = k$5(regeneratorRuntime.mark(function e(t) {
+	      function y() {
+	        return (y = k$5(regeneratorRuntime.mark(function e(t) {
 	          var n, r;
 	          return regeneratorRuntime.wrap(function (e) {
 	            for (;;) {
 	              switch (e.prev = e.next) {
 	                case 0:
-	                  return e.next = 2, It.resizeExact({
-	                    src: {
-	                      canvas: t
-	                    },
-	                    options: {
-	                      exact: {
-	                        width: 960,
-	                        height: 640
-	                      }
-	                    }
-	                  });
-
-	                case 2:
-	                  n = e.sent, r = n.toDataURL("image/jpeg", .8).split(",")[1], s.current.push({
+	                  n = a.resize({
+	                    srcCanvas: t
+	                  }), r = n.toDataURL("image/jpeg", .8).split(",")[1], s.current.push({
 	                    base64: r
 	                  });
 
-	                case 5:
+	                case 3:
 	                case "end":
 	                  return e.stop();
 	              }
@@ -74428,21 +74413,21 @@
 	        }))).apply(this, arguments);
 	      }
 
-	      function y(e) {
-	        return b.apply(this, arguments);
+	      function b(e) {
+	        return v.apply(this, arguments);
 	      }
 
-	      function b() {
-	        return (b = k$5(regeneratorRuntime.mark(function t(o) {
-	          var s, i, u, c, f, h, m;
+	      function v() {
+	        return (v = k$5(regeneratorRuntime.mark(function t(a) {
+	          var o, s, i, u, c, f, h;
 	          return regeneratorRuntime.wrap(function (t) {
 	            for (;;) {
 	              switch (t.prev = t.next) {
 	                case 0:
-	                  s = o.resultAnalyzeVideoAndWindowSizes, p.current = !0;
+	                  o = a.resultAnalyzeVideoAndWindowSizes, p.current = !0;
 
 	                case 2:
-	                  if (i = d.current, u = s.cropX, c = s.cropY, f = s.cropWidth, h = s.cropHeight, i.getContext("2d").drawImage(e, u, c, f, h, 0, 0, f, h), !l) {
+	                  if (s = d.current, i = o.cropX, u = o.cropY, c = o.cropWidth, f = o.cropHeight, s.getContext("2d").drawImage(e, i, u, c, f, 0, 0, c, f), !l) {
 	                    t.next = 19;
 	                    break;
 	                  }
@@ -74452,22 +74437,22 @@
 	                    break;
 	                  }
 
-	                  if (!((m = new Date().getTime()) - r >= n)) {
+	                  if (!((h = new Date().getTime()) - r >= n)) {
 	                    t.next = 15;
 	                    break;
 	                  }
 
-	                  return t.next = 14, a(i);
+	                  return t.next = 14, m(s);
 
 	                case 14:
-	                  r = m;
+	                  r = h;
 
 	                case 15:
 	                  t.next = 19;
 	                  break;
 
 	                case 17:
-	                  return t.next = 19, a(i);
+	                  return t.next = 19, m(s);
 
 	                case 19:
 	                  if (p.current) {
@@ -74493,8 +74478,8 @@
 	        }))).apply(this, arguments);
 	      }
 
-	      function v() {
-	        return (v = k$5(regeneratorRuntime.mark(function r() {
+	      function w() {
+	        return (w = k$5(regeneratorRuntime.mark(function r() {
 	          var a, o, s, i, l;
 	          return regeneratorRuntime.wrap(function (r) {
 	            for (;;) {
@@ -74511,7 +74496,7 @@
 	                  l = r.sent, n = Jw(l, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.frames_interval_ms");
 
 	                case 11:
-	                  return r.next = 13, y({
+	                  return r.next = 13, b({
 	                    resultAnalyzeVideoAndWindowSizes: a
 	                  });
 
@@ -74525,7 +74510,7 @@
 	      }
 
 	      return i && u && function () {
-	        v.apply(this, arguments);
+	        w.apply(this, arguments);
 	      }(), function () {
 	        f();
 	      };
