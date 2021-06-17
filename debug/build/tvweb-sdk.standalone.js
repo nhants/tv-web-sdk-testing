@@ -15678,29 +15678,27 @@
 	      m = o.videoSettings,
 	      g = o.refVideo,
 	      y = o.onError,
-	      b = l$1.useSDKSettings(),
-	      x = b.lang,
-	      v = b.debug,
-	      k = d$1.useAsset("ic_close.png"),
-	      I = N$3(react.useState(""), 2),
-	      E = I[0],
-	      C = I[1],
-	      S = N$3(react.useState([]), 2),
-	      _ = S[0],
-	      $ = S[1],
-	      R = N$3(react.useState(!1), 2),
-	      A = R[0],
-	      F = R[1],
-	      O = react.useRef(!1),
-	      M = react.useCallback(function () {
+	      b = l$1.useSDKSettings().lang,
+	      x = d$1.useAsset("ic_close.png"),
+	      v = N$3(react.useState(""), 2),
+	      k = v[0],
+	      I = v[1],
+	      E = N$3(react.useState([]), 2),
+	      C = E[0],
+	      S = E[1],
+	      _ = N$3(react.useState(!1), 2),
+	      $ = _[0],
+	      R = _[1],
+	      A = react.useRef(!1),
+	      F = react.useCallback(function () {
 	    var e;
 	    (null == g || null === (e = g.current) || void 0 === e ? void 0 : e.srcObject) instanceof MediaStream && (g.current.srcObject.getTracks().forEach(function (e) {
 	      return e.stop();
 	    }), g.current.srcObject = null);
 	  }, [g]),
-	      P = react.useCallback(function () {
+	      O = react.useCallback(function () {
 	    var e = w$6(regeneratorRuntime.mark(function e(t) {
-	      var n, r;
+	      var n;
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
 	          switch (e.prev = e.next) {
@@ -15722,28 +15720,28 @@
 	              });
 
 	            case 3:
-	              return (n = e.sent) || (C(Q$3.not_supported.msg[x]), y(Q$3.not_supported)), v && (r = n.getVideoTracks()[0].getSettings(), alert(JSON.stringify(r))), e.abrupt("return", n);
+	              return (n = e.sent) || (I(Q$3.not_supported.msg[b]), y(Q$3.not_supported)), e.abrupt("return", n);
 
-	            case 9:
-	              e.prev = 9, e.t0 = e["catch"](0), "NotAllowedError" === e.t0.name ? (C(Q$3.no_permission.msg[x]), y(Q$3.no_permission)) : (F(!0), C(e.t0.message), y({
+	            case 8:
+	              e.prev = 8, e.t0 = e["catch"](0), "NotAllowedError" === e.t0.name ? (I(Q$3.no_permission.msg[b]), y(Q$3.no_permission)) : (R(!0), I(e.t0.message), y({
 	                code: e.t0.name || e.t0.code
 	              }));
 
-	            case 12:
+	            case 11:
 	              return e.abrupt("return", null);
 
-	            case 13:
+	            case 12:
 	            case "end":
 	              return e.stop();
 	          }
 	        }
-	      }, e, null, [[0, 9]]);
+	      }, e, null, [[0, 8]]);
 	    }));
 	    return function (t) {
 	      return e.apply(this, arguments);
 	    };
-	  }(), [i, m, x, y]),
-	      B = react.useCallback(function () {
+	  }(), [i, m, b, y]),
+	      M = react.useCallback(function () {
 	    var e = w$6(regeneratorRuntime.mark(function e(t) {
 	      var n, r;
 	      return regeneratorRuntime.wrap(function (e) {
@@ -15769,7 +15767,7 @@
 	                  lostX: o,
 	                  lostY: i
 	                });
-	              }, e.next = 4, P(t);
+	              }, e.next = 4, O(t);
 
 	            case 4:
 	              (r = e.sent) && (n.srcObject = r);
@@ -15784,7 +15782,8 @@
 	    return function (t) {
 	      return e.apply(this, arguments);
 	    };
-	  }(), [g, P, c]);
+	  }(), [g, O, c]);
+
 	  react.useEffect(function () {
 	    function e() {
 	      return (e = w$6(regeneratorRuntime.mark(function e() {
@@ -15798,7 +15797,7 @@
 	              case 3:
 	                t = e.sent, n = t.filter(function (e) {
 	                  return e.deviceId && "videoinput" === e.kind;
-	                }), $(n), e.next = 11;
+	                }), S(n), e.next = 11;
 	                break;
 
 	              case 8:
@@ -15813,10 +15812,10 @@
 	      }))).apply(this, arguments);
 	    }
 
-	    A && !O.current && (O.current = !0, function () {
+	    $ && !A.current && (A.current = !0, function () {
 	      e.apply(this, arguments);
 	    }());
-	  }, [A]), react.useEffect(function () {
+	  }, [$]), react.useEffect(function () {
 	    function e() {
 	      return (e = w$6(regeneratorRuntime.mark(function e() {
 	        var t, n, r;
@@ -15824,7 +15823,7 @@
 	          for (;;) {
 	            switch (e.prev = e.next) {
 	              case 0:
-	                return e.next = 2, B();
+	                return e.next = 2, M();
 
 	              case 2:
 	                return e.next = 4, L$3();
@@ -15832,7 +15831,7 @@
 	              case 4:
 	                t = e.sent, (n = t.filter(function (e) {
 	                  return "videoinput" === e.kind && e.label.includes("0");
-	                })).length > 0 && (r = n[0].deviceId, M(), B(r));
+	                })).length > 0 && (r = n[0].deviceId, F(), M(r));
 
 	              case 7:
 	              case "end":
@@ -15844,33 +15843,33 @@
 	    }
 
 	    var t = g.current;
-	    return !pe$2 || D$3.browserName && ["facebook"].includes(D$3.browserName.toLowerCase()) ? (C(Q$3.not_supported.msg[x]), y(Q$3.not_supported)) : t && (D$3.isAndroid && !1 === i ? function () {
+	    return !pe$2 || D$3.browserName && ["facebook"].includes(D$3.browserName.toLowerCase()) ? (I(Q$3.not_supported.msg[b]), y(Q$3.not_supported)) : t && (D$3.isAndroid && !1 === i ? function () {
 	      e.apply(this, arguments);
-	    }() : B()), function () {
-	      M();
+	    }() : M()), function () {
+	      F();
 	    };
-	  }, [g, x, i, B, M, y]);
-	  var z = react.useCallback(function () {
-	    M(), u && u();
-	  }, [u, M]);
+	  }, [g, b, i, M, F, y]);
+	  var P = react.useCallback(function () {
+	    F(), u && u();
+	  }, [u, F]);
 	  return /*#__PURE__*/react.createElement(J$3, {
 	    checkCameraMode: s
-	  }, A && null != _ && _.length ? /*#__PURE__*/react.createElement(ae$2, null, /*#__PURE__*/react.createElement(oe$2, null, /*#__PURE__*/react.createElement(se$2, null, /*#__PURE__*/react.createElement(ie$2, null, "Không thể mở camera mặc định"), /*#__PURE__*/react.createElement(ue$2, null, "Vui lòng thử chọn camera khác trong danh sách dưới đây")), /*#__PURE__*/react.createElement(le$2, null, _.map(function (t, n) {
+	  }, $ && null != C && C.length ? /*#__PURE__*/react.createElement(ae$2, null, /*#__PURE__*/react.createElement(oe$2, null, /*#__PURE__*/react.createElement(se$2, null, /*#__PURE__*/react.createElement(ie$2, null, "Không thể mở camera mặc định"), /*#__PURE__*/react.createElement(ue$2, null, "Vui lòng thử chọn camera khác trong danh sách dưới đây")), /*#__PURE__*/react.createElement(le$2, null, C.map(function (t, n) {
 	    return /*#__PURE__*/react.createElement(ce$2, {
 	      key: t.deviceId,
 	      onClick: function onClick() {
-	        C(""), M(), F(!1), B(t.deviceId);
+	        I(""), F(), R(!1), M(t.deviceId);
 	      }
 	    }, t.label ? t.label : "Camera ".concat(n + 1));
-	  })))) : null, E ? /*#__PURE__*/react.createElement(re$3, null, E) : null, /*#__PURE__*/react.createElement(ee$2, {
+	  })))) : null, k ? /*#__PURE__*/react.createElement(re$3, null, k) : null, /*#__PURE__*/react.createElement(ee$2, {
 	    ref: g,
 	    playsInline: !0,
 	    muted: !0,
 	    flipHorizontal: d
 	  }), l, /*#__PURE__*/react.createElement(ne$2, {
-	    onClick: z
+	    onClick: P
 	  }, /*#__PURE__*/react.createElement("img", {
-	    src: k,
+	    src: x,
 	    alt: ""
 	  })));
 	}
@@ -74620,7 +74619,7 @@
 	    flipHorizontal: s,
 	    ref: j,
 	    onError: m
-	  }, X ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(pO, null, W), /*#__PURE__*/react.createElement(aO, {
+	  }, X ? /*#__PURE__*/react.createElement(react.Fragment, null, G && /*#__PURE__*/react.createElement(pO, null, W), /*#__PURE__*/react.createElement(aO, {
 	    keyForTransition: _
 	  }), ee ? /*#__PURE__*/react.createElement(Ee$2, {
 	    x: "".concat(ee.x, "px"),
@@ -75446,7 +75445,8 @@
 	          lang: this.lang,
 	          assetRoot: this.assetRoot,
 	          apiClient: apiClient,
-	          debug: true
+	          debug: true // todo: create script for this mode
+
 	        }
 	      }, /*#__PURE__*/react.createElement(mO, _extends({
 	        onClose: this.destroyView
