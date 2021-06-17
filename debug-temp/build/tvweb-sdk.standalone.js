@@ -74323,57 +74323,56 @@
 	      c = o.onImageTaken,
 	      d = o.usePortraitMask,
 	      m = o.onError,
-	      y = o.errorMessage,
-	      b = o.cardType,
-	      v = o.cardSide,
-	      w = o.apiCheck,
-	      I = o.onSuccess,
-	      E = o.frontCardId,
-	      T = o.enableRecording,
-	      N = o.onApiCheck,
-	      _ = S$3(react.useState(0), 2),
-	      $ = _[0],
-	      R = _[1],
-	      A = o.titleIcon || (v === nO.BACK ? "id_card_back.svg" : "id_card_front.svg"),
-	      F = d$1.useAsset(A),
-	      O = S$3(react.useState({}), 2),
-	      D = O[0],
-	      P = O[1],
-	      L = D.yTitle,
-	      B = D.yDescription,
-	      z = d$1.useAsset("ic_camera.svg"),
-	      W = S$3(react.useState(""), 2),
-	      V = W[0],
-	      U = W[1],
-	      H = l$1.useSDKSettings(),
-	      G = H.apiClient,
-	      j = H.debug,
-	      q = react.useRef(null),
-	      K = react.useRef([]);
-
+	      g = o.errorMessage,
+	      y = o.cardType,
+	      b = o.cardSide,
+	      v = o.apiCheck,
+	      w = o.onSuccess,
+	      I = o.frontCardId,
+	      E = o.enableRecording,
+	      T = o.onApiCheck,
+	      N = S$3(react.useState(0), 2),
+	      _ = N[0],
+	      $ = N[1],
+	      R = o.titleIcon || (b === nO.BACK ? "id_card_back.svg" : "id_card_front.svg"),
+	      A = d$1.useAsset(R),
+	      F = S$3(react.useState({}), 2),
+	      O = F[0],
+	      D = F[1],
+	      P = O.yTitle,
+	      L = O.yDescription,
+	      B = d$1.useAsset("ic_camera.svg"),
+	      z = S$3(react.useState(""), 2),
+	      W = z[0],
+	      V = z[1],
+	      U = l$1.useSDKSettings(),
+	      H = U.apiClient,
+	      G = U.debug,
+	      j = react.useRef(null),
+	      q = react.useRef([]);
 	  react.useEffect(function () {
-	    j && setInterval(function () {
-	      var e = q.current,
+	    G && setInterval(function () {
+	      var e = j.current,
 	          t = {
 	        videoWidth: e.videoWidth,
 	        videoHeight: e.videoHeight,
-	        framesCount: K.current.length,
+	        framesCount: q.current.length,
 	        "window.innerWidth": window.innerWidth,
 	        "window.innerHeight": window.innerHeight
 	      };
-	      U(JSON.stringify(t, null, 2));
+	      V(JSON.stringify(t, null, 2));
 	    }, 1e3);
-	  }, [j]);
+	  }, [G]);
 
-	  var X = S$3(react.useState(!1), 2),
-	      Y = X[0],
-	      Q = X[1],
-	      Z = d$1.useAsset("id_card_mask_landscape.png"),
-	      J = d$1.useAsset("id_card_mask_portrait.png"),
-	      ee = S$3(react.useState(null), 2),
-	      te = ee[0],
-	      ne = ee[1],
-	      re = function (e) {
+	  var K = S$3(react.useState(!1), 2),
+	      X = K[0],
+	      Y = K[1],
+	      Q = d$1.useAsset("id_card_mask_landscape.png"),
+	      Z = d$1.useAsset("id_card_mask_portrait.png"),
+	      J = S$3(react.useState(null), 2),
+	      ee = J[0],
+	      te = J[1],
+	      ne = function (e) {
 	    var t = e.apiClient,
 	        o = e.refVideo,
 	        s = e.refFrames,
@@ -74397,29 +74396,16 @@
 
 	      function a() {
 	        return (a = k$5(regeneratorRuntime.mark(function e(t) {
-	          var n, r;
+	          var n;
 	          return regeneratorRuntime.wrap(function (e) {
 	            for (;;) {
 	              switch (e.prev = e.next) {
 	                case 0:
-	                  return e.next = 2, It.resizeExact({
-	                    src: {
-	                      canvas: t
-	                    },
-	                    options: {
-	                      exact: {
-	                        width: 960,
-	                        height: 640
-	                      }
-	                    }
+	                  n = t.toDataURL("image/jpeg", .8).split(",")[1], s.current.push({
+	                    base64: n
 	                  });
 
 	                case 2:
-	                  n = e.sent, r = n.toDataURL("image/jpeg", .8).split(",")[1], s.current.push({
-	                    base64: r
-	                  });
-
-	                case 5:
 	                case "end":
 	                  return e.stop();
 	              }
@@ -74429,11 +74415,11 @@
 	      }
 
 	      function m(e) {
-	        return y.apply(this, arguments);
+	        return g.apply(this, arguments);
 	      }
 
-	      function y() {
-	        return (y = k$5(regeneratorRuntime.mark(function a(o) {
+	      function g() {
+	        return (g = k$5(regeneratorRuntime.mark(function a(o) {
 	          var s, i, u, c, f, h, m;
 	          return regeneratorRuntime.wrap(function (a) {
 	            for (;;) {
@@ -74493,8 +74479,8 @@
 	        }))).apply(this, arguments);
 	      }
 
-	      function b() {
-	        return (b = k$5(regeneratorRuntime.mark(function n() {
+	      function y() {
+	        return (y = k$5(regeneratorRuntime.mark(function n() {
 	          var r, a, o, s;
 	          return regeneratorRuntime.wrap(function (n) {
 	            for (;;) {
@@ -74514,7 +74500,7 @@
 	      }
 
 	      return i && u && function () {
-	        b.apply(this, arguments);
+	        y.apply(this, arguments);
 	      }(), function () {
 	        f();
 	      };
@@ -74523,17 +74509,17 @@
 	      stopCheckFrame: f
 	    };
 	  }({
-	    apiClient: G,
-	    refVideo: q,
-	    refFrames: K,
-	    videoPlayed: Y,
-	    cropArea: te,
-	    enableRecording: T,
-	    apiCheck: w
+	    apiClient: H,
+	    refVideo: j,
+	    refFrames: q,
+	    videoPlayed: X,
+	    cropArea: ee,
+	    enableRecording: E,
+	    apiCheck: v
 	  }),
-	      ae = re.refCroppedCanvas,
-	      oe = re.stopCheckFrame,
-	      se = react.useCallback(function (e) {
+	      re = ne.refCroppedCanvas,
+	      ae = ne.stopCheckFrame,
+	      oe = react.useCallback(function (e) {
 	    var t,
 	        n,
 	        r,
@@ -74546,50 +74532,50 @@
 	        c = e.clientHeight;
 	    d ? (r = .7 * (a = i - 150), n = (o = (t = l + 10) + 45) + a + 10) : (r = M$3.isMobile ? s - 6 : Math.floor(.7 * s), n = (o = (t = l + 10) + 50) + (a = Math.floor(Math.min(r / 1.5, c - 2 * l - 80 - 100))) + 10);
 	    var p = Math.floor((s - r) / 2) + u;
-	    ne({
+	    te({
 	      x: p,
 	      y: o,
 	      width: r,
 	      height: a,
-	      image: d ? J : Z,
+	      image: d ? Z : Q,
 	      surroundStyle: {
 	        opacity: .6,
 	        background: "#000"
 	      }
-	    }), P({
+	    }), D({
 	      yTitle: t,
 	      yDescription: n
-	    }), Q(!0);
-	  }, [J, Z, d]),
-	      ie = react.useCallback(k$5(regeneratorRuntime.mark(function e() {
+	    }), Y(!0);
+	  }, [Z, Q, d]),
+	      se = react.useCallback(k$5(regeneratorRuntime.mark(function e() {
 	    var t, n, r;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
 	        switch (e.prev = e.next) {
 	          case 0:
-	            return oe(), R(function (e) {
+	            return ae(), $(function (e) {
 	              return e + 1;
 	            }), e.next = 4, Z$1.takePicture({
-	              canvas: ae.current
+	              canvas: re.current
 	            });
 
 	          case 4:
 	            if (t = e.sent, c(t), n = {
 	              image: t,
-	              capturedFrames: K.current
-	            }, !w) {
+	              capturedFrames: q.current
+	            }, !v) {
 	              e.next = 22;
 	              break;
 	            }
 
-	            return r = null, e.prev = 9, N(), e.next = 13, HF({
+	            return r = null, e.prev = 9, T(), e.next = 13, HF({
 	              image: t,
-	              cardSide: v,
-	              frontCardId: E,
-	              refFrames: K,
+	              cardSide: b,
+	              frontCardId: I,
+	              refFrames: q,
 	              onError: m,
-	              apiClient: G,
-	              cardType: b
+	              apiClient: H,
+	              cardType: y
 	            });
 
 	          case 13:
@@ -74602,13 +74588,13 @@
 	            }));
 
 	          case 19:
-	            r && I(C$3(C$3({}, n), {}, {
+	            r && w(C$3(C$3({}, n), {}, {
 	              apiResult: r
 	            })), e.next = 23;
 	            break;
 
 	          case 22:
-	            I(n);
+	            w(n);
 
 	          case 23:
 	          case "end":
@@ -74616,28 +74602,28 @@
 	        }
 	      }
 	    }, e, null, [[9, 16]]);
-	  })), [c, w, G, b, v, E, m, I, K, N, ae, oe]);
+	  })), [c, v, H, y, b, I, m, w, q, T, re, ae]);
 
 	  return /*#__PURE__*/react.createElement(sO, null, /*#__PURE__*/react.createElement(me$2, {
 	    frontCamera: s,
-	    onVideoPlayed: se,
+	    onVideoPlayed: oe,
 	    onClose: l,
 	    flipHorizontal: s,
-	    ref: q,
+	    ref: j,
 	    onError: m
-	  }, Y ? /*#__PURE__*/react.createElement(react.Fragment, null, j && /*#__PURE__*/react.createElement(fO, null, V), /*#__PURE__*/react.createElement(oO, {
-	    keyForTransition: $
-	  }), te ? /*#__PURE__*/react.createElement(Te$2, {
-	    x: "".concat(te.x, "px"),
-	    y: "".concat(te.y, "px"),
-	    width: "".concat(te.width, "px"),
-	    height: "".concat(te.height, "px"),
-	    surroundStyle: te.surroundStyle
+	  }, X ? /*#__PURE__*/react.createElement(react.Fragment, null, G && /*#__PURE__*/react.createElement(fO, null, W), /*#__PURE__*/react.createElement(oO, {
+	    keyForTransition: _
+	  }), ee ? /*#__PURE__*/react.createElement(Te$2, {
+	    x: "".concat(ee.x, "px"),
+	    y: "".concat(ee.y, "px"),
+	    width: "".concat(ee.width, "px"),
+	    height: "".concat(ee.height, "px"),
+	    surroundStyle: ee.surroundStyle
 	  }, /*#__PURE__*/react.createElement(Ce$1, {
-	    src: te.image,
-	    width: te.width
+	    src: ee.image,
+	    width: ee.width
 	  })) : null, /*#__PURE__*/react.createElement(cO, {
-	    y: "".concat(L, "px")
+	    y: "".concat(P, "px")
 	  }, /*#__PURE__*/react.createElement(fF, null, /*#__PURE__*/react.createElement(iF, {
 	    key: i,
 	    timeout: {
@@ -74647,19 +74633,19 @@
 	    classNames: "flipY",
 	    unmountOnExit: !0
 	  }, /*#__PURE__*/react.createElement(dO, null, /*#__PURE__*/react.createElement(iO, {
-	    src: F,
+	    src: A,
 	    alt: ""
 	  }), /*#__PURE__*/react.createElement(pO, {
 	    className: "title"
-	  }, i))))), !y && /*#__PURE__*/react.createElement(hO, {
-	    y: "".concat(B, "px"),
+	  }, i))))), !g && /*#__PURE__*/react.createElement(hO, {
+	    y: "".concat(L, "px"),
 	    className: "description"
-	  }, u), y && /*#__PURE__*/react.createElement(mO, {
-	    y: "".concat(B, "px")
-	  }, y), !y && /*#__PURE__*/react.createElement(uO, {
-	    onClick: ie
+	  }, u), g && /*#__PURE__*/react.createElement(mO, {
+	    y: "".concat(L, "px")
+	  }, g), !g && /*#__PURE__*/react.createElement(uO, {
+	    onClick: se
 	  }, /*#__PURE__*/react.createElement("img", {
-	    src: z,
+	    src: B,
 	    alt: ""
 	  }))) : null));
 	}
