@@ -238,7 +238,7 @@
         });
       }
 
-      function handleReadIDCardResult({ image, capturedFrames, apiResult }) {
+      function handleReadIDCardResult({ image, recordedVideos, apiResult }) {
         const apiCheck = selectApiCheckEl.value === "true";
 
         const imgEl = document.createElement("img");
@@ -246,7 +246,7 @@
         imgEl.src = URL.createObjectURL(image);
         resultExtractIdInfoEl.appendChild(imgEl);
         resultExtractIdInfoEl.appendChild(document.createElement("br"));
-        resultExtractIdInfoEl.appendChild(document.createTextNode(`Captured frames: ${capturedFrames.length}\n`));
+        resultExtractIdInfoEl.appendChild(document.createTextNode(`Recorded videos: ${recordedVideos.length}\n`));
 
         if (apiCheck) {
           resultExtractIdInfoEl.appendChild(document.createTextNode("API Result:\n"));
