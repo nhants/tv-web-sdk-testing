@@ -74247,7 +74247,7 @@
 	});
 
 	function GF() {
-	  var e = N$3(["\n  position: absolute;\n  font-size: 18px;\n  text-align: center;\n  border-radius: 3px;\n  padding: 5px 10px;\n  background: #ea3223;\n  color: #fff;\n  margin: 0 15px;\n  top: ", ";\n  z-index: ", ";\n"]);
+	  var e = N$3(["\n  position: absolute;\n  font-size: 18px;\n  text-align: center;\n  border-radius: 3px;\n  padding: 5px 10px;\n  background: #ea3223;\n  color: #fff;\n  margin: 0 10px;\n  top: ", ";\n  z-index: ", ";\n"]);
 	  return GF = function GF() {
 	    return e;
 	  }, e;
@@ -75164,6 +75164,7 @@
 	    src: W,
 	    alt: ""
 	  })), Q && /*#__PURE__*/react.createElement(hO, {
+	    key: Q,
 	    className: "message",
 	    y: "".concat(z, "px")
 	  }, Q)) : null));
