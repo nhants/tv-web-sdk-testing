@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="Vanilla JS demo" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h2>Continuous Photo Capture</h2>
+    <div id="container"></div>
+    <button onclick="startCaptureIDFront()">Start</button>
+    <div id="result"></div>
+    <script src="../../build/tvweb-sdk.standalone.min.js"></script>
+    <script type="text/javascript">
+      const tv = new TVWebSDK.SDK({
+        container: document.getElementById("container"),
+        lang: "vi",
+        assetRoot: "https://unpkg.com/@tsocial/tvweb-sdk@latest/assets",
+      });
+      const resultEl = document.getElementById("result");
+
+      function startCaptureIDFront() {
+        resultEl.innerHTML = "";
+
+        tv.openCamera({
+          frontCamera: false,
+          title: "Mặt trước CMND/CCCD",
+          titleIcon: "id_card_front.svg",
+          description: "Vui lòng đặt CMND mặt trước vào trong khung",
+          onImageTaken: handleIDFrontTaken,
+        });
+      }
+
+      function handleIDFrontTaken(img) {
+        const imgEl = document.createElement("img");
+        imgEl.width = "200";
+        imgEl.src = URL.createObjectURL(img);
+        resultEl.appendChild(imgEl);
+        tv.openCamera({
+          frontCamera: false,
+          title: "CMND mặt sau",
+          titleIcon: "id_card_back.svg",
+          description: "Vui lòng đặt CMND mặt sau vào trong khung",
+          onImageTaken: handleIDBackTaken,
+        });
+      }
+
+      function handleIDBackTaken(img) {
+        const imgEl = document.createElement("img");
+        imgEl.width = "200";
+        imgEl.src = URL.createObjectURL(img);
+        resultEl.appendChild(imgEl);
+        tv.openCamera({
+          frontCamera: true,
+          usePortraitMask: true,
+          title: "Ảnh Selfie",
+          onImageTaken: handleSelfieTaken,
+        });
+      }
+
+      function handleSelfieTaken(img) {
+        const imgEl = document.createElement("img");
+        imgEl.width = "200";
+        imgEl.src = URL.createObjectURL(img);
+        resultEl.appendChild(imgEl);
+        tv.destroyView();
+      }
+    </script>
+  </body>
+</html>
