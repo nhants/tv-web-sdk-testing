@@ -74253,149 +74253,156 @@
 	  __proto__: null,
 	  "default": UF
 	}),
-	    jF = Object.freeze({
+	    jF = We$1(["from{transform:rotate(0deg);}to{transform:rotate(360deg);}"]),
+	    GF = Ae$1([".spin{animation-name:", ";animation-iteration-count:infinite;animation-duration:1000ms;animation-timing-function:linear;}"], jF),
+	    qF = Object.freeze({
+	  __proto__: null,
+	  "default": GF
+	}),
+	    KF = Object.freeze({
 	  __proto__: null,
 	  flipY: _F,
 	  slide: FF,
 	  blink: MF,
-	  splash: HF
+	  splash: HF,
+	  spin: qF
 	});
 
-	function GF() {
-	  var e = N$3(["\n  position: absolute;\n  font-size: 18px;\n  text-align: center;\n  border-radius: 3px;\n  padding: 5px 10px;\n  background: #ea3223;\n  color: #fff;\n  margin: 0 10px;\n  top: ", ";\n  z-index: ", ";\n"]);
-	  return GF = function GF() {
-	    return e;
-	  }, e;
-	}
-
-	function qF() {
-	  var e = N$3(["\n  background: #ea3223;\n  padding: 5px 10px;\n  border-radius: 3px;\n"]);
-	  return qF = function qF() {
-	    return e;
-	  }, e;
-	}
-
-	function KF() {
-	  var e = N$3(["\n  position: absolute;\n  font-size: 16px;\n  text-align: center;\n  color: #fff;\n  top: ", ";\n  z-index: ", ";\n"]);
-	  return KF = function KF() {
-	    return e;
-	  }, e;
-	}
-
 	function XF() {
-	  var e = N$3(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: green;\n  position: absolute;\n  left: 0;\n  top: 10px;\n  background: white;\n  z-index: ", ";\n"]);
+	  var e = N$3(["\n  position: absolute;\n  font-size: 18px;\n  text-align: center;\n  border-radius: 3px;\n  padding: 5px 10px;\n  background: #ea3223;\n  color: #fff;\n  margin: 0 10px;\n  top: ", ";\n  z-index: ", ";\n"]);
 	  return XF = function XF() {
 	    return e;
 	  }, e;
 	}
 
 	function YF() {
-	  var e = N$3(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: #fff;\n"]);
+	  var e = N$3(["\n  background: #ea3223;\n  padding: 5px 10px;\n  border-radius: 3px;\n"]);
 	  return YF = function YF() {
 	    return e;
 	  }, e;
 	}
 
 	function QF() {
-	  var e = N$3(["\n  display: flex;\n  align-items: center;\n"]);
+	  var e = N$3(["\n  position: absolute;\n  font-size: 16px;\n  text-align: center;\n  color: #fff;\n  top: ", ";\n  z-index: ", ";\n"]);
 	  return QF = function QF() {
 	    return e;
 	  }, e;
 	}
 
 	function ZF() {
-	  var e = N$3(["\n  transform: translateZ(1000px); // to fix rotating bug on safari\n  transform-style: preserve-3d;\n  position: absolute;\n  top: ", ";\n  z-index: ", ";\n"]);
+	  var e = N$3(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: green;\n  position: absolute;\n  left: 0;\n  top: 10px;\n  background: white;\n  z-index: ", ";\n"]);
 	  return ZF = function ZF() {
 	    return e;
 	  }, e;
 	}
 
 	function JF() {
-	  var e = N$3(["\n  color: #fff;\n  text-align: center;\n"]);
+	  var e = N$3(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: #fff;\n"]);
 	  return JF = function JF() {
 	    return e;
 	  }, e;
 	}
 
 	function eO() {
-	  var e = N$3(["\n  cursor: pointer;\n  text-align: center;\n  width: ", "px;\n\n  img {\n    width: 100%;\n  }\n\n  z-index: ", ";\n  position: fixed;\n  bottom: ", "px;\n"]);
+	  var e = N$3(["\n  display: flex;\n  align-items: center;\n"]);
 	  return eO = function eO() {
 	    return e;
 	  }, e;
 	}
 
 	function tO() {
-	  var e = N$3(["\n  border-radius: 5px;\n  opacity: 0.7;\n  height: 38px;\n"]);
+	  var e = N$3(["\n  transform: translateZ(1000px); // to fix rotating bug on safari\n  transform-style: preserve-3d;\n  position: absolute;\n  top: ", ";\n  z-index: ", ";\n"]);
 	  return tO = function tO() {
 	    return e;
 	  }, e;
 	}
 
 	function nO() {
-	  var e = N$3(["\n  ", "\n"]);
+	  var e = N$3(["\n  color: #fff;\n  text-align: center;\n"]);
 	  return nO = function nO() {
 	    return e;
 	  }, e;
 	}
 
-	var rO = UF,
-	    aO = qe$1.div(nO(), SF),
-	    oO = qe$1.img(tO()),
-	    sO = qe$1.div(eO(), 60, 1020, 10),
-	    iO = qe$1.div(JF()),
-	    uO = qe$1.div(ZF(), function (e) {
+	function rO() {
+	  var e = N$3(["\n  cursor: pointer;\n  text-align: center;\n  width: ", "px;\n\n  img {\n    width: 100%;\n  }\n\n  z-index: ", ";\n  position: fixed;\n  bottom: ", "px;\n"]);
+	  return rO = function rO() {
+	    return e;
+	  }, e;
+	}
+
+	function aO() {
+	  var e = N$3(["\n  border-radius: 5px;\n  opacity: 0.7;\n  height: 38px;\n"]);
+	  return aO = function aO() {
+	    return e;
+	  }, e;
+	}
+
+	function oO() {
+	  var e = N$3(["\n  ", "\n  ", "\n"]);
+	  return oO = function oO() {
+	    return e;
+	  }, e;
+	}
+
+	var sO = UF,
+	    iO = qe$1.div(oO(), SF, GF),
+	    uO = qe$1.img(aO()),
+	    lO = qe$1.div(rO(), 60, 1020, 10),
+	    cO = qe$1.div(nO()),
+	    dO = qe$1.div(tO(), function (e) {
 	  return e.y;
 	}, 1020),
-	    lO = qe$1.div(QF()),
-	    cO = qe$1(iO)(YF()),
-	    dO = qe$1(iO)(XF(), 1030),
-	    pO = qe$1(iO)(KF(), function (e) {
+	    pO = qe$1.div(eO()),
+	    fO = qe$1(cO)(JF()),
+	    hO = qe$1(cO)(ZF(), 1030),
+	    mO = qe$1(cO)(QF(), function (e) {
 	  return e.y;
 	}, 1020),
-	    fO = qe$1(pO)(qF()),
-	    hO = qe$1(iO)(GF(), function (e) {
+	    gO = qe$1(mO)(YF()),
+	    yO = qe$1(cO)(XF(), function (e) {
 	  return e.y;
 	}, 1020),
-	    mO = function () {
+	    bO = function () {
 	  try {
 	    var e = uw(Object, "defineProperty");
 	    return e({}, "", {}), e;
 	  } catch (e) {}
 	}();
 
-	var gO = function gO(e, t, n) {
-	  "__proto__" == t && mO ? mO(e, t, {
+	var xO = function xO(e, t, n) {
+	  "__proto__" == t && bO ? bO(e, t, {
 	    configurable: !0,
 	    enumerable: !0,
 	    value: n,
 	    writable: !0
 	  }) : e[t] = n;
 	},
-	    yO = Object.prototype.hasOwnProperty;
+	    vO = Object.prototype.hasOwnProperty;
 
-	var bO = function bO(e, t, n) {
+	var wO = function wO(e, t, n) {
 	  var r = e[t];
-	  yO.call(e, t) && vw(r, n) && (void 0 !== n || t in e) || gO(e, t, n);
+	  vO.call(e, t) && vw(r, n) && (void 0 !== n || t in e) || xO(e, t, n);
 	};
 
-	var xO = function xO(e, t, n, r) {
+	var kO = function kO(e, t, n, r) {
 	  var a = !n;
 	  n || (n = {});
 
 	  for (var o = -1, s = t.length; ++o < s;) {
 	    var i = t[o],
 	        u = r ? r(n[i], e[i], i, n, e) : void 0;
-	    void 0 === u && (u = e[i]), a ? gO(n, i, u) : bO(n, i, u);
+	    void 0 === u && (u = e[i]), a ? xO(n, i, u) : wO(n, i, u);
 	  }
 
 	  return n;
 	};
 
-	var vO = function vO(e) {
+	var IO = function IO(e) {
 	  return e;
 	};
 
-	var wO = function wO(e, t, n) {
+	var EO = function EO(e, t, n) {
 	  switch (n.length) {
 	    case 0:
 	      return e.call(t);
@@ -74412,11 +74419,11 @@
 
 	  return e.apply(t, n);
 	},
-	    kO = Math.max;
+	    TO = Math.max;
 
-	var IO = function IO(e, t, n) {
-	  return t = kO(void 0 === t ? e.length - 1 : t, 0), function () {
-	    for (var r = arguments, a = -1, o = kO(r.length - t, 0), s = Array(o); ++a < o;) {
+	var CO = function CO(e, t, n) {
+	  return t = TO(void 0 === t ? e.length - 1 : t, 0), function () {
+	    for (var r = arguments, a = -1, o = TO(r.length - t, 0), s = Array(o); ++a < o;) {
 	      s[a] = r[t + a];
 	    }
 
@@ -74426,30 +74433,30 @@
 	      i[a] = r[a];
 	    }
 
-	    return i[t] = n(s), wO(e, this, i);
+	    return i[t] = n(s), EO(e, this, i);
 	  };
 	};
 
-	var EO = function EO(e) {
+	var NO = function NO(e) {
 	  return function () {
 	    return e;
 	  };
 	},
-	    TO = mO ? function (e, t) {
-	  return mO(e, "toString", {
+	    SO = bO ? function (e, t) {
+	  return bO(e, "toString", {
 	    configurable: !0,
 	    enumerable: !1,
-	    value: EO(t),
+	    value: NO(t),
 	    writable: !0
 	  });
-	} : vO,
-	    CO = Date.now;
+	} : IO,
+	    _O = Date.now;
 
-	var NO = function (e) {
+	var $O = function (e) {
 	  var t = 0,
 	      n = 0;
 	  return function () {
-	    var r = CO(),
+	    var r = _O(),
 	        a = 16 - (r - n);
 
 	    if (n = r, a > 0) {
@@ -74458,43 +74465,43 @@
 
 	    return e.apply(void 0, arguments);
 	  };
-	}(TO);
+	}(SO);
 
-	var SO = function SO(e, t) {
-	  return NO(IO(e, t, vO), e + "");
+	var RO = function RO(e, t) {
+	  return $O(CO(e, t, IO), e + "");
 	};
 
-	var _O = function _O(e) {
+	var AO = function AO(e) {
 	  return "number" == typeof e && e > -1 && e % 1 == 0 && e <= 9007199254740991;
 	};
 
-	var $O = function $O(e) {
-	  return null != e && _O(e.length) && !Kv(e);
+	var FO = function FO(e) {
+	  return null != e && AO(e.length) && !Kv(e);
 	},
-	    RO = /^(?:0|[1-9]\d*)$/;
+	    OO = /^(?:0|[1-9]\d*)$/;
 
-	var AO = function AO(e, t) {
+	var DO = function DO(e, t) {
 	  var n = _typeof(e);
 
-	  return !!(t = null == t ? 9007199254740991 : t) && ("number" == n || "symbol" != n && RO.test(e)) && e > -1 && e % 1 == 0 && e < t;
+	  return !!(t = null == t ? 9007199254740991 : t) && ("number" == n || "symbol" != n && OO.test(e)) && e > -1 && e % 1 == 0 && e < t;
 	};
 
-	var FO = function FO(e, t, n) {
+	var MO = function MO(e, t, n) {
 	  if (!Se$2(n)) return !1;
 
 	  var r = _typeof(t);
 
-	  return !!("number" == r ? $O(n) && AO(t, n.length) : "string" == r && t in n) && vw(n[t], e);
+	  return !!("number" == r ? FO(n) && DO(t, n.length) : "string" == r && t in n) && vw(n[t], e);
 	};
 
-	var OO = function OO(e) {
-	  return SO(function (t, n) {
+	var PO = function PO(e) {
+	  return RO(function (t, n) {
 	    var r = -1,
 	        a = n.length,
 	        o = a > 1 ? n[a - 1] : void 0,
 	        s = a > 2 ? n[2] : void 0;
 
-	    for (o = e.length > 3 && "function" == typeof o ? (a--, o) : void 0, s && FO(n[0], n[1], s) && (o = a < 3 ? void 0 : o, a = 1), t = Object(t); ++r < a;) {
+	    for (o = e.length > 3 && "function" == typeof o ? (a--, o) : void 0, s && MO(n[0], n[1], s) && (o = a < 3 ? void 0 : o, a = 1), t = Object(t); ++r < a;) {
 	      var i = n[r];
 	      i && e(t, i, r, o);
 	    }
@@ -74503,7 +74510,7 @@
 	  });
 	};
 
-	var DO = function DO(e, t) {
+	var LO = function LO(e, t) {
 	  for (var n = -1, r = Array(e); ++n < e;) {
 	    r[n] = t(n);
 	  }
@@ -74511,42 +74518,42 @@
 	  return r;
 	};
 
-	var MO = function MO(e) {
+	var BO = function BO(e) {
 	  return Ue$1(e) && "[object Arguments]" == Ve$2(e);
 	},
-	    PO = Object.prototype,
-	    LO = PO.hasOwnProperty,
-	    BO = PO.propertyIsEnumerable,
-	    zO = MO(function () {
+	    zO = Object.prototype,
+	    WO = zO.hasOwnProperty,
+	    VO = zO.propertyIsEnumerable,
+	    UO = BO(function () {
 	  return arguments;
-	}()) ? MO : function (e) {
-	  return Ue$1(e) && LO.call(e, "callee") && !BO.call(e, "callee");
+	}()) ? BO : function (e) {
+	  return Ue$1(e) && WO.call(e, "callee") && !VO.call(e, "callee");
 	};
 
-	var WO = function WO() {
+	var HO = function HO() {
 	  return !1;
 	},
-	    VO = O$2(function (e, t) {
+	    jO = O$2(function (e, t) {
 	  var n = t && !t.nodeType && t,
 	      r = n && e && !e.nodeType && e,
 	      a = r && r.exports === n ? Re$2.Buffer : void 0,
-	      o = (a ? a.isBuffer : void 0) || WO;
+	      o = (a ? a.isBuffer : void 0) || HO;
 	  e.exports = o;
 	}),
-	    UO = {};
+	    GO = {};
 
-	UO["[object Float32Array]"] = UO["[object Float64Array]"] = UO["[object Int8Array]"] = UO["[object Int16Array]"] = UO["[object Int32Array]"] = UO["[object Uint8Array]"] = UO["[object Uint8ClampedArray]"] = UO["[object Uint16Array]"] = UO["[object Uint32Array]"] = !0, UO["[object Arguments]"] = UO["[object Array]"] = UO["[object ArrayBuffer]"] = UO["[object Boolean]"] = UO["[object DataView]"] = UO["[object Date]"] = UO["[object Error]"] = UO["[object Function]"] = UO["[object Map]"] = UO["[object Number]"] = UO["[object Object]"] = UO["[object RegExp]"] = UO["[object Set]"] = UO["[object String]"] = UO["[object WeakMap]"] = !1;
+	GO["[object Float32Array]"] = GO["[object Float64Array]"] = GO["[object Int8Array]"] = GO["[object Int16Array]"] = GO["[object Int32Array]"] = GO["[object Uint8Array]"] = GO["[object Uint8ClampedArray]"] = GO["[object Uint16Array]"] = GO["[object Uint32Array]"] = !0, GO["[object Arguments]"] = GO["[object Array]"] = GO["[object ArrayBuffer]"] = GO["[object Boolean]"] = GO["[object DataView]"] = GO["[object Date]"] = GO["[object Error]"] = GO["[object Function]"] = GO["[object Map]"] = GO["[object Number]"] = GO["[object Object]"] = GO["[object RegExp]"] = GO["[object Set]"] = GO["[object String]"] = GO["[object WeakMap]"] = !1;
 
-	var HO = function HO(e) {
-	  return Ue$1(e) && _O(e.length) && !!UO[Ve$2(e)];
+	var qO = function qO(e) {
+	  return Ue$1(e) && AO(e.length) && !!GO[Ve$2(e)];
 	};
 
-	var jO = function jO(e) {
+	var KO = function KO(e) {
 	  return function (t) {
 	    return e(t);
 	  };
 	},
-	    GO = O$2(function (e, t) {
+	    XO = O$2(function (e, t) {
 	  var n = t && !t.nodeType && t,
 	      r = n && e && !e.nodeType && e,
 	      a = r && r.exports === n && _e$2.process,
@@ -74560,105 +74567,105 @@
 
 	  e.exports = o;
 	}),
-	    qO = GO && GO.isTypedArray,
-	    KO = qO ? jO(qO) : HO,
-	    XO = Object.prototype.hasOwnProperty;
+	    YO = XO && XO.isTypedArray,
+	    QO = YO ? KO(YO) : qO,
+	    ZO = Object.prototype.hasOwnProperty;
 
-	var YO = function YO(e, t) {
+	var JO = function JO(e, t) {
 	  var n = Uv(e),
-	      r = !n && zO(e),
-	      a = !n && !r && VO(e),
-	      o = !n && !r && !a && KO(e),
+	      r = !n && UO(e),
+	      a = !n && !r && jO(e),
+	      o = !n && !r && !a && QO(e),
 	      s = n || r || a || o,
-	      i = s ? DO(e.length, String) : [],
+	      i = s ? LO(e.length, String) : [],
 	      u = i.length;
 
 	  for (var l in e) {
-	    !t && !XO.call(e, l) || s && ("length" == l || a && ("offset" == l || "parent" == l) || o && ("buffer" == l || "byteLength" == l || "byteOffset" == l) || AO(l, u)) || i.push(l);
+	    !t && !ZO.call(e, l) || s && ("length" == l || a && ("offset" == l || "parent" == l) || o && ("buffer" == l || "byteLength" == l || "byteOffset" == l) || DO(l, u)) || i.push(l);
 	  }
 
 	  return i;
 	},
-	    QO = Object.prototype;
+	    eD = Object.prototype;
 
-	var ZO = function ZO(e) {
+	var tD = function tD(e) {
 	  var t = e && e.constructor;
-	  return e === ("function" == typeof t && t.prototype || QO);
+	  return e === ("function" == typeof t && t.prototype || eD);
 	};
 
-	var JO = function JO(e) {
+	var nD = function nD(e) {
 	  var t = [];
 	  if (null != e) for (var n in Object(e)) {
 	    t.push(n);
 	  }
 	  return t;
 	},
-	    eD = Object.prototype.hasOwnProperty;
+	    rD = Object.prototype.hasOwnProperty;
 
-	var tD = function tD(e) {
-	  if (!Se$2(e)) return JO(e);
-	  var t = ZO(e),
+	var aD = function aD(e) {
+	  if (!Se$2(e)) return nD(e);
+	  var t = tD(e),
 	      n = [];
 
 	  for (var r in e) {
-	    ("constructor" != r || !t && eD.call(e, r)) && n.push(r);
+	    ("constructor" != r || !t && rD.call(e, r)) && n.push(r);
 	  }
 
 	  return n;
 	};
 
-	var nD = function nD(e) {
-	  return $O(e) ? YO(e, !0) : tD(e);
+	var oD = function oD(e) {
+	  return FO(e) ? JO(e, !0) : aD(e);
 	},
-	    rD = OO(function (e, t, n, r) {
-	  xO(t, nD(t), e, r);
+	    sD = PO(function (e, t, n, r) {
+	  kO(t, oD(t), e, r);
 	});
 
-	var aD = function aD(e, t) {
+	var iD = function iD(e, t) {
 	  return function (n) {
 	    return e(t(n));
 	  };
 	},
-	    oD = aD(Object.getPrototypeOf, Object),
-	    sD = Function.prototype,
-	    iD = Object.prototype,
-	    uD = sD.toString,
-	    lD = iD.hasOwnProperty,
-	    cD = uD.call(Object);
+	    uD = iD(Object.getPrototypeOf, Object),
+	    lD = Function.prototype,
+	    cD = Object.prototype,
+	    dD = lD.toString,
+	    pD = cD.hasOwnProperty,
+	    fD = dD.call(Object);
 
-	var dD = function dD(e) {
+	var hD = function hD(e) {
 	  if (!Ue$1(e) || "[object Object]" != Ve$2(e)) return !1;
-	  var t = oD(e);
+	  var t = uD(e);
 	  if (null === t) return !0;
-	  var n = lD.call(t, "constructor") && t.constructor;
-	  return "function" == typeof n && n instanceof n && uD.call(n) == cD;
+	  var n = pD.call(t, "constructor") && t.constructor;
+	  return "function" == typeof n && n instanceof n && dD.call(n) == fD;
 	};
 
-	var pD = function pD(e) {
+	var mD = function mD(e) {
 	  if (!Ue$1(e)) return !1;
 	  var t = Ve$2(e);
-	  return "[object Error]" == t || "[object DOMException]" == t || "string" == typeof e.message && "string" == typeof e.name && !dD(e);
+	  return "[object Error]" == t || "[object DOMException]" == t || "string" == typeof e.message && "string" == typeof e.name && !hD(e);
 	},
-	    fD = SO(function (e, t) {
+	    gD = RO(function (e, t) {
 	  try {
-	    return wO(e, void 0, t);
+	    return EO(e, void 0, t);
 	  } catch (e) {
-	    return pD(e) ? e : new Error(e);
+	    return mD(e) ? e : new Error(e);
 	  }
 	});
 
-	var hD = function hD(e, t) {
+	var yD = function yD(e, t) {
 	  return Hw(t, function (t) {
 	    return e[t];
 	  });
 	},
-	    mD = Object.prototype,
-	    gD = mD.hasOwnProperty;
+	    bD = Object.prototype,
+	    xD = bD.hasOwnProperty;
 
-	var yD = function yD(e, t, n, r) {
-	  return void 0 === e || vw(e, mD[n]) && !gD.call(r, n) ? t : e;
+	var vD = function vD(e, t, n, r) {
+	  return void 0 === e || vw(e, bD[n]) && !xD.call(r, n) ? t : e;
 	},
-	    bD = {
+	    wD = {
 	  "\\": "\\",
 	  "'": "'",
 	  "\n": "n",
@@ -74667,29 +74674,29 @@
 	  "\u2029": "u2029"
 	};
 
-	var xD = function xD(e) {
-	  return "\\" + bD[e];
-	},
-	    vD = aD(Object.keys, Object),
-	    wD = Object.prototype.hasOwnProperty;
-
 	var kD = function kD(e) {
-	  if (!ZO(e)) return vD(e);
+	  return "\\" + wD[e];
+	},
+	    ID = iD(Object.keys, Object),
+	    ED = Object.prototype.hasOwnProperty;
+
+	var TD = function TD(e) {
+	  if (!tD(e)) return ID(e);
 	  var t = [];
 
 	  for (var n in Object(e)) {
-	    wD.call(e, n) && "constructor" != n && t.push(n);
+	    ED.call(e, n) && "constructor" != n && t.push(n);
 	  }
 
 	  return t;
 	};
 
-	var ID = function ID(e) {
-	  return $O(e) ? YO(e) : kD(e);
+	var CD = function CD(e) {
+	  return FO(e) ? JO(e) : TD(e);
 	},
-	    ED = /<%=([\s\S]+?)%>/g;
+	    ND = /<%=([\s\S]+?)%>/g;
 
-	var TD = function (e) {
+	var SD = function (e) {
 	  return function (t) {
 	    return null == e ? void 0 : e[t];
 	  };
@@ -74700,56 +74707,56 @@
 	  '"': "&quot;",
 	  "'": "&#39;"
 	}),
-	    CD = /[&<>"']/g,
-	    ND = RegExp(CD.source);
+	    _D = /[&<>"']/g,
+	    $D = RegExp(_D.source);
 
-	var SD = {
+	var RD = {
 	  escape: /<%-([\s\S]+?)%>/g,
 	  evaluate: /<%([\s\S]+?)%>/g,
-	  interpolate: ED,
+	  interpolate: ND,
 	  variable: "",
 	  imports: {
 	    _: {
 	      escape: function escape(e) {
-	        return (e = Kw(e)) && ND.test(e) ? e.replace(CD, TD) : e;
+	        return (e = Kw(e)) && $D.test(e) ? e.replace(_D, SD) : e;
 	      }
 	    }
 	  }
 	},
-	    _D = /\b__p \+= '';/g,
-	    $D = /\b(__p \+=) '' \+/g,
-	    RD = /(__e\(.*?\)|\b__t\)) \+\n'';/g,
-	    AD = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g,
-	    FD = /($^)/,
-	    OD = /['\n\r\u2028\u2029\\]/g,
-	    DD = Object.prototype.hasOwnProperty;
+	    AD = /\b__p \+= '';/g,
+	    FD = /\b(__p \+=) '' \+/g,
+	    OD = /(__e\(.*?\)|\b__t\)) \+\n'';/g,
+	    DD = /\$\{([^\\}]*(?:\\.[^\\}]*)*)\}/g,
+	    MD = /($^)/,
+	    PD = /['\n\r\u2028\u2029\\]/g,
+	    LD = Object.prototype.hasOwnProperty;
 
-	var MD = function MD(e, t, n) {
-	  var r = SD.imports._.templateSettings || SD;
-	  n && FO(e, t, n) && (t = void 0), e = Kw(e), t = rD({}, t, r, yD);
+	var BD = function BD(e, t, n) {
+	  var r = RD.imports._.templateSettings || RD;
+	  n && MO(e, t, n) && (t = void 0), e = Kw(e), t = sD({}, t, r, vD);
 	  var a,
 	      o,
-	      s = rD({}, t.imports, r.imports, yD),
-	      i = ID(s),
-	      u = hD(s, i),
+	      s = sD({}, t.imports, r.imports, vD),
+	      i = CD(s),
+	      u = yD(s, i),
 	      l = 0,
-	      c = t.interpolate || FD,
+	      c = t.interpolate || MD,
 	      d = "__p += '",
-	      p = RegExp((t.escape || FD).source + "|" + c.source + "|" + (c === ED ? AD : FD).source + "|" + (t.evaluate || FD).source + "|$", "g"),
-	      f = DD.call(t, "sourceURL") ? "//# sourceURL=" + (t.sourceURL + "").replace(/\s/g, " ") + "\n" : "";
+	      p = RegExp((t.escape || MD).source + "|" + c.source + "|" + (c === ND ? DD : MD).source + "|" + (t.evaluate || MD).source + "|$", "g"),
+	      f = LD.call(t, "sourceURL") ? "//# sourceURL=" + (t.sourceURL + "").replace(/\s/g, " ") + "\n" : "";
 	  e.replace(p, function (t, n, r, s, i, u) {
-	    return r || (r = s), d += e.slice(l, u).replace(OD, xD), n && (a = !0, d += "' +\n__e(" + n + ") +\n'"), i && (o = !0, d += "';\n" + i + ";\n__p += '"), r && (d += "' +\n((__t = (" + r + ")) == null ? '' : __t) +\n'"), l = u + t.length, t;
+	    return r || (r = s), d += e.slice(l, u).replace(PD, kD), n && (a = !0, d += "' +\n__e(" + n + ") +\n'"), i && (o = !0, d += "';\n" + i + ";\n__p += '"), r && (d += "' +\n((__t = (" + r + ")) == null ? '' : __t) +\n'"), l = u + t.length, t;
 	  }), d += "';\n";
-	  var h = DD.call(t, "variable") && t.variable;
-	  h || (d = "with (obj) {\n" + d + "\n}\n"), d = (o ? d.replace(_D, "") : d).replace($D, "$1").replace(RD, "$1;"), d = "function(" + (h || "obj") + ") {\n" + (h ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (a ? ", __e = _.escape" : "") + (o ? ", __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n" : ";\n") + d + "return __p\n}";
-	  var m = fD(function () {
+	  var h = LD.call(t, "variable") && t.variable;
+	  h || (d = "with (obj) {\n" + d + "\n}\n"), d = (o ? d.replace(AD, "") : d).replace(FD, "$1").replace(OD, "$1;"), d = "function(" + (h || "obj") + ") {\n" + (h ? "" : "obj || (obj = {});\n") + "var __t, __p = ''" + (a ? ", __e = _.escape" : "") + (o ? ", __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n" : ";\n") + d + "return __p\n}";
+	  var m = gD(function () {
 	    return Function(i, f + "return " + d).apply(void 0, u);
 	  });
-	  if (m.source = d, pD(m)) throw m;
+	  if (m.source = d, mD(m)) throw m;
 	  return m;
 	},
-	    PD = o.IDCardMessage,
-	    LD = function LD(e) {
+	    zD = o.IDCardMessage,
+	    WD = function WD(e) {
 	  var t = e.enableRecording,
 	      o = e.videoPlayed,
 	      s = e.onRestartFlow,
@@ -74765,9 +74772,9 @@
 	      var e = 0;
 	      l.current = setInterval(function () {
 	        var t = 15 - (e += 1);
-	        t <= 5 && u(MD(PD.REMAINING_TIME[i])({
+	        t <= 5 && u(BD(zD.REMAINING_TIME[i])({
 	          x: t
-	        })), 0 === t && (u(MD(PD.TIMEOUT_INSTRUCTION[i])({
+	        })), 0 === t && (u(BD(zD.TIMEOUT_INSTRUCTION[i])({
 	          x: 15
 	        })), c.current = setTimeout(function () {
 	          u("");
@@ -74782,11 +74789,11 @@
 	    stopTimers: d
 	  };
 	},
-	    BD = o.IDCardSide,
-	    zD = o.IDCardType,
-	    WD = o.Errors;
+	    VD = o.IDCardSide,
+	    UD = o.IDCardType,
+	    HD = o.Errors;
 
-	function VD(o) {
+	function jD(o) {
 	  var s = o.frontCamera,
 	      i = o.title,
 	      u = o.description,
@@ -74804,7 +74811,7 @@
 	      N = S$3(react.useState(0), 2),
 	      _ = N[0],
 	      $ = N[1],
-	      R = o.titleIcon || (b === BD.BACK ? "id_card_back.svg" : "id_card_front.svg"),
+	      R = o.titleIcon || (b === VD.BACK ? "id_card_back.svg" : "id_card_front.svg"),
 	      A = d$1.useAsset(R),
 	      F = S$3(react.useState({}), 2),
 	      O = F[0],
@@ -74830,7 +74837,10 @@
 	      te = S$3(react.useState(null), 2),
 	      ne = te[0],
 	      re = te[1],
-	      ae = function (e) {
+	      ae = S$3(react.useState(!1), 2),
+	      oe = ae[0],
+	      se = ae[1],
+	      ie = function (e) {
 	    var t = e.apiClient,
 	        o = e.refVideo,
 	        s = e.videoPlayed,
@@ -75010,17 +75020,17 @@
 	    enableRecording: E,
 	    apiCheck: v
 	  }),
-	      oe = ae.refCroppedCanvas,
-	      se = ae.stopCheckFrame,
-	      ie = ae.refRecordedVideos,
-	      ue = ae.splitVideos;
+	      ue = ie.refCroppedCanvas,
+	      le = ie.stopCheckFrame,
+	      ce = ie.refRecordedVideos,
+	      de = ie.splitVideos;
 
 	  react.useEffect(function () {
 	    var e;
 	    return G && (e = setInterval(function () {
 	      var e = K.current,
-	          t = ie.current,
-	          n = oe.current,
+	          t = ce.current,
+	          n = ue.current,
 	          r = t[t.length - 1],
 	          a = {
 	        videoWidth: e.videoWidth,
@@ -75035,23 +75045,24 @@
 	    }, 1e3)), function () {
 	      return clearInterval(e);
 	    };
-	  }, [G, ie, oe]);
-	  var le = d$1.useAsset("id_card_mask_landscape.png"),
-	      ce = d$1.useAsset("id_card_mask_portrait.png"),
-	      de = react.useCallback(function () {
-	    ue();
-	  }, [ue]),
-	      pe = react.useCallback(function (e) {
+	  }, [G, ce, ue]);
+	  var pe = d$1.useAsset("id_card_mask_landscape.png"),
+	      fe = d$1.useAsset("id_card_mask_portrait.png"),
+	      he = d$1.useAsset("ic_loading.png"),
+	      ge = react.useCallback(function () {
+	    de();
+	  }, [de]),
+	      ye = react.useCallback(function (e) {
 	    Q(e);
 	  }, []),
-	      fe = LD({
+	      be = WD({
 	    enableRecording: E,
 	    videoPlayed: J,
-	    onRestartFlow: de,
+	    onRestartFlow: ge,
 	    lang: q,
-	    onMessageChange: pe
+	    onMessageChange: ye
 	  }).stopTimers,
-	      he = react.useCallback(function (e) {
+	      xe = react.useCallback(function (e) {
 	    var t,
 	        n,
 	        r,
@@ -75070,7 +75081,7 @@
 	      y: s,
 	      width: a,
 	      height: o,
-	      image: c ? ce : le,
+	      image: c ? fe : pe,
 	      surroundStyle: {
 	        opacity: .6,
 	        background: "#000"
@@ -75080,71 +75091,74 @@
 	      yDescription: n,
 	      yMessage: r
 	    }), ee(!0);
-	  }, [ce, le, c]),
-	      ge = react.useCallback(k$5(regeneratorRuntime.mark(function e() {
+	  }, [fe, pe, c]),
+	      ve = react.useCallback(k$5(regeneratorRuntime.mark(function e() {
 	    var t, n, r;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
 	        switch (e.prev = e.next) {
 	          case 0:
-	            return se(), fe(), $(function (e) {
+	            return se(!0), le(), be(), $(function (e) {
 	              return e + 1;
-	            }), e.next = 5, Z$1.takePicture({
-	              canvas: oe.current
+	            }), e.next = 6, Z$1.takePicture({
+	              canvas: ue.current
 	            });
 
-	          case 5:
+	          case 6:
 	            if (t = e.sent, n = {
 	              image: t,
-	              recordedVideos: ie.current
+	              recordedVideos: E ? ce.current : []
 	            }, !v) {
-	              e.next = 22;
+	              e.next = 23;
 	              break;
 	            }
 
-	            return r = null, e.prev = 9, T(), e.next = 13, EF({
+	            return r = null, e.prev = 10, T(), e.next = 14, EF({
 	              image: t,
 	              cardSide: b,
 	              frontCardId: I,
 	              onError: d,
 	              apiClient: j,
 	              cardType: y,
-	              recordedVideos: ie.current
+	              recordedVideos: ce.current
 	            });
 
-	          case 13:
-	            r = e.sent, e.next = 19;
+	          case 14:
+	            r = e.sent, e.next = 20;
 	            break;
 
-	          case 16:
-	            e.prev = 16, e.t0 = e["catch"](9), d(C$3(C$3({}, WD.api_call_error), {}, {
+	          case 17:
+	            e.prev = 17, e.t0 = e["catch"](10), d(C$3(C$3({}, HD.api_call_error), {}, {
 	              details: e.t0
 	            }));
 
-	          case 19:
+	          case 20:
 	            r && w(C$3(C$3({}, n), {}, {
 	              apiResult: r
-	            })), e.next = 23;
+	            })), e.next = 24;
 	            break;
 
-	          case 22:
+	          case 23:
 	            w(n);
 
-	          case 23:
+	          case 24:
+	            se(!1);
+
+	          case 25:
 	          case "end":
 	            return e.stop();
 	        }
 	      }
-	    }, e, null, [[9, 16]]);
-	  })), [v, j, y, b, I, d, w, T, oe, se, ie, fe]);
-	  return /*#__PURE__*/react.createElement(aO, null, /*#__PURE__*/react.createElement(me$2, {
+	    }, e, null, [[10, 17]]);
+	  })), [v, j, y, b, I, d, w, T, ue, le, ce, be, E]);
+	  return /*#__PURE__*/react.createElement(iO, null, /*#__PURE__*/react.createElement(me$2, {
 	    frontCamera: s,
-	    onVideoPlayed: he,
+	    onVideoPlayed: xe,
 	    onClose: l,
 	    flipHorizontal: s,
 	    ref: K,
 	    onError: d
-	  }, J ? /*#__PURE__*/react.createElement(react.Fragment, null, G && /*#__PURE__*/react.createElement(dO, null, V), /*#__PURE__*/react.createElement(rO, {
+	  }, J ? /*#__PURE__*/react.createElement(react.Fragment, null, G && /*#__PURE__*/react.createElement(hO, null, V), /*#__PURE__*/react.createElement(sO, {
 	    keyForTransition: _
 	  }), ne ? /*#__PURE__*/react.createElement(Te$2, {
 	    x: "".concat(ne.x, "px"),
@@ -75155,7 +75169,7 @@
 	  }, /*#__PURE__*/react.createElement(Ce$1, {
 	    src: ne.image,
 	    width: ne.width
-	  })) : null, /*#__PURE__*/react.createElement(uO, {
+	  })) : null, /*#__PURE__*/react.createElement(dO, {
 	    y: "".concat(P, "px")
 	  }, /*#__PURE__*/react.createElement(fF, null, /*#__PURE__*/react.createElement(iF, {
 	    key: i,
@@ -75165,29 +75179,33 @@
 	    },
 	    classNames: "flipY",
 	    unmountOnExit: !0
-	  }, /*#__PURE__*/react.createElement(lO, null, /*#__PURE__*/react.createElement(oO, {
+	  }, /*#__PURE__*/react.createElement(pO, null, /*#__PURE__*/react.createElement(uO, {
 	    src: A,
 	    alt: ""
-	  }), /*#__PURE__*/react.createElement(cO, {
+	  }), /*#__PURE__*/react.createElement(fO, {
 	    className: "title"
-	  }, i))))), !m && /*#__PURE__*/react.createElement(pO, {
+	  }, i))))), !m && /*#__PURE__*/react.createElement(mO, {
 	    y: "".concat(L, "px"),
 	    className: "description"
-	  }, u), m && /*#__PURE__*/react.createElement(fO, {
+	  }, u), m && /*#__PURE__*/react.createElement(gO, {
 	    y: "".concat(L, "px")
-	  }, m), !m && /*#__PURE__*/react.createElement(sO, {
-	    onClick: ge
-	  }, /*#__PURE__*/react.createElement("img", {
+	  }, m), !m && /*#__PURE__*/react.createElement(lO, {
+	    onClick: oe ? null : ve
+	  }, oe ? /*#__PURE__*/react.createElement("img", {
+	    src: he,
+	    alt: "",
+	    className: "spin"
+	  }) : /*#__PURE__*/react.createElement("img", {
 	    src: z,
 	    alt: ""
-	  })), Y && /*#__PURE__*/react.createElement(hO, {
+	  })), Y && /*#__PURE__*/react.createElement(yO, {
 	    key: Y,
 	    className: "message",
 	    y: "".concat(B, "px")
 	  }, Y)) : null));
 	}
 
-	VD.propTypes = {
+	jD.propTypes = {
 	  frontCamera: propTypes.bool,
 	  usePortraitMask: propTypes.bool,
 	  cardType: propTypes.string,
@@ -75203,11 +75221,11 @@
 	  frontCardId: propTypes.string,
 	  enableRecording: propTypes.bool,
 	  onApiCheck: propTypes.func
-	}, VD.defaultProps = {
+	}, jD.defaultProps = {
 	  frontCamera: !0,
 	  usePortraitMask: !1,
-	  cardType: zD.VN,
-	  cardSide: BD.FRONT,
+	  cardType: UD.VN,
+	  cardSide: VD.FRONT,
 	  title: "",
 	  titleIcon: null,
 	  description: "",
@@ -75220,21 +75238,21 @@
 	  enableRecording: !1,
 	  onApiCheck: function onApiCheck() {}
 	};
-	var UD = Object.freeze({
+	var GD = Object.freeze({
 	  __proto__: null,
 	  Camera: Ne$2
 	});
 
-	function HD() {
+	function qD() {
 	  var e = N$3(["\n  transition: stroke-dashoffset 0.4s;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n"]);
-	  return HD = function HD() {
+	  return qD = function qD() {
 	    return e;
 	  }, e;
 	}
 
-	var jD = qe$1.circle(HD());
+	var KD = qe$1.circle(qD());
 
-	function GD(t) {
+	function XD(t) {
 	  var n = t.className,
 	      r = t.style,
 	      a = t.radius,
@@ -75287,7 +75305,7 @@
 	    cy: a,
 	    r: S,
 	    stroke: c
-	  }), /*#__PURE__*/react.createElement(jD, {
+	  }), /*#__PURE__*/react.createElement(KD, {
 	    cx: a,
 	    cy: a,
 	    r: S,
@@ -75319,7 +75337,7 @@
 	    strokeDasharray: "".concat(x, " ").concat(v)
 	  })), /*#__PURE__*/react.createElement("g", {
 	    mask: "url(#mask0)"
-	  }, /*#__PURE__*/react.createElement(jD, {
+	  }, /*#__PURE__*/react.createElement(KD, {
 	    cx: a,
 	    cy: a,
 	    r: R,
@@ -75336,7 +75354,7 @@
 	    r: O,
 	    stroke: w,
 	    strokeWidth: k
-	  }), /*#__PURE__*/react.createElement(jD, {
+	  }), /*#__PURE__*/react.createElement(KD, {
 	    cx: a,
 	    cy: a,
 	    r: O,
@@ -75362,7 +75380,7 @@
 	  }) : null);
 	}
 
-	GD.propTypes = {
+	XD.propTypes = {
 	  className: propTypes.string,
 	  style: propTypes.shape({}),
 	  radius: propTypes.number,
@@ -75387,7 +75405,7 @@
 	  showOutsideRing: propTypes.bool,
 	  showDashedRing: propTypes.bool,
 	  showInsideRing: propTypes.bool
-	}, GD.defaultProps = {
+	}, XD.defaultProps = {
 	  className: "",
 	  style: null,
 	  radius: 160,
@@ -75414,8 +75432,8 @@
 	  showInsideRing: !0
 	};
 
-	var qD = ok,
-	    KD = function (e, t) {
+	var YD = ok,
+	    QD = function (e, t) {
 	  if (null == e) return {};
 
 	  var n,
@@ -75963,7 +75981,7 @@
 	          debug: false // todo: create script for this mode
 
 	        }
-	      }, /*#__PURE__*/react.createElement(VD, _extends({
+	      }, /*#__PURE__*/react.createElement(jD, _extends({
 	        onClose: this.destroyView
 	      }, rest))), this.container);
 	    }
@@ -76029,7 +76047,7 @@
 	  return TVWebSDK;
 	}();
 
-	exports.Animations = jF;
+	exports.Animations = KF;
 	exports.AssetUtils = d$1;
 	exports.AsyncUtils = f$9;
 	exports.BASE_Z_INDEX = J$3;
@@ -76042,20 +76060,20 @@
 	exports.CropAreaOverlayWrapper = Te$2;
 	exports.FaceUtils = he;
 	exports.GlareUtils = Et;
-	exports.Icons = UD;
+	exports.Icons = GD;
 	exports.ImageUtils = It;
 	exports.LivenessDetection = Gk;
-	exports.LivenessDetectionComponents = KD;
+	exports.LivenessDetectionComponents = QD;
 	exports.MobileDetect = L$3;
 	exports.OverlayAssetImage = Ce$1;
 	exports.PlacementArea = ke$2;
 	exports.PredictionUtils = Ae;
-	exports.ProgressCircle = GD;
-	exports.ReadIDCard = VD;
+	exports.ProgressCircle = XD;
+	exports.ReadIDCard = jD;
 	exports.SDK = TVWebSDK;
 	exports.SettingsContext = l$1;
 	exports.UserAgentUtils = Ct;
-	exports.useLivenessDetection = qD;
+	exports.useLivenessDetection = YD;
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
