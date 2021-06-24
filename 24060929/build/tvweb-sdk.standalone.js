@@ -15760,7 +15760,7 @@
 	        for (;;) {
 	          switch (e.prev = e.next) {
 	            case 0:
-	              return (n = g.current).oncanplay = function () {
+	              return (n = g.current).onloadedmetadata = function () {
 	                n.play();
 	                var e = window.innerWidth,
 	                    t = window.innerHeight,
