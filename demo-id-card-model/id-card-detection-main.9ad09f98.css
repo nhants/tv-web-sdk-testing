@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+img,
+canvas {
+  max-width: 100%;
+}
+
+label {
+  display: block;
+}
+
+label + label {
+  margin-top: 0.5rem;
+}
+
+
+/*# sourceMappingURL=/id-card-detection-main.9ad09f98.css.map */

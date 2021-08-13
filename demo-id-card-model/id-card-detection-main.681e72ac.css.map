@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,cACF,CAEA,WAEE,cACF,CAEA,MACE,aACF,CAEA,YACE,gBACF","file":"id-card-detection-main.681e72ac.css","sourceRoot":"..","sourcesContent":["body {\n  margin: 0;\n  padding: 1.5rem;\n}\n\nimg,\ncanvas {\n  max-width: 100%;\n}\n\nlabel {\n  display: block;\n}\n\nlabel + label {\n  margin-top: 0.5rem;\n}\n"]}
