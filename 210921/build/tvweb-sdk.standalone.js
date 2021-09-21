@@ -99919,10 +99919,10 @@
 	    this.commonSettings = {
 	      lang: this.lang,
 	      assetRoot: this.assetRoot,
-	      tfjsWasmRoot: this.libRoot ? "".concat(this.libRoot, "/tfjs-backend-wasm/") : '',
-	      blazefaceRoot: this.libRoot ? "".concat(this.libRoot, "/blaze-face-model/model.json") : '',
-	      opencvUrl: this.libRoot ? "".concat(this.libRoot, "/opencv.js") : '',
-	      idCardModelUrl: this.libRoot ? "".concat(this.libRoot, "/id-card-model/uint8/model.json") : ''
+	      tfjsWasmRoot: this.libRoot ? "".concat(this.libRoot, "/tfjs-backend-wasm/") : undefined,
+	      blazefaceRoot: this.libRoot ? "".concat(this.libRoot, "/blaze-face-model/model.json") : undefined,
+	      opencvUrl: this.libRoot ? "".concat(this.libRoot, "/opencv.js") : undefined,
+	      idCardModelUrl: this.libRoot ? "".concat(this.libRoot, "/id-card-model/uint8/model.json") : undefined
 	    };
 	  }
 
