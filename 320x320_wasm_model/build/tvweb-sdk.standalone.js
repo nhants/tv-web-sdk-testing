@@ -72209,7 +72209,7 @@
 	  i.done ? t(u) : Promise.resolve(u).then(r, a);
 	}
 
-	function M$4(e) {
+	function C$4(e) {
 	  return function () {
 	    var t = this,
 	        n = arguments;
@@ -72229,7 +72229,7 @@
 	  };
 	}
 
-	function C$4(e, t) {
+	function M$4(e, t) {
 	  for (var n = 0; n < t.length; n++) {
 	    var r = t[n];
 	    r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r);
@@ -72497,8 +72497,8 @@
 	        O = o.FIREFOX,
 	        A = o.SAFARI,
 	        D = o.EDGE,
-	        M = o.YANDEX,
-	        C = o.MOBILE_SAFARI,
+	        C = o.YANDEX,
+	        M = o.MOBILE_SAFARI,
 	        R = u.MOBILE,
 	        $ = u.TABLET,
 	        F = u.SMART_TV,
@@ -72522,7 +72522,7 @@
 	        G = w.type === F,
 	        Y = w.type === L,
 	        X = w.type === P,
-	        Q = v.name === C || q(),
+	        Q = v.name === M || q(),
 	        Z = v.name === E,
 	        J = function () {
 	      switch (w.type) {
@@ -72542,7 +72542,7 @@
 	        se = k.name === j || q(),
 	        oe = v.name === N,
 	        ie = v.name === O,
-	        ue = v.name === A || v.name === C,
+	        ue = v.name === A || v.name === M,
 	        ce = v.name === I,
 	        le = v.name === S || v.name === T,
 	        pe = k.version ? k.version : "none",
@@ -72556,7 +72556,7 @@
 	        ve = x.version,
 	        we = _,
 	        xe = H() || K(),
-	        ke = v.name === M,
+	        ke = v.name === C,
 	        _e = w.type,
 	        Ne = (r = g()) && (/iPad|iPhone|iPod/.test(r.platform) || "MacIntel" === r.platform && r.maxTouchPoints > 1) && !window.MSStream,
 	        Ee = q(),
@@ -72570,18 +72570,18 @@
 	        Oe = K(),
 	        Ae = H(),
 	        De = k.name === W,
-	        Me = k.name === U,
-	        Ce = l(w.type);
+	        Ce = k.name === U,
+	        Me = l(w.type);
 
 	    e.exports = {
 	      deviceDetect: function deviceDetect() {
-	        var e = Ce.isBrowser,
-	            t = Ce.isMobile,
-	            n = Ce.isTablet,
-	            r = Ce.isSmartTV,
-	            a = Ce.isConsole,
-	            s = Ce.isWearable;
-	        return e ? p(e, v, x, k, _) : r ? f(r, x, k, _) : a ? h(a, x, k, _) : t || n ? d(Ce, w, k, _) : s ? m(s, x, k, _) : void 0;
+	        var e = Me.isBrowser,
+	            t = Me.isMobile,
+	            n = Me.isTablet,
+	            r = Me.isSmartTV,
+	            a = Me.isConsole,
+	            s = Me.isWearable;
+	        return e ? p(e, v, x, k, _) : r ? f(r, x, k, _) : a ? h(a, x, k, _) : t || n ? d(Me, w, k, _) : s ? m(s, x, k, _) : void 0;
 	      },
 	      isSmartTV: G,
 	      isConsole: Y,
@@ -72621,7 +72621,7 @@
 	      isEdgeChromium: Oe,
 	      isLegacyEdge: Ae,
 	      isWindows: De,
-	      isMacOs: Me
+	      isMacOs: Ce
 	    };
 	  }, function (e, t, n) {
 	    var r;
@@ -73056,14 +73056,14 @@
 	      O = I[0],
 	      A = I[1],
 	      D = react.useRef(!1),
-	      C = react.useRef(!1),
+	      M = react.useRef(!1),
 	      R = react.useCallback(function () {
 	    m.current.srcObject instanceof MediaStream && (m.current.srcObject.getTracks().forEach(function (e) {
 	      return e.stop();
 	    }), m.current.srcObject = null);
 	  }, [m]),
 	      $ = react.useCallback(function () {
-	    var e = M$4(regeneratorRuntime.mark(function e(t) {
+	    var e = C$4(regeneratorRuntime.mark(function e(t) {
 	      var n, r;
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
@@ -73119,14 +73119,14 @@
 	    };
 	  }(), [i, d, w, h]),
 	      F = react.useCallback(function () {
-	    var e = M$4(regeneratorRuntime.mark(function e(t) {
+	    var e = C$4(regeneratorRuntime.mark(function e(t) {
 	      var n, r;
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
 	          switch (e.prev = e.next) {
 	            case 0:
 	              return (n = m.current).oncanplaythrough = function () {
-	                n.play(), C.current = !0, N("");
+	                n.play(), M.current = !0, N("");
 	                var e = window.innerWidth,
 	                    t = window.innerHeight,
 	                    r = Q$1.analyzeVideoAndWindowSizes(n),
@@ -73162,7 +73162,7 @@
 	  }(), [m, $, l]);
 	  react.useEffect(function () {
 	    function e() {
-	      return (e = M$4(regeneratorRuntime.mark(function e() {
+	      return (e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, n;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -73193,7 +73193,7 @@
 	    }());
 	  }, [O]), react.useEffect(function () {
 	    function e() {
-	      return (e = M$4(regeneratorRuntime.mark(function e() {
+	      return (e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, n, r;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -73226,7 +73226,7 @@
 	    };
 	  }, [m, w, i, F, R, h]), react.useEffect(function () {
 	    var e = setTimeout(function () {
-	      C.current || (N(ce$3.camera_timeout.msg[w]), h(ce$3.camera_timeout));
+	      M.current || (N(ce$3.camera_timeout.msg[w]), h(ce$3.camera_timeout));
 	    }, 15e3);
 	    return function () {
 	      clearTimeout(e);
@@ -73297,8 +73297,8 @@
 	}),
 	    Ae$3 = qe$1.table(Te$3 || (Te$3 = P$4(["\n  width: 100%;\n  height: 100%;\n  td {\n    text-align: center;\n    vertical-align: middle;\n    padding: 0;\n    border: 0;\n  }\n  border-spacing: 0px;\n  table-layout: auto;\n"]))),
 	    De$3 = qe$1.div(Se$3 || (Se$3 = P$4(["\n  position: relative;\n"]))),
-	    Me$3 = Array.from(Array(3).keys()),
-	    Ce$2 = Array.from(Array(3).keys());
+	    Ce$2 = Array.from(Array(3).keys()),
+	    Me$3 = Array.from(Array(3).keys());
 
 	function Re$3(t) {
 	  var n = t.children,
@@ -73310,14 +73310,14 @@
 	      u = t.surroundStyle;
 	  return /*#__PURE__*/react.createElement(Ae$3, {
 	    className: i
-	  }, /*#__PURE__*/react.createElement("tbody", null, Me$3.map(function (t, i) {
+	  }, /*#__PURE__*/react.createElement("tbody", null, Ce$2.map(function (t, i) {
 	    return /*#__PURE__*/react.createElement("tr", {
 	      key: t,
 	      style: {
 	        height: 0 === i ? a : "auto"
 	      },
 	      "data-testid": "row"
-	    }, Ce$2.map(function (t, a) {
+	    }, Me$3.map(function (t, a) {
 	      var c = 1 === i && 1 === a,
 	          l = "auto";
 	      return c ? l = s : 0 === a && (l = r), /*#__PURE__*/react.createElement("td", {
@@ -73620,11 +73620,11 @@
 	  return n;
 	};
 
-	var Mt$1 = function Mt(e) {
+	var Ct$1 = function Ct(e) {
 	  return e;
 	};
 
-	var Ct$1 = function Ct(e, t, n) {
+	var Mt$1 = function Mt(e, t, n) {
 	  switch (n.length) {
 	    case 0:
 	      return e.call(t);
@@ -73655,7 +73655,7 @@
 	      i[a] = r[a];
 	    }
 
-	    return i[t] = n(o), Ct$1(e, this, i);
+	    return i[t] = n(o), Mt$1(e, this, i);
 	  };
 	};
 
@@ -73671,7 +73671,7 @@
 	    value: Ft$1(t),
 	    writable: !0
 	  });
-	} : Mt$1,
+	} : Ct$1,
 	    Pt$1 = Date.now;
 
 	var Lt$1 = function (e) {
@@ -73690,7 +73690,7 @@
 	}(zt$1);
 
 	var Bt$1 = function Bt(e, t) {
-	  return Lt$1($t$1(e, t, Mt$1), e + "");
+	  return Lt$1($t$1(e, t, Ct$1), e + "");
 	};
 
 	var Vt$1 = function Vt(e) {
@@ -73871,7 +73871,7 @@
 	},
 	    Sn$1 = Bt$1(function (e, t) {
 	  try {
-	    return Ct$1(e, void 0, t);
+	    return Mt$1(e, void 0, t);
 	  } catch (e) {
 	    return Tn$1(e) ? e : new Error(e);
 	  }
@@ -73893,10 +73893,10 @@
 	    An$1 = Object.prototype,
 	    Dn$1 = An$1.hasOwnProperty;
 
-	var Mn$1 = function Mn(e, t, n, r) {
+	var Cn$1 = function Cn(e, t, n, r) {
 	  return void 0 === e || It$1(e, An$1[n]) && !Dn$1.call(r, n) ? t : e;
 	},
-	    Cn$1 = {
+	    Mn$1 = {
 	  "\\": "\\",
 	  "'": "'",
 	  "\n": "n",
@@ -73906,7 +73906,7 @@
 	};
 
 	var Rn$1 = function Rn(e) {
-	  return "\\" + Cn$1[e];
+	  return "\\" + Mn$1[e];
 	},
 	    $n$1 = bn$1(Object.keys, Object),
 	    Fn$1 = Object.prototype.hasOwnProperty;
@@ -73978,10 +73978,10 @@
 
 	var tr$1 = function tr(e, t, n) {
 	  var r = qn$1.imports._.templateSettings || qn$1;
-	  n && Kt$1(e, t, n) && (t = void 0), e = Un$1(e), t = yn$1({}, t, r, Mn$1);
+	  n && Kt$1(e, t, n) && (t = void 0), e = Un$1(e), t = yn$1({}, t, r, Cn$1);
 	  var a,
 	      s,
-	      o = yn$1({}, t.imports, r.imports, Mn$1),
+	      o = yn$1({}, t.imports, r.imports, Cn$1),
 	      i = Pn$1(o),
 	      u = On$1(o, i),
 	      c = 0,
@@ -74144,7 +74144,7 @@
 	  return n.set(e, t), this.size += n.size == r ? 0 : 1, this;
 	};
 
-	function Mr$1(e) {
+	function Cr$1(e) {
 	  var t = -1,
 	      n = null == e ? 0 : e.length;
 
@@ -74154,8 +74154,8 @@
 	  }
 	}
 
-	Mr$1.prototype.clear = Er$1, Mr$1.prototype["delete"] = Ir$1, Mr$1.prototype.get = Or$1, Mr$1.prototype.has = Ar$1, Mr$1.prototype.set = Dr$1;
-	var Cr$1 = Mr$1;
+	Cr$1.prototype.clear = Er$1, Cr$1.prototype["delete"] = Ir$1, Cr$1.prototype.get = Or$1, Cr$1.prototype.has = Ar$1, Cr$1.prototype.set = Dr$1;
+	var Mr$1 = Cr$1;
 
 	function Rr$1(e, t) {
 	  if ("function" != typeof e || null != t && "function" != typeof t) throw new TypeError("Expected a function");
@@ -74169,10 +74169,10 @@
 	    return n.cache = s.set(a, o) || s, o;
 	  };
 
-	  return n.cache = new (Rr$1.Cache || Cr$1)(), n;
+	  return n.cache = new (Rr$1.Cache || Mr$1)(), n;
 	}
 
-	Rr$1.Cache = Cr$1;
+	Rr$1.Cache = Mr$1;
 	var $r$1 = Rr$1;
 
 	var Fr$1 = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,
@@ -74289,7 +74289,7 @@
 	      });
 	    },
 	        i = function () {
-	      var e = M$4(regeneratorRuntime.mark(function e() {
+	      var e = C$4(regeneratorRuntime.mark(function e() {
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
 	            switch (e.prev = e.next) {
@@ -74368,7 +74368,7 @@
 	      I = i.onError,
 	      O = i.frontalMinSize,
 	      D = i.enableRecording,
-	      C = void 0 !== D && D,
+	      M = void 0 !== D && D,
 	      $ = i.waitingTimeToGetBetterFrames,
 	      F = void 0 === $ ? 500 : $,
 	      P = i.captureFrameData,
@@ -74428,8 +74428,8 @@
 	      De = react.useMemo(function () {
 	    return ct$1(Ae, 500);
 	  }, [Ae]),
-	      Me = react.useRef([]),
-	      Ce = react.useRef(),
+	      Ce = react.useRef([]),
+	      Me = react.useRef(),
 	      Re = react.useRef([]),
 	      $e = react.useRef(-1),
 	      Fe = react.useRef(),
@@ -74547,7 +74547,7 @@
 	    Ze(3), clearInterval(st.current), at(!0);
 
 	    var e = function () {
-	      var e = M$4(regeneratorRuntime.mark(function e(t) {
+	      var e = C$4(regeneratorRuntime.mark(function e(t) {
 	        var n, r, a, s, o;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -74619,7 +74619,7 @@
 	    Oe && (clearInterval(st.current), at(!1));
 	  }, [Oe, at]), react.useEffect(function () {
 	    (function () {
-	      var e = M$4(regeneratorRuntime.mark(function e() {
+	      var e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, n;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -74673,7 +74673,7 @@
 	    var e,
 	        t = me$1.current,
 	        n = function () {
-	      var e = M$4(regeneratorRuntime.mark(function e() {
+	      var e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, n, r;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -74725,7 +74725,7 @@
 	      };
 	    }(),
 	        r = function () {
-	      var e = M$4(regeneratorRuntime.mark(function e() {
+	      var e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, r;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -74798,7 +74798,7 @@
 	      };
 	    }(),
 	        a = function () {
-	      var e = M$4(regeneratorRuntime.mark(function e() {
+	      var e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, n, r, a, s;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -74841,7 +74841,7 @@
 	      };
 	    }(),
 	        s = function () {
-	      var e = M$4(regeneratorRuntime.mark(function e() {
+	      var e = C$4(regeneratorRuntime.mark(function e() {
 	        var t, n, s, o, i, c, l;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -74852,12 +74852,12 @@
 	                  break;
 	                }
 
-	                if (!C) {
+	                if (!M) {
 	                  e.next = 7;
 	                  break;
 	                }
 
-	                return e.next = 7, Ce.current.stopVideoRecording();
+	                return e.next = 7, Me.current.stopVideoRecording();
 
 	              case 7:
 	                if (Be.enable && U(""), !S) {
@@ -74952,7 +74952,7 @@
 	    }
 
 	    function c() {
-	      return (c = M$4(regeneratorRuntime.mark(function e(t, n, r, a) {
+	      return (c = C$4(regeneratorRuntime.mark(function e(t, n, r, a) {
 	        var i, u, c, l, p, d;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -75013,7 +75013,7 @@
 	    }
 
 	    function m() {
-	      return (m = M$4(regeneratorRuntime.mark(function e(t, n, r) {
+	      return (m = C$4(regeneratorRuntime.mark(function e(t, n, r) {
 	        var a;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -75109,8 +75109,8 @@
 	    }
 
 	    function x() {
-	      return (x = M$4(regeneratorRuntime.mark(function n(r, a) {
-	        var s, o, u, c, m, b, w, x, N, E, T, S, I, O, A, D, M, C, R, $;
+	      return (x = C$4(regeneratorRuntime.mark(function n(r, a) {
+	        var s, o, u, c, m, b, w, x, N, E, T, S, I, O, A, D, C, M, R, $;
 	        return regeneratorRuntime.wrap(function (n) {
 	          for (;;) {
 	            switch (n.prev = n.next) {
@@ -75136,13 +75136,13 @@
 	                  break;
 	                }
 
-	                return M = D[A], I = N.landmarks, n.next = 24, de.calculateFaceDirection({
+	                return C = D[A], I = N.landmarks, n.next = 24, de.calculateFaceDirection({
 	                  landmarks: I,
-	                  getPerfectFrontal: M && M.name === na$2.FRONTAL
+	                  getPerfectFrontal: C && C.name === na$2.FRONTAL
 	                });
 
 	              case 24:
-	                (C = n.sent) && (T = C.gesture, S = C.leftRightScore);
+	                (M = n.sent) && (T = M.gesture, S = M.leftRightScore);
 
 	              case 26:
 	                if (R = "no_face" === (null == x ? void 0 : x.code) || "partial_face" === (null == x ? void 0 : x.code), $ = A < D.length, g(R && $), x && ("face_too_small" !== x.code || ![na$2.DOWN, na$2.UP, na$2.LEFT, na$2.RIGHT].includes(T))) {
@@ -75200,16 +75200,16 @@
 	    }
 
 	    function N() {
-	      return (N = M$4(regeneratorRuntime.mark(function e() {
+	      return (N = C$4(regeneratorRuntime.mark(function e() {
 	        var n, r, a, s, o, i, u;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
 	            switch (e.prev = e.next) {
 	              case 0:
-	                ne && (n = Q$1.analyzeVideoAndWindowSizes(t, Ne.current), r = n.cropWidth, a = n.cropHeight, (s = document.createElement("canvas")).width = r, s.height = a, (o = s.getContext("2d")).translate(r, 0), o.scale(-1, 1), i = C ? Kr$1({
+	                ne && (n = Q$1.analyzeVideoAndWindowSizes(t, Ne.current), r = n.cropWidth, a = n.cropHeight, (s = document.createElement("canvas")).width = r, s.height = a, (o = s.getContext("2d")).translate(r, 0), o.scale(-1, 1), i = M ? Kr$1({
 	                  canvas: s,
-	                  resultsOutput: Me.current
-	                }) : {}, u = i.mediaRecorder, Ce.current = u, Ce.current && Ce.current.start(), y(n, s));
+	                  resultsOutput: Ce.current
+	                }) : {}, u = i.mediaRecorder, Me.current = u, Me.current && Me.current.start(), y(n, s));
 
 	              case 1:
 	              case "end":
@@ -75227,7 +75227,7 @@
 	    }, 2e3), function () {
 	      cancelAnimationFrame(e), e = -1;
 	    };
-	  }, [Z, fe, we, ye, u, l, p, S, I, C, O, F, V, H, Pe, Be.enable, U, De, Le, Ue, Ve, ne, pe, He, Y]);
+	  }, [Z, fe, we, ye, u, l, p, S, I, M, O, F, V, H, Pe, Be.enable, U, De, Le, Ue, Ve, ne, pe, He, Y]);
 	  var lt = Te.current,
 	      pt = lt.curStepIndex,
 	      dt = lt.steps,
@@ -75352,8 +75352,8 @@
 	    Oa$2,
 	    Aa$2,
 	    Da$2,
-	    Ma$2,
 	    Ca$2,
+	    Ma$2,
 	    Ra$2,
 	    $a$2 = qe$1.circle(fa$2 || (fa$2 = P$4(["\n  transition: stroke-dashoffset 0.4s;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n"])));
 
@@ -75388,10 +75388,10 @@
 	      O = a - 2 * s,
 	      A = 2 * Math.PI * O,
 	      D = A - o / 100 * A,
-	      M = O - v / 2 - s / 2 - c,
-	      C = 2 * Math.PI * M,
-	      R = C - o / 100 * C,
-	      $ = M - _ / 2 - v / 2,
+	      C = O - v / 2 - s / 2 - c,
+	      M = 2 * Math.PI * C,
+	      R = M - o / 100 * M,
+	      $ = C - _ / 2 - v / 2,
 	      F = 2 * Math.PI * $,
 	      z = F - o / 100 * F,
 	      P = $ - m / 2 - _ / 2,
@@ -75428,7 +75428,7 @@
 	    opacity: b,
 	    cx: a,
 	    cy: a,
-	    r: M,
+	    r: C,
 	    stroke: y,
 	    strokeWidth: v,
 	    strokeDasharray: "".concat(w, " ").concat(x)
@@ -75439,7 +75439,7 @@
 	  }, /*#__PURE__*/react.createElement("circle", {
 	    cx: a,
 	    cy: a,
-	    r: M,
+	    r: C,
 	    stroke: u,
 	    strokeWidth: v,
 	    strokeDasharray: "".concat(w, " ").concat(x)
@@ -75449,10 +75449,10 @@
 	    "data-testid": "dashedAnimateRing",
 	    cx: a,
 	    cy: a,
-	    r: M,
+	    r: C,
 	    stroke: u,
 	    strokeWidth: v,
-	    strokeDasharray: "".concat(C, " ").concat(C),
+	    strokeDasharray: "".concat(M, " ").concat(M),
 	    style: {
 	      strokeDashoffset: R
 	    }
@@ -75620,7 +75620,7 @@
 	}),
 	    Qa$2 = qe$1.div(Da$2 || (Da$2 = P$4(["\n  position: absolute;\n  z-index: -1;\n  background: rgba(223, 0, 0, 0.2);\n  border-radius: 50%;\n  width: 86%;\n  height: 86%;\n  top: 7%;\n  left: 7%;\n"]))),
 	    Za$2 = We$1(["from{opacity:1;}to{opacity:0;}"]),
-	    Ja$2 = qe$1.div(Ma$2 || (Ma$2 = P$4(["\n  position: absolute;\n  width: 100%;\n  top: 0;\n  bottom: 0;\n  z-index: -1;\n  background: rgba(255, 255, 255, 0.3);\n  animation: ", " 1s infinite;\n  border-radius: 50%;\n"])), Za$2),
+	    Ja$2 = qe$1.div(Ca$2 || (Ca$2 = P$4(["\n  position: absolute;\n  width: 100%;\n  top: 0;\n  bottom: 0;\n  z-index: -1;\n  background: rgba(255, 255, 255, 0.3);\n  animation: ", " 1s infinite;\n  border-radius: 50%;\n"])), Za$2),
 	    es$1 = se$3.isMobile ? {
 	  width: 640
 	} : null,
@@ -75685,8 +75685,8 @@
 	  }),
 	      A = O.countdownToTakePicture,
 	      D = O.cropArea,
-	      M = O.curStepIndex,
-	      C = O.directionIcon,
+	      C = O.curStepIndex,
+	      M = O.directionIcon,
 	      R = O.faceDetectionError,
 	      $ = O.handleTriggerPassiveMode,
 	      F = O.handleVideoPlayed,
@@ -75717,14 +75717,14 @@
 	    height: "".concat(D.current.height, "px"),
 	    surroundStyle: D.current.surroundStyle
 	  }, /*#__PURE__*/react.createElement(Xa$2, null), /*#__PURE__*/react.createElement(Ya$2, {
-	    progress: M / j.length * 100,
+	    progress: C / j.length * 100,
 	    hasError: !!R,
 	    showDashedRing: !1,
 	    showOutsideRing: !1,
 	    insideRingWidth: 1,
 	    errorRingWidth: 1,
 	    insideRingStrokeDash: "2"
-	  }), V ? /*#__PURE__*/react.createElement(qa$2, null, A) : null, P ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Ga$2, null, C), U && /*#__PURE__*/react.createElement(Ja$2, null)) : null, R && /*#__PURE__*/react.createElement(Qa$2, null)) : null, P ? /*#__PURE__*/react.createElement(react.Fragment, null, T && /*#__PURE__*/react.createElement(Va$2, {
+	  }), V ? /*#__PURE__*/react.createElement(qa$2, null, A) : null, P ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Ga$2, null, M), U && /*#__PURE__*/react.createElement(Ja$2, null)) : null, R && /*#__PURE__*/react.createElement(Qa$2, null)) : null, P ? /*#__PURE__*/react.createElement(react.Fragment, null, T && /*#__PURE__*/react.createElement(Va$2, {
 	    top: N - 30
 	  }, T), z ? /*#__PURE__*/react.createElement(ja$2, {
 	    top: N + 5,
@@ -75736,7 +75736,7 @@
 	        a = t.image.objUrl;
 	    return /*#__PURE__*/react.createElement(Ua$2, {
 	      key: r,
-	      active: M >= n,
+	      active: C >= n,
 	      className: "step-item"
 	    }, a ? /*#__PURE__*/react.createElement("img", {
 	      src: a,
@@ -75769,15 +75769,15 @@
 	  onError: function onError() {},
 	  captureFrameData: !1,
 	  frontCamera: !0,
-	  customDirectionIcon: (Ca$2 = {}, R$3(Ca$2, s.FaceDirection.LEFT, /*#__PURE__*/react.createElement(ha$2, {
+	  customDirectionIcon: (Ma$2 = {}, R$3(Ma$2, s.FaceDirection.LEFT, /*#__PURE__*/react.createElement(ha$2, {
 	    type: s.FaceDirection.LEFT
-	  })), R$3(Ca$2, s.FaceDirection.RIGHT, /*#__PURE__*/react.createElement(ha$2, {
+	  })), R$3(Ma$2, s.FaceDirection.RIGHT, /*#__PURE__*/react.createElement(ha$2, {
 	    type: s.FaceDirection.RIGHT
-	  })), R$3(Ca$2, s.FaceDirection.UP, /*#__PURE__*/react.createElement(ha$2, {
+	  })), R$3(Ma$2, s.FaceDirection.UP, /*#__PURE__*/react.createElement(ha$2, {
 	    type: s.FaceDirection.UP
-	  })), R$3(Ca$2, s.FaceDirection.FRONTAL, /*#__PURE__*/react.createElement(ha$2, {
+	  })), R$3(Ma$2, s.FaceDirection.FRONTAL, /*#__PURE__*/react.createElement(ha$2, {
 	    type: s.FaceDirection.FRONTAL
-	  })), Ca$2),
+	  })), Ma$2),
 	  customStepTimeConstraints: (Ra$2 = {}, R$3(Ra$2, s.FaceDirection.UP, {
 	    delayTime: 1e3
 	  }), R$3(Ra$2, s.FaceDirection.LEFT, {
@@ -76213,18 +76213,259 @@
 	Ns$1.propTypes = {}, Ns$1.defaultProps = {
 	  mode: vs$1
 	};
-	s.IDCardSide, s.Errors;
-	var Es$1 = s.Errors;
+	var Es$1 = s.IDCardSide,
+	    Ts$1 = s.Errors;
 
-	function Ts$1(e, t) {
-	  return Math.pow(e.x - t.x, 2) + Math.pow(e.y - t.y, 2);
-	}
-
-	function Ss$1(e, t) {
-	  return Math.sqrt(Ts$1(e, t));
+	function Ss$1(e) {
+	  return Is$1.apply(this, arguments);
 	}
 
 	function Is$1() {
+	  return (Is$1 = C$4(regeneratorRuntime.mark(function e(t) {
+	    var n, r, a, s;
+	    return regeneratorRuntime.wrap(function (e) {
+	      for (;;) {
+	        switch (e.prev = e.next) {
+	          case 0:
+	            return n = t.image, r = t.cardType, a = t.cardSide, s = t.apiClient, e.abrupt("return", s.uploadImage({
+	              file: n,
+	              label: "id_card.".concat(r, ".").concat(a)
+	            }));
+
+	          case 2:
+	          case "end":
+	            return e.stop();
+	        }
+	      }
+	    }, e);
+	  }))).apply(this, arguments);
+	}
+
+	function Os$1(e) {
+	  return As$1.apply(this, arguments);
+	}
+
+	function As$1() {
+	  return (As$1 = C$4(regeneratorRuntime.mark(function e(t) {
+	    var n, r, a;
+	    return regeneratorRuntime.wrap(function (e) {
+	      for (;;) {
+	        switch (e.prev = e.next) {
+	          case 0:
+	            return n = t.imageId, r = t.cardType, a = t.apiClient, e.abrupt("return", a.requestVerifyIDCard({
+	              card_type: r,
+	              image1: {
+	                id: n
+	              }
+	            }));
+
+	          case 2:
+	          case "end":
+	            return e.stop();
+	        }
+	      }
+	    }, e);
+	  }))).apply(this, arguments);
+	}
+
+	function Ds$1(e) {
+	  return Cs$1.apply(this, arguments);
+	}
+
+	function Cs$1() {
+	  return (Cs$1 = C$4(regeneratorRuntime.mark(function e(t) {
+	    var n, r, a, s, o, i, u, c, l;
+	    return regeneratorRuntime.wrap(function (e) {
+	      for (;;) {
+	        switch (e.prev = e.next) {
+	          case 0:
+	            return n = t.apiClient, r = t.cardType, a = t.frontCardId, s = t.isCapturingFrontSide, o = t.backCardId, i = t.recordedVideos, u = i.filter(function (e) {
+	              return null !== e.id;
+	            }), c = i.filter(function (e) {
+	              return null === e.id && e.frames.length > 0;
+	            }), e.next = 5, Promise.all(c.map(function (e) {
+	              return n.fileService.request({
+	                frames: e.frames
+	              });
+	            }));
+
+	          case 5:
+	            return l = e.sent, e.abrupt("return", n.detectIDTampering({
+	              card_type: r,
+	              image: {
+	                id: a
+	              },
+	              image2: s ? void 0 : {
+	                id: o
+	              },
+	              videos: [].concat(B$4(u.map(function (e) {
+	                return {
+	                  id: e.id
+	                };
+	              })), B$4(l.map(function (e) {
+	                return {
+	                  id: e.data.file_id
+	                };
+	              })))
+	            }));
+
+	          case 7:
+	          case "end":
+	            return e.stop();
+	        }
+	      }
+	    }, e);
+	  }))).apply(this, arguments);
+	}
+
+	function Ms$1(e) {
+	  return Rs$1.apply(this, arguments);
+	}
+
+	function Rs$1() {
+	  return (Rs$1 = C$4(regeneratorRuntime.mark(function e(t) {
+	    var n, r, a, s, o;
+	    return regeneratorRuntime.wrap(function (e) {
+	      for (;;) {
+	        switch (e.prev = e.next) {
+	          case 0:
+	            return n = t.cardType, r = t.apiClient, a = t.frontCardId, s = t.backCardId, o = t.isCapturingFrontSide, e.abrupt("return", r.readIDCard({
+	              card_type: n,
+	              image1: o ? {
+	                id: a
+	              } : {
+	                id: s
+	              }
+	            }));
+
+	          case 2:
+	          case "end":
+	            return e.stop();
+	        }
+	      }
+	    }, e);
+	  }))).apply(this, arguments);
+	}
+
+	function $s$1(e) {
+	  return Fs$1.apply(this, arguments);
+	}
+
+	function Fs$1() {
+	  return (Fs$1 = C$4(regeneratorRuntime.mark(function e(t) {
+	    var n, r, a, s, o, i, u, c, l, p, d, m, h, f, g;
+	    return regeneratorRuntime.wrap(function (e) {
+	      for (;;) {
+	        switch (e.prev = e.next) {
+	          case 0:
+	            if (n = t.image, r = t.frontCardId, a = t.onError, s = t.recordedVideos, o = t.apiClient, i = t.cardType, (u = t.cardSide) !== Es$1.BACK || r) {
+	              e.next = 4;
+	              break;
+	            }
+
+	            return a(Ts$1.missing_front_id_card), e.abrupt("return");
+
+	          case 4:
+	            return e.next = 6, Ss$1({
+	              image: n,
+	              cardType: i,
+	              cardSide: u,
+	              apiClient: o
+	            });
+
+	          case 6:
+	            if (!(c = e.sent).errors) {
+	              e.next = 10;
+	              break;
+	            }
+
+	            return a(z$6(z$6({}, Ts$1.upload_error), {}, {
+	              details: c.errors
+	            })), e.abrupt("return");
+
+	          case 10:
+	            return l = c.data.image_id, (m = u === Es$1.FRONT) ? p = l : (p = r, d = l), e.next = 15, Os$1({
+	              imageId: l,
+	              cardType: i,
+	              apiClient: o
+	            });
+
+	          case 15:
+	            if (!(h = e.sent).errors) {
+	              e.next = 19;
+	              break;
+	            }
+
+	            return a(z$6(z$6({}, Ts$1.sanity_check_error), {}, {
+	              details: h.errors
+	            })), e.abrupt("return");
+
+	          case 19:
+	            return e.next = 21, Ms$1({
+	              cardType: i,
+	              apiClient: o,
+	              frontCardId: p,
+	              backCardId: d,
+	              isCapturingFrontSide: m
+	            });
+
+	          case 21:
+	            if (!(f = e.sent).errors) {
+	              e.next = 25;
+	              break;
+	            }
+
+	            return a(z$6(z$6({}, Ts$1.read_id_card_error), {}, {
+	              details: f.errors
+	            })), e.abrupt("return");
+
+	          case 25:
+	            return e.next = 27, Ds$1({
+	              apiClient: o,
+	              cardType: i,
+	              frontCardId: p,
+	              isCapturingFrontSide: m,
+	              backCardId: d,
+	              recordedVideos: s
+	            });
+
+	          case 27:
+	            if (!(g = e.sent).errors) {
+	              e.next = 31;
+	              break;
+	            }
+
+	            return a(z$6(z$6({}, Ts$1.detect_id_tampering_error), {}, {
+	              details: g.errors
+	            })), e.abrupt("return");
+
+	          case 31:
+	            return e.abrupt("return", {
+	              sanityResult: h.data,
+	              tamperingInfo: g.data,
+	              cardInfo: f.data
+	            });
+
+	          case 32:
+	          case "end":
+	            return e.stop();
+	        }
+	      }
+	    }, e);
+	  }))).apply(this, arguments);
+	}
+
+	var zs$1 = s.Errors;
+
+	function Ps$1(e, t) {
+	  return Math.pow(e.x - t.x, 2) + Math.pow(e.y - t.y, 2);
+	}
+
+	function Ls$1(e, t) {
+	  return Math.sqrt(Ps$1(e, t));
+	}
+
+	function Bs$1() {
 	  var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
 	      t = e.canvas,
 	      n = e.imgMargin,
@@ -76243,7 +76484,7 @@
 	  };
 	}
 
-	function Os$1(e, t) {
+	function Vs$1(e, t) {
 	  var n = window.cv,
 	      r = L$4(t.map(function (e) {
 	    return e.location;
@@ -76252,11 +76493,11 @@
 	      s = r[1],
 	      o = r[2],
 	      i = r[3],
-	      u = Ss$1(o, i),
-	      c = Ss$1(s, a),
+	      u = Ls$1(o, i),
+	      c = Ls$1(s, a),
 	      l = Math.max(u, c),
-	      p = Ss$1(s, o),
-	      d = Ss$1(a, i),
+	      p = Ls$1(s, o),
+	      d = Ls$1(a, i),
 	      m = Math.max(p, d),
 	      h = [a.x, a.y, s.x, s.y, o.x, o.y, i.x, i.y],
 	      f = [0, 0, l - 1, 0, l - 1, m - 1, 0, m - 1],
@@ -76271,7 +76512,7 @@
 	  return g["delete"](), y["delete"](), v["delete"](), w["delete"](), k;
 	}
 
-	function As$1(e) {
+	function js$1(e) {
 	  var t = e.corners,
 	      n = e.width,
 	      r = e.height,
@@ -76289,12 +76530,12 @@
 	  return a / n >= u && s / r >= u && (r - i) / r >= u && (n - o) / n >= u;
 	}
 
-	function Ds$1() {
-	  return Ms$1.apply(this, arguments);
+	function Ws$1() {
+	  return Us$1.apply(this, arguments);
 	}
 
-	function Ms$1() {
-	  return (Ms$1 = M$4(regeneratorRuntime.mark(function e() {
+	function Us$1() {
+	  return (Us$1 = C$4(regeneratorRuntime.mark(function e() {
 	    var t,
 	        n,
 	        r,
@@ -76323,7 +76564,7 @@
 	  }))).apply(this, arguments);
 	}
 
-	function Cs$1(e) {
+	function Ks$1(e) {
 	  for (var t, n, r, a, s, o, i, u = e.length, c = 0; c < u; c++) {
 	    var l = (c + u - 1) % u,
 	        p = (c + 1) % u,
@@ -76340,12 +76581,12 @@
 	  return !0;
 	}
 
-	function Rs$1(e) {
-	  return $s$1.apply(this, arguments);
+	function Hs$1(e) {
+	  return qs$1.apply(this, arguments);
 	}
 
-	function $s$1() {
-	  return ($s$1 = M$4(regeneratorRuntime.mark(function e(t) {
+	function qs$1() {
+	  return (qs$1 = C$4(regeneratorRuntime.mark(function e(t) {
 	    var n, r, a, s, o, i, u, c, l, p, d, m;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
@@ -76380,7 +76621,7 @@
 	              break;
 	            }
 
-	            return e.abrupt("return", Es$1.id_detector_error_front_side_no_faces);
+	            return e.abrupt("return", zs$1.id_detector_error_front_side_no_faces);
 
 	          case 18:
 	            if (!(m > 1)) {
@@ -76388,7 +76629,7 @@
 	              break;
 	            }
 
-	            return e.abrupt("return", Es$1.id_detector_error_front_side_multiple_faces);
+	            return e.abrupt("return", zs$1.id_detector_error_front_side_multiple_faces);
 
 	          case 20:
 	            e.next = 24;
@@ -76400,7 +76641,7 @@
 	              break;
 	            }
 
-	            return e.abrupt("return", Es$1.id_detector_error_back_side_has_faces);
+	            return e.abrupt("return", zs$1.id_detector_error_back_side_has_faces);
 
 	          case 24:
 	            return e.abrupt("return", null);
@@ -76414,34 +76655,34 @@
 	  }))).apply(this, arguments);
 	}
 
-	var Fs$1 = function Fs(e) {
+	var Gs$1 = function Gs(e) {
 	  return e ? Infinity === (e = st$1(e)) || -Infinity === e ? 17976931348623157e292 * (e < 0 ? -1 : 1) : e == e ? e : 0 : 0 === e ? e : 0;
 	};
 
-	var zs$1 = function zs(e) {
-	  var t = Fs$1(e),
+	var Ys$1 = function Ys(e) {
+	  var t = Gs$1(e),
 	      n = t % 1;
 	  return t == t ? n ? t - n : t : 0;
 	};
 
-	var Ps$1 = function Ps(e, t) {
+	var Xs$1 = function Xs(e, t) {
 	  var n;
 	  if ("function" != typeof t) throw new TypeError("Expected a function");
-	  return e = zs$1(e), function () {
+	  return e = Ys$1(e), function () {
 	    return --e > 0 && (n = t.apply(this, arguments)), e <= 1 && (t = void 0), n;
 	  };
 	};
 
-	var Ls$1 = function Ls(e) {
-	  return Ps$1(2, e);
+	var Qs$1 = function Qs(e) {
+	  return Xs$1(2, e);
 	};
 
-	var Bs$1 = function Bs(e, t, n) {
+	var Zs$1 = function Zs(e, t, n) {
 	  return e == e && (void 0 !== n && (e = e <= n ? e : n), void 0 !== t && (e = e >= t ? e : t)), e;
 	};
 
-	var Vs$1 = function Vs(e, t, n) {
-	  return void 0 === n && (n = t, t = void 0), void 0 !== n && (n = (n = st$1(n)) == n ? n : 0), void 0 !== t && (t = (t = st$1(t)) == t ? t : 0), Bs$1(st$1(e), t, n);
+	var Js$1 = function Js(e, t, n) {
+	  return void 0 === n && (n = t, t = void 0), void 0 !== n && (n = (n = st$1(n)) == n ? n : 0), void 0 !== t && (t = (t = st$1(t)) == t ? t : 0), Zs$1(st$1(e), t, n);
 	};
 	/**
 	 * @license
@@ -76461,7 +76702,7 @@
 	 */
 
 
-	function js$1(e) {
+	function eo$1(e) {
 	  throw new Error("'".concat(e, "' not yet implemented or not found in the registry. This kernel may not be supported by the tfjs backend you have chosen"));
 	}
 	/**
@@ -76482,26 +76723,26 @@
 	 */
 
 
-	function Ws$1(e, t) {
+	function to$1(e, t) {
 	  if (!e) throw new Error("string" == typeof t ? t : t());
 	}
 
-	function Us$1(e) {
-	  Ws$1(null != e, function () {
+	function no$1(e) {
+	  to$1(null != e, function () {
 	    return "The input to the tensor constructor must be a non-null value.";
 	  });
 	}
 
-	function Ks$1(e) {
+	function ro$1(e) {
 	  var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 	  var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
-	  if (null == t && (t = []), Array.isArray(e) || Qs$1(e) && !n) for (var _r2 = 0; _r2 < e.length; ++_r2) {
-	    Ks$1(e[_r2], t, n);
+	  if (null == t && (t = []), Array.isArray(e) || co$1(e) && !n) for (var _r2 = 0; _r2 < e.length; ++_r2) {
+	    ro$1(e[_r2], t, n);
 	  } else t.push(e);
 	  return t;
 	}
 
-	function Hs$1(e) {
+	function ao$1(e) {
 	  if (0 === e.length) return 1;
 	  var t = e[0];
 
@@ -76512,7 +76753,7 @@
 	  return t;
 	}
 
-	function qs$1(e, t) {
+	function so$1(e, t) {
 	  if (e === t) return !0;
 	  if (null == e || null == t) return !1;
 	  if (e.length !== t.length) return !1;
@@ -76524,28 +76765,28 @@
 	  return !0;
 	}
 
-	function Gs$1(e) {
+	function oo$1(e) {
 	  return e % 1 == 0;
 	}
 
-	function Ys$1(e, t) {
+	function io$1(e, t) {
 	  return t <= e.length ? e : e + " ".repeat(t - e.length);
 	}
 
-	function Xs$1(e, t) {
+	function uo$1(e, t) {
 	  var n = [],
 	      r = [],
 	      a = null != t && Array.isArray(t) && 0 === t.length,
 	      s = null == t || a ? null : function (e, t) {
 	    var n = t.length;
-	    return Ws$1((e = null == e ? t.map(function (e, t) {
+	    return to$1((e = null == e ? t.map(function (e, t) {
 	      return t;
 	    }) : [].concat(e)).every(function (e) {
 	      return e >= -n && e < n;
 	    }), function () {
 	      return "All values in axis param must be in range [-".concat(n, ", ").concat(n, ") but got axis ").concat(e);
-	    }), Ws$1(e.every(function (e) {
-	      return Gs$1(e);
+	    }), to$1(e.every(function (e) {
+	      return oo$1(e);
 	    }), function () {
 	      return "All values in axis param must be integers but got axis ".concat(e);
 	    }), e.map(function (e) {
@@ -76569,32 +76810,32 @@
 	  };
 	}
 
-	function Qs$1(e) {
+	function co$1(e) {
 	  return e instanceof Float32Array || e instanceof Int32Array || e instanceof Uint8Array;
 	}
 
-	function Zs$1(e) {
+	function lo$1(e) {
 	  if ("float32" === e || "int32" === e) return 4;
 	  if ("complex64" === e) return 8;
 	  if ("bool" === e) return 1;
 	  throw new Error("Unknown dtype ".concat(e));
 	}
 
-	function Js$1(e) {
+	function po$1(e) {
 	  return "string" == typeof e || e instanceof String;
 	}
 
-	function eo$1(e) {
-	  return Array.isArray(e) ? eo$1(e[0]) : e instanceof Float32Array ? "float32" : e instanceof Int32Array || e instanceof Uint8Array ? "int32" : "number" == typeof e ? "float32" : Js$1(e) ? "string" : function (e) {
+	function mo$1(e) {
+	  return Array.isArray(e) ? mo$1(e[0]) : e instanceof Float32Array ? "float32" : e instanceof Int32Array || e instanceof Uint8Array ? "int32" : "number" == typeof e ? "float32" : po$1(e) ? "string" : function (e) {
 	    return "boolean" == typeof e;
 	  }(e) ? "bool" : "float32";
 	}
 
-	function to$1(e) {
+	function ho$1(e) {
 	  return !!(e && e.constructor && e.call && e.apply);
 	}
 
-	function no$1(e) {
+	function fo$1(e) {
 	  var t = e.length;
 	  if (t < 2) return [];
 	  var n = new Array(t - 1);
@@ -76607,7 +76848,7 @@
 	  return n;
 	}
 
-	function ro$1(e, t, n) {
+	function go$1(e, t, n) {
 	  var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
 	  var a = new Array();
 
@@ -76625,14 +76866,14 @@
 	    }) * (r ? 2 : 1);
 
 	    for (var _t4 = 0; _t4 < _s3; _t4++) {
-	      a[_t4] = ro$1(e + _t4 * _i2, _o2, n, r);
+	      a[_t4] = go$1(e + _t4 * _i2, _o2, n, r);
 	    }
 	  }
 
 	  return a;
 	}
 
-	function ao$1(e, t) {
+	function yo$1(e, t) {
 	  var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	  if (0 === e.length) return t[0];
 	  var r = e.reduce(function (e, t) {
@@ -76640,11 +76881,11 @@
 	  }) * (n ? 2 : 1);
 	  if (0 === r) return [];
 	  if (r !== t.length) throw new Error("[".concat(e, "] does not match the input size ").concat(t.length).concat(n ? " for a complex tensor" : "", "."));
-	  return ro$1(0, e, t, n);
+	  return go$1(0, e, t, n);
 	}
 
-	function so$1(e, t) {
-	  var n = oo$1(e, t);
+	function bo$1(e, t) {
+	  var n = vo$1(e, t);
 
 	  for (var _e2 = 0; _e2 < n.length; _e2++) {
 	    n[_e2] = 1;
@@ -76653,22 +76894,22 @@
 	  return n;
 	}
 
-	function oo$1(e, t) {
+	function vo$1(e, t) {
 	  if (null == t || "float32" === t || "complex64" === t) return new Float32Array(e);
 	  if ("int32" === t) return new Int32Array(e);
 	  if ("bool" === t) return new Uint8Array(e);
 	  throw new Error("Unknown data type ".concat(t));
 	}
 
-	function io$1(e) {
+	function wo$1(e) {
 	  e.forEach(function (t) {
-	    Ws$1(Number.isInteger(t) && t >= 0, function () {
+	    to$1(Number.isInteger(t) && t >= 0, function () {
 	      return "Tensor must have a shape comprised of positive integers but got shape [".concat(e, "].");
 	    });
 	  });
 	}
 
-	function uo$1(e) {
+	function xo$1(e) {
 	  return e && e.then && "function" == typeof e.then;
 	}
 	/**
@@ -76689,14 +76930,14 @@
 	 */
 
 
-	var co$1 = /*#__PURE__*/function () {
-	  function co(e) {
-	    _classCallCheck(this, co);
+	var ko$1 = /*#__PURE__*/function () {
+	  function ko(e) {
+	    _classCallCheck(this, ko);
 
-	    this.global = e, this.flags = {}, this.flagRegistry = {}, this.urlFlags = {}, this.getQueryParams = lo$1, this.populateURLFlags();
+	    this.global = e, this.flags = {}, this.flagRegistry = {}, this.urlFlags = {}, this.getQueryParams = _o$1, this.populateURLFlags();
 	  }
 
-	  _createClass(co, [{
+	  _createClass(ko, [{
 	    key: "setPlatform",
 	    value: function setPlatform(e, t) {
 	      null != this.platform && console.warn("Platform ".concat(this.platformName, " has already been set. Overwriting the platform with ").concat(t, ".")), this.platformName = e, this.platform = t;
@@ -76755,7 +76996,7 @@
 	    value: function get(e) {
 	      if (e in this.flags) return this.flags[e];
 	      var t = this.evaluateFlag(e);
-	      if (uo$1(t)) throw new Error("Flag ".concat(e, " cannot be synchronously evaluated. Please use getAsync() instead."));
+	      if (xo$1(t)) throw new Error("Flag ".concat(e, " cannot be synchronously evaluated. Please use getAsync() instead."));
 	      return this.flags[e] = t, this.flags[e];
 	    }
 	  }, {
@@ -76825,10 +77066,10 @@
 	    }
 	  }]);
 
-	  return co;
+	  return ko;
 	}();
 
-	function lo$1(e) {
+	function _o$1(e) {
 	  var t = {};
 	  return e.replace(/[?&]([^=?&]+)(?:=([^&]*))?/g, function (e) {
 	    for (var _len = arguments.length, n = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -76841,30 +77082,30 @@
 	  }), t;
 	}
 
-	function po$1() {
-	  return ho$1;
+	function No$1() {
+	  return To$1;
 	}
 
-	var mo$1,
-	    ho$1 = null;
+	var Eo$1,
+	    To$1 = null;
 
-	function fo$1() {
-	  if (null == mo$1) {
+	function So$1() {
+	  if (null == Eo$1) {
 	    var _e3;
 
 	    if ("undefined" != typeof window) _e3 = window;else if ("undefined" != typeof global) _e3 = global;else if ("undefined" != typeof process) _e3 = process;else {
 	      if ("undefined" == typeof self) throw new Error("Could not find a global object");
 	      _e3 = self;
 	    }
-	    mo$1 = _e3;
+	    Eo$1 = _e3;
 	  }
 
-	  return mo$1;
+	  return Eo$1;
 	}
 
-	function go$1(e, t) {
+	function Io$1(e, t) {
 	  var n = function () {
-	    var e = fo$1();
+	    var e = So$1();
 	    return null == e._tfGlobals && (e._tfGlobals = new Map()), e._tfGlobals;
 	  }();
 
@@ -76876,14 +77117,14 @@
 	  }
 	}
 
-	var yo$1 = go$1("kernelRegistry", function () {
+	var Oo$1 = Io$1("kernelRegistry", function () {
 	  return new Map();
 	}),
-	    bo$1 = go$1("gradRegistry", function () {
+	    Ao$1 = Io$1("gradRegistry", function () {
 	  return new Map();
 	});
 
-	function vo$1(e, t) {
+	function Do$1(e, t) {
 	  var n = function (e, t) {
 	    return "".concat(t, "_").concat(e);
 	  }
@@ -76905,15 +77146,15 @@
 	   */
 	  (e, t);
 
-	  return yo$1.get(n);
+	  return Oo$1.get(n);
 	}
 
-	function wo$1(e) {
-	  return bo$1.get(e);
+	function Co$1(e) {
+	  return Ao$1.get(e);
 	}
 
-	function xo$1(e) {
-	  var t = yo$1.entries(),
+	function Mo$1(e) {
+	  var t = Oo$1.entries(),
 	      n = [];
 
 	  for (;;) {
@@ -76936,9 +77177,9 @@
 	  return n;
 	}
 
-	function ko$1(e, t) {
+	function Ro$1(e, t) {
 	  if ("string" === t) throw new Error("Cannot convert a string[] to a TypedArray");
-	  if (Array.isArray(e) && (e = Ks$1(e)), po$1().getBool("DEBUG") && function (e, t) {
+	  if (Array.isArray(e) && (e = ro$1(e)), No$1().getBool("DEBUG") && function (e, t) {
 	    for (var _n4 = 0; _n4 < e.length; _n4++) {
 	      var _r6 = e[_n4];
 	      if (isNaN(_r6) || !isFinite(_r6)) throw Error("A tensor of type ".concat(t, " being uploaded contains ").concat(_r6, "."));
@@ -76962,13 +77203,13 @@
 	  throw new Error("Unknown data type ".concat(t));
 	}
 
-	function _o$1() {
-	  return po$1().platform.now();
+	function $o$1() {
+	  return No$1().platform.now();
 	}
 
-	function No$1(e) {
+	function Fo$1(e) {
 	  var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "utf-8";
-	  return t = t || "utf-8", po$1().platform.decode(e, t);
+	  return t = t || "utf-8", No$1().platform.decode(e, t);
 	}
 	/**
 	 * @license
@@ -76988,14 +77229,14 @@
 	 */
 
 
-	var Eo$1 = /*#__PURE__*/function () {
-	  function Eo(e, t) {
-	    _classCallCheck(this, Eo);
+	var zo$1 = /*#__PURE__*/function () {
+	  function zo(e, t) {
+	    _classCallCheck(this, zo);
 
-	    this.backendTimer = e, this.logger = t, null == t && (this.logger = new So$1());
+	    this.backendTimer = e, this.logger = t, null == t && (this.logger = new Lo$1());
 	  }
 
-	  _createClass(Eo, [{
+	  _createClass(zo, [{
 	    key: "profileKernel",
 	    value: function profileKernel(e, t, n) {
 	      var r;
@@ -77005,9 +77246,7 @@
 	      };
 
 	      var s;
-
-	      var o = _o$1();
-
+	      var o = $o$1();
 	      if (this.backendTimer.timerAvailable()) s = this.backendTimer.time(a);else {
 	        a();
 
@@ -77027,15 +77266,15 @@
 	        }
 
 	        s = Promise.resolve({
-	          kernelMs: _o$1() - o
+	          kernelMs: $o$1() - o
 	        });
 	      }
 
-	      if (po$1().getBool("CHECK_COMPUTATION_FOR_ERRORS")) {
+	      if (No$1().getBool("CHECK_COMPUTATION_FOR_ERRORS")) {
 	        var _loop = function _loop(_t7) {
 	          var n = r[_t7];
 	          n.data().then(function (t) {
-	            To$1(t, n.dtype, e);
+	            Po$1(t, n.dtype, e);
 	          });
 	        };
 
@@ -77074,10 +77313,10 @@
 	    }
 	  }]);
 
-	  return Eo;
+	  return zo;
 	}();
 
-	function To$1(e, t, n) {
+	function Po$1(e, t, n) {
 	  if ("float32" !== t) return !1;
 
 	  for (var _t8 = 0; _t8 < e.length; _t8++) {
@@ -77088,19 +77327,19 @@
 	  return !1;
 	}
 
-	var So$1 = /*#__PURE__*/function () {
-	  function So() {
-	    _classCallCheck(this, So);
+	var Lo$1 = /*#__PURE__*/function () {
+	  function Lo() {
+	    _classCallCheck(this, Lo);
 	  }
 
-	  _createClass(So, [{
+	  _createClass(Lo, [{
 	    key: "logKernelProfile",
 	    value: function logKernelProfile(e, t, n, r, a, s) {
-	      var o = "number" == typeof r ? Ys$1("".concat(r, "ms"), 9) : r.error,
-	          i = Ys$1(e, 25),
+	      var o = "number" == typeof r ? io$1("".concat(r, "ms"), 9) : r.error,
+	          i = io$1(e, 25),
 	          u = t.rank,
 	          c = t.size,
-	          l = Ys$1(t.shape.toString(), 14);
+	          l = io$1(t.shape.toString(), 14);
 	      var p = "";
 
 	      for (var _e5 in a) {
@@ -77118,7 +77357,7 @@
 	    }
 	  }]);
 
-	  return So;
+	  return Lo;
 	}();
 	/**
 	 * @license
@@ -77138,25 +77377,25 @@
 	 */
 
 
-	function Io$1(e, t, n, r) {
-	  var a = no$1(t),
+	function Bo$1(e, t, n, r) {
+	  var a = fo$1(t),
 	      s = function (e, t, n, r) {
-	    var a = Hs$1(t),
+	    var a = ao$1(t),
 	        s = r[r.length - 1],
 	        o = new Array(s).fill(0),
 	        i = t.length,
-	        u = "complex64" === n ? Mo$1(e) : e;
+	        u = "complex64" === n ? Uo$1(e) : e;
 	    if (i > 1) for (var _e6 = 0; _e6 < a / s; _e6++) {
 	      var _t9 = _e6 * s;
 
 	      for (var _e7 = 0; _e7 < s; _e7++) {
-	        o[_e7] = Math.max(o[_e7], Oo$1(u[_t9 + _e7], 0, n).length);
+	        o[_e7] = Math.max(o[_e7], Vo$1(u[_t9 + _e7], 0, n).length);
 	      }
 	    }
 	    return o;
 	  }(e, t, n, a),
 	      o = t.length,
-	      i = Do$1(e, t, n, a, s),
+	      i = Wo$1(e, t, n, a, s),
 	      u = ["Tensor"];
 
 	  return r && (u.push("  dtype: ".concat(n)), u.push("  rank: ".concat(o)), u.push("  shape: [".concat(t, "]")), u.push("  values:")), u.push(i.map(function (e) {
@@ -77164,16 +77403,16 @@
 	  }).join("\n")), u.join("\n");
 	}
 
-	function Oo$1(e, t, n) {
+	function Vo$1(e, t, n) {
 	  var r;
-	  return r = Array.isArray(e) ? "".concat(parseFloat(e[0].toFixed(7)), " + ").concat(parseFloat(e[1].toFixed(7)), "j") : Js$1(e) ? "'".concat(e, "'") : "bool" === n ? Ao$1(e) : parseFloat(e.toFixed(7)).toString(), Ys$1(r, t);
+	  return r = Array.isArray(e) ? "".concat(parseFloat(e[0].toFixed(7)), " + ").concat(parseFloat(e[1].toFixed(7)), "j") : po$1(e) ? "'".concat(e, "'") : "bool" === n ? jo$1(e) : parseFloat(e.toFixed(7)).toString(), io$1(r, t);
 	}
 
-	function Ao$1(e) {
+	function jo$1(e) {
 	  return 0 === e ? "false" : "true";
 	}
 
-	function Do$1(e, t, n, r, a) {
+	function Wo$1(e, t, n, r, a) {
 	  var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : !0;
 	  var o = "complex64" === n ? 2 : 1,
 	      i = t[0],
@@ -77181,10 +77420,10 @@
 
 	  if (0 === u) {
 	    if ("complex64" === n) {
-	      return [Oo$1(Mo$1(e)[0], 0, n)];
+	      return [Vo$1(Uo$1(e)[0], 0, n)];
 	    }
 
-	    return "bool" === n ? [Ao$1(e[0])] : [e[0].toString()];
+	    return "bool" === n ? [jo$1(e[0])] : [e[0].toString()];
 	  }
 
 	  if (1 === u) {
@@ -77194,15 +77433,15 @@
 	      var _r9 = Array.from(e.slice(0, _t10)),
 	          _s5 = Array.from(e.slice((i - 3) * o, i * o));
 
-	      return "complex64" === n && (_r9 = Mo$1(_r9), _s5 = Mo$1(_s5)), ["[" + _r9.map(function (e, t) {
-	        return Oo$1(e, a[t], n);
+	      return "complex64" === n && (_r9 = Uo$1(_r9), _s5 = Uo$1(_s5)), ["[" + _r9.map(function (e, t) {
+	        return Vo$1(e, a[t], n);
 	      }).join(", ") + ", ..., " + _s5.map(function (e, t) {
-	        return Oo$1(e, a[i - 3 + t], n);
+	        return Vo$1(e, a[i - 3 + t], n);
 	      }).join(", ") + "]"];
 	    }
 
-	    return ["[" + ("complex64" === n ? Mo$1(e) : Array.from(e)).map(function (e, t) {
-	      return Oo$1(e, a[t], n);
+	    return ["[" + ("complex64" === n ? Uo$1(e) : Array.from(e)).map(function (e, t) {
+	      return Vo$1(e, a[t], n);
 	    }).join(", ") + "]"];
 	  }
 
@@ -77216,7 +77455,7 @@
 	      var _r10 = _t11 * p,
 	          _s6 = _r10 + p;
 
-	      d.push.apply(d, _toConsumableArray(Do$1(e.slice(_r10, _s6), c, n, l, a, !1)));
+	      d.push.apply(d, _toConsumableArray(Wo$1(e.slice(_r10, _s6), c, n, l, a, !1)));
 	    }
 
 	    d.push("...");
@@ -77225,13 +77464,13 @@
 	      var _r11 = _t12 * p,
 	          _s7 = _r11 + p;
 
-	      d.push.apply(d, _toConsumableArray(Do$1(e.slice(_r11, _s7), c, n, l, a, _t12 === i - 1)));
+	      d.push.apply(d, _toConsumableArray(Wo$1(e.slice(_r11, _s7), c, n, l, a, _t12 === i - 1)));
 	    }
 	  } else for (var _t13 = 0; _t13 < i; _t13++) {
 	    var _r12 = _t13 * p,
 	        _s8 = _r12 + p;
 
-	    d.push.apply(d, _toConsumableArray(Do$1(e.slice(_r12, _s8), c, n, l, a, _t13 === i - 1)));
+	    d.push.apply(d, _toConsumableArray(Wo$1(e.slice(_r12, _s8), c, n, l, a, _t13 === i - 1)));
 	  }
 
 	  var m = 2 === u ? "," : "";
@@ -77250,7 +77489,7 @@
 	  return d[d.length - 1] = " " + d[d.length - 1] + "]" + (s ? "" : h), d;
 	}
 
-	function Mo$1(e) {
+	function Uo$1(e) {
 	  var t = [];
 
 	  for (var _n7 = 0; _n7 < e.length; _n7 += 2) {
@@ -77277,15 +77516,15 @@
 	 */
 
 
-	var Co$1 = /*#__PURE__*/function () {
-	  function Co(e, t, n) {
+	var Ko$1 = /*#__PURE__*/function () {
+	  function Ko(e, t, n) {
 	    var _this3 = this;
 
-	    _classCallCheck(this, Co);
+	    _classCallCheck(this, Ko);
 
-	    if (this.dtype = t, this.shape = e.slice(), this.size = Hs$1(e), null != n) {
+	    if (this.dtype = t, this.shape = e.slice(), this.size = ao$1(e), null != n) {
 	      var _e10 = n.length;
-	      Ws$1(_e10 === this.size, function () {
+	      to$1(_e10 === this.size, function () {
 	        return "Length of values '".concat(_e10, "' does not match the size inferred by the shape '").concat(_this3.size, "'.");
 	      });
 	    }
@@ -77298,10 +77537,10 @@
 	        n = new Array(t);
 	      }
 	      return n;
-	    }(t, this.size), this.strides = no$1(e);
+	    }(t, this.size), this.strides = fo$1(e);
 	  }
 
-	  _createClass(Co, [{
+	  _createClass(Ko, [{
 	    key: "set",
 	    value: function set(e) {
 	      var _this4 = this;
@@ -77310,7 +77549,7 @@
 	        t[_key2 - 1] = arguments[_key2];
 	      }
 
-	      0 === t.length && (t = [0]), Ws$1(t.length === this.rank, function () {
+	      0 === t.length && (t = [0]), to$1(t.length === this.rank, function () {
 	        return "The number of provided coordinates (".concat(t.length, ") must match the rank (").concat(_this4.rank, ")");
 	      });
 	      var n = this.locToIndex(t);
@@ -77380,24 +77619,24 @@
 	  }, {
 	    key: "toTensor",
 	    value: function toTensor() {
-	      return Ro$1().makeTensor(this.values, this.shape, this.dtype);
+	      return Ho$1().makeTensor(this.values, this.shape, this.dtype);
 	    }
 	  }]);
 
-	  return Co;
+	  return Ko;
 	}();
 
-	var Ro$1 = null,
-	    $o$1 = null;
+	var Ho$1 = null,
+	    qo$1 = null;
 
-	var Fo$1 = /*#__PURE__*/function () {
-	  function Fo(e, t, n, r) {
-	    _classCallCheck(this, Fo);
+	var Go$1 = /*#__PURE__*/function () {
+	  function Go(e, t, n, r) {
+	    _classCallCheck(this, Go);
 
-	    this.kept = !1, this.isDisposedInternal = !1, this.shape = e.slice(), this.dtype = t || "float32", this.size = Hs$1(e), this.strides = no$1(e), this.dataId = n, this.id = r, this.rankType = this.rank < 5 ? this.rank.toString() : "higher";
+	    this.kept = !1, this.isDisposedInternal = !1, this.shape = e.slice(), this.dtype = t || "float32", this.size = ao$1(e), this.strides = fo$1(e), this.dataId = n, this.id = r, this.rankType = this.rank < 5 ? this.rank.toString() : "higher";
 	  }
 
-	  _createClass(Fo, [{
+	  _createClass(Go, [{
 	    key: "rank",
 	    get: function get() {
 	      return this.shape.length;
@@ -77416,7 +77655,7 @@
 
 	              case 2:
 	                e = _context2.sent;
-	                return _context2.abrupt("return", $o$1.buffer(this.shape, this.dtype, e));
+	                return _context2.abrupt("return", qo$1.buffer(this.shape, this.dtype, e));
 
 	              case 4:
 	              case "end":
@@ -77435,7 +77674,7 @@
 	  }, {
 	    key: "bufferSync",
 	    value: function bufferSync() {
-	      return $o$1.buffer(this.shape, this.dtype, this.dataSync());
+	      return qo$1.buffer(this.shape, this.dtype, this.dataSync());
 	    }
 	  }, {
 	    key: "array",
@@ -77451,7 +77690,7 @@
 
 	              case 2:
 	                e = _context3.sent;
-	                return _context3.abrupt("return", ao$1(this.shape, e, "complex64" === this.dtype));
+	                return _context3.abrupt("return", yo$1(this.shape, e, "complex64" === this.dtype));
 
 	              case 4:
 	              case "end":
@@ -77470,7 +77709,7 @@
 	  }, {
 	    key: "arraySync",
 	    value: function arraySync() {
-	      return ao$1(this.shape, this.dataSync(), "complex64" === this.dtype);
+	      return yo$1(this.shape, this.dataSync(), "complex64" === this.dtype);
 	    }
 	  }, {
 	    key: "data",
@@ -77483,7 +77722,7 @@
 	            switch (_context4.prev = _context4.next) {
 	              case 0:
 	                this.throwIfDisposed();
-	                e = Ro$1().read(this.dataId);
+	                e = Ho$1().read(this.dataId);
 
 	                if (!("string" === this.dtype)) {
 	                  _context4.next = 13;
@@ -77497,7 +77736,7 @@
 	                _t16 = _context4.sent;
 	                _context4.prev = 6;
 	                return _context4.abrupt("return", _t16.map(function (e) {
-	                  return No$1(e);
+	                  return Fo$1(e);
 	                }));
 
 	              case 10:
@@ -77526,10 +77765,10 @@
 	    key: "dataSync",
 	    value: function dataSync() {
 	      this.throwIfDisposed();
-	      var e = Ro$1().readSync(this.dataId);
+	      var e = Ho$1().readSync(this.dataId);
 	      if ("string" === this.dtype) try {
 	        return e.map(function (e) {
-	          return No$1(e);
+	          return Fo$1(e);
 	        });
 	      } catch (e) {
 	        throw new Error("Failed to decode the string bytes into utf-8. To get the original bytes, call tensor.bytes().");
@@ -77547,7 +77786,7 @@
 	              case 0:
 	                this.throwIfDisposed();
 	                _context5.next = 3;
-	                return Ro$1().read(this.dataId);
+	                return Ho$1().read(this.dataId);
 
 	              case 3:
 	                e = _context5.sent;
@@ -77570,7 +77809,7 @@
 	  }, {
 	    key: "dispose",
 	    value: function dispose() {
-	      this.isDisposed || (Ro$1().disposeTensor(this), this.isDisposedInternal = !0);
+	      this.isDisposed || (Ho$1().disposeTensor(this), this.isDisposedInternal = !0);
 	    }
 	  }, {
 	    key: "isDisposed",
@@ -77586,23 +77825,23 @@
 	    key: "print",
 	    value: function print() {
 	      var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : !1;
-	      return $o$1.print(this, e);
+	      return qo$1.print(this, e);
 	    }
 	  }, {
 	    key: "clone",
 	    value: function clone() {
-	      return this.throwIfDisposed(), $o$1.clone(this);
+	      return this.throwIfDisposed(), qo$1.clone(this);
 	    }
 	  }, {
 	    key: "toString",
 	    value: function toString() {
 	      var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : !1;
-	      return Io$1(this.dataSync(), this.shape, this.dtype, e);
+	      return Bo$1(this.dataSync(), this.shape, this.dtype, e);
 	    }
 	  }, {
 	    key: "cast",
 	    value: function cast(e) {
-	      return this.throwIfDisposed(), $o$1.cast(this, e);
+	      return this.throwIfDisposed(), qo$1.cast(this, e);
 	    }
 	  }, {
 	    key: "variable",
@@ -77610,51 +77849,51 @@
 	      var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : !0;
 	      var t = arguments.length > 1 ? arguments[1] : undefined;
 	      var n = arguments.length > 2 ? arguments[2] : undefined;
-	      return this.throwIfDisposed(), Ro$1().makeVariable(this, e, t, n);
+	      return this.throwIfDisposed(), Ho$1().makeVariable(this, e, t, n);
 	    }
 	  }]);
 
-	  return Fo;
+	  return Go;
 	}();
 
-	Object.defineProperty(Fo$1, Symbol.hasInstance, {
+	Object.defineProperty(Go$1, Symbol.hasInstance, {
 	  value: function value(e) {
 	    return !!e && null != e.data && null != e.dataSync && null != e.throwIfDisposed;
 	  }
-	}), go$1("Tensor", function () {
-	  return Fo$1;
+	}), Io$1("Tensor", function () {
+	  return Go$1;
 	});
 
-	var zo$1 = /*#__PURE__*/function (_Fo) {
-	  _inherits(zo, _Fo);
+	var Yo$1 = /*#__PURE__*/function (_Go) {
+	  _inherits(Yo, _Go);
 
-	  var _super = _createSuper(zo);
+	  var _super = _createSuper(Yo);
 
-	  function zo(e, t, n, r) {
+	  function Yo(e, t, n, r) {
 	    var _this5;
 
-	    _classCallCheck(this, zo);
+	    _classCallCheck(this, Yo);
 
 	    _this5 = _super.call(this, e.shape, e.dtype, e.dataId, r), _this5.trainable = t, _this5.name = n;
 	    return _this5;
 	  }
 
-	  _createClass(zo, [{
+	  _createClass(Yo, [{
 	    key: "assign",
 	    value: function assign(e) {
 	      if (e.dtype !== this.dtype) throw new Error("dtype of the new value (".concat(e.dtype, ") and previous value (").concat(this.dtype, ") must match"));
-	      if (!qs$1(e.shape, this.shape)) throw new Error("shape of the new value (".concat(e.shape, ") and previous value (").concat(this.shape, ") must match"));
-	      Ro$1().disposeTensor(this), this.dataId = e.dataId, Ro$1().incRef(this, null);
+	      if (!so$1(e.shape, this.shape)) throw new Error("shape of the new value (".concat(e.shape, ") and previous value (").concat(this.shape, ") must match"));
+	      Ho$1().disposeTensor(this), this.dataId = e.dataId, Ho$1().incRef(this, null);
 	    }
 	  }, {
 	    key: "dispose",
 	    value: function dispose() {
-	      Ro$1().disposeVariable(this), this.isDisposedInternal = !0;
+	      Ho$1().disposeVariable(this), this.isDisposedInternal = !0;
 	    }
 	  }]);
 
-	  return zo;
-	}(Fo$1);
+	  return Yo;
+	}(Go$1);
 	/**
 	 * @license
 	 * Copyright 2017 Google LLC. All Rights Reserved.
@@ -77673,27 +77912,27 @@
 	 */
 
 
-	var Po$1, Lo$1, Bo$1, Vo$1, jo$1;
-	Object.defineProperty(zo$1, Symbol.hasInstance, {
+	var Xo$1, Qo$1, Zo$1, Jo$1, ei$2;
+	Object.defineProperty(Yo$1, Symbol.hasInstance, {
 	  value: function value(e) {
-	    return e instanceof Fo$1 && null != e.assign && e.assign instanceof Function;
+	    return e instanceof Go$1 && null != e.assign && e.assign instanceof Function;
 	  }
 	}), function (e) {
 	  e.R0 = "R0", e.R1 = "R1", e.R2 = "R2", e.R3 = "R3", e.R4 = "R4", e.R5 = "R5", e.R6 = "R6";
-	}(Po$1 || (Po$1 = {})), function (e) {
+	}(Xo$1 || (Xo$1 = {})), function (e) {
 	  e.float32 = "float32", e.int32 = "int32", e.bool = "int32", e.complex64 = "complex64";
-	}(Lo$1 || (Lo$1 = {})), function (e) {
+	}(Qo$1 || (Qo$1 = {})), function (e) {
 	  e.float32 = "float32", e.int32 = "int32", e.bool = "bool", e.complex64 = "complex64";
-	}(Bo$1 || (Bo$1 = {})), function (e) {
+	}(Zo$1 || (Zo$1 = {})), function (e) {
 	  e.float32 = "float32", e.int32 = "float32", e.bool = "float32", e.complex64 = "complex64";
-	}(Vo$1 || (Vo$1 = {})), function (e) {
+	}(Jo$1 || (Jo$1 = {})), function (e) {
 	  e.float32 = "complex64", e.int32 = "complex64", e.bool = "complex64", e.complex64 = "complex64";
-	}(jo$1 || (jo$1 = {}));
-	var Wo$1 = {
-	  float32: Vo$1,
-	  int32: Lo$1,
-	  bool: Bo$1,
-	  complex64: jo$1
+	}(ei$2 || (ei$2 = {}));
+	var ti$2 = {
+	  float32: Jo$1,
+	  int32: Qo$1,
+	  bool: Zo$1,
+	  complex64: ei$2
 	};
 	/**
 	 * @license
@@ -77712,7 +77951,7 @@
 	 * =============================================================================
 	 */
 
-	function Uo$1(e, t) {
+	function ni$2(e, t) {
 	  if (e.dtype === t.dtype) return [e, t];
 
 	  var n = function (e, t) {
@@ -77721,20 +77960,20 @@
 	      throw new Error("Can not upcast ".concat(e, " with ").concat(t));
 	    }
 
-	    return Wo$1[e][t];
+	    return ti$2[e][t];
 	  }(e.dtype, t.dtype);
 
 	  return [e.cast(n), t.cast(n)];
 	}
 
-	function Ko$1(e) {
+	function ri$2(e) {
 	  var t = [];
-	  return Ho$1(e, t, new Set()), t;
+	  return ai$2(e, t, new Set()), t;
 	}
 
-	function Ho$1(e, t, n) {
+	function ai$2(e, t, n) {
 	  if (null == e) return;
-	  if (e instanceof Fo$1) return void t.push(e);
+	  if (e instanceof Go$1) return void t.push(e);
 	  if (r = e, !Array.isArray(r) && "object" != _typeof(r)) return;
 	  var r;
 	  /**
@@ -77758,17 +77997,17 @@
 
 	  for (var _e12 in a) {
 	    var _r13 = a[_e12];
-	    n.has(_r13) || (n.add(_r13), Ho$1(_r13, t, n));
+	    n.has(_r13) || (n.add(_r13), ai$2(_r13, t, n));
 	  }
 	}
 
-	function qo$1(e) {
+	function si$2(e) {
 	  return null != e.kernelName;
 	}
 
-	var Go$1 = /*#__PURE__*/function () {
-	  function Go() {
-	    _classCallCheck(this, Go);
+	var oi$2 = /*#__PURE__*/function () {
+	  function oi() {
+	    _classCallCheck(this, oi);
 
 	    this.registeredVariables = {}, this.nextTapeNodeId = 0, this.numBytes = 0, this.numTensors = 0, this.numStringTensors = 0, this.numDataBuffers = 0, this.gradientDepth = 0, this.kernelDepth = 0, this.scopeStack = [], this.numDataMovesStack = [], this.nextScopeId = 0, this.tensorInfo = new WeakMap(), this.profiling = !1, this.activeProfile = {
 	      newBytes: 0,
@@ -77786,7 +78025,7 @@
 	    };
 	  }
 
-	  _createClass(Go, [{
+	  _createClass(oi, [{
 	    key: "dispose",
 	    value: function dispose() {
 	      for (var _e13 in this.registeredVariables) {
@@ -77795,17 +78034,17 @@
 	    }
 	  }]);
 
-	  return Go;
+	  return oi;
 	}();
 
-	var Yo$1 = /*#__PURE__*/function () {
-	  function Yo(e) {
-	    _classCallCheck(this, Yo);
+	var ii$2 = /*#__PURE__*/function () {
+	  function ii(e) {
+	    _classCallCheck(this, ii);
 
-	    this.ENV = e, this.registry = {}, this.registryFactory = {}, this.pendingBackendInitId = 0, this.state = new Go$1();
+	    this.ENV = e, this.registry = {}, this.registryFactory = {}, this.pendingBackendInitId = 0, this.state = new oi$2();
 	  }
 
-	  _createClass(Yo, [{
+	  _createClass(ii, [{
 	    key: "ready",
 	    value: function () {
 	      var _ready = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
@@ -77979,7 +78218,7 @@
 	                return _context7.abrupt("return", !1);
 
 	              case 14:
-	                return _context7.abrupt("return", (this.backendInstance = this.registry[e], this.setupRegisteredKernels(), this.profiler = new Eo$1(this.backendInstance), !0));
+	                return _context7.abrupt("return", (this.backendInstance = this.registry[e], this.setupRegisteredKernels(), this.profiler = new zo$1(this.backendInstance), !0));
 
 	              case 15:
 	              case "end":
@@ -78000,7 +78239,7 @@
 	    value: function setupRegisteredKernels() {
 	      var _this6 = this;
 
-	      xo$1(this.backendName).forEach(function (e) {
+	      Mo$1(this.backendName).forEach(function (e) {
 	        null != e.setupFunc && e.setupFunc(_this6.backendInstance);
 	      });
 	    }
@@ -78009,7 +78248,7 @@
 	    value: function disposeRegisteredKernels(e) {
 	      var _this7 = this;
 
-	      xo$1(e).forEach(function (t) {
+	      Mo$1(e).forEach(function (t) {
 	        null != t.disposeFunc && t.disposeFunc(_this7.registry[e]);
 	      });
 	    }
@@ -78032,12 +78271,12 @@
 	          _createClass(_class, [{
 	            key: "refCount",
 	            value: function refCount(e) {
-	              return js$1("refCount");
+	              return eo$1("refCount");
 	            }
 	          }, {
 	            key: "incRef",
 	            value: function incRef(e) {
-	              return js$1("incRef");
+	              return eo$1("incRef");
 	            }
 	          }, {
 	            key: "timerAvailable",
@@ -78047,47 +78286,47 @@
 	          }, {
 	            key: "time",
 	            value: function time(e) {
-	              return js$1("time");
+	              return eo$1("time");
 	            }
 	          }, {
 	            key: "read",
 	            value: function read(e) {
-	              return js$1("read");
+	              return eo$1("read");
 	            }
 	          }, {
 	            key: "readSync",
 	            value: function readSync(e) {
-	              return js$1("readSync");
+	              return eo$1("readSync");
 	            }
 	          }, {
 	            key: "numDataIds",
 	            value: function numDataIds() {
-	              return js$1("numDataIds");
+	              return eo$1("numDataIds");
 	            }
 	          }, {
 	            key: "disposeData",
 	            value: function disposeData(e, t) {
-	              return js$1("disposeData");
+	              return eo$1("disposeData");
 	            }
 	          }, {
 	            key: "write",
 	            value: function write(e, t, n) {
-	              return js$1("write");
+	              return eo$1("write");
 	            }
 	          }, {
 	            key: "move",
 	            value: function move(e, t, n, r, a) {
-	              return js$1("move");
+	              return eo$1("move");
 	            }
 	          }, {
 	            key: "memory",
 	            value: function memory() {
-	              return js$1("memory");
+	              return eo$1("memory");
 	            }
 	          }, {
 	            key: "floatPrecision",
 	            value: function floatPrecision() {
-	              return js$1("floatPrecision");
+	              return eo$1("floatPrecision");
 	            }
 	          }, {
 	            key: "epsilon",
@@ -78097,7 +78336,7 @@
 	          }, {
 	            key: "dispose",
 	            value: function dispose() {
-	              return js$1("dispose");
+	              return eo$1("dispose");
 	            }
 	          }]);
 
@@ -78211,17 +78450,17 @@
 	  }, {
 	    key: "nextTensorId",
 	    value: function nextTensorId() {
-	      return Yo.nextTensorId++;
+	      return ii.nextTensorId++;
 	    }
 	  }, {
 	    key: "nextVariableId",
 	    value: function nextVariableId() {
-	      return Yo.nextVariableId++;
+	      return ii.nextVariableId++;
 	    }
 	  }, {
 	    key: "clone",
 	    value: function clone(e) {
-	      var t = Qo$1.runKernel("Identity", {
+	      var t = ci$2.runKernel("Identity", {
 	        x: e
 	      }),
 	          n = {
@@ -78236,7 +78475,7 @@
 	                n = {
 	              dtype: "float32"
 	            };
-	            return Qo$1.runKernel("Cast", t, n);
+	            return ci$2.runKernel("Cast", t, n);
 	          }
 	        };
 	      }, [], {}), t;
@@ -78245,7 +78484,7 @@
 	    key: "runKernel",
 	    value: function runKernel(e, t, n) {
 	      null == this.backendName && this.backend;
-	      if (!(null != vo$1(e, this.backendName))) throw new Error("Kernel '".concat(e, "' not registered for backend '").concat(this.backendName, "'"));
+	      if (!(null != Do$1(e, this.backendName))) throw new Error("Kernel '".concat(e, "' not registered for backend '").concat(this.backendName, "'"));
 	      return this.runKernelFunc({
 	        kernelName: e,
 	        inputs: t,
@@ -78281,17 +78520,17 @@
 	          s = this.state.numTensors;
 	      var o, i;
 	      this.shouldCheckForMemLeaks() && this.state.numDataMovesStack.push(0), null == this.backendName && this.backend;
-	      var u = qo$1(e) ? e.kernelName : null != this.state.activeScope ? this.state.activeScope.name : "";
+	      var u = si$2(e) ? e.kernelName : null != this.state.activeScope ? this.state.activeScope.name : "";
 
-	      if (qo$1(e)) {
+	      if (si$2(e)) {
 	        var _t23 = e.kernelName,
 	            _a6 = e.inputs,
 	            _s9 = e.attrs;
 	        null == this.backendName && this.backend;
 
-	        var _u2 = vo$1(_t23, this.backendName);
+	        var _u2 = Do$1(_t23, this.backendName);
 
-	        Ws$1(null != _u2, function () {
+	        to$1(null != _u2, function () {
 	          return "Cannot find registered kernel '".concat(_t23, "' for backend '").concat(_this11.backendName, "'");
 	        }), o = function o() {
 	          var e = _this11.backend.numDataIds();
@@ -78340,7 +78579,7 @@
 
 	      var c = e.inputs,
 	          l = e.attrs,
-	          p = qo$1(e) ? null : e.backwardsFunc;
+	          p = si$2(e) ? null : e.backwardsFunc;
 	      var d;
 	      return this.scopedRun(function () {
 	        return _this11.state.kernelDepth++;
@@ -78378,7 +78617,7 @@
 	  }, {
 	    key: "getTensorsForGradient",
 	    value: function getTensorsForGradient(e, t, n) {
-	      var r = wo$1(e);
+	      var r = Co$1(e);
 
 	      if (null != r) {
 	        var _e17 = r.inputsToSave || [],
@@ -78386,7 +78625,7 @@
 
 	        var _s10;
 
-	        r.saveAllInputs ? (Ws$1(Array.isArray(t), function () {
+	        r.saveAllInputs ? (to$1(Array.isArray(t), function () {
 	          return "saveAllInputs is true, expected inputs to be an array.";
 	        }), _s10 = Object.keys(t).map(function (e) {
 	          return t[e];
@@ -78409,14 +78648,14 @@
 	      if (null == e) throw new Error("Values passed to engine.makeTensor() are null");
 	      n = n || "float32", r = r || this.backend;
 	      var a = e;
-	      "string" === n && Js$1(e[0]) && (a = e.map(function (e) {
+	      "string" === n && po$1(e[0]) && (a = e.map(function (e) {
 	        return function (e) {
 	          var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "utf-8";
-	          return t = t || "utf-8", po$1().platform.encode(e, t);
+	          return t = t || "utf-8", No$1().platform.encode(e, t);
 	        }(e);
 	      }));
 	      var s = r.write(a, t, n),
-	          o = new Fo$1(t, n, s, this.nextTensorId());
+	          o = new Go$1(t, n, s, this.nextTensorId());
 
 	      if (this.trackTensor(o, r), "string" === n) {
 	        var _e18 = this.state.tensorInfo.get(s),
@@ -78436,7 +78675,7 @@
 	  }, {
 	    key: "makeTensorFromDataId",
 	    value: function makeTensorFromDataId(e, t, n, r) {
-	      var a = new Fo$1(t, n = n || "float32", e, this.nextTensorId());
+	      var a = new Go$1(t, n = n || "float32", e, this.nextTensorId());
 	      return this.trackTensor(a, r), a;
 	    }
 	  }, {
@@ -78446,7 +78685,7 @@
 	      var n = arguments.length > 2 ? arguments[2] : undefined;
 	      var r = arguments.length > 3 ? arguments[3] : undefined;
 	      n = n || this.nextVariableId().toString(), null != r && r !== e.dtype && (e = e.cast(r));
-	      var a = new zo$1(e, t, n, this.nextTensorId());
+	      var a = new Yo$1(e, t, n, this.nextTensorId());
 	      if (null != this.state.registeredVariables[a.name]) throw new Error("Variable with name ".concat(a.name, " was already registered"));
 	      return this.state.registeredVariables[a.name] = a, this.incRef(a, this.backend), a;
 	    }
@@ -78455,12 +78694,12 @@
 	    value: function trackTensor(e, t) {
 	      this.state.numTensors++, "string" === e.dtype && this.state.numStringTensors++;
 	      var n = 0;
-	      "complex64" !== e.dtype && "string" !== e.dtype && (n = e.size * Zs$1(e.dtype)), this.state.numBytes += n, this.state.tensorInfo.has(e.dataId) || (this.state.numDataBuffers++, this.state.tensorInfo.set(e.dataId, {
+	      "complex64" !== e.dtype && "string" !== e.dtype && (n = e.size * lo$1(e.dtype)), this.state.numBytes += n, this.state.tensorInfo.has(e.dataId) || (this.state.numDataBuffers++, this.state.tensorInfo.set(e.dataId, {
 	        backend: t || this.backend,
 	        dtype: e.dtype,
 	        shape: e.shape,
 	        bytes: n
-	      })), e instanceof zo$1 || this.track(e);
+	      })), e instanceof Yo$1 || this.track(e);
 	    }
 	  }, {
 	    key: "incRef",
@@ -78479,7 +78718,7 @@
 	      var t = this.state.tensorInfo.get(e.dataId);
 
 	      if (this.state.numTensors--, "string" === e.dtype && (this.state.numStringTensors--, this.state.numBytes -= t.bytes), "complex64" !== e.dtype && "string" !== e.dtype) {
-	        var _t26 = e.size * Zs$1(e.dtype);
+	        var _t26 = e.size * lo$1(e.dtype);
 
 	        this.state.numBytes -= _t26;
 	      }
@@ -78607,12 +78846,12 @@
 	        outputs: n,
 	        saved: a
 	      },
-	          i = wo$1(e);
+	          i = Co$1(e);
 	      null != i && (r = i.gradFunc), null != r && (o.gradient = function (e) {
 	        return e = e.map(function (e, t) {
 	          if (null == e) {
 	            var _e21 = n[t],
-	                _r16 = oo$1(_e21.size, _e21.dtype);
+	                _r16 = vo$1(_e21.size, _e21.dtype);
 
 	            return _this13.makeTensor(_r16, _e21.shape, _e21.dtype);
 	          }
@@ -78651,7 +78890,7 @@
 	    value: function endScope(e) {
 	      var _this14 = this;
 
-	      var t = Ko$1(e),
+	      var t = ri$2(e),
 	          n = new Set(t.map(function (e) {
 	        return e.id;
 	      }));
@@ -78672,7 +78911,7 @@
 	      var _this15 = this;
 
 	      var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
-	      if (Ws$1(t.length > 0, function () {
+	      if (to$1(t.length > 0, function () {
 	        return "gradients() received an empty list of xs.";
 	      }), null != n && "float32" !== n.dtype) throw new Error("dy must have 'float32' dtype, but has '".concat(n.dtype, "'"));
 	      var a = this.scopedRun(function () {
@@ -78682,7 +78921,7 @@
 	      }, function () {
 	        return _this15.tidy("forward", e);
 	      });
-	      Ws$1(a instanceof Fo$1, function () {
+	      to$1(a instanceof Go$1, function () {
 	        return "The result y returned by f() must be a tensor.";
 	      });
 
@@ -78761,8 +79000,8 @@
 	      return this.tidy("backward", function () {
 	        var e = {};
 	        e[a.id] = null == n ? function (e) {
-	          var t = so$1(Hs$1(e), "float32");
-	          return Qo$1.makeTensor(t, e, "float32");
+	          var t = bo$1(ao$1(e), "float32");
+	          return ci$2.makeTensor(t, e, "float32");
 	        }(a.shape) : n, function (e, t, n, r) {
 	          var _loop2 = function _loop2(_a10) {
 	            var s = t[_a10],
@@ -78780,7 +79019,7 @@
 	              });
 	              if ("float32" !== a.dtype) throw new Error("Error in gradient for op ".concat(s.kernelName, ". The gradient of input ").concat(_t33, " must have 'float32' dtype, but has '").concat(a.dtype, "'"));
 	              var o = s.inputs[_t33];
-	              if (!qs$1(a.shape, o.shape)) throw new Error("Error in gradient for op ".concat(s.kernelName, ". The gradient of input '").concat(_t33, "' has shape '").concat(a.shape, "', which does not match the shape of the input '").concat(o.shape, "'"));
+	              if (!so$1(a.shape, o.shape)) throw new Error("Error in gradient for op ".concat(s.kernelName, ". The gradient of input '").concat(_t33, "' has shape '").concat(a.shape, "', which does not match the shape of the input '").concat(o.shape, "'"));
 	              if (null == e[o.id]) e[o.id] = a;else {
 	                var _t34 = e[o.id];
 	                e[o.id] = r(_t34, a), _t34.dispose();
@@ -78814,7 +79053,7 @@
 	         */
 	        (e, s, function (e) {
 	          return _this15.tidy(e);
-	        }, Zo$1);
+	        }, li$2);
 	        var r = t.map(function (t) {
 	          return e[t.id];
 	        });
@@ -78844,7 +79083,7 @@
 	    value: function customGrad(e) {
 	      var _this16 = this;
 
-	      return Ws$1(to$1(e), function () {
+	      return to$1(ho$1(e), function () {
 	        return "The f passed in customGrad(f) must be a function.";
 	      }), function () {
 	        for (var _len4 = arguments.length, t = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
@@ -78852,8 +79091,8 @@
 	        }
 
 	        var n;
-	        Ws$1(t.every(function (e) {
-	          return e instanceof Fo$1;
+	        to$1(t.every(function (e) {
+	          return e instanceof Go$1;
 	        }), function () {
 	          return "The args passed in customGrad(f)(x1, x2,...) must all be tensors";
 	        });
@@ -78863,19 +79102,19 @@
 	        });
 	        return _this16.runKernelFunc({
 	          forwardFunc: function forwardFunc(r, a) {
-	            return n = e.apply(void 0, t.concat([a])), Ws$1(n.value instanceof Fo$1, function () {
+	            return n = e.apply(void 0, t.concat([a])), to$1(n.value instanceof Go$1, function () {
 	              return "The function f passed in customGrad(f) must return an object where `obj.value` is a tensor";
-	            }), Ws$1(to$1(n.gradFunc), function () {
+	            }), to$1(ho$1(n.gradFunc), function () {
 	              return "The function f passed in customGrad(f) must return an object where `obj.gradFunc` is a function.";
 	            }), n.value;
 	          },
 	          backwardsFunc: function backwardsFunc(e, r) {
 	            var a = n.gradFunc(e, r),
 	                s = Array.isArray(a) ? a : [a];
-	            Ws$1(s.length === t.length, function () {
+	            to$1(s.length === t.length, function () {
 	              return "The function f passed in customGrad(f) must return an object where `obj.gradFunc` is a function that returns the same number of tensors as inputs passed to f(...).";
-	            }), Ws$1(s.every(function (e) {
-	              return e instanceof Fo$1;
+	            }), to$1(s.every(function (e) {
+	              return e instanceof Go$1;
 	            }), function () {
 	              return "The function f passed in customGrad(f) must return an object where `obj.gradFunc` is a function that returns a list of only tensors.";
 	            });
@@ -78909,13 +79148,13 @@
 	          while (1) {
 	            switch (_context9.prev = _context9.next) {
 	              case 0:
-	                t = _o$1();
+	                t = $o$1();
 	                _context9.next = 3;
 	                return this.backend.time(e);
 
 	              case 3:
 	                n = _context9.sent;
-	                return _context9.abrupt("return", (n.wallMs = _o$1() - t, n));
+	                return _context9.abrupt("return", (n.wallMs = $o$1() - t, n));
 
 	              case 5:
 	              case "end":
@@ -78944,7 +79183,7 @@
 	  }, {
 	    key: "reset",
 	    value: function reset() {
-	      this.pendingBackendInitId++, this.state.dispose(), this.ENV.reset(), this.state = new Go$1();
+	      this.pendingBackendInitId++, this.state.dispose(), this.ENV.reset(), this.state = new oi$2();
 
 	      for (var _e29 in this.registry) {
 	        this.disposeRegisteredKernels(_e29), this.registry[_e29].dispose(), delete this.registry[_e29];
@@ -78954,16 +79193,16 @@
 	    }
 	  }]);
 
-	  return Yo;
+	  return ii;
 	}();
 
-	function Xo$1() {
-	  var e = fo$1();
+	function ui$2() {
+	  var e = So$1();
 
 	  if (null == e._tfengine) {
-	    var _t36 = new co$1(e);
+	    var _t36 = new ko$1(e);
 
-	    e._tfengine = new Yo$1(_t36);
+	    e._tfengine = new ii$2(_t36);
 	  }
 
 	  var t;
@@ -78984,20 +79223,20 @@
 	   * =============================================================================
 	   */
 
-	  return t = e._tfengine.ENV, ho$1 = t, Ro$1 = function Ro() {
+	  return t = e._tfengine.ENV, To$1 = t, Ho$1 = function Ho() {
 	    return e._tfengine;
 	  }, e._tfengine;
 	}
 
-	Yo$1.nextTensorId = 0, Yo$1.nextVariableId = 0;
-	var Qo$1 = Xo$1();
+	ii$2.nextTensorId = 0, ii$2.nextVariableId = 0;
+	var ci$2 = ui$2();
 
-	function Zo$1(e, t) {
+	function li$2(e, t) {
 	  var n = {
 	    a: e,
 	    b: t
 	  };
-	  return Qo$1.runKernel("Add", n);
+	  return ci$2.runKernel("Add", n);
 	}
 	/**
 	 * @license
@@ -79034,7 +79273,7 @@
 	 */
 
 
-	var Jo$1 = po$1();
+	var pi$2 = No$1();
 	/**
 	 * @license
 	 * Copyright 2018 Google LLC. All Rights Reserved.
@@ -79052,64 +79291,64 @@
 	 * =============================================================================
 	 */
 
-	function ei$2(e, t) {
+	function di$2(e, t) {
 	  var n = e;
-	  if (Qs$1(e)) return "string" === t ? [] : [e.length];
+	  if (co$1(e)) return "string" === t ? [] : [e.length];
 	  if (!Array.isArray(e)) return [];
 	  var r = [];
 
-	  for (; Array.isArray(n) || Qs$1(n) && "string" !== t;) {
+	  for (; Array.isArray(n) || co$1(n) && "string" !== t;) {
 	    r.push(n.length), n = n[0];
 	  }
 
-	  return Array.isArray(e) && po$1().getBool("TENSORLIKE_CHECK_SHAPE_CONSISTENCY") && ti$2(e, r, []), r;
+	  return Array.isArray(e) && No$1().getBool("TENSORLIKE_CHECK_SHAPE_CONSISTENCY") && mi$2(e, r, []), r;
 	}
 
-	function ti$2(e, t, n) {
-	  if (n = n || [], !Array.isArray(e) && !Qs$1(e)) return void Ws$1(0 === t.length, function () {
+	function mi$2(e, t, n) {
+	  if (n = n || [], !Array.isArray(e) && !co$1(e)) return void to$1(0 === t.length, function () {
 	    return "Element arr[".concat(n.join("]["), "] is a primitive, but should be an array/TypedArray of ").concat(t[0], " elements");
 	  });
-	  Ws$1(t.length > 0, function () {
+	  to$1(t.length > 0, function () {
 	    return "Element arr[".concat(n.join("]["), "] should be a primitive, but is an array of ").concat(e.length, " elements");
-	  }), Ws$1(e.length === t[0], function () {
+	  }), to$1(e.length === t[0], function () {
 	    return "Element arr[".concat(n.join("]["), "] should have ").concat(t[0], " elements, but has ").concat(e.length, " elements");
 	  });
 	  var r = t.slice(1);
 
 	  for (var _t37 = 0; _t37 < e.length; ++_t37) {
-	    ti$2(e[_t37], r, n.concat(_t37));
+	    mi$2(e[_t37], r, n.concat(_t37));
 	  }
 	}
 
-	function ni$2(e, t, n, r) {
+	function hi$3(e, t, n, r) {
 	  if ("string_or_numeric" !== e) {
 	    if (null == e) throw new Error("Expected dtype cannot be null.");
 	    if ("numeric" !== e && e !== t || "numeric" === e && "string" === t) throw new Error("Argument '".concat(n, "' passed to '").concat(r, "' must be ").concat(e, " tensor, but got ").concat(t, " tensor"));
 	  }
 	}
 
-	function ri$2(e, t, n) {
+	function fi$2(e, t, n) {
 	  var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "numeric";
-	  if (e instanceof Fo$1) return ni$2(r, e.dtype, t, n), e;
-	  var a = eo$1(e);
+	  if (e instanceof Go$1) return hi$3(r, e.dtype, t, n), e;
+	  var a = mo$1(e);
 
-	  if ("string" !== a && ["bool", "int32", "float32"].indexOf(r) >= 0 && (a = r), ni$2(r, a, t, n), null == e || !Qs$1(e) && !Array.isArray(e) && "number" != typeof e && "boolean" != typeof e && "string" != typeof e) {
+	  if ("string" !== a && ["bool", "int32", "float32"].indexOf(r) >= 0 && (a = r), hi$3(r, a, t, n), null == e || !co$1(e) && !Array.isArray(e) && "number" != typeof e && "boolean" != typeof e && "string" != typeof e) {
 	    var _r18 = null == e ? "null" : e.constructor.name;
 
 	    throw new Error("Argument '".concat(t, "' passed to '").concat(n, "' must be a Tensor or TensorLike, but got '").concat(_r18, "'"));
 	  }
 
-	  var s = ei$2(e, a);
-	  Qs$1(e) || Array.isArray(e) || (e = [e]);
-	  var o = "string" !== a ? ko$1(e, a) : Ks$1(e, [], !0);
-	  return Qo$1.makeTensor(o, s, a);
+	  var s = di$2(e, a);
+	  co$1(e) || Array.isArray(e) || (e = [e]);
+	  var o = "string" !== a ? Ro$1(e, a) : ro$1(e, [], !0);
+	  return ci$2.makeTensor(o, s, a);
 	}
 
-	function ai$2(e, t, n) {
+	function gi$2(e, t, n) {
 	  var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "numeric";
 	  if (!Array.isArray(e)) throw new Error("Argument ".concat(t, " passed to ").concat(n, " must be a `Tensor[]` or `TensorLike[]`"));
 	  return e.map(function (e, a) {
-	    return ri$2(e, "".concat(t, "[").concat(a, "]"), n, r);
+	    return fi$2(e, "".concat(t, "[").concat(a, "]"), n, r);
 	  });
 	}
 	/**
@@ -79130,31 +79369,31 @@
 	 */
 
 
-	Jo$1.registerFlag("DEBUG", function () {
+	pi$2.registerFlag("DEBUG", function () {
 	  return !1;
 	}, function (e) {
 	  e && console.warn("Debugging mode is ON. The output of every math call will be downloaded to CPU and checked for NaNs. This significantly impacts performance.");
-	}), Jo$1.registerFlag("IS_BROWSER", function () {
+	}), pi$2.registerFlag("IS_BROWSER", function () {
 	  return "undefined" != typeof window && null != window.document || "undefined" != typeof WorkerGlobalScope;
-	}), Jo$1.registerFlag("IS_NODE", function () {
+	}), pi$2.registerFlag("IS_NODE", function () {
 	  return "undefined" != typeof process && void 0 !== process.versions && void 0 !== process.versions.node;
-	}), Jo$1.registerFlag("IS_CHROME", function () {
+	}), pi$2.registerFlag("IS_CHROME", function () {
 	  return "undefined" != typeof navigator && null != navigator && null != navigator.userAgent && /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-	}), Jo$1.registerFlag("PROD", function () {
+	}), pi$2.registerFlag("PROD", function () {
 	  return !1;
-	}), Jo$1.registerFlag("TENSORLIKE_CHECK_SHAPE_CONSISTENCY", function () {
-	  return Jo$1.getBool("DEBUG");
-	}), Jo$1.registerFlag("DEPRECATION_WARNINGS_ENABLED", function () {
+	}), pi$2.registerFlag("TENSORLIKE_CHECK_SHAPE_CONSISTENCY", function () {
+	  return pi$2.getBool("DEBUG");
+	}), pi$2.registerFlag("DEPRECATION_WARNINGS_ENABLED", function () {
 	  return !0;
-	}), Jo$1.registerFlag("IS_TEST", function () {
+	}), pi$2.registerFlag("IS_TEST", function () {
 	  return !1;
-	}), Jo$1.registerFlag("CHECK_COMPUTATION_FOR_ERRORS", function () {
+	}), pi$2.registerFlag("CHECK_COMPUTATION_FOR_ERRORS", function () {
 	  return !0;
-	}), Jo$1.registerFlag("WRAP_TO_IMAGEBITMAP", function () {
+	}), pi$2.registerFlag("WRAP_TO_IMAGEBITMAP", function () {
 	  return !1;
 	});
 
-	function si$2(e) {
+	function yi$2(e) {
 	  var t = Object.keys(e);
 	  if (1 !== t.length) throw new Error("Please provide an object with a single key (operation name) mapping to a function. Got an object with ".concat(t.length, " keys."));
 	  var n = t[0];
@@ -79162,14 +79401,14 @@
 	  n.endsWith("_") && (n = n.substring(0, n.length - 1)), n += "__op";
 
 	  var a = function a() {
-	    Qo$1.startScope(n);
+	    ci$2.startScope(n);
 
 	    try {
 	      var _t38 = r.apply(void 0, arguments);
 
-	      return uo$1(_t38) && console.error("Cannot return a Promise inside of tidy."), Qo$1.endScope(_t38), _t38;
+	      return xo$1(_t38) && console.error("Cannot return a Promise inside of tidy."), ci$2.endScope(_t38), _t38;
 	    } catch (e) {
-	      throw Qo$1.endScope(null), e;
+	      throw ci$2.endScope(null), e;
 	    }
 	  };
 
@@ -79196,13 +79435,13 @@
 	 */
 
 
-	var oi$2 = si$2({
+	var bi$2 = yi$2({
 	  complex_: function complex_(e, t) {
-	    var n = ri$2(e, "real", "complex"),
-	        r = ri$2(t, "imag", "complex");
+	    var n = fi$2(e, "real", "complex"),
+	        r = fi$2(t, "imag", "complex");
 	    !function (e, t) {
 	      var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
-	      Ws$1(qs$1(e, t), function () {
+	      to$1(so$1(e, t), function () {
 	        return n + " Shapes ".concat(e, " and ").concat(t, " must match");
 	      });
 	    }(n.shape, r.shape, "real and imag shapes, ".concat(n.shape, " and ").concat(r.shape, ", must match in call to tf.complex()."));
@@ -79210,7 +79449,7 @@
 	      real: n,
 	      imag: r
 	    };
-	    return Qo$1.runKernel("Complex", a);
+	    return ci$2.runKernel("Complex", a);
 	  }
 	});
 	/**
@@ -79230,31 +79469,31 @@
 	 * =============================================================================
 	 */
 
-	function ii$2(e, t, n, r) {
-	  if (null == r && (r = eo$1(e)), "complex64" === r) throw new Error("Cannot construct a complex64 tensor directly. Please use tf.complex(real, imag).");
-	  if (!Qs$1(e) && !Array.isArray(e) && "number" != typeof e && "boolean" != typeof e && "string" != typeof e) throw new Error("values passed to tensor(values) must be a number/boolean/string or an array of numbers/booleans/strings, or a TypedArray");
+	function vi$2(e, t, n, r) {
+	  if (null == r && (r = mo$1(e)), "complex64" === r) throw new Error("Cannot construct a complex64 tensor directly. Please use tf.complex(real, imag).");
+	  if (!co$1(e) && !Array.isArray(e) && "number" != typeof e && "boolean" != typeof e && "string" != typeof e) throw new Error("values passed to tensor(values) must be a number/boolean/string or an array of numbers/booleans/strings, or a TypedArray");
 
 	  if (null != t) {
-	    io$1(t);
+	    wo$1(t);
 
-	    var _e30 = Hs$1(t),
-	        _r19 = Hs$1(n);
+	    var _e30 = ao$1(t),
+	        _r19 = ao$1(n);
 
-	    Ws$1(_e30 === _r19, function () {
+	    to$1(_e30 === _r19, function () {
 	      return "Based on the provided shape, [".concat(t, "], the tensor should have ").concat(_e30, " values but has ").concat(_r19);
 	    });
 
 	    for (var _e31 = 0; _e31 < n.length; ++_e31) {
 	      var _r20 = n[_e31],
-	          _a11 = _e31 !== n.length - 1 || _r20 !== Hs$1(t.slice(_e31));
+	          _a11 = _e31 !== n.length - 1 || _r20 !== ao$1(t.slice(_e31));
 
-	      Ws$1(n[_e31] === t[_e31] || !_a11, function () {
+	      to$1(n[_e31] === t[_e31] || !_a11, function () {
 	        return "Error creating a new Tensor. Inferred shape (".concat(n, ") does not match the provided shape (").concat(t, "). ");
 	      });
 	    }
 	  }
 
-	  return Qs$1(e) || Array.isArray(e) || (e = [e]), t = t || n, e = "string" !== r ? ko$1(e, r) : Ks$1(e, [], !0), Qo$1.makeTensor(e, t, r);
+	  return co$1(e) || Array.isArray(e) || (e = [e]), t = t || n, e = "string" !== r ? Ro$1(e, r) : ro$1(e, [], !0), ci$2.makeTensor(e, t, r);
 	}
 	/**
 	 * @license
@@ -79274,8 +79513,8 @@
 	 */
 
 
-	function ui$2(e, t, n) {
-	  return ii$2(e, t, ei$2(e, n), n);
+	function wi$2(e, t, n) {
+	  return vi$2(e, t, di$2(e, n), n);
 	}
 	/**
 	 * @license
@@ -79295,7 +79534,7 @@
 	 */
 
 
-	var ci$2 = {
+	var xi$2 = {
 	  float32: 4,
 	  float16: 2,
 	  int32: 4,
@@ -79321,13 +79560,13 @@
 	 * =============================================================================
 	 */
 
-	var li$2 = "undefined" != typeof Buffer && ("undefined" == typeof Blob || "undefined" == typeof atob || "undefined" == typeof btoa);
+	var ki$2 = "undefined" != typeof Buffer && ("undefined" == typeof Blob || "undefined" == typeof atob || "undefined" == typeof btoa);
 
-	function pi$2(e) {
-	  return li$2 ? Buffer.byteLength(e) : new Blob([e]).size;
+	function _i$1(e) {
+	  return ki$2 ? Buffer.byteLength(e) : new Blob([e]).size;
 	}
 
-	function di$2(e) {
+	function Ni$2(e) {
 	  if (1 === e.length) return e[0];
 	  var t = 0;
 	  e.forEach(function (e) {
@@ -79340,18 +79579,18 @@
 	  }), n.buffer;
 	}
 
-	function mi$2(e) {
+	function Ei$2(e) {
 	  if (e.modelTopology instanceof ArrayBuffer) throw new Error("Expected JSON model topology, received ArrayBuffer.");
 	  return {
 	    dateSaved: new Date(),
 	    modelTopologyType: "JSON",
-	    modelTopologyBytes: null == e.modelTopology ? 0 : pi$2(JSON.stringify(e.modelTopology)),
-	    weightSpecsBytes: null == e.weightSpecs ? 0 : pi$2(JSON.stringify(e.weightSpecs)),
+	    modelTopologyBytes: null == e.modelTopology ? 0 : _i$1(JSON.stringify(e.modelTopology)),
+	    weightSpecsBytes: null == e.weightSpecs ? 0 : _i$1(JSON.stringify(e.weightSpecs)),
 	    weightDataBytes: null == e.weightData ? 0 : e.weightData.byteLength
 	  };
 	}
 
-	function hi$3() {
+	function Ti$2() {
 	  var e = function () {
 	    var e = function e(_e32) {
 	      var t = _e32 << 13,
@@ -79433,61 +79672,61 @@
 	 */
 
 
-	var fi$2 = /*#__PURE__*/function () {
-	  function fi() {
-	    _classCallCheck(this, fi);
+	var Si$2 = /*#__PURE__*/function () {
+	  function Si() {
+	    _classCallCheck(this, Si);
 
 	    this.saveRouters = [], this.loadRouters = [];
 	  }
 
-	  _createClass(fi, null, [{
+	  _createClass(Si, null, [{
 	    key: "getInstance",
 	    value: function getInstance() {
-	      return null == fi.instance && (fi.instance = new fi()), fi.instance;
+	      return null == Si.instance && (Si.instance = new Si()), Si.instance;
 	    }
 	  }, {
 	    key: "registerSaveRouter",
 	    value: function registerSaveRouter(e) {
-	      fi.getInstance().saveRouters.push(e);
+	      Si.getInstance().saveRouters.push(e);
 	    }
 	  }, {
 	    key: "registerLoadRouter",
 	    value: function registerLoadRouter(e) {
-	      fi.getInstance().loadRouters.push(e);
+	      Si.getInstance().loadRouters.push(e);
 	    }
 	  }, {
 	    key: "getSaveHandlers",
 	    value: function getSaveHandlers(e) {
-	      return fi.getHandlers(e, "save");
+	      return Si.getHandlers(e, "save");
 	    }
 	  }, {
 	    key: "getLoadHandlers",
 	    value: function getLoadHandlers(e, t) {
-	      return fi.getHandlers(e, "load", t);
+	      return Si.getHandlers(e, "load", t);
 	    }
 	  }, {
 	    key: "getHandlers",
 	    value: function getHandlers(e, t, n) {
 	      var r = [];
-	      return ("load" === t ? fi.getInstance().loadRouters : fi.getInstance().saveRouters).forEach(function (t) {
+	      return ("load" === t ? Si.getInstance().loadRouters : Si.getInstance().saveRouters).forEach(function (t) {
 	        var a = t(e, n);
 	        null !== a && r.push(a);
 	      }), r;
 	    }
 	  }]);
 
-	  return fi;
+	  return Si;
 	}();
 
-	function gi$2() {
-	  if (!po$1().getBool("IS_BROWSER")) throw new Error("Failed to obtain IndexedDB factory because the current environmentis not a web browser.");
+	function Ii$2() {
+	  if (!No$1().getBool("IS_BROWSER")) throw new Error("Failed to obtain IndexedDB factory because the current environmentis not a web browser.");
 	  var e = "undefined" == typeof window ? self : window,
 	      t = e.indexedDB || e.mozIndexedDB || e.webkitIndexedDB || e.msIndexedDB || e.shimIndexedDB;
 	  if (null == t) throw new Error("The current browser does not appear to support IndexedDB.");
 	  return t;
 	}
 
-	function yi$2(e) {
+	function Oi$2(e) {
 	  var t = e.result;
 	  t.createObjectStore("models_store", {
 	    keyPath: "modelPath"
@@ -79496,15 +79735,15 @@
 	  });
 	}
 
-	var bi$2 = /*#__PURE__*/function () {
-	  function bi(e) {
-	    _classCallCheck(this, bi);
+	var Ai$2 = /*#__PURE__*/function () {
+	  function Ai(e) {
+	    _classCallCheck(this, Ai);
 
-	    if (this.indexedDB = gi$2(), null == e || !e) throw new Error("For IndexedDB, modelPath must not be null, undefined or empty.");
+	    if (this.indexedDB = Ii$2(), null == e || !e) throw new Error("For IndexedDB, modelPath must not be null, undefined or empty.");
 	    this.modelPath = e;
 	  }
 
-	  _createClass(bi, [{
+	  _createClass(Ai, [{
 	    key: "save",
 	    value: function () {
 	      var _save = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee10(e) {
@@ -79569,7 +79808,7 @@
 	        var r = _this17.indexedDB.open("tensorflowjs", 1);
 
 	        r.onupgradeneeded = function () {
-	          return yi$2(r);
+	          return Oi$2(r);
 	        }, r.onsuccess = function () {
 	          var a = r.result;
 
@@ -79586,7 +79825,7 @@
 	              return a.close();
 	            };
 	          } else {
-	            var _r22 = mi$2(t),
+	            var _r22 = Ei$2(t),
 	                _s12 = a.transaction("model_info_store", "readwrite");
 
 	            var _o7 = _s12.objectStore("model_info_store");
@@ -79637,26 +79876,26 @@
 	    }
 	  }]);
 
-	  return bi;
+	  return Ai;
 	}();
 
-	bi$2.URL_SCHEME = "indexeddb://";
+	Ai$2.URL_SCHEME = "indexeddb://";
 
-	var vi$2 = function vi(e) {
-	  return po$1().getBool("IS_BROWSER") && !Array.isArray(e) && e.startsWith(bi$2.URL_SCHEME) ? (t = e.slice(bi$2.URL_SCHEME.length), new bi$2(t)) : null;
+	var Di$2 = function Di(e) {
+	  return No$1().getBool("IS_BROWSER") && !Array.isArray(e) && e.startsWith(Ai$2.URL_SCHEME) ? (t = e.slice(Ai$2.URL_SCHEME.length), new Ai$2(t)) : null;
 	  var t;
 	};
 
-	fi$2.registerSaveRouter(vi$2), fi$2.registerLoadRouter(vi$2);
+	Si$2.registerSaveRouter(Di$2), Si$2.registerLoadRouter(Di$2);
 
-	var wi$2 = /*#__PURE__*/function () {
-	  function wi() {
-	    _classCallCheck(this, wi);
+	var Ci$2 = /*#__PURE__*/function () {
+	  function Ci() {
+	    _classCallCheck(this, Ci);
 
-	    this.indexedDB = gi$2();
+	    this.indexedDB = Ii$2();
 	  }
 
-	  _createClass(wi, [{
+	  _createClass(Ci, [{
 	    key: "listModels",
 	    value: function () {
 	      var _listModels = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
@@ -79670,7 +79909,7 @@
 	                  var n = _this18.indexedDB.open("tensorflowjs", 1);
 
 	                  n.onupgradeneeded = function () {
-	                    return yi$2(n);
+	                    return Oi$2(n);
 	                  }, n.onsuccess = function () {
 	                    var r = n.result,
 	                        a = r.transaction("model_info_store", "readonly"),
@@ -79728,11 +79967,11 @@
 	          while (1) {
 	            switch (_context13.prev = _context13.next) {
 	              case 0:
-	                return _context13.abrupt("return", (e = (t = e).startsWith(bi$2.URL_SCHEME) ? t.slice(bi$2.URL_SCHEME.length) : t, new Promise(function (t, n) {
+	                return _context13.abrupt("return", (e = (t = e).startsWith(Ai$2.URL_SCHEME) ? t.slice(Ai$2.URL_SCHEME.length) : t, new Promise(function (t, n) {
 	                  var r = _this19.indexedDB.open("tensorflowjs", 1);
 
 	                  r.onupgradeneeded = function () {
-	                    return yi$2(r);
+	                    return Oi$2(r);
 	                  }, r.onsuccess = function () {
 	                    var a = r.result,
 	                        s = a.transaction("model_info_store", "readwrite"),
@@ -79785,7 +80024,7 @@
 	    }()
 	  }]);
 
-	  return wi;
+	  return Ci;
 	}();
 	/**
 	 * @license
@@ -79805,46 +80044,46 @@
 	 */
 
 
-	var xi$2 = "tensorflowjs_models",
-	    ki$2 = "info",
-	    _i$1 = "model_topology",
-	    Ni$2 = "weight_specs",
-	    Ei$2 = "weight_data",
-	    Ti$2 = "model_metadata";
+	var Mi$2 = "tensorflowjs_models",
+	    Ri$2 = "info",
+	    $i$2 = "model_topology",
+	    Fi$2 = "weight_specs",
+	    zi$2 = "weight_data",
+	    Pi$2 = "model_metadata";
 
-	function Si$2(e) {
+	function Li$2(e) {
 	  return {
-	    info: [xi$2, e, ki$2].join("/"),
-	    topology: [xi$2, e, _i$1].join("/"),
-	    weightSpecs: [xi$2, e, Ni$2].join("/"),
-	    weightData: [xi$2, e, Ei$2].join("/"),
-	    modelMetadata: [xi$2, e, Ti$2].join("/")
+	    info: [Mi$2, e, Ri$2].join("/"),
+	    topology: [Mi$2, e, $i$2].join("/"),
+	    weightSpecs: [Mi$2, e, Fi$2].join("/"),
+	    weightData: [Mi$2, e, zi$2].join("/"),
+	    modelMetadata: [Mi$2, e, Pi$2].join("/")
 	  };
 	}
 
-	function Ii$2(e) {
+	function Bi$2(e) {
 	  for (var _i8 = 0, _Object$values = Object.values(e); _i8 < _Object$values.length; _i8++) {
 	    var t = _Object$values[_i8];
 	    window.localStorage.removeItem(t);
 	  }
 	}
 
-	function Oi$2(e) {
+	function Vi$2(e) {
 	  var t = e.split("/");
 	  if (t.length < 3) throw new Error("Invalid key format: ".concat(e));
 	  return t.slice(1, t.length - 1).join("/");
 	}
 
-	var Ai$2 = /*#__PURE__*/function () {
-	  function Ai(e) {
-	    _classCallCheck(this, Ai);
+	var ji$2 = /*#__PURE__*/function () {
+	  function ji(e) {
+	    _classCallCheck(this, ji);
 
-	    if (!po$1().getBool("IS_BROWSER") || "undefined" == typeof window || void 0 === window.localStorage) throw new Error("The current environment does not support local storage.");
+	    if (!No$1().getBool("IS_BROWSER") || "undefined" == typeof window || void 0 === window.localStorage) throw new Error("The current environment does not support local storage.");
 	    if (this.LS = window.localStorage, null == e || !e) throw new Error("For local storage, modelPath must not be null, undefined or empty.");
-	    this.modelPath = e, this.keys = Si$2(this.modelPath);
+	    this.modelPath = e, this.keys = Li$2(this.modelPath);
 	  }
 
-	  _createClass(Ai, [{
+	  _createClass(ji, [{
 	    key: "save",
 	    value: function () {
 	      var _save2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee14(e) {
@@ -79862,10 +80101,10 @@
 	                throw new Error("BrowserLocalStorage.save() does not support saving model topology in binary formats yet.");
 
 	              case 2:
-	                t = JSON.stringify(e.modelTopology), _n20 = JSON.stringify(e.weightSpecs), _r24 = mi$2(e);
+	                t = JSON.stringify(e.modelTopology), _n20 = JSON.stringify(e.weightSpecs), _r24 = Ei$2(e);
 	                _context14.prev = 3;
 	                this.LS.setItem(this.keys.info, JSON.stringify(_r24)), this.LS.setItem(this.keys.topology, t), this.LS.setItem(this.keys.weightSpecs, _n20), this.LS.setItem(this.keys.weightData, function (e) {
-	                  if (li$2) return Buffer.from(e).toString("base64");
+	                  if (ki$2) return Buffer.from(e).toString("base64");
 	                  var t = new Uint8Array(e);
 	                  var n = "";
 
@@ -79891,7 +80130,7 @@
 	              case 9:
 	                _context14.prev = 9;
 	                _context14.t0 = _context14["catch"](3);
-	                throw Ii$2(this.keys), new Error("Failed to save model '".concat(this.modelPath, "' to local storage: size quota being exceeded is a possible cause of this failure: modelTopologyBytes=").concat(_r24.modelTopologyBytes, ", weightSpecsBytes=").concat(_r24.weightSpecsBytes, ", weightDataBytes=").concat(_r24.weightDataBytes, "."));
+	                throw Bi$2(this.keys), new Error("Failed to save model '".concat(this.modelPath, "' to local storage: size quota being exceeded is a possible cause of this failure: modelTopologyBytes=").concat(_r24.modelTopologyBytes, ", weightSpecsBytes=").concat(_r24.weightSpecsBytes, ", weightDataBytes=").concat(_r24.weightDataBytes, "."));
 
 	              case 12:
 	              case "end":
@@ -79975,7 +80214,7 @@
 
 	              case 18:
 	                return _context15.abrupt("return", (t.weightData = function (e) {
-	                  if (li$2) {
+	                  if (ki$2) {
 	                    var _t43 = Buffer.from(e, "base64");
 
 	                    return _t43.buffer.slice(_t43.byteOffset, _t43.byteOffset + _t43.byteLength);
@@ -80007,30 +80246,30 @@
 	    }()
 	  }]);
 
-	  return Ai;
+	  return ji;
 	}();
 
-	Ai$2.URL_SCHEME = "localstorage://";
+	ji$2.URL_SCHEME = "localstorage://";
 
-	var Di$2 = function Di(e) {
-	  return po$1().getBool("IS_BROWSER") && !Array.isArray(e) && e.startsWith(Ai$2.URL_SCHEME) ? (t = e.slice(Ai$2.URL_SCHEME.length), new Ai$2(t)) : null;
+	var Wi$2 = function Wi(e) {
+	  return No$1().getBool("IS_BROWSER") && !Array.isArray(e) && e.startsWith(ji$2.URL_SCHEME) ? (t = e.slice(ji$2.URL_SCHEME.length), new ji$2(t)) : null;
 	  var t;
 	};
 
-	fi$2.registerSaveRouter(Di$2), fi$2.registerLoadRouter(Di$2);
+	Si$2.registerSaveRouter(Wi$2), Si$2.registerLoadRouter(Wi$2);
 
-	var Mi$2 = /*#__PURE__*/function () {
-	  function Mi() {
-	    _classCallCheck(this, Mi);
+	var Ui$2 = /*#__PURE__*/function () {
+	  function Ui() {
+	    _classCallCheck(this, Ui);
 
-	    Ws$1(po$1().getBool("IS_BROWSER"), function () {
+	    to$1(No$1().getBool("IS_BROWSER"), function () {
 	      return "Current environment is not a web browser";
-	    }), Ws$1("undefined" == typeof window || void 0 !== window.localStorage, function () {
+	    }), to$1("undefined" == typeof window || void 0 !== window.localStorage, function () {
 	      return "Current browser does not appear to support localStorage";
 	    }), this.LS = window.localStorage;
 	  }
 
-	  _createClass(Mi, [{
+	  _createClass(Ui, [{
 	    key: "listModels",
 	    value: function () {
 	      var _listModels2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
@@ -80040,13 +80279,13 @@
 	          while (1) {
 	            switch (_context16.prev = _context16.next) {
 	              case 0:
-	                e = {}, t = xi$2 + "/", n = "/" + ki$2;
+	                e = {}, t = Mi$2 + "/", n = "/" + Ri$2;
 
 	                for (_r26 = 0; _r26 < this.LS.length; ++_r26) {
 	                  _a14 = this.LS.key(_r26);
 
 	                  if (_a14.startsWith(t) && _a14.endsWith(n)) {
-	                    e[Oi$2(_a14)] = JSON.parse(this.LS.getItem(_a14));
+	                    e[Vi$2(_a14)] = JSON.parse(this.LS.getItem(_a14));
 	                  }
 	                }
 
@@ -80075,7 +80314,7 @@
 	          while (1) {
 	            switch (_context17.prev = _context17.next) {
 	              case 0:
-	                n = Si$2(e = (t = e).startsWith(Ai$2.URL_SCHEME) ? t.slice(Ai$2.URL_SCHEME.length) : t);
+	                n = Li$2(e = (t = e).startsWith(ji$2.URL_SCHEME) ? t.slice(ji$2.URL_SCHEME.length) : t);
 
 	                if (!(null == this.LS.getItem(n.info))) {
 	                  _context17.next = 3;
@@ -80086,7 +80325,7 @@
 
 	              case 3:
 	                r = JSON.parse(this.LS.getItem(n.info));
-	                return _context17.abrupt("return", (Ii$2(n), r));
+	                return _context17.abrupt("return", (Bi$2(n), r));
 
 	              case 5:
 	              case "end":
@@ -80104,7 +80343,7 @@
 	    }()
 	  }]);
 
-	  return Mi;
+	  return Ui;
 	}();
 	/**
 	 * @license
@@ -80124,28 +80363,28 @@
 	 */
 
 
-	var Ci$2 = /*#__PURE__*/function () {
-	  function Ci() {
-	    _classCallCheck(this, Ci);
+	var Ki$2 = /*#__PURE__*/function () {
+	  function Ki() {
+	    _classCallCheck(this, Ki);
 
 	    this.managers = {};
 	  }
 
-	  _createClass(Ci, null, [{
+	  _createClass(Ki, null, [{
 	    key: "getInstance",
 	    value: function getInstance() {
-	      return null == Ci.instance && (Ci.instance = new Ci()), Ci.instance;
+	      return null == Ki.instance && (Ki.instance = new Ki()), Ki.instance;
 	    }
 	  }, {
 	    key: "registerManager",
 	    value: function registerManager(e, t) {
-	      Ws$1(null != e, function () {
+	      to$1(null != e, function () {
 	        return "scheme must not be undefined or null.";
-	      }), e.endsWith("://") && (e = e.slice(0, e.indexOf("://"))), Ws$1(e.length > 0, function () {
+	      }), e.endsWith("://") && (e = e.slice(0, e.indexOf("://"))), to$1(e.length > 0, function () {
 	        return "scheme must not be an empty string.";
 	      });
-	      var n = Ci.getInstance();
-	      Ws$1(null == n.managers[e], function () {
+	      var n = Ki.getInstance();
+	      to$1(null == n.managers[e], function () {
 	        return "A model store manager is already registered for scheme '".concat(e, "'.");
 	      }), n.managers[e] = t;
 	    }
@@ -80163,7 +80402,7 @@
 	    }
 	  }]);
 
-	  return Ci;
+	  return Ki;
 	}();
 	/**
 	 * @license
@@ -80183,12 +80422,12 @@
 	 */
 
 
-	var Ri$2 = /*#__PURE__*/function () {
-	  function Ri() {
-	    _classCallCheck(this, Ri);
+	var Hi$2 = /*#__PURE__*/function () {
+	  function Hi() {
+	    _classCallCheck(this, Hi);
 	  }
 
-	  _createClass(Ri, [{
+	  _createClass(Hi, [{
 	    key: "fetch",
 	    value: function (_fetch) {
 	      function fetch(_x9, _x10) {
@@ -80221,18 +80460,18 @@
 	    }
 	  }]);
 
-	  return Ri;
+	  return Hi;
 	}();
 
-	if (po$1().get("IS_BROWSER")) {
-	  po$1().setPlatform("browser", new Ri$2());
+	if (No$1().get("IS_BROWSER")) {
+	  No$1().setPlatform("browser", new Hi$2());
 
 	  try {
-	    Ci$2.registerManager(Ai$2.URL_SCHEME, new Mi$2());
+	    Ki$2.registerManager(ji$2.URL_SCHEME, new Ui$2());
 	  } catch (e) {}
 
 	  try {
-	    Ci$2.registerManager(bi$2.URL_SCHEME, new wi$2());
+	    Ki$2.registerManager(Ai$2.URL_SCHEME, new Ci$2());
 	  } catch (e) {}
 	}
 	/**
@@ -80253,23 +80492,23 @@
 	 */
 
 
-	var $i$2 = function $i() {
+	var qi$2 = function qi() {
 	  return require("node-fetch");
 	};
 
-	var Fi$2;
+	var Gi$2;
 
-	var zi$2 = /*#__PURE__*/function () {
-	  function zi() {
-	    _classCallCheck(this, zi);
+	var Yi$2 = /*#__PURE__*/function () {
+	  function Yi() {
+	    _classCallCheck(this, Yi);
 
 	    this.util = require("util"), this.textEncoder = new this.util.TextEncoder();
 	  }
 
-	  _createClass(zi, [{
+	  _createClass(Yi, [{
 	    key: "fetch",
 	    value: function fetch(e, t) {
-	      return null != po$1().global.fetch ? po$1().global.fetch(e, t) : (null == Fi$2 && (Fi$2 = $i$2()), Fi$2(e, t));
+	      return null != No$1().global.fetch ? No$1().global.fetch(e, t) : (null == Gi$2 && (Gi$2 = qi$2()), Gi$2(e, t));
 	    }
 	  }, {
 	    key: "now",
@@ -80290,7 +80529,7 @@
 	    }
 	  }]);
 
-	  return zi;
+	  return Yi;
 	}();
 	/**
 	 * @license
@@ -80310,10 +80549,10 @@
 	 */
 
 
-	function Pi$2(e) {
+	function Xi$2(e) {
 	  var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "float32";
 	  var n = arguments.length > 2 ? arguments[2] : undefined;
-	  return t = t || "float32", io$1(e), new Co$1(e, t, n);
+	  return t = t || "float32", wo$1(e), new Ko$1(e, t, n);
 	}
 	/**
 	 * @license
@@ -80333,10 +80572,10 @@
 	 */
 
 
-	po$1().get("IS_NODE") && po$1().setPlatform("node", new zi$2());
-	var Li$2 = si$2({
+	No$1().get("IS_NODE") && No$1().setPlatform("node", new Yi$2());
+	var Qi$2 = yi$2({
 	  cast_: function cast_(e, t) {
-	    var n = ri$2(e, "x", "cast");
+	    var n = fi$2(e, "x", "cast");
 	    if (!function (e) {
 	      return "bool" === e || "complex64" === e || "float32" === e || "int32" === e || "string" === e;
 	    }(t)) throw new Error("Failed to cast to unknown dtype ".concat(t));
@@ -80347,7 +80586,7 @@
 	        a = {
 	      dtype: t
 	    };
-	    return Qo$1.runKernel("Cast", r, a);
+	    return ci$2.runKernel("Cast", r, a);
 	  }
 	});
 	/**
@@ -80367,12 +80606,12 @@
 	 * =============================================================================
 	 */
 
-	var Bi$2 = si$2({
+	var Zi$2 = yi$2({
 	  clone_: function clone_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "clone", "string_or_numeric")
+	      x: fi$2(e, "x", "clone", "string_or_numeric")
 	    };
-	    return Qo$1.runKernel("Identity", t);
+	    return ci$2.runKernel("Identity", t);
 	  }
 	});
 	/**
@@ -80409,7 +80648,7 @@
 	 * =============================================================================
 	 */
 
-	Xo$1();
+	ui$2();
 	/**
 	 * @license
 	 * Copyright 2019 Google LLC. All Rights Reserved.
@@ -80427,17 +80666,17 @@
 	 * =============================================================================
 	 */
 
-	function Vi$2(e, t, n, r) {
+	function Ji$2(e, t, n, r) {
 	  !function (e) {
-	    Ws$1(null != e && Array.isArray(e) && e.length > 0, function () {
+	    to$1(null != e && Array.isArray(e) && e.length > 0, function () {
 	      return "promises must be a none empty array";
 	    });
 	  }(e), function (e, t) {
-	    Ws$1(e >= 0 && e <= 1, function () {
+	    to$1(e >= 0 && e <= 1, function () {
 	      return "Progress fraction must be in range [0, 1], but got startFraction ".concat(e);
-	    }), Ws$1(t >= 0 && t <= 1, function () {
+	    }), to$1(t >= 0 && t <= 1, function () {
 	      return "Progress fraction must be in range [0, 1], but got endFraction ".concat(t);
-	    }), Ws$1(t >= e, function () {
+	    }), to$1(t >= e, function () {
 	      return "startFraction must be no more than endFraction, but got startFraction ".concat(e, " and endFraction ").concat(t);
 	    });
 	  }(n = null == n ? 0 : n, r = null == r ? 1 : r);
@@ -80467,31 +80706,31 @@
 	 */
 
 
-	$o$1 = {
-	  buffer: Pi$2,
-	  cast: Li$2,
-	  clone: Bi$2,
+	qo$1 = {
+	  buffer: Xi$2,
+	  cast: Qi$2,
+	  clone: Zi$2,
 	  print: function print(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : !1;
 	    console.log(e.toString(t));
 	  }
 	};
 
-	var ji$2 = /*#__PURE__*/function () {
-	  function ji(e, t) {
-	    _classCallCheck(this, ji);
+	var eu$1 = /*#__PURE__*/function () {
+	  function eu(e, t) {
+	    _classCallCheck(this, eu);
 
-	    if (this.DEFAULT_METHOD = "POST", null == t && (t = {}), this.weightPathPrefix = t.weightPathPrefix, this.onProgress = t.onProgress, this.weightUrlConverter = t.weightUrlConverter, null != t.fetchFunc ? (Ws$1("function" == typeof t.fetchFunc, function () {
+	    if (this.DEFAULT_METHOD = "POST", null == t && (t = {}), this.weightPathPrefix = t.weightPathPrefix, this.onProgress = t.onProgress, this.weightUrlConverter = t.weightUrlConverter, null != t.fetchFunc ? (to$1("function" == typeof t.fetchFunc, function () {
 	      return "Must pass a function that matches the signature of `fetch` (see https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)";
-	    }), this.fetch = t.fetchFunc) : this.fetch = po$1().platform.fetch, Ws$1(null != e && e.length > 0, function () {
+	    }), this.fetch = t.fetchFunc) : this.fetch = No$1().platform.fetch, to$1(null != e && e.length > 0, function () {
 	      return "URL path for http must not be null, undefined or empty.";
-	    }), Array.isArray(e) && Ws$1(2 === e.length, function () {
+	    }), Array.isArray(e) && to$1(2 === e.length, function () {
 	      return "URL paths for http must have a length of 2, (actual length is ".concat(e.length, ").");
 	    }), this.path = e, null != t.requestInit && null != t.requestInit.body) throw new Error("requestInit is expected to have no pre-existing body, but has one.");
 	    this.requestInit = t.requestInit || {};
 	  }
 
-	  _createClass(ji, [{
+	  _createClass(eu, [{
 	    key: "save",
 	    value: function () {
 	      var _save3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee18(e) {
@@ -80544,7 +80783,7 @@
 	                }
 
 	                return _context18.abrupt("return", {
-	                  modelArtifactsInfo: mi$2(e),
+	                  modelArtifactsInfo: Ei$2(e),
 	                  responses: [r]
 	                });
 
@@ -80755,7 +80994,7 @@
 
 	              case 16:
 	                _context22.t6 = s;
-	                _context22.t7 = di$2;
+	                _context22.t7 = Ni$2;
 	                _context22.next = 20;
 	                return function () {
 	                  var _ref4 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee21(e, t) {
@@ -80765,7 +81004,7 @@
 	                        switch (_context21.prev = _context21.next) {
 	                          case 0:
 	                            null == t && (t = {});
-	                            n = null == t.fetchFunc ? po$1().platform.fetch : t.fetchFunc;
+	                            n = null == t.fetchFunc ? No$1().platform.fetch : t.fetchFunc;
 	                            r = e.map(function (e) {
 	                              return n(e, t.requestInit, {
 	                                isBinary: !0
@@ -80787,7 +81026,7 @@
 
 	                          case 9:
 	                            _context21.next = 11;
-	                            return Vi$2(r, t.onProgress, 0, .5);
+	                            return Ji$2(r, t.onProgress, 0, .5);
 
 	                          case 11:
 	                            _context21.t0 = _context21.sent;
@@ -80812,7 +81051,7 @@
 
 	                          case 19:
 	                            _context21.next = 21;
-	                            return Vi$2(a, t.onProgress, .5, 1);
+	                            return Ji$2(a, t.onProgress, .5, 1);
 
 	                          case 21:
 	                            _context21.t1 = _context21.sent;
@@ -80875,33 +81114,33 @@
 	    }()
 	  }]);
 
-	  return ji;
+	  return eu;
 	}();
 
-	function Wi$2(e) {
-	  return null != e.match(ji$2.URL_SCHEME_REGEX);
+	function tu$1(e) {
+	  return null != e.match(eu$1.URL_SCHEME_REGEX);
 	}
 
-	ji$2.URL_SCHEME_REGEX = /^https?:\/\//;
+	eu$1.URL_SCHEME_REGEX = /^https?:\/\//;
 
-	var Ui$2 = function Ui(e, t) {
+	var nu$1 = function nu(e, t) {
 	  if ("undefined" == typeof fetch && (null == t || null == t.fetchFunc)) return null;
 	  {
 	    var _n21 = !0;
 
 	    if (_n21 = Array.isArray(e) ? e.every(function (e) {
-	      return Wi$2(e);
-	    }) : Wi$2(e), _n21) return Ki$2(e, t);
+	      return tu$1(e);
+	    }) : tu$1(e), _n21) return ru$1(e, t);
 	  }
 	  return null;
 	};
 
-	function Ki$2(e, t) {
-	  return new ji$2(e, t);
+	function ru$1(e, t) {
+	  return new eu$1(e, t);
 	}
 
-	function Hi$2(e, t) {
-	  return Ki$2(e, t);
+	function au$1(e, t) {
+	  return ru$1(e, t);
 	}
 	/**
 	 * @license
@@ -80921,20 +81160,20 @@
 	 */
 
 
-	fi$2.registerSaveRouter(Ui$2), fi$2.registerLoadRouter(Ui$2);
-	var qi$2 = si$2({
+	Si$2.registerSaveRouter(nu$1), Si$2.registerLoadRouter(nu$1);
+	var su$1 = yi$2({
 	  matMul_: function matMul_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
-	    var a = ri$2(e, "a", "matMul"),
-	        s = ri$2(t, "b", "matMul");
+	    var a = fi$2(e, "a", "matMul"),
+	        s = fi$2(t, "b", "matMul");
 
-	    var _Uo = Uo$1(a, s);
+	    var _ni = ni$2(a, s);
 
-	    var _Uo2 = _slicedToArray(_Uo, 2);
+	    var _ni2 = _slicedToArray(_ni, 2);
 
-	    a = _Uo2[0];
-	    s = _Uo2[1];
+	    a = _ni2[0];
+	    s = _ni2[1];
 	    var o = {
 	      a: a,
 	      b: s
@@ -80943,7 +81182,7 @@
 	      transposeA: n,
 	      transposeB: r
 	    };
-	    return Qo$1.runKernel("BatchMatMul", o, i);
+	    return ci$2.runKernel("BatchMatMul", o, i);
 	  }
 	});
 	/**
@@ -80963,20 +81202,20 @@
 	 * =============================================================================
 	 */
 
-	var Gi$2 = si$2({
+	var ou$1 = yi$2({
 	  oneHot_: function oneHot_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
 	    if (t < 2) throw new Error("Error in oneHot: depth must be >=2, but it is ".concat(t));
 	    var a = {
-	      indices: ri$2(e, "indices", "oneHot", "int32")
+	      indices: fi$2(e, "indices", "oneHot", "int32")
 	    },
 	        s = {
 	      depth: t,
 	      onValue: n,
 	      offValue: r
 	    };
-	    return Qo$1.runKernel("OneHot", a, s);
+	    return ci$2.runKernel("OneHot", a, s);
 	  }
 	});
 	/**
@@ -80996,15 +81235,15 @@
 	 * =============================================================================
 	 */
 
-	var Yi$2 = si$2({
+	var iu$1 = yi$2({
 	  transpose_: function transpose_(e, t) {
-	    var n = ri$2(e, "x", "transpose");
+	    var n = fi$2(e, "x", "transpose");
 	    if (null == t && (t = n.shape.map(function (e, t) {
 	      return t;
-	    }).reverse()), Ws$1(n.rank === t.length, function () {
+	    }).reverse()), to$1(n.rank === t.length, function () {
 	      return "Error in transpose: rank of input ".concat(n.rank, " must match length of perm ").concat(t, ".");
 	    }), t.forEach(function (e) {
-	      Ws$1(e >= 0 && e < n.rank, function () {
+	      to$1(e >= 0 && e < n.rank, function () {
 	        return "All entries in 'perm' must be between 0 and " + (n.rank - 1) + " but got ".concat(t);
 	      });
 	    }), n.rank <= 1) return n.clone();
@@ -81014,7 +81253,7 @@
 	        a = {
 	      perm: t
 	    };
-	    return Qo$1.runKernel("Transpose", r, a);
+	    return ci$2.runKernel("Transpose", r, a);
 	  }
 	});
 	/**
@@ -81051,8 +81290,8 @@
 	 * =============================================================================
 	 */
 
-	var Xi$2;
-	var Qi$2 = si$2({
+	var uu$1;
+	var cu$1 = yi$2({
 	  fromPixels_: function fromPixels_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
 	    if (t > 4) throw new Error("Cannot construct Tensor with more than 4 channels from pixels.");
@@ -81073,14 +81312,14 @@
 	      if (a && e.readyState < _t47) throw new Error("The video element has not loaded data yet. Please wait for `loadeddata` event on the <video> element.");
 	    }
 
-	    if (null != vo$1("FromPixels", Qo$1.backendName)) {
+	    if (null != Do$1("FromPixels", ci$2.backendName)) {
 	      var _n22 = {
 	        pixels: e
 	      },
 	          _r28 = {
 	        numChannels: t
 	      };
-	      return Qo$1.runKernel("FromPixels", _n22, _r28);
+	      return ci$2.runKernel("FromPixels", _n22, _r28);
 	    }
 
 	    var _ref5 = a ? [e.videoWidth, e.videoHeight] : [e.width, e.height],
@@ -81089,7 +81328,7 @@
 	        c = _ref6[1];
 
 	    var l, p;
-	    if (o ? l = e.getContext("2d").getImageData(0, 0, u, c).data : r || n ? l = e.data : (s || a || i) && (null == Xi$2 && (Xi$2 = document.createElement("canvas").getContext("2d")), Xi$2.canvas.width = u, Xi$2.canvas.height = c, Xi$2.drawImage(e, 0, 0, u, c), l = Xi$2.getImageData(0, 0, u, c).data), 4 === t) p = new Int32Array(l);else {
+	    if (o ? l = e.getContext("2d").getImageData(0, 0, u, c).data : r || n ? l = e.data : (s || a || i) && (null == uu$1 && (uu$1 = document.createElement("canvas").getContext("2d")), uu$1.canvas.width = u, uu$1.canvas.height = c, uu$1.drawImage(e, 0, 0, u, c), l = uu$1.getImageData(0, 0, u, c).data), 4 === t) p = new Int32Array(l);else {
 	      var _e39 = u * c;
 
 	      p = new Int32Array(_e39 * t);
@@ -81101,16 +81340,16 @@
 	      }
 	    }
 	    return function (e, t, n) {
-	      if (Us$1(e), null != t && 3 !== t.length) throw new Error("tensor3d() requires shape to have three numbers");
-	      var r = ei$2(e, n);
+	      if (no$1(e), null != t && 3 !== t.length) throw new Error("tensor3d() requires shape to have three numbers");
+	      var r = di$2(e, n);
 	      if (3 !== r.length && 1 !== r.length) throw new Error("tensor3d() requires values to be number[][][] or flat/TypedArray");
 	      if (1 === r.length && null == t) throw new Error("tensor3d() requires shape to be provided when `values` are a flat array");
-	      return ii$2(e, t, r, n);
+	      return vi$2(e, t, r, n);
 	    }(p, [c, u, t], "int32");
 	  }
 	});
 
-	function Zi$2(e, t, n) {
+	function lu$1(e, t, n) {
 	  if (t.rank < 1) throw new Error("tf.scatterND() expects the indices to be rank 1 or higher, but the rank was ".concat(t.rank, "."));
 	  if (e.rank < 1) throw new Error("tf.scatterND() expects the updates to be rank 1 or higher, but the rank was ".concat(e.rank, "."));
 	  if ("int32" !== t.dtype) throw new Error("The dtype of 'indices' should be int32, but got dtype: ".concat(t.dtype));
@@ -81156,12 +81395,12 @@
 	 */
 
 
-	function Ji$2(e, t) {
-	  return Qo$1.tidy(e, t);
+	function pu$1(e, t) {
+	  return ci$2.tidy(e, t);
 	}
 
-	function eu$1(e) {
-	  return Qo$1.keep(e);
+	function du$1(e) {
+	  return ci$2.keep(e);
 	}
 	/**
 	 * @license
@@ -81181,22 +81420,22 @@
 	 */
 
 
-	var tu$1 = si$2({
+	var mu$1 = yi$2({
 	  add_: function add_(e, t) {
-	    var n = ri$2(e, "a", "add"),
-	        r = ri$2(t, "b", "add");
+	    var n = fi$2(e, "a", "add"),
+	        r = fi$2(t, "b", "add");
 
-	    var _Uo3 = Uo$1(n, r);
+	    var _ni3 = ni$2(n, r);
 
-	    var _Uo4 = _slicedToArray(_Uo3, 2);
+	    var _ni4 = _slicedToArray(_ni3, 2);
 
-	    n = _Uo4[0];
-	    r = _Uo4[1];
+	    n = _ni4[0];
+	    r = _ni4[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Add", a);
+	    return ci$2.runKernel("Add", a);
 	  }
 	});
 	/**
@@ -81216,22 +81455,22 @@
 	 * =============================================================================
 	 */
 
-	var nu$1 = si$2({
+	var hu$1 = yi$2({
 	  floorDiv_: function floorDiv_(e, t) {
-	    var n = ri$2(e, "a", "floorDiv"),
-	        r = ri$2(t, "b", "floorDiv");
+	    var n = fi$2(e, "a", "floorDiv"),
+	        r = fi$2(t, "b", "floorDiv");
 
-	    var _Uo5 = Uo$1(n, r);
+	    var _ni5 = ni$2(n, r);
 
-	    var _Uo6 = _slicedToArray(_Uo5, 2);
+	    var _ni6 = _slicedToArray(_ni5, 2);
 
-	    n = _Uo6[0];
-	    r = _Uo6[1];
+	    n = _ni6[0];
+	    r = _ni6[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("FloorDiv", a);
+	    return ci$2.runKernel("FloorDiv", a);
 	  }
 	});
 	/**
@@ -81251,18 +81490,18 @@
 	 * =============================================================================
 	 */
 
-	var ru$1 = si$2({
+	var fu$1 = yi$2({
 	  div_: function div_(e, t) {
-	    var _Uo7, _Uo8;
+	    var _ni7, _ni8;
 
-	    var n = ri$2(e, "a", "div"),
-	        r = ri$2(t, "b", "div");
-	    if ((_Uo7 = Uo$1(n, r), _Uo8 = _slicedToArray(_Uo7, 2), n = _Uo8[0], r = _Uo8[1], _Uo7), "int32" === n.dtype && "int32" === r.dtype) return nu$1(n, r);
+	    var n = fi$2(e, "a", "div"),
+	        r = fi$2(t, "b", "div");
+	    if ((_ni7 = ni$2(n, r), _ni8 = _slicedToArray(_ni7, 2), n = _ni8[0], r = _ni8[1], _ni7), "int32" === n.dtype && "int32" === r.dtype) return hu$1(n, r);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("RealDiv", a, {});
+	    return ci$2.runKernel("RealDiv", a, {});
 	  }
 	});
 	/**
@@ -81282,22 +81521,22 @@
 	 * =============================================================================
 	 */
 
-	var au$1 = si$2({
+	var gu$1 = yi$2({
 	  mul_: function mul_(e, t) {
-	    var n = ri$2(e, "a", "mul"),
-	        r = ri$2(t, "b", "mul");
+	    var n = fi$2(e, "a", "mul"),
+	        r = fi$2(t, "b", "mul");
 
-	    var _Uo9 = Uo$1(n, r);
+	    var _ni9 = ni$2(n, r);
 
-	    var _Uo10 = _slicedToArray(_Uo9, 2);
+	    var _ni10 = _slicedToArray(_ni9, 2);
 
-	    n = _Uo10[0];
-	    r = _Uo10[1];
+	    n = _ni10[0];
+	    r = _ni10[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Multiply", a);
+	    return ci$2.runKernel("Multiply", a);
 	  }
 	});
 	/**
@@ -81317,22 +81556,22 @@
 	 * =============================================================================
 	 */
 
-	var su$1 = si$2({
+	var yu$1 = yi$2({
 	  abs_: function abs_(e) {
-	    var t = ri$2(e, "x", "abs");
+	    var t = fi$2(e, "x", "abs");
 
 	    if ("complex64" === t.dtype) {
 	      var _e42 = {
 	        x: t
 	      };
-	      return Qo$1.runKernel("ComplexAbs", _e42);
+	      return ci$2.runKernel("ComplexAbs", _e42);
 	    }
 
 	    {
 	      var _e43 = {
 	        x: t
 	      };
-	      return Qo$1.runKernel("Abs", _e43);
+	      return ci$2.runKernel("Abs", _e43);
 	    }
 	  }
 	});
@@ -81353,12 +81592,12 @@
 	 * =============================================================================
 	 */
 
-	var ou$1 = si$2({
+	var bu$1 = yi$2({
 	  acos_: function acos_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "acos")
+	      x: fi$2(e, "x", "acos")
 	    };
-	    return Qo$1.runKernel("Acos", t);
+	    return ci$2.runKernel("Acos", t);
 	  }
 	});
 	/**
@@ -81378,12 +81617,12 @@
 	 * =============================================================================
 	 */
 
-	var iu$1 = si$2({
+	var vu$1 = yi$2({
 	  acosh_: function acosh_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "acosh")
+	      x: fi$2(e, "x", "acosh")
 	    };
-	    return Qo$1.runKernel("Acosh", t);
+	    return ci$2.runKernel("Acosh", t);
 	  }
 	});
 	/**
@@ -81403,24 +81642,24 @@
 	 * =============================================================================
 	 */
 
-	var uu$1 = si$2({
+	var wu$1 = yi$2({
 	  addN_: function addN_(e) {
-	    Ws$1(Array.isArray(e), function () {
+	    to$1(Array.isArray(e), function () {
 	      return "The argument passed to tf.addN() must be a list of tensors";
-	    }), Ws$1(e.length >= 1, function () {
+	    }), to$1(e.length >= 1, function () {
 	      return "Must pass at least one tensor to tf.addN(), but got ".concat(e.length);
 	    });
 	    var t = e.map(function (e, t) {
-	      return ri$2(e, "tensors".concat(t), "addN");
+	      return fi$2(e, "tensors".concat(t), "addN");
 	    }),
 	        n = t[0];
 	    t.forEach(function (e) {
 	      if (e.dtype !== n.dtype) throw new Error("All tensors passed to tf.addN() must have the same dtype");
 	    }), t.forEach(function (e) {
-	      if (!qs$1(e.shape, n.shape)) throw new Error("All tensors passed to tf.addN() must have the same shape");
+	      if (!so$1(e.shape, n.shape)) throw new Error("All tensors passed to tf.addN() must have the same shape");
 	    });
 	    var r = t;
-	    return Qo$1.runKernel("AddN", r);
+	    return ci$2.runKernel("AddN", r);
 	  }
 	});
 	/**
@@ -81440,18 +81679,18 @@
 	 * =============================================================================
 	 */
 
-	var cu$1 = si$2({
+	var xu$1 = yi$2({
 	  all_: function all_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = {
-	      x: ri$2(e, "x", "all", "bool")
+	      x: fi$2(e, "x", "all", "bool")
 	    },
 	        a = {
 	      axis: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("All", r, a);
+	    return ci$2.runKernel("All", r, a);
 	  }
 	});
 	/**
@@ -81471,18 +81710,18 @@
 	 * =============================================================================
 	 */
 
-	var lu$1 = si$2({
+	var ku$1 = yi$2({
 	  any_: function any_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = {
-	      x: ri$2(e, "x", "any", "bool")
+	      x: fi$2(e, "x", "any", "bool")
 	    },
 	        a = {
 	      axis: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("Any", r, a);
+	    return ci$2.runKernel("Any", r, a);
 	  }
 	});
 	/**
@@ -81502,16 +81741,16 @@
 	 * =============================================================================
 	 */
 
-	var pu$1 = si$2({
+	var _u$1 = yi$2({
 	  argMax_: function argMax_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 	    var n = {
-	      x: ri$2(e, "x", "argMax")
+	      x: fi$2(e, "x", "argMax")
 	    },
 	        r = {
 	      axis: t
 	    };
-	    return Qo$1.runKernel("ArgMax", n, r);
+	    return ci$2.runKernel("ArgMax", n, r);
 	  }
 	});
 	/**
@@ -81531,16 +81770,17 @@
 	 * =============================================================================
 	 */
 
-	var du$1 = si$2({
+
+	var Nu$1 = yi$2({
 	  argMin_: function argMin_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 	    var n = {
-	      x: ri$2(e, "x", "argMin")
+	      x: fi$2(e, "x", "argMin")
 	    },
 	        r = {
 	      axis: t
 	    };
-	    return Qo$1.runKernel("ArgMin", n, r);
+	    return ci$2.runKernel("ArgMin", n, r);
 	  }
 	});
 	/**
@@ -81560,12 +81800,12 @@
 	 * =============================================================================
 	 */
 
-	var mu$1 = si$2({
+	var Eu$1 = yi$2({
 	  asin_: function asin_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "asin")
+	      x: fi$2(e, "x", "asin")
 	    };
-	    return Qo$1.runKernel("Asin", t);
+	    return ci$2.runKernel("Asin", t);
 	  }
 	});
 	/**
@@ -81585,12 +81825,12 @@
 	 * =============================================================================
 	 */
 
-	var hu$1 = si$2({
+	var Tu$1 = yi$2({
 	  asinh_: function asinh_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "asinh")
+	      x: fi$2(e, "x", "asinh")
 	    };
-	    return Qo$1.runKernel("Asinh", t);
+	    return ci$2.runKernel("Asinh", t);
 	  }
 	});
 	/**
@@ -81610,12 +81850,12 @@
 	 * =============================================================================
 	 */
 
-	var fu$1 = si$2({
+	var Su$1 = yi$2({
 	  atan_: function atan_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "atan")
+	      x: fi$2(e, "x", "atan")
 	    };
-	    return Qo$1.runKernel("Atan", t);
+	    return ci$2.runKernel("Atan", t);
 	  }
 	});
 	/**
@@ -81635,22 +81875,22 @@
 	 * =============================================================================
 	 */
 
-	var gu$1 = si$2({
+	var Iu$1 = yi$2({
 	  atan2_: function atan2_(e, t) {
-	    var n = ri$2(e, "a", "atan2"),
-	        r = ri$2(t, "b", "atan2");
+	    var n = fi$2(e, "a", "atan2"),
+	        r = fi$2(t, "b", "atan2");
 
-	    var _Uo11 = Uo$1(n, r);
+	    var _ni11 = ni$2(n, r);
 
-	    var _Uo12 = _slicedToArray(_Uo11, 2);
+	    var _ni12 = _slicedToArray(_ni11, 2);
 
-	    n = _Uo12[0];
-	    r = _Uo12[1];
+	    n = _ni12[0];
+	    r = _ni12[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Atan2", a);
+	    return ci$2.runKernel("Atan2", a);
 	  }
 	});
 	/**
@@ -81670,12 +81910,12 @@
 	 * =============================================================================
 	 */
 
-	var yu$1 = si$2({
+	var Ou$1 = yi$2({
 	  atanh_: function atanh_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "atanh")
+	      x: fi$2(e, "x", "atanh")
 	    };
-	    return Qo$1.runKernel("Atanh", t);
+	    return ci$2.runKernel("Atanh", t);
 	  }
 	});
 	/**
@@ -81695,7 +81935,7 @@
 	 * =============================================================================
 	 */
 
-	function bu$1(e, t, n, r, a, s) {
+	function Au$1(e, t, n, r, a, s) {
 	  var o = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : !1;
 	  var i = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : "channelsLast";
 	  var u = -1,
@@ -81725,16 +81965,16 @@
 	      d = _t49[0],
 	      m = _t49[1],
 	      h = _t49[3],
-	      _vu = vu$1(n),
-	      _vu2 = _slicedToArray(_vu, 2),
-	      f = _vu2[0],
-	      g = _vu2[1],
-	      _vu3 = vu$1(r),
-	      _vu4 = _slicedToArray(_vu3, 2),
-	      y = _vu4[0],
-	      b = _vu4[1],
-	      v = wu$1(d, y),
-	      w = wu$1(m, b),
+	      _Du = Du$1(n),
+	      _Du2 = _slicedToArray(_Du, 2),
+	      f = _Du2[0],
+	      g = _Du2[1],
+	      _Du3 = Du$1(r),
+	      _Du4 = _slicedToArray(_Du3, 2),
+	      y = _Du4[0],
+	      b = _Du4[1],
+	      v = Cu$1(d, y),
+	      w = Cu$1(m, b),
 	      _ref7 = function (e, t, n, r, a, s, o, i, u) {
 	    var c, l, p;
 
@@ -81750,13 +81990,13 @@
 	      var _a16 = function (e, t, n, r, a) {
 	        null == r && (r = function (e, t, n) {
 	          var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
-	          var a = wu$1(t, r);
+	          var a = Cu$1(t, r);
 	          return Math.floor((e[0] * (n - 1) - n + a) / 2);
 	        }(e, t, n));
 	        var s = e[0],
 	            o = e[1],
-	            i = xu$1((s - t + 2 * r) / n + 1, a),
-	            u = xu$1((o - t + 2 * r) / n + 1, a);
+	            i = Mu$1((s - t + 2 * r) / n + 1, a),
+	            u = Mu$1((o - t + 2 * r) / n + 1, a);
 	        return [i, u];
 	      }([t, n], s, r, e, i);
 
@@ -81797,7 +82037,7 @@
 	          left: _h2,
 	          right: _f2,
 	          type: 0 === _d3 && 0 === _m3 && 0 === _h2 && 0 === _f2 ? "VALID" : "EXPLICIT"
-	        }, l = xu$1((t - s + _d3 + _m3) / r + 1, i), p = xu$1((n - o + _h2 + _f2) / a + 1, i);
+	        }, l = Mu$1((t - s + _d3 + _m3) / r + 1, i), p = Mu$1((n - o + _h2 + _f2) / a + 1, i);
 	      }
 	    }
 
@@ -81837,15 +82077,15 @@
 	  };
 	}
 
-	function vu$1(e) {
+	function Du$1(e) {
 	  return "number" == typeof e ? [e, e, e] : 2 === e.length ? [e[0], e[1], 1] : e;
 	}
 
-	function wu$1(e, t) {
+	function Cu$1(e, t) {
 	  return t <= 1 ? e : e + (e - 1) * (t - 1);
 	}
 
-	function xu$1(e, t) {
+	function Mu$1(e, t) {
 	  if (!t) return Math.trunc(e);
 
 	  switch (t) {
@@ -81863,18 +82103,18 @@
 	  }
 	}
 
-	function ku$1(e) {
-	  var _vu5 = vu$1(e),
-	      _vu6 = _slicedToArray(_vu5, 3),
-	      t = _vu6[0],
-	      n = _vu6[1],
-	      r = _vu6[2];
+	function Ru$1(e) {
+	  var _Du5 = Du$1(e),
+	      _Du6 = _slicedToArray(_Du5, 3),
+	      t = _Du6[0],
+	      n = _Du6[1],
+	      r = _Du6[2];
 
 	  return 1 === t && 1 === n && 1 === r;
 	}
 
-	function _u$1(e, t) {
-	  return ku$1(e) || ku$1(t);
+	function $u$1(e, t) {
+	  return Ru$1(e) || Ru$1(t);
 	}
 	/**
 	 * @license
@@ -81894,15 +82134,15 @@
 	 */
 
 
-	var Nu$1 = si$2({
+	var Fu$1 = yi$2({
 	  reshape_: function reshape_(e, t) {
 	    var n = {
-	      x: ri$2(e, "x", "reshape", "string_or_numeric")
+	      x: fi$2(e, "x", "reshape", "string_or_numeric")
 	    },
 	        r = {
 	      shape: t
 	    };
-	    return Qo$1.runKernel("Reshape", n, r);
+	    return ci$2.runKernel("Reshape", n, r);
 	  }
 	});
 	/**
@@ -81922,17 +82162,17 @@
 	 * =============================================================================
 	 */
 
-	var Eu$1 = si$2({
+	var zu$1 = yi$2({
 	  avgPool_: function avgPool_(e, t, n, r, a) {
-	    var s = ri$2(e, "x", "avgPool", "float32");
-	    Ws$1(_u$1(n, 1), function () {
+	    var s = fi$2(e, "x", "avgPool", "float32");
+	    to$1($u$1(n, 1), function () {
 	      return "Error in avgPool: Either strides or dilations must be 1. Got strides ".concat(n, " and dilations '1'");
 	    });
 	    var o = s,
 	        i = !1;
-	    3 === s.rank && (i = !0, o = Nu$1(s, [1, s.shape[0], s.shape[1], s.shape[2]])), Ws$1(4 === o.rank, function () {
+	    3 === s.rank && (i = !0, o = Fu$1(s, [1, s.shape[0], s.shape[1], s.shape[2]])), to$1(4 === o.rank, function () {
 	      return "Error in avgPool: x must be rank 4 but got rank ".concat(o.rank, ".");
-	    }), null != a && Ws$1(Gs$1(r), function () {
+	    }), null != a && to$1(oo$1(r), function () {
 	      return "Error in avgPool: pad must be an integer when using, dimRoundingMode ".concat(a, " but got pad ").concat(r, ".");
 	    });
 	    var u = {
@@ -81944,8 +82184,8 @@
 	      pad: r,
 	      dimRoundingMode: a
 	    };
-	    var l = Qo$1.runKernel("AvgPool", u, c);
-	    return l = Li$2(l, s.dtype), i ? Nu$1(l, [l.shape[1], l.shape[2], l.shape[3]]) : l;
+	    var l = ci$2.runKernel("AvgPool", u, c);
+	    return l = Qi$2(l, s.dtype), i ? Fu$1(l, [l.shape[1], l.shape[2], l.shape[3]]) : l;
 	  }
 	});
 	/**
@@ -81965,17 +82205,17 @@
 	 * =============================================================================
 	 */
 
-	var Tu$1 = si$2({
+	var Pu$1 = yi$2({
 	  avgPool3d_: function avgPool3d_(e, t, n, r, a) {
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "NDHWC";
-	    var o = ri$2(e, "x", "avgPool3d", "float32");
+	    var o = fi$2(e, "x", "avgPool3d", "float32");
 	    var i = o,
 	        u = !1;
-	    4 === o.rank && (u = !0, i = Nu$1(o, [1, o.shape[0], o.shape[1], o.shape[2], o.shape[3]])), Ws$1(5 === i.rank, function () {
+	    4 === o.rank && (u = !0, i = Fu$1(o, [1, o.shape[0], o.shape[1], o.shape[2], o.shape[3]])), to$1(5 === i.rank, function () {
 	      return "Error in avgPool3d: x must be rank 5 but got rank ".concat(i.rank, ".");
-	    }), Ws$1("NDHWC" === s, function () {
+	    }), to$1("NDHWC" === s, function () {
 	      return "Error in avgPool3d: Only NDHWC is currently supported, but got dataFormat of ".concat(s);
-	    }), null != a && Ws$1(Gs$1(r), function () {
+	    }), null != a && to$1(oo$1(r), function () {
 	      return "Error in avgPool3d: pad must be an integer when using, dimRoundingMode ".concat(a, " but got pad ").concat(r, ".");
 	    });
 	    var c = {
@@ -81988,8 +82228,8 @@
 	      dimRoundingMode: a,
 	      dataFormat: s
 	    };
-	    var p = Qo$1.runKernel("AvgPool3D", c, l);
-	    return p = Li$2(p, i.dtype), u ? Nu$1(p, [p.shape[1], p.shape[2], p.shape[3], p.shape[4]]) : p;
+	    var p = ci$2.runKernel("AvgPool3D", c, l);
+	    return p = Qi$2(p, i.dtype), u ? Fu$1(p, [p.shape[1], p.shape[2], p.shape[3], p.shape[4]]) : p;
 	  }
 	});
 	/**
@@ -82009,21 +82249,21 @@
 	 * =============================================================================
 	 */
 
-	var Su$1 = si$2({
+	var Lu$1 = yi$2({
 	  concat_: function concat_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-	    Ws$1(e.length >= 1, function () {
+	    to$1(e.length >= 1, function () {
 	      return "Pass at least one tensor to concat";
 	    });
-	    var n = ai$2(e, "tensors", "concat", "string_or_numeric");
+	    var n = gi$2(e, "tensors", "concat", "string_or_numeric");
 	    if ("complex64" === n[0].dtype && n.forEach(function (e) {
 	      if ("complex64" !== e.dtype) throw new Error("Cannot concatenate complex64 tensors with a tensor\n          with dtype ".concat(e.dtype, ". "));
-	    }), 1 === n.length) return Bi$2(n[0]);
+	    }), 1 === n.length) return Zi$2(n[0]);
 	    var r = n,
 	        a = {
 	      axis: t
 	    };
-	    return Qo$1.runKernel("Concat", r, a);
+	    return ci$2.runKernel("Concat", r, a);
 	  }
 	});
 	/**
@@ -82043,12 +82283,12 @@
 	 * =============================================================================
 	 */
 
-	var Iu$1 = si$2({
+	var Bu$1 = yi$2({
 	  sigmoid_: function sigmoid_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "sigmoid")
+	      x: fi$2(e, "x", "sigmoid")
 	    };
-	    return Qo$1.runKernel("Sigmoid", t);
+	    return ci$2.runKernel("Sigmoid", t);
 	  }
 	});
 	/**
@@ -82068,9 +82308,9 @@
 	 * =============================================================================
 	 */
 
-	var Ou$1 = si$2({
+	var Vu$1 = yi$2({
 	  slice_: function slice_(e, t, n) {
-	    var r = ri$2(e, "x", "slice", "string_or_numeric");
+	    var r = fi$2(e, "x", "slice", "string_or_numeric");
 	    if (0 === r.rank) throw new Error("Slicing scalar is not possible");
 	    var a = {
 	      x: r
@@ -82079,7 +82319,7 @@
 	      begin: t,
 	      size: n
 	    };
-	    return Qo$1.runKernel("Slice", a, s);
+	    return ci$2.runKernel("Slice", a, s);
 	  }
 	});
 	/**
@@ -82099,12 +82339,12 @@
 	 * =============================================================================
 	 */
 
-	var Au$1 = si$2({
+	var ju$1 = yi$2({
 	  tanh_: function tanh_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "tanh")
+	      x: fi$2(e, "x", "tanh")
 	    };
-	    return Qo$1.runKernel("Tanh", t);
+	    return ci$2.runKernel("Tanh", t);
 	  }
 	});
 	/**
@@ -82124,17 +82364,17 @@
 	 * =============================================================================
 	 */
 
-	var Du$1 = si$2({
+	var Wu$1 = yi$2({
 	  batchToSpaceND_: function batchToSpaceND_(e, t, n) {
-	    var r = ri$2(e, "x", "batchToSpaceND"),
+	    var r = fi$2(e, "x", "batchToSpaceND"),
 	        a = t.reduce(function (e, t) {
 	      return e * t;
 	    });
-	    Ws$1(r.rank >= 1 + t.length, function () {
+	    to$1(r.rank >= 1 + t.length, function () {
 	      return "input rank is ".concat(r.rank, " but should be > than blockShape.length ").concat(t.length);
-	    }), Ws$1(n.length === t.length, function () {
+	    }), to$1(n.length === t.length, function () {
 	      return "crops.length is ".concat(n.length, " but should be equal to blockShape.length  ").concat(t.length);
-	    }), Ws$1(r.shape[0] % a == 0, function () {
+	    }), to$1(r.shape[0] % a == 0, function () {
 	      return "input tensor batch is ".concat(r.shape[0], " but is not divisible by the product of the elements of blockShape ").concat(t.join(" * "), " === ").concat(a);
 	    });
 	    var s = {
@@ -82144,10 +82384,10 @@
 	      blockShape: t,
 	      crops: n
 	    };
-	    return Qo$1.runKernel("BatchToSpaceND", s, o);
+	    return ci$2.runKernel("BatchToSpaceND", s, o);
 	  }
 	});
-	var Mu$1 = si$2({
+	var Uu$1 = yi$2({
 	  batchNorm_:
 	  /**
 	   * @license
@@ -82167,21 +82407,21 @@
 	   */
 	  function batchNorm_(e, t, n, r, a, s) {
 	    null == s && (s = .001);
-	    var o = ri$2(e, "x", "batchNorm"),
-	        i = ri$2(t, "mean", "batchNorm"),
-	        u = ri$2(n, "variance", "batchNorm");
+	    var o = fi$2(e, "x", "batchNorm"),
+	        i = fi$2(t, "mean", "batchNorm"),
+	        u = fi$2(n, "variance", "batchNorm");
 	    var c, l;
-	    null != a && (c = ri$2(a, "scale", "batchNorm")), null != r && (l = ri$2(r, "offset", "batchNorm")), Ws$1(i.rank === u.rank, function () {
+	    null != a && (c = fi$2(a, "scale", "batchNorm")), null != r && (l = fi$2(r, "offset", "batchNorm")), to$1(i.rank === u.rank, function () {
 	      return "Batch normalization gradient requires mean and variance to have equal ranks.";
-	    }), Ws$1(null == l || i.rank === l.rank, function () {
+	    }), to$1(null == l || i.rank === l.rank, function () {
 	      return "Batch normalization gradient requires mean and offset to have equal ranks.";
-	    }), Ws$1(null == c || i.rank === c.rank, function () {
+	    }), to$1(null == c || i.rank === c.rank, function () {
 	      return "Batch normalization gradient requires mean and scale to have equal ranks.";
 	    });
 	    var p = {
 	      x: function (e) {
 	        var t;
-	        return t = 0 === e.rank || 1 === e.rank ? Nu$1(e, [1, 1, 1, e.size]) : 2 === e.rank ? Nu$1(e, [1, 1, e.shape[0], e.shape[1]]) : 3 === e.rank ? Nu$1(e, [1, e.shape[0], e.shape[1], e.shape[2]]) : e, t;
+	        return t = 0 === e.rank || 1 === e.rank ? Fu$1(e, [1, 1, 1, e.size]) : 2 === e.rank ? Fu$1(e, [1, 1, e.shape[0], e.shape[1]]) : 3 === e.rank ? Fu$1(e, [1, e.shape[0], e.shape[1], e.shape[2]]) : e, t;
 	      }(o),
 	      scale: c,
 	      offset: l,
@@ -82191,8 +82431,8 @@
 	        d = {
 	      varianceEpsilon: s
 	    },
-	        m = Qo$1.runKernel("FusedBatchNorm", p, d);
-	    return Nu$1(m, o.shape);
+	        m = ci$2.runKernel("FusedBatchNorm", p, d);
+	    return Fu$1(m, o.shape);
 	  }
 	});
 	/**
@@ -82212,15 +82452,15 @@
 	 * =============================================================================
 	 */
 
-	var Cu$1 = si$2({
+	var Ku$1 = yi$2({
 	  bincount_: function bincount_(e, t, n) {
-	    var r = ri$2(e, "x", "bincount"),
-	        a = ri$2(t, "weights", "bincount");
-	    Ws$1("int32" === r.dtype, function () {
+	    var r = fi$2(e, "x", "bincount"),
+	        a = fi$2(t, "weights", "bincount");
+	    to$1("int32" === r.dtype, function () {
 	      return "Error in bincount: input dtype must be int32, but got ".concat(r.dtype);
-	    }), Ws$1(n >= 0, function () {
+	    }), to$1(n >= 0, function () {
 	      return "size must be non-negative, but got ".concat(n, ".");
-	    }), Ws$1(a.size === r.size || 0 === a.size, function () {
+	    }), to$1(a.size === r.size || 0 === a.size, function () {
 	      return "Error in bincount: weights must have the same size as input or0-length, but got input shape: ".concat(r.shape, ", weights shape: ").concat(a.shape, ".");
 	    });
 	    var s = {
@@ -82230,7 +82470,7 @@
 	        o = {
 	      size: n
 	    };
-	    return Qo$1.runKernel("Bincount", s, o);
+	    return ci$2.runKernel("Bincount", s, o);
 	  }
 	});
 	/**
@@ -82250,9 +82490,9 @@
 	 * =============================================================================
 	 */
 
-	var Ru$1 = si$2({
+	var Hu$1 = yi$2({
 	  broadcastTo_: function broadcastTo_(e, t) {
-	    var n = ri$2(e, "broadcastTo", "x");
+	    var n = fi$2(e, "broadcastTo", "x");
 	    var r = n.shape;
 	    if (t.some(function (e) {
 	      return !(e > 0) || e % 1 != 0;
@@ -82266,7 +82506,7 @@
 	        _e47.unshift(1);
 	      }
 
-	      n = Nu$1(n, _e47);
+	      n = Fu$1(n, _e47);
 	    }
 
 	    var a = n.shape,
@@ -82280,14 +82520,14 @@
 	      return e > 1 ? t : -1;
 	    }).filter(function (e) {
 	      return e >= 0;
-	    }).length) return Bi$2(n);
+	    }).length) return Zi$2(n);
 	    var o = {
 	      x: n
 	    },
 	        i = {
 	      reps: s
 	    };
-	    return Qo$1.runKernel("Tile", o, i);
+	    return ci$2.runKernel("Tile", o, i);
 	  }
 	});
 	/**
@@ -82307,12 +82547,12 @@
 	 * =============================================================================
 	 */
 
-	var $u$1 = si$2({
+	var qu$1 = yi$2({
 	  ceil_: function ceil_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "ceil")
+	      x: fi$2(e, "x", "ceil")
 	    };
-	    return Qo$1.runKernel("Ceil", t);
+	    return ci$2.runKernel("Ceil", t);
 	  }
 	});
 	/**
@@ -82332,10 +82572,10 @@
 	 * =============================================================================
 	 */
 
-	var Fu$1 = si$2({
+	var Gu$1 = yi$2({
 	  clipByValue_: function clipByValue_(e, t, n) {
-	    var r = ri$2(e, "x", "clipByValue");
-	    Ws$1(t <= n, function () {
+	    var r = fi$2(e, "x", "clipByValue");
+	    to$1(t <= n, function () {
 	      return "Error in clip: min (".concat(t, ") must be less than or equal to max (").concat(n, ").");
 	    });
 	    var a = {
@@ -82345,7 +82585,7 @@
 	      clipValueMin: t,
 	      clipValueMax: n
 	    };
-	    return Qo$1.runKernel("ClipByValue", a, s);
+	    return ci$2.runKernel("ClipByValue", a, s);
 	  }
 	});
 	/**
@@ -82365,26 +82605,26 @@
 	 * =============================================================================
 	 */
 
-	var zu$1 = si$2({
+	var Yu$1 = yi$2({
 	  conv2d_: function conv2d_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "NHWC";
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : [1, 1];
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
-	    var i = ri$2(e, "x", "conv2d"),
-	        u = ri$2(t, "filter", "conv2d");
+	    var i = fi$2(e, "x", "conv2d"),
+	        u = fi$2(t, "filter", "conv2d");
 	    var c = i,
 	        l = !1;
-	    3 === i.rank && (l = !0, c = Nu$1(i, [1, i.shape[0], i.shape[1], i.shape[2]])), Ws$1(4 === c.rank, function () {
+	    3 === i.rank && (l = !0, c = Fu$1(i, [1, i.shape[0], i.shape[1], i.shape[2]])), to$1(4 === c.rank, function () {
 	      return "Error in conv2d: input must be rank 4, but got rank ".concat(c.rank, ".");
-	    }), Ws$1(4 === u.rank, function () {
+	    }), to$1(4 === u.rank, function () {
 	      return "Error in conv2d: filter must be rank 4, but got rank ".concat(u.rank, ".");
-	    }), null != o && Ws$1(Gs$1(r), function () {
+	    }), null != o && to$1(oo$1(r), function () {
 	      return "Error in conv2d: pad must be an integer when using, dimRoundingMode ".concat(o, " but got pad ").concat(r, ".");
 	    });
 	    var p = "NHWC" === a ? c.shape[3] : c.shape[1];
-	    Ws$1(p === u.shape[2], function () {
+	    to$1(p === u.shape[2], function () {
 	      return "Error in conv2d: depth of input (".concat(p, ") must match input depth for filter ").concat(u.shape[2], ".");
-	    }), Ws$1(_u$1(n, s), function () {
+	    }), to$1($u$1(n, s), function () {
 	      return "Error in conv2D: Either strides or dilations must be 1. Got strides ".concat(n, " and dilations '").concat(s, "'");
 	    });
 	    var d = {
@@ -82398,36 +82638,36 @@
 	      dilations: s,
 	      dimRoundingMode: o
 	    },
-	        h = Qo$1.runKernel("Conv2D", d, m);
-	    return l ? Nu$1(h, [h.shape[1], h.shape[2], h.shape[3]]) : h;
+	        h = ci$2.runKernel("Conv2D", d, m);
+	    return l ? Fu$1(h, [h.shape[1], h.shape[2], h.shape[3]]) : h;
 	  }
 	});
-	var Pu$1 = si$2({
+	var Xu$1 = yi$2({
 	  conv1d_: function conv1d_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "NWC";
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 1;
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
-	    var i = ri$2(e, "x", "conv1d"),
-	        u = ri$2(t, "filter", "conv1d");
+	    var i = fi$2(e, "x", "conv1d"),
+	        u = fi$2(t, "filter", "conv1d");
 	    var c = i,
 	        l = !1;
-	    2 === i.rank && (l = !0, c = Nu$1(i, [1, i.shape[0], i.shape[1]])), Ws$1(3 === c.rank, function () {
+	    2 === i.rank && (l = !0, c = Fu$1(i, [1, i.shape[0], i.shape[1]])), to$1(3 === c.rank, function () {
 	      return "Error in conv1d: input must be rank 3, but got rank ".concat(c.rank, ".");
-	    }), Ws$1(3 === u.rank, function () {
+	    }), to$1(3 === u.rank, function () {
 	      return "Error in conv1d: filter must be rank 3, but got rank ".concat(u.rank, ".");
-	    }), null != o && Ws$1(Gs$1(r), function () {
+	    }), null != o && to$1(oo$1(r), function () {
 	      return "Error in conv1d: pad must be an integer when using, dimRoundingMode ".concat(o, " but got pad ").concat(r, ".");
-	    }), Ws$1(c.shape[2] === u.shape[1], function () {
+	    }), to$1(c.shape[2] === u.shape[1], function () {
 	      return "Error in conv1d: depth of input (".concat(c.shape[2], ") must match input depth for filter ").concat(u.shape[1], ".");
-	    }), Ws$1(_u$1(n, s), function () {
+	    }), to$1($u$1(n, s), function () {
 	      return "Error in conv1D: Either stride or dilation must be 1. Got stride ".concat(n, " and dilation '").concat(s, "'");
-	    }), Ws$1("NWC" === a, function () {
+	    }), to$1("NWC" === a, function () {
 	      return "Error in conv1d: got dataFormat of ".concat(a, " but only NWC is currently supported.");
 	    });
-	    var p = Nu$1(u, [1, u.shape[0], u.shape[1], u.shape[2]]),
-	        d = Nu$1(c, [c.shape[0], 1, c.shape[1], c.shape[2]]),
-	        m = zu$1(d, p, [1, n], r, "NHWC", [1, s], o);
-	    return Nu$1(m, l ? [m.shape[2], m.shape[3]] : [m.shape[0], m.shape[2], m.shape[3]]);
+	    var p = Fu$1(u, [1, u.shape[0], u.shape[1], u.shape[2]]),
+	        d = Fu$1(c, [c.shape[0], 1, c.shape[1], c.shape[2]]),
+	        m = Yu$1(d, p, [1, n], r, "NHWC", [1, s], o);
+	    return Fu$1(m, l ? [m.shape[2], m.shape[3]] : [m.shape[0], m.shape[2], m.shape[3]]);
 	  }
 	});
 	/**
@@ -82447,30 +82687,30 @@
 	 * =============================================================================
 	 */
 
-	var Lu$1 = si$2({
+	var Qu$1 = yi$2({
 	  conv2DBackpropInput_: function conv2DBackpropInput_(e, t, n, r, a) {
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "NHWC";
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
-	    Ws$1(e.length === t.rank, function () {
+	    to$1(e.length === t.rank, function () {
 	      return "Length of inShape (".concat(e.length, ") and rank of dy (").concat(t.rank, ") must match");
 	    });
 	    var i = e,
 	        u = t,
 	        c = !1;
-	    3 === t.rank && (c = !0, u = Nu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]]), i = [1, e[0], e[1], e[2]]), Ws$1(4 === i.length, function () {
+	    3 === t.rank && (c = !0, u = Fu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]]), i = [1, e[0], e[1], e[2]]), to$1(4 === i.length, function () {
 	      return "Error in conv2dDerInput: inShape must be length 4, but got length ".concat(i.length, ".");
-	    }), Ws$1(4 === u.rank, function () {
+	    }), to$1(4 === u.rank, function () {
 	      return "Error in conv2dDerInput: dy must be rank 4, but got rank ".concat(u.rank);
-	    }), Ws$1(4 === n.rank, function () {
+	    }), to$1(4 === n.rank, function () {
 	      return "Error in conv2dDerInput: filter must be rank 4, but got rank ".concat(n.rank);
 	    });
 	    var l = "NHWC" === s ? i[3] : i[1],
 	        p = "NHWC" === s ? u.shape[3] : u.shape[1];
-	    Ws$1(l === n.shape[2], function () {
+	    to$1(l === n.shape[2], function () {
 	      return "Error in conv2dDerInput: depth of input (".concat(l, ") must match input depth for filter ").concat(n.shape[2], ".");
-	    }), Ws$1(p === n.shape[3], function () {
+	    }), to$1(p === n.shape[3], function () {
 	      return "Error in conv2dDerInput: depth of output (".concat(p, ") must match output depth for filter ").concat(n.shape[3], ".");
-	    }), null != o && Ws$1(Gs$1(a), function () {
+	    }), null != o && to$1(oo$1(a), function () {
 	      return "Error in conv2dDerInput: pad must be an integer when using, dimRoundingMode ".concat(o, " but got pad ").concat(a, ".");
 	    });
 	    var d = {
@@ -82484,15 +82724,15 @@
 	      dimRoundingMode: o,
 	      inputShape: i
 	    },
-	        h = Qo$1.runKernel("Conv2DBackpropInput", d, m);
-	    return c ? Nu$1(h, [h.shape[1], h.shape[2], h.shape[3]]) : h;
+	        h = ci$2.runKernel("Conv2DBackpropInput", d, m);
+	    return c ? Fu$1(h, [h.shape[1], h.shape[2], h.shape[3]]) : h;
 	  }
 	});
-	var Bu$1 = si$2({
+	var Zu$1 = yi$2({
 	  conv2dTranspose_: function conv2dTranspose_(e, t, n, r, a, s) {
-	    var o = ri$2(e, "x", "conv2dTranspose"),
-	        i = ri$2(t, "filter", "conv2dTranspose");
-	    return Lu$1(n, o, i, r, a, "NHWC", s);
+	    var o = fi$2(e, "x", "conv2dTranspose"),
+	        i = fi$2(t, "filter", "conv2dTranspose");
+	    return Qu$1(n, o, i, r, a, "NHWC", s);
 	  }
 	});
 	/**
@@ -82512,23 +82752,23 @@
 	 * =============================================================================
 	 */
 
-	var Vu$1 = si$2({
+	var Ju$1 = yi$2({
 	  conv3d_: function conv3d_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "NDHWC";
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : [1, 1, 1];
-	    var o = ri$2(e, "x", "conv3d"),
-	        i = ri$2(t, "filter", "conv3d");
+	    var o = fi$2(e, "x", "conv3d"),
+	        i = fi$2(t, "filter", "conv3d");
 	    var u = o,
 	        c = !1;
-	    4 === o.rank && (c = !0, u = Nu$1(o, [1, o.shape[0], o.shape[1], o.shape[2], o.shape[3]])), Ws$1(5 === u.rank, function () {
+	    4 === o.rank && (c = !0, u = Fu$1(o, [1, o.shape[0], o.shape[1], o.shape[2], o.shape[3]])), to$1(5 === u.rank, function () {
 	      return "Error in conv3d: input must be rank 5, but got rank ".concat(u.rank, ".");
-	    }), Ws$1(5 === i.rank, function () {
+	    }), to$1(5 === i.rank, function () {
 	      return "Error in conv3d: filter must be rank 5, but got rank ".concat(i.rank, ".");
-	    }), Ws$1(u.shape[4] === i.shape[3], function () {
+	    }), to$1(u.shape[4] === i.shape[3], function () {
 	      return "Error in conv3d: depth of input (".concat(u.shape[4], ") must match input depth for filter ").concat(i.shape[3], ".");
-	    }), Ws$1(_u$1(n, s), function () {
+	    }), to$1($u$1(n, s), function () {
 	      return "Error in conv3D: Either strides or dilations must be 1. Got strides ".concat(n, " and dilations '").concat(s, "'");
-	    }), Ws$1("NDHWC" === a, function () {
+	    }), to$1("NDHWC" === a, function () {
 	      return "Error in conv3d: got dataFormat of ".concat(a, " but only NDHWC is currently supported.");
 	    });
 	    var l = {
@@ -82541,8 +82781,8 @@
 	      dataFormat: a,
 	      dilations: s
 	    },
-	        d = Qo$1.runKernel("Conv3D", l, p);
-	    return c ? Nu$1(d, [d.shape[1], d.shape[2], d.shape[3], d.shape[4]]) : d;
+	        d = ci$2.runKernel("Conv3D", l, p);
+	    return c ? Fu$1(d, [d.shape[1], d.shape[2], d.shape[3], d.shape[4]]) : d;
 	  }
 	});
 	/**
@@ -82562,12 +82802,12 @@
 	 * =============================================================================
 	 */
 
-	var ju$1 = si$2({
+	var ec$2 = yi$2({
 	  cos_: function cos_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "cos")
+	      x: fi$2(e, "x", "cos")
 	    };
-	    return Qo$1.runKernel("Cos", t);
+	    return ci$2.runKernel("Cos", t);
 	  }
 	});
 	/**
@@ -82587,12 +82827,12 @@
 	 * =============================================================================
 	 */
 
-	var Wu$1 = si$2({
+	var tc$2 = yi$2({
 	  cosh_: function cosh_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "cosh")
+	      x: fi$2(e, "x", "cosh")
 	    };
-	    return Qo$1.runKernel("Cosh", t);
+	    return ci$2.runKernel("Cosh", t);
 	  }
 	});
 	/**
@@ -82612,20 +82852,20 @@
 	 * =============================================================================
 	 */
 
-	var Uu$1 = si$2({
+	var nc$2 = yi$2({
 	  cumsum_: function cumsum_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
 	    var a = {
-	      x: ri$2(e, "x", "cumsum")
+	      x: fi$2(e, "x", "cumsum")
 	    },
 	        s = {
 	      axis: t,
 	      exclusive: n,
 	      reverse: r
 	    };
-	    return Qo$1.runKernel("Cumsum", a, s);
+	    return ci$2.runKernel("Cumsum", a, s);
 	  }
 	});
 	/**
@@ -82645,18 +82885,18 @@
 	 * =============================================================================
 	 */
 
-	var Ku$1 = si$2({
+	var rc$2 = yi$2({
 	  denseBincount_: function denseBincount_(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
-	    var a = ri$2(e, "x", "denseBincount"),
-	        s = ri$2(t, "weights", "denseBincount");
-	    Ws$1("int32" === a.dtype, function () {
+	    var a = fi$2(e, "x", "denseBincount"),
+	        s = fi$2(t, "weights", "denseBincount");
+	    to$1("int32" === a.dtype, function () {
 	      return "Error in denseBincount: input dtype must be int32, but got ".concat(a.dtype);
-	    }), Ws$1(a.rank <= 2, function () {
+	    }), to$1(a.rank <= 2, function () {
 	      return "Error in denseBincount: input must be at most rank 2, but got rank ".concat(a.rank, ".");
-	    }), Ws$1(n >= 0, function () {
+	    }), to$1(n >= 0, function () {
 	      return "size must be non-negative, but got ".concat(n, ".");
-	    }), Ws$1(s.size === a.size || 0 === s.size, function () {
+	    }), to$1(s.size === a.size || 0 === s.size, function () {
 	      return "Error in denseBincount: weights must have the same shape as x or 0-length, but got x shape: ".concat(a.shape, ", weights shape: ").concat(s.shape, ".");
 	    });
 	    var o = {
@@ -82667,7 +82907,7 @@
 	      size: n,
 	      binaryOutput: r
 	    };
-	    return Qo$1.runKernel("DenseBincount", o, i);
+	    return ci$2.runKernel("DenseBincount", o, i);
 	  }
 	});
 	/**
@@ -82687,18 +82927,18 @@
 	 * =============================================================================
 	 */
 
-	var Hu$1 = si$2({
+	var ac$2 = yi$2({
 	  depthToSpace_: function depthToSpace_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "NHWC";
-	    var r = ri$2(e, "x", "depthToSpace"),
+	    var r = fi$2(e, "x", "depthToSpace"),
 	        a = "NHWC" === n ? r.shape[1] : r.shape[2],
 	        s = "NHWC" === n ? r.shape[2] : r.shape[3],
 	        o = "NHWC" === n ? r.shape[3] : r.shape[1];
-	    Ws$1(a * t >= 0, function () {
+	    to$1(a * t >= 0, function () {
 	      return "Negative dimension size caused by overflow when multiplying\n    ".concat(a, " and ").concat(t, "  for depthToSpace with input shape\n    ").concat(r.shape);
-	    }), Ws$1(s * t >= 0, function () {
+	    }), to$1(s * t >= 0, function () {
 	      return "Negative dimension size caused by overflow when multiplying\n    ".concat(s, " and ").concat(t, " for depthToSpace with input shape\n        ").concat(r.shape);
-	    }), Ws$1(o % (t * t) == 0, function () {
+	    }), to$1(o % (t * t) == 0, function () {
 	      return "Dimension size must be evenly divisible by ".concat(t * t, " but is ").concat(o, " for depthToSpace with input shape ").concat(r.shape);
 	    });
 	    var i = {
@@ -82708,7 +82948,7 @@
 	      blockSize: t,
 	      dataFormat: n
 	    };
-	    return Qo$1.runKernel("DepthToSpace", i, u);
+	    return ci$2.runKernel("DepthToSpace", i, u);
 	  }
 	});
 	/**
@@ -82728,22 +82968,22 @@
 	 * =============================================================================
 	 */
 
-	var qu$1 = si$2({
+	var sc$2 = yi$2({
 	  depthwiseConv2d_: function depthwiseConv2d_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "NHWC";
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : [1, 1];
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
-	    var i = ri$2(e, "x", "depthwiseConv2d"),
-	        u = ri$2(t, "filter", "depthwiseConv2d");
+	    var i = fi$2(e, "x", "depthwiseConv2d"),
+	        u = fi$2(t, "filter", "depthwiseConv2d");
 	    var c = i,
 	        l = !1;
-	    3 === i.rank && (l = !0, c = Nu$1(i, [1, i.shape[0], i.shape[1], i.shape[2]])), Ws$1(4 === c.rank, function () {
+	    3 === i.rank && (l = !0, c = Fu$1(i, [1, i.shape[0], i.shape[1], i.shape[2]])), to$1(4 === c.rank, function () {
 	      return "Error in depthwiseConv2d: input must be rank 4, but got rank ".concat(c.rank, ".");
-	    }), Ws$1(4 === u.rank, function () {
+	    }), to$1(4 === u.rank, function () {
 	      return "Error in depthwiseConv2d: filter must be rank 4, but got rank ".concat(u.rank, ".");
-	    }), Ws$1(c.shape[3] === u.shape[2], function () {
+	    }), to$1(c.shape[3] === u.shape[2], function () {
 	      return "Error in depthwiseConv2d: number of input channels (".concat(c.shape[3], ") must match the inChannels dimension in filter ").concat(u.shape[2], ".");
-	    }), null != o && Ws$1(Gs$1(r), function () {
+	    }), null != o && to$1(oo$1(r), function () {
 	      return "Error in depthwiseConv2d: pad must be an integer when using, dimRoundingMode ".concat(o, " but got pad ").concat(r, ".");
 	    });
 	    var p = {
@@ -82757,8 +82997,8 @@
 	      dilations: s,
 	      dimRoundingMode: o
 	    },
-	        m = Qo$1.runKernel("DepthwiseConv2dNative", p, d);
-	    return l ? Nu$1(m, [m.shape[1], m.shape[2], m.shape[3]]) : m;
+	        m = ci$2.runKernel("DepthwiseConv2dNative", p, d);
+	    return l ? Fu$1(m, [m.shape[1], m.shape[2], m.shape[3]]) : m;
 	  }
 	});
 	/**
@@ -82778,22 +83018,22 @@
 	 * =============================================================================
 	 */
 
-	var Gu$1 = si$2({
+	var oc$2 = yi$2({
 	  dilation2d_: function dilation2d_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : [1, 1];
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "NHWC";
-	    var o = ri$2(e, "x", "dilation2d"),
-	        i = ri$2(t, "filter", "dilation2d");
-	    Ws$1(3 === o.rank || 4 === o.rank, function () {
+	    var o = fi$2(e, "x", "dilation2d"),
+	        i = fi$2(t, "filter", "dilation2d");
+	    to$1(3 === o.rank || 4 === o.rank, function () {
 	      return "Error in dilation2d: input must be rank 3 or 4, but got rank ".concat(o.rank, ".");
-	    }), Ws$1(3 === i.rank, function () {
+	    }), to$1(3 === i.rank, function () {
 	      return "Error in dilation2d: filter must be rank 3, but got rank ".concat(i.rank, ".");
-	    }), Ws$1("NHWC" === s, function () {
+	    }), to$1("NHWC" === s, function () {
 	      return "Error in dilation2d: Only NHWC is currently supported, but got dataFormat of ".concat(s);
 	    });
 	    var u = o,
 	        c = !1;
-	    3 === o.rank && (u = Nu$1(o, [1, o.shape[0], o.shape[1], o.shape[2]]), c = !0);
+	    3 === o.rank && (u = Fu$1(o, [1, o.shape[0], o.shape[1], o.shape[2]]), c = !0);
 	    var l = {
 	      x: u,
 	      filter: i
@@ -82803,8 +83043,8 @@
 	      pad: r,
 	      dilations: a
 	    },
-	        d = Qo$1.runKernel("Dilation2D", l, p);
-	    return c ? Nu$1(d, [d.shape[1], d.shape[2], d.shape[3]]) : d;
+	        d = ci$2.runKernel("Dilation2D", l, p);
+	    return c ? Fu$1(d, [d.shape[1], d.shape[2], d.shape[3]]) : d;
 	  }
 	});
 	/**
@@ -82824,7 +83064,7 @@
 	 * =============================================================================
 	 */
 
-	function Yu$1(e, t) {
+	function ic$2(e, t) {
 	  var n = [],
 	      r = Math.max(e.length, t.length);
 
@@ -82861,18 +83101,18 @@
 	 */
 
 
-	var Xu$1 = si$2({
+	var uc$2 = yi$2({
 	  equal_: function equal_(e, t) {
-	    var _Uo13, _Uo14;
+	    var _ni13, _ni14;
 
-	    var n = ri$2(e, "a", "equal", "string_or_numeric"),
-	        r = ri$2(t, "b", "equal", "string_or_numeric");
-	    (_Uo13 = Uo$1(n, r), _Uo14 = _slicedToArray(_Uo13, 2), n = _Uo14[0], r = _Uo14[1], _Uo13), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "equal", "string_or_numeric"),
+	        r = fi$2(t, "b", "equal", "string_or_numeric");
+	    (_ni13 = ni$2(n, r), _ni14 = _slicedToArray(_ni13, 2), n = _ni14[0], r = _ni14[1], _ni13), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Equal", a);
+	    return ci$2.runKernel("Equal", a);
 	  }
 	});
 	/**
@@ -82892,18 +83132,18 @@
 	 * =============================================================================
 	 */
 
-	var Qu$1 = si$2({
+	var cc$2 = yi$2({
 	  where_: function where_(e, t, n) {
-	    var r = ri$2(t, "a", "where"),
-	        a = ri$2(n, "b", "where"),
-	        s = ri$2(e, "condition", "where", "bool"),
-	        o = Yu$1(Yu$1(s.shape, r.shape), a.shape),
+	    var r = fi$2(t, "a", "where"),
+	        a = fi$2(n, "b", "where"),
+	        s = fi$2(e, "condition", "where", "bool"),
+	        o = ic$2(ic$2(s.shape, r.shape), a.shape),
 	        i = {
-	      condition: Ru$1(s, o),
-	      t: Ru$1(r, o),
-	      e: Ru$1(a, o)
+	      condition: Hu$1(s, o),
+	      t: Hu$1(r, o),
+	      e: Hu$1(a, o)
 	    };
-	    return Qo$1.runKernel("Select", i);
+	    return ci$2.runKernel("Select", i);
 	  }
 	});
 	/**
@@ -82923,12 +83163,12 @@
 	 * =============================================================================
 	 */
 
-	var Zu$1 = si$2({
+	var lc$2 = yi$2({
 	  zerosLike_: function zerosLike_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "zerosLike")
+	      x: fi$2(e, "x", "zerosLike")
 	    };
-	    return Qo$1.runKernel("ZerosLike", t);
+	    return ci$2.runKernel("ZerosLike", t);
 	  }
 	});
 	/**
@@ -82948,21 +83188,21 @@
 	 * =============================================================================
 	 */
 
-	var Ju$1 = si$2({
+	var pc$2 = yi$2({
 	  divNoNan_: function divNoNan_(e, t) {
-	    var n = ri$2(e, "a", "div"),
-	        r = ri$2(t, "b", "div");
+	    var n = fi$2(e, "a", "div"),
+	        r = fi$2(t, "b", "div");
 
-	    var _Uo15 = Uo$1(n, r);
+	    var _ni15 = ni$2(n, r);
 
-	    var _Uo16 = _slicedToArray(_Uo15, 2);
+	    var _ni16 = _slicedToArray(_ni15, 2);
 
-	    n = _Uo16[0];
-	    r = _Uo16[1];
-	    var a = ru$1(n, r),
-	        s = Zu$1(a),
-	        o = Xu$1(r, s);
-	    return Qu$1(o, s, a);
+	    n = _ni16[0];
+	    r = _ni16[1];
+	    var a = fu$1(n, r),
+	        s = lc$2(a),
+	        o = uc$2(r, s);
+	    return cc$2(o, s, a);
 	  }
 	});
 	/**
@@ -82982,19 +83222,19 @@
 	 * =============================================================================
 	 */
 
-	var ec$2 = si$2({
+	var dc$2 = yi$2({
 	  einsum_: function einsum_(e) {
 	    for (var _len5 = arguments.length, t = new Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {
 	      t[_key5 - 1] = arguments[_key5];
 	    }
 
 	    var n = t.map(function (e, t) {
-	      return ri$2(e, "tensors".concat(t), "einsum");
+	      return fi$2(e, "tensors".concat(t), "einsum");
 	    }),
 	        r = {
 	      equation: e
 	    };
-	    return Qo$1.runKernel("Einsum", n, r);
+	    return ci$2.runKernel("Einsum", n, r);
 	  }
 	});
 	/**
@@ -83014,12 +83254,12 @@
 	 * =============================================================================
 	 */
 
-	var tc$2 = si$2({
+	var mc$2 = yi$2({
 	  elu_: function elu_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "elu")
+	      x: fi$2(e, "x", "elu")
 	    };
-	    return Qo$1.runKernel("Elu", t);
+	    return ci$2.runKernel("Elu", t);
 	  }
 	});
 	/**
@@ -83039,16 +83279,16 @@
 	 * =============================================================================
 	 */
 
-	var nc$2 = si$2({
+	var hc$2 = yi$2({
 	  erf_: function erf_(e) {
-	    var t = ri$2(e, "x", "erf");
-	    Ws$1("int32" === t.dtype || "float32" === t.dtype, function () {
+	    var t = fi$2(e, "x", "erf");
+	    to$1("int32" === t.dtype || "float32" === t.dtype, function () {
 	      return "Input dtype must be `int32` or `float32`.";
-	    }), "int32" === t.dtype && (t = Li$2(t, "float32"));
+	    }), "int32" === t.dtype && (t = Qi$2(t, "float32"));
 	    var n = {
 	      x: t
 	    };
-	    return Qo$1.runKernel("Erf", n);
+	    return ci$2.runKernel("Erf", n);
 	  }
 	});
 	/**
@@ -83068,12 +83308,12 @@
 	 * =============================================================================
 	 */
 
-	var rc$2 = si$2({
+	var fc$2 = yi$2({
 	  exp_: function exp_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "exp")
+	      x: fi$2(e, "x", "exp")
 	    };
-	    return Qo$1.runKernel("Exp", t);
+	    return ci$2.runKernel("Exp", t);
 	  }
 	});
 	/**
@@ -83093,11 +83333,11 @@
 	 * =============================================================================
 	 */
 
-	var ac$2 = si$2({
+	var gc$2 = yi$2({
 	  expandDims_: function expandDims_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-	    var n = ri$2(e, "x", "expandDims", "string_or_numeric");
-	    Ws$1(t <= n.rank, function () {
+	    var n = fi$2(e, "x", "expandDims", "string_or_numeric");
+	    to$1(t <= n.rank, function () {
 	      return "Axis must be <= rank of the tensor";
 	    });
 	    var r = {
@@ -83106,7 +83346,7 @@
 	        a = {
 	      dim: t
 	    };
-	    return Qo$1.runKernel("ExpandDims", r, a);
+	    return ci$2.runKernel("ExpandDims", r, a);
 	  }
 	});
 	/**
@@ -83126,12 +83366,12 @@
 	 * =============================================================================
 	 */
 
-	var sc$2 = si$2({
+	var yc$2 = yi$2({
 	  expm1_: function expm1_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "expm1")
+	      x: fi$2(e, "x", "expm1")
 	    };
-	    return Qo$1.runKernel("Expm1", t);
+	    return ci$2.runKernel("Expm1", t);
 	  }
 	});
 	/**
@@ -83151,10 +83391,10 @@
 	 * =============================================================================
 	 */
 
-	var oc$2 = si$2({
+	var bc$2 = yi$2({
 	  tile_: function tile_(e, t) {
-	    var n = ri$2(e, "x", "tile", "string_or_numeric");
-	    Ws$1(n.rank === t.length, function () {
+	    var n = fi$2(e, "x", "tile", "string_or_numeric");
+	    to$1(n.rank === t.length, function () {
 	      return "Error in transpose: rank of input ".concat(n.rank, " must match length of reps ").concat(t, ".");
 	    });
 	    var r = {
@@ -83163,7 +83403,7 @@
 	        a = {
 	      reps: t
 	    };
-	    return Qo$1.runKernel("Tile", r, a);
+	    return ci$2.runKernel("Tile", r, a);
 	  }
 	});
 	/**
@@ -83183,13 +83423,13 @@
 	 * =============================================================================
 	 */
 
-	function ic$2(e, t, n) {
+	function vc$2(e, t, n) {
 	  var r = {
 	    shape: e,
 	    value: t,
 	    dtype: n
 	  };
-	  return Qo$1.runKernel("Fill", {}, r);
+	  return ci$2.runKernel("Fill", {}, r);
 	}
 	/**
 	 * @license
@@ -83209,12 +83449,12 @@
 	 */
 
 
-	var uc$2 = si$2({
+	var wc$2 = yi$2({
 	  floor_: function floor_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "floor")
+	      x: fi$2(e, "x", "floor")
 	    };
-	    return Qo$1.runKernel("Floor", t);
+	    return ci$2.runKernel("Floor", t);
 	  }
 	});
 	/**
@@ -83234,19 +83474,19 @@
 	 * =============================================================================
 	 */
 
-	var cc$2 = si$2({
+	var xc$2 = yi$2({
 	  gather_: function gather_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
 	    var a = {
-	      x: ri$2(e, "x", "gather"),
-	      indices: ri$2(t, "indices", "gather", "int32")
+	      x: fi$2(e, "x", "gather"),
+	      indices: fi$2(t, "indices", "gather", "int32")
 	    },
 	        s = {
 	      axis: n,
 	      batchDims: r
 	    };
-	    return Qo$1.runKernel("GatherV2", a, s);
+	    return ci$2.runKernel("GatherV2", a, s);
 	  }
 	});
 	/**
@@ -83266,18 +83506,18 @@
 	 * =============================================================================
 	 */
 
-	var lc$2 = si$2({
+	var kc$2 = yi$2({
 	  greater_: function greater_(e, t) {
-	    var _Uo17, _Uo18;
+	    var _ni17, _ni18;
 
-	    var n = ri$2(e, "a", "greater", "string_or_numeric"),
-	        r = ri$2(t, "b", "greater", "string_or_numeric");
-	    (_Uo17 = Uo$1(n, r), _Uo18 = _slicedToArray(_Uo17, 2), n = _Uo18[0], r = _Uo18[1], _Uo17), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "greater", "string_or_numeric"),
+	        r = fi$2(t, "b", "greater", "string_or_numeric");
+	    (_ni17 = ni$2(n, r), _ni18 = _slicedToArray(_ni17, 2), n = _ni18[0], r = _ni18[1], _ni17), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Greater", a);
+	    return ci$2.runKernel("Greater", a);
 	  }
 	});
 	/**
@@ -83297,18 +83537,18 @@
 	 * =============================================================================
 	 */
 
-	var pc$2 = si$2({
+	var _c$1 = yi$2({
 	  greaterEqual_: function greaterEqual_(e, t) {
-	    var _Uo19, _Uo20;
+	    var _ni19, _ni20;
 
-	    var n = ri$2(e, "a", "greaterEqual", "string_or_numeric"),
-	        r = ri$2(t, "b", "greaterEqual", "string_or_numeric");
-	    (_Uo19 = Uo$1(n, r), _Uo20 = _slicedToArray(_Uo19, 2), n = _Uo20[0], r = _Uo20[1], _Uo19), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "greaterEqual", "string_or_numeric"),
+	        r = fi$2(t, "b", "greaterEqual", "string_or_numeric");
+	    (_ni19 = ni$2(n, r), _ni20 = _slicedToArray(_ni19, 2), n = _ni20[0], r = _ni20[1], _ni19), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("GreaterEqual", a);
+	    return ci$2.runKernel("GreaterEqual", a);
 	  }
 	});
 	/**
@@ -83328,12 +83568,13 @@
 	 * =============================================================================
 	 */
 
-	var dc$2 = si$2({
+
+	var Nc$2 = yi$2({
 	  imag_: function imag_(e) {
 	    var t = {
-	      input: ri$2(e, "input", "imag")
+	      input: fi$2(e, "input", "imag")
 	    };
-	    return Qo$1.runKernel("Imag", t);
+	    return ci$2.runKernel("Imag", t);
 	  }
 	});
 	/**
@@ -83353,12 +83594,12 @@
 	 * =============================================================================
 	 */
 
-	var mc$2 = si$2({
+	var Ec$2 = yi$2({
 	  isNaN_: function isNaN_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "isNaN")
+	      x: fi$2(e, "x", "isNaN")
 	    };
-	    return Qo$1.runKernel("IsNan", t);
+	    return ci$2.runKernel("IsNan", t);
 	  }
 	});
 	/**
@@ -83378,16 +83619,16 @@
 	 * =============================================================================
 	 */
 
-	var hc$2 = si$2({
+	var Tc$2 = yi$2({
 	  leakyRelu_: function leakyRelu_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : .2;
 	    var n = {
-	      x: ri$2(e, "x", "leakyRelu")
+	      x: fi$2(e, "x", "leakyRelu")
 	    },
 	        r = {
 	      alpha: t
 	    };
-	    return Qo$1.runKernel("LeakyRelu", n, r);
+	    return ci$2.runKernel("LeakyRelu", n, r);
 	  }
 	});
 	/**
@@ -83407,18 +83648,18 @@
 	 * =============================================================================
 	 */
 
-	var fc$2 = si$2({
+	var Sc$2 = yi$2({
 	  less_: function less_(e, t) {
-	    var _Uo21, _Uo22;
+	    var _ni21, _ni22;
 
-	    var n = ri$2(e, "a", "less", "string_or_numeric"),
-	        r = ri$2(t, "b", "less", "string_or_numeric");
-	    (_Uo21 = Uo$1(n, r), _Uo22 = _slicedToArray(_Uo21, 2), n = _Uo22[0], r = _Uo22[1], _Uo21), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "less", "string_or_numeric"),
+	        r = fi$2(t, "b", "less", "string_or_numeric");
+	    (_ni21 = ni$2(n, r), _ni22 = _slicedToArray(_ni21, 2), n = _ni22[0], r = _ni22[1], _ni21), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Less", a);
+	    return ci$2.runKernel("Less", a);
 	  }
 	});
 	/**
@@ -83438,18 +83679,18 @@
 	 * =============================================================================
 	 */
 
-	var gc$2 = si$2({
+	var Ic$2 = yi$2({
 	  lessEqual_: function lessEqual_(e, t) {
-	    var _Uo23, _Uo24;
+	    var _ni23, _ni24;
 
-	    var n = ri$2(e, "a", "lessEqual", "string_or_numeric"),
-	        r = ri$2(t, "b", "lessEqual", "string_or_numeric");
-	    (_Uo23 = Uo$1(n, r), _Uo24 = _slicedToArray(_Uo23, 2), n = _Uo24[0], r = _Uo24[1], _Uo23), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "lessEqual", "string_or_numeric"),
+	        r = fi$2(t, "b", "lessEqual", "string_or_numeric");
+	    (_ni23 = ni$2(n, r), _ni24 = _slicedToArray(_ni23, 2), n = _ni24[0], r = _ni24[1], _ni23), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("LessEqual", a);
+	    return ci$2.runKernel("LessEqual", a);
 	  }
 	});
 	/**
@@ -83469,14 +83710,14 @@
 	 * =============================================================================
 	 */
 
-	function yc$2(e, t, n) {
+	function Oc$2(e, t, n) {
 	  if (n <= 0) throw new Error("The number of values should be positive.");
 	  var r = {
 	    start: e,
 	    stop: t,
 	    num: n
 	  };
-	  return Qo$1.runKernel("LinSpace", {}, r);
+	  return ci$2.runKernel("LinSpace", {}, r);
 	}
 	/**
 	 * @license
@@ -83496,21 +83737,21 @@
 	 */
 
 
-	var bc$2 = si$2({
+	var Ac$2 = yi$2({
 	  localResponseNormalization_: function localResponseNormalization_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 5;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : .5;
-	    var s = ri$2(e, "x", "localResponseNormalization");
-	    Ws$1(4 === s.rank || 3 === s.rank, function () {
+	    var s = fi$2(e, "x", "localResponseNormalization");
+	    to$1(4 === s.rank || 3 === s.rank, function () {
 	      return "Error in localResponseNormalization: x must be rank 3 or 4 but got\n               rank ".concat(s.rank, ".");
-	    }), Ws$1(Gs$1(t), function () {
+	    }), to$1(oo$1(t), function () {
 	      return "Error in localResponseNormalization: depthRadius must be an integer but got depthRadius ".concat(t, ".");
 	    });
 	    var o = s,
 	        i = !1;
-	    3 === s.rank && (i = !0, o = Nu$1(s, [1, s.shape[0], s.shape[1], s.shape[2]]));
+	    3 === s.rank && (i = !0, o = Fu$1(s, [1, s.shape[0], s.shape[1], s.shape[2]]));
 	    var u = {
 	      x: o
 	    },
@@ -83520,8 +83761,8 @@
 	      alpha: r,
 	      beta: a
 	    },
-	        l = Qo$1.runKernel("LRN", u, c);
-	    return i ? Nu$1(l, [l.shape[1], l.shape[2], l.shape[3]]) : l;
+	        l = ci$2.runKernel("LRN", u, c);
+	    return i ? Fu$1(l, [l.shape[1], l.shape[2], l.shape[3]]) : l;
 	  }
 	});
 	/**
@@ -83541,12 +83782,12 @@
 	 * =============================================================================
 	 */
 
-	var vc$2 = si$2({
+	var Dc$2 = yi$2({
 	  log_: function log_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "log")
+	      x: fi$2(e, "x", "log")
 	    };
-	    return Qo$1.runKernel("Log", t);
+	    return ci$2.runKernel("Log", t);
 	  }
 	});
 	/**
@@ -83566,12 +83807,12 @@
 	 * =============================================================================
 	 */
 
-	var wc$2 = si$2({
+	var Cc$2 = yi$2({
 	  log1p_: function log1p_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "log1p")
+	      x: fi$2(e, "x", "log1p")
 	    };
-	    return Qo$1.runKernel("Log1p", t);
+	    return ci$2.runKernel("Log1p", t);
 	  }
 	});
 	/**
@@ -83591,8 +83832,8 @@
 	 * =============================================================================
 	 */
 
-	function xc$2(e) {
-	  return Qo$1.customGrad(e);
+	function Mc$2(e) {
+	  return ci$2.customGrad(e);
 	}
 	/**
 	 * @license
@@ -83612,12 +83853,12 @@
 	 */
 
 
-	var kc$2 = si$2({
+	var Rc$2 = yi$2({
 	  neg_: function neg_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "neg")
+	      x: fi$2(e, "x", "neg")
 	    };
-	    return Qo$1.runKernel("Neg", t);
+	    return ci$2.runKernel("Neg", t);
 	  }
 	});
 	/**
@@ -83637,12 +83878,12 @@
 	 * =============================================================================
 	 */
 
-	var _c$1 = si$2({
+	var $c$2 = yi$2({
 	  softplus_: function softplus_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "softplus")
+	      x: fi$2(e, "x", "softplus")
 	    };
-	    return Qo$1.runKernel("Softplus", t);
+	    return ci$2.runKernel("Softplus", t);
 	  }
 	});
 	/**
@@ -83662,19 +83903,18 @@
 	 * =============================================================================
 	 */
 
-
-	var Nc$2 = si$2({
+	var Fc$2 = yi$2({
 	  max_: function max_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = {
-	      x: ri$2(e, "x", "max")
+	      x: fi$2(e, "x", "max")
 	    },
 	        a = {
 	      reductionIndices: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("Max", r, a);
+	    return ci$2.runKernel("Max", r, a);
 	  }
 	});
 	/**
@@ -83694,22 +83934,22 @@
 	 * =============================================================================
 	 */
 
-	var Ec$2 = si$2({
+	var zc$2 = yi$2({
 	  sub_: function sub_(e, t) {
-	    var n = ri$2(e, "a", "sub"),
-	        r = ri$2(t, "b", "sub");
+	    var n = fi$2(e, "a", "sub"),
+	        r = fi$2(t, "b", "sub");
 
-	    var _Uo25 = Uo$1(n, r);
+	    var _ni25 = ni$2(n, r);
 
-	    var _Uo26 = _slicedToArray(_Uo25, 2);
+	    var _ni26 = _slicedToArray(_ni25, 2);
 
-	    n = _Uo26[0];
-	    r = _Uo26[1];
+	    n = _ni26[0];
+	    r = _ni26[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Sub", a);
+	    return ci$2.runKernel("Sub", a);
 	  }
 	});
 	/**
@@ -83729,12 +83969,12 @@
 	 * =============================================================================
 	 */
 
-	var Tc$2 = si$2({
+	var Pc$2 = yi$2({
 	  sum_: function sum_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
-	    var r = ri$2(e, "x", "sum");
-	    "bool" === r.dtype && (r = Li$2(r, "int32"));
+	    var r = fi$2(e, "x", "sum");
+	    "bool" === r.dtype && (r = Qi$2(r, "int32"));
 	    var a = {
 	      x: r
 	    },
@@ -83742,7 +83982,7 @@
 	      axis: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("Sum", a, s);
+	    return ci$2.runKernel("Sum", a, s);
 	  }
 	});
 	/**
@@ -83762,24 +84002,24 @@
 	 * =============================================================================
 	 */
 
-	var Sc$2 = si$2({
+	var Lc$2 = yi$2({
 	  logSoftmax_: function logSoftmax_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : -1;
-	    var n = ri$2(e, "logits", "logSoftmax");
+	    var n = fi$2(e, "logits", "logSoftmax");
 	    if (-1 === t && (t = n.rank - 1), t !== n.rank - 1) throw Error("Log Softmax along a non-last dimension is not yet supported. Logits was rank ".concat(n.rank, " and axis was ").concat(t));
-	    return xc$2(function (e, n) {
-	      var r = Nc$2(e, t, !0),
-	          a = Ec$2(e, r),
-	          s = Ec$2(Li$2(a, "float32"), vc$2(Tc$2(rc$2(a), t, !0)));
+	    return Mc$2(function (e, n) {
+	      var r = Fc$2(e, t, !0),
+	          a = zc$2(e, r),
+	          s = zc$2(Qi$2(a, "float32"), Dc$2(Pc$2(fc$2(a), t, !0)));
 	      n([s]);
 	      return {
 	        value: s,
 	        gradFunc: function gradFunc(e, n) {
 	          var _n24 = _slicedToArray(n, 1),
 	              r = _n24[0],
-	              a = rc$2(r);
+	              a = fc$2(r);
 
-	          return Ec$2(e, au$1(Tc$2(e, t, !0), a));
+	          return zc$2(e, gu$1(Pc$2(e, t, !0), a));
 	        }
 	      };
 	    })(n);
@@ -83802,16 +84042,16 @@
 	 * =============================================================================
 	 */
 
-	var Ic$2 = si$2({
+	var Bc$2 = yi$2({
 	  logicalAnd_: function logicalAnd_(e, t) {
-	    var n = ri$2(e, "a", "logicalAnd", "bool"),
-	        r = ri$2(t, "b", "logicalAnd", "bool");
-	    Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "logicalAnd", "bool"),
+	        r = fi$2(t, "b", "logicalAnd", "bool");
+	    ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("LogicalAnd", a);
+	    return ci$2.runKernel("LogicalAnd", a);
 	  }
 	});
 	/**
@@ -83831,12 +84071,12 @@
 	 * =============================================================================
 	 */
 
-	var Oc$2 = si$2({
+	var Vc$2 = yi$2({
 	  logicalNot_: function logicalNot_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "logicalNot", "bool")
+	      x: fi$2(e, "x", "logicalNot", "bool")
 	    };
-	    return Qo$1.runKernel("LogicalNot", t);
+	    return ci$2.runKernel("LogicalNot", t);
 	  }
 	});
 	/**
@@ -83856,16 +84096,16 @@
 	 * =============================================================================
 	 */
 
-	var Ac$2 = si$2({
+	var jc$2 = yi$2({
 	  logicalOr_: function logicalOr_(e, t) {
-	    var n = ri$2(e, "a", "logicalOr", "bool"),
-	        r = ri$2(t, "b", "logicalOr", "bool");
-	    Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "logicalOr", "bool"),
+	        r = fi$2(t, "b", "logicalOr", "bool");
+	    ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("LogicalOr", a);
+	    return ci$2.runKernel("LogicalOr", a);
 	  }
 	});
 	/**
@@ -83885,16 +84125,16 @@
 	 * =============================================================================
 	 */
 
-	var Dc$2 = si$2({
+	var Wc$2 = yi$2({
 	  maxPool_: function maxPool_(e, t, n, r, a) {
-	    var s = ri$2(e, "x", "maxPool");
+	    var s = fi$2(e, "x", "maxPool");
 	    var o = s,
 	        i = !1;
-	    3 === s.rank && (i = !0, o = Nu$1(s, [1, s.shape[0], s.shape[1], s.shape[2]])), Ws$1(4 === o.rank, function () {
+	    3 === s.rank && (i = !0, o = Fu$1(s, [1, s.shape[0], s.shape[1], s.shape[2]])), to$1(4 === o.rank, function () {
 	      return "Error in maxPool: input must be rank 4 but got rank ".concat(o.rank, ".");
-	    }), Ws$1(_u$1(n, 1), function () {
+	    }), to$1($u$1(n, 1), function () {
 	      return "Error in maxPool: Either strides or dilations must be 1. Got strides ".concat(n, " and dilations '1'");
-	    }), null != a && Ws$1(Gs$1(r), function () {
+	    }), null != a && to$1(oo$1(r), function () {
 	      return "Error in maxPool: pad must be an integer when using, dimRoundingMode ".concat(a, " but got pad ").concat(r, ".");
 	    });
 	    var u = {
@@ -83906,8 +84146,8 @@
 	      pad: r,
 	      dimRoundingMode: a
 	    },
-	        l = Qo$1.runKernel("MaxPool", u, c);
-	    return i ? Nu$1(l, [l.shape[1], l.shape[2], l.shape[3]]) : l;
+	        l = ci$2.runKernel("MaxPool", u, c);
+	    return i ? Fu$1(l, [l.shape[1], l.shape[2], l.shape[3]]) : l;
 	  }
 	});
 	/**
@@ -83927,21 +84167,21 @@
 	 * =============================================================================
 	 */
 
-	var Mc$2 = si$2({
+	var Uc$2 = yi$2({
 	  maxPool3d_: function maxPool3d_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [1, 1, 1];
 	    var n = arguments.length > 2 ? arguments[2] : undefined;
 	    var r = arguments.length > 3 ? arguments[3] : undefined;
 	    var a = arguments.length > 4 ? arguments[4] : undefined;
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "NDHWC";
-	    var o = ri$2(e, "x", "maxPool3d");
+	    var o = fi$2(e, "x", "maxPool3d");
 	    var i = o,
 	        u = !1;
-	    4 === o.rank && (u = !0, i = Nu$1(o, [1, o.shape[0], o.shape[1], o.shape[2], o.shape[3]])), Ws$1(5 === i.rank, function () {
+	    4 === o.rank && (u = !0, i = Fu$1(o, [1, o.shape[0], o.shape[1], o.shape[2], o.shape[3]])), to$1(5 === i.rank, function () {
 	      return "Error in maxPool3d: x must be rank 5 but got rank ".concat(i.rank, ".");
-	    }), Ws$1("NDHWC" === s, function () {
+	    }), to$1("NDHWC" === s, function () {
 	      return "Error in maxPool3d: Only NDHWC is currently supported, but got dataFormat of ".concat(s);
-	    }), null != a && Ws$1(Gs$1(r), function () {
+	    }), null != a && to$1(oo$1(r), function () {
 	      return "Error in maxPool3d: pad must be an integer when using, dimRoundingMode ".concat(a, " but got pad ").concat(r, ".");
 	    });
 	    var c = {
@@ -83954,8 +84194,8 @@
 	      dimRoundingMode: a,
 	      dataFormat: s
 	    },
-	        p = Qo$1.runKernel("MaxPool3D", c, l);
-	    return u ? Nu$1(p, [p.shape[1], p.shape[2], p.shape[3], p.shape[4]]) : p;
+	        p = ci$2.runKernel("MaxPool3D", c, l);
+	    return u ? Fu$1(p, [p.shape[1], p.shape[2], p.shape[3], p.shape[4]]) : p;
 	  }
 	});
 	/**
@@ -83975,11 +84215,11 @@
 	 * =============================================================================
 	 */
 
-	var Cc$2 = si$2({
+	var Kc$2 = yi$2({
 	  maxPoolWithArgmax_: function maxPoolWithArgmax_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : !1;
 	    var s = {
-	      x: ri$2(e, "x", "maxPoolWithArgmax")
+	      x: fi$2(e, "x", "maxPoolWithArgmax")
 	    },
 	        o = {
 	      filterSize: t,
@@ -83987,7 +84227,7 @@
 	      pad: r,
 	      includeBatchInIndex: a
 	    },
-	        i = Qo$1.runKernel("MaxPoolWithArgmax", s, o);
+	        i = ci$2.runKernel("MaxPoolWithArgmax", s, o);
 	    return {
 	      result: i[0],
 	      indexes: i[1]
@@ -84011,18 +84251,18 @@
 	 * =============================================================================
 	 */
 
-	var Rc$2 = si$2({
+	var Hc$2 = yi$2({
 	  maximum_: function maximum_(e, t) {
-	    var _Uo27, _Uo28;
+	    var _ni27, _ni28;
 
-	    var n = ri$2(e, "a", "maximum"),
-	        r = ri$2(t, "b", "maximum");
-	    (_Uo27 = Uo$1(n, r), _Uo28 = _slicedToArray(_Uo27, 2), n = _Uo28[0], r = _Uo28[1], _Uo27), "bool" === n.dtype && (n = Li$2(n, "int32"), r = Li$2(r, "int32")), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "maximum"),
+	        r = fi$2(t, "b", "maximum");
+	    (_ni27 = ni$2(n, r), _ni28 = _slicedToArray(_ni27, 2), n = _ni28[0], r = _ni28[1], _ni27), "bool" === n.dtype && (n = Qi$2(n, "int32"), r = Qi$2(r, "int32")), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Maximum", a);
+	    return ci$2.runKernel("Maximum", a);
 	  }
 	});
 	/**
@@ -84042,18 +84282,18 @@
 	 * =============================================================================
 	 */
 
-	var $c$2 = si$2({
+	var qc$2 = yi$2({
 	  mean_: function mean_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = {
-	      x: ri$2(e, "x", "mean")
+	      x: fi$2(e, "x", "mean")
 	    },
 	        a = {
 	      axis: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("Mean", r, a);
+	    return ci$2.runKernel("Mean", r, a);
 	  }
 	});
 	/**
@@ -84073,18 +84313,18 @@
 	 * =============================================================================
 	 */
 
-	function Fc$2(e) {
+	function Gc$2(e) {
 	  var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "float32";
 
 	  if ("complex64" === t) {
-	    var _t50 = Fc$2(e, "float32"),
-	        _n25 = Fc$2(e, "float32");
+	    var _t50 = Gc$2(e, "float32"),
+	        _n25 = Gc$2(e, "float32");
 
-	    return oi$2(_t50, _n25);
+	    return bi$2(_t50, _n25);
 	  }
 
-	  var n = oo$1(Hs$1(e), t);
-	  return Qo$1.makeTensor(n, e, t);
+	  var n = vo$1(ao$1(e), t);
+	  return ci$2.makeTensor(n, e, t);
 	}
 	/**
 	 * @license
@@ -84104,18 +84344,18 @@
 	 */
 
 
-	function zc$2(e) {
+	function Yc$2(e) {
 	  var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "float32";
 
 	  if ("complex64" === t) {
-	    var _t51 = zc$2(e, "float32"),
-	        _n26 = Fc$2(e, "float32");
+	    var _t51 = Yc$2(e, "float32"),
+	        _n26 = Gc$2(e, "float32");
 
-	    return oi$2(_t51, _n26);
+	    return bi$2(_t51, _n26);
 	  }
 
-	  var n = so$1(Hs$1(e), t);
-	  return Qo$1.makeTensor(n, e, t);
+	  var n = bo$1(ao$1(e), t);
+	  return ci$2.makeTensor(n, e, t);
 	}
 	/**
 	 * @license
@@ -84135,18 +84375,18 @@
 	 */
 
 
-	var Pc$2 = si$2({
+	var Xc$1 = yi$2({
 	  min_: function min_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = {
-	      x: ri$2(e, "x", "min")
+	      x: fi$2(e, "x", "min")
 	    },
 	        a = {
 	      axis: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("Min", r, a);
+	    return ci$2.runKernel("Min", r, a);
 	  }
 	});
 	/**
@@ -84166,18 +84406,18 @@
 	 * =============================================================================
 	 */
 
-	var Lc$2 = si$2({
+	var Qc$2 = yi$2({
 	  minimum_: function minimum_(e, t) {
-	    var _Uo29, _Uo30;
+	    var _ni29, _ni30;
 
-	    var n = ri$2(e, "a", "minimum"),
-	        r = ri$2(t, "b", "minimum");
-	    (_Uo29 = Uo$1(n, r), _Uo30 = _slicedToArray(_Uo29, 2), n = _Uo30[0], r = _Uo30[1], _Uo29), "bool" === n.dtype && (n = Li$2(n, "int32"), r = Li$2(r, "int32")), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "minimum"),
+	        r = fi$2(t, "b", "minimum");
+	    (_ni29 = ni$2(n, r), _ni30 = _slicedToArray(_ni29, 2), n = _ni30[0], r = _ni30[1], _ni29), "bool" === n.dtype && (n = Qi$2(n, "int32"), r = Qi$2(r, "int32")), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Minimum", a);
+	    return ci$2.runKernel("Minimum", a);
 	  }
 	});
 	/**
@@ -84197,22 +84437,22 @@
 	 * =============================================================================
 	 */
 
-	var Bc$2 = si$2({
+	var Zc$2 = yi$2({
 	  mirrorPad_: function mirrorPad_(e, t, n) {
-	    Ws$1("reflect" === n || "symmetric" === n, function () {
+	    to$1("reflect" === n || "symmetric" === n, function () {
 	      return "Invalid mode. Mode must be either reflect or symmetric. Got ".concat(n, ".");
 	    });
-	    var r = ri$2(e, "x", "mirrorPad");
+	    var r = fi$2(e, "x", "mirrorPad");
 	    if (0 === r.rank) throw new Error("mirrorPad(scalar) is not defined. Pass non-scalar to mirrorPad");
-	    Ws$1(t.length === r.rank, function () {
+	    to$1(t.length === r.rank, function () {
 	      return "Padding doesn't match input. Must be ".concat(r.rank, ". Got ").concat(t.length, ".");
 	    });
 	    var a = "reflect" === n ? 1 : 0;
 
 	    var _loop4 = function _loop4(_e49) {
-	      Ws$1(2 === t[_e49].length, function () {
+	      to$1(2 === t[_e49].length, function () {
 	        return "Invalid number of paddings. Must be length of 2 each.";
-	      }), Ws$1(t[_e49][0] >= 0 && t[_e49][0] <= r.shape[_e49] - a && t[_e49][1] >= 0 && t[_e49][1] <= r.shape[_e49] - a, function () {
+	      }), to$1(t[_e49][0] >= 0 && t[_e49][0] <= r.shape[_e49] - a && t[_e49][1] >= 0 && t[_e49][1] <= r.shape[_e49] - a, function () {
 	        return "Padding in dimension ".concat(_e49, " cannot be greater than or equal to ").concat(r.shape[_e49] - a, " or less than 0 for input of shape ").concat(r.shape);
 	      });
 	    };
@@ -84228,7 +84468,7 @@
 	        o = {
 	      x: r
 	    };
-	    return Qo$1.runKernel("MirrorPad", o, s);
+	    return ci$2.runKernel("MirrorPad", o, s);
 	  }
 	});
 	/**
@@ -84248,22 +84488,22 @@
 	 * =============================================================================
 	 */
 
-	var Vc$2 = si$2({
+	var Jc$2 = yi$2({
 	  mod_: function mod_(e, t) {
-	    var n = ri$2(e, "a", "mod"),
-	        r = ri$2(t, "b", "mod");
+	    var n = fi$2(e, "a", "mod"),
+	        r = fi$2(t, "b", "mod");
 
-	    var _Uo31 = Uo$1(n, r);
+	    var _ni31 = ni$2(n, r);
 
-	    var _Uo32 = _slicedToArray(_Uo31, 2);
+	    var _ni32 = _slicedToArray(_ni31, 2);
 
-	    n = _Uo32[0];
-	    r = _Uo32[1];
+	    n = _ni32[0];
+	    r = _ni32[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Mod", a);
+	    return ci$2.runKernel("Mod", a);
 	  }
 	});
 	/**
@@ -84283,10 +84523,10 @@
 	 * =============================================================================
 	 */
 
-	var jc$2 = si$2({
+	var el$1 = yi$2({
 	  square_: function square_(e) {
-	    var t = ri$2(e, "x", "square");
-	    return Qo$1.runKernel("Square", {
+	    var t = fi$2(e, "x", "square");
+	    return ci$2.runKernel("Square", {
 	      x: t
 	    }, {});
 	  }
@@ -84308,25 +84548,25 @@
 	 * =============================================================================
 	 */
 
-	var Wc$2 = si$2({
+	var tl$1 = yi$2({
 	  multinomial_: function multinomial_(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
-	    var a = ri$2(e, "logits", "multinomial"),
+	    var a = fi$2(e, "logits", "multinomial"),
 	        s = a.size,
 	        o = a.rank;
 	    if (s < 2) throw new Error("Error in multinomial: you need at least 2 outcomes, but got ".concat(s, "."));
 	    if (o > 2) throw new Error("Rank of probabilities must be 1 or 2, but is ".concat(o));
 	    n = n || Math.random();
 	    var i = {
-	      logits: 1 === o ? Nu$1(a, [1, -1]) : a
+	      logits: 1 === o ? Fu$1(a, [1, -1]) : a
 	    },
 	        u = {
 	      numSamples: t,
 	      seed: n,
 	      normalized: r
 	    },
-	        c = Qo$1.runKernel("Multinomial", i, u);
-	    return 1 === o ? Nu$1(c, [c.size]) : c;
+	        c = ci$2.runKernel("Multinomial", i, u);
+	    return 1 === o ? Fu$1(c, [c.size]) : c;
 	  }
 	});
 	/**
@@ -84346,18 +84586,18 @@
 	 * =============================================================================
 	 */
 
-	var Uc$2 = si$2({
+	var nl$1 = yi$2({
 	  notEqual_: function notEqual_(e, t) {
-	    var _Uo33, _Uo34;
+	    var _ni33, _ni34;
 
-	    var n = ri$2(e, "a", "notEqual", "string_or_numeric"),
-	        r = ri$2(t, "b", "notEqual", "string_or_numeric");
-	    (_Uo33 = Uo$1(n, r), _Uo34 = _slicedToArray(_Uo33, 2), n = _Uo34[0], r = _Uo34[1], _Uo33), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "notEqual", "string_or_numeric"),
+	        r = fi$2(t, "b", "notEqual", "string_or_numeric");
+	    (_ni33 = ni$2(n, r), _ni34 = _slicedToArray(_ni33, 2), n = _ni34[0], r = _ni34[1], _ni33), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("NotEqual", a);
+	    return ci$2.runKernel("NotEqual", a);
 	  }
 	});
 	/**
@@ -84377,12 +84617,12 @@
 	 * =============================================================================
 	 */
 
-	var Kc$2 = si$2({
+	var rl$1 = yi$2({
 	  onesLike_: function onesLike_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "onesLike")
+	      x: fi$2(e, "x", "onesLike")
 	    };
-	    return Qo$1.runKernel("OnesLike", t);
+	    return ci$2.runKernel("OnesLike", t);
 	  }
 	});
 	/**
@@ -84402,10 +84642,10 @@
 	 * =============================================================================
 	 */
 
-	var Hc$2 = si$2({
+	var al$1 = yi$2({
 	  pad_: function pad_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-	    var r = ri$2(e, "x", "pad");
+	    var r = fi$2(e, "x", "pad");
 	    if (0 === r.rank) throw new Error("pad(scalar) is not defined. Pass non-scalar to pad");
 	    var a = {
 	      paddings: t,
@@ -84414,7 +84654,7 @@
 	        s = {
 	      x: r
 	    };
-	    return Qo$1.runKernel("PadV2", s, a);
+	    return ci$2.runKernel("PadV2", s, a);
 	  }
 	});
 	/**
@@ -84434,14 +84674,14 @@
 	 * =============================================================================
 	 */
 
-	var qc$2 = si$2({
+	var sl$1 = yi$2({
 	  spaceToBatchND_: function spaceToBatchND_(e, t, n) {
-	    var r = ri$2(e, "x", "spaceToBatchND");
-	    Ws$1(r.rank >= 1 + t.length, function () {
+	    var r = fi$2(e, "x", "spaceToBatchND");
+	    to$1(r.rank >= 1 + t.length, function () {
 	      return "input rank ".concat(r.rank, " should be > than [blockShape] ").concat(t.length);
-	    }), Ws$1(n.length === t.length, function () {
+	    }), to$1(n.length === t.length, function () {
 	      return "paddings.shape[0] ".concat(n.length, " must be equal to [blockShape] ").concat(t.length);
-	    }), Ws$1(r.shape.reduce(function (e, r, a) {
+	    }), to$1(r.shape.reduce(function (e, r, a) {
 	      return a > 0 && a <= t.length ? e && (r + n[a - 1][0] + n[a - 1][1]) % t[a - 1] == 0 : e;
 	    }, !0), function () {
 	      return "input spatial dimensions ".concat(r.shape.slice(1), " with paddings ").concat(n.toString(), " must be divisible by blockShapes ").concat(t.toString());
@@ -84453,7 +84693,7 @@
 	      blockShape: t,
 	      paddings: n
 	    };
-	    return Qo$1.runKernel("SpaceToBatchND", a, s);
+	    return ci$2.runKernel("SpaceToBatchND", a, s);
 	  }
 	});
 	/**
@@ -84473,22 +84713,22 @@
 	 * =============================================================================
 	 */
 
-	var Gc$2 = si$2({
+	var ol$1 = yi$2({
 	  pow_: function pow_(e, t) {
-	    var n = ri$2(e, "base", "pow"),
-	        r = ri$2(t, "exp", "pow");
+	    var n = fi$2(e, "base", "pow"),
+	        r = fi$2(t, "exp", "pow");
 
-	    var _Uo35 = Uo$1(n, r);
+	    var _ni35 = ni$2(n, r);
 
-	    var _Uo36 = _slicedToArray(_Uo35, 2);
+	    var _ni36 = _slicedToArray(_ni35, 2);
 
-	    n = _Uo36[0];
-	    r = _Uo36[1];
+	    n = _ni36[0];
+	    r = _ni36[1];
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("Pow", a);
+	    return ci$2.runKernel("Pow", a);
 	  }
 	});
 	/**
@@ -84508,13 +84748,13 @@
 	 * =============================================================================
 	 */
 
-	var Yc$2 = si$2({
+	var il$1 = yi$2({
 	  prelu_: function prelu_(e, t) {
 	    var n = {
-	      x: ri$2(e, "x", "prelu"),
-	      alpha: ri$2(t, "alpha", "prelu")
+	      x: fi$2(e, "x", "prelu"),
+	      alpha: fi$2(t, "alpha", "prelu")
 	    };
-	    return Qo$1.runKernel("Prelu", n);
+	    return ci$2.runKernel("Prelu", n);
 	  }
 	});
 	/**
@@ -84534,12 +84774,12 @@
 	 * =============================================================================
 	 */
 
-	var Xc$1 = si$2({
+	var ul$1 = yi$2({
 	  prod_: function prod_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
-	    var r = ri$2(e, "x", "prod");
-	    "bool" === r.dtype && (r = Li$2(r, "int32"));
+	    var r = fi$2(e, "x", "prod");
+	    "bool" === r.dtype && (r = Qi$2(r, "int32"));
 	    var a = {
 	      x: r
 	    },
@@ -84547,10 +84787,10 @@
 	      axis: t,
 	      keepDims: n
 	    };
-	    return Qo$1.runKernel("Prod", a, s);
+	    return ci$2.runKernel("Prod", a, s);
 	  }
 	});
-	var Qc$2 = K$4(function (e) {
+	var cl$1 = K$4(function (e) {
 	  !function (e, t, n) {
 	    function r(e) {
 	      var t,
@@ -84593,7 +84833,7 @@
 	    }) : this.alea = s;
 	  }(0, e, !1);
 	}),
-	    Zc$2 = K$4(function (e) {
+	    ll$1 = K$4(function (e) {
 	  !function (e, t, n) {
 	    function r(e) {
 	      var t = this,
@@ -84635,7 +84875,7 @@
 	    }) : this.xor128 = s;
 	  }(0, e, !1);
 	}),
-	    Jc$2 = K$4(function (e) {
+	    pl$1 = K$4(function (e) {
 	  !function (e, t, n) {
 	    function r(e) {
 	      var t = this,
@@ -84677,7 +84917,7 @@
 	    }) : this.xorwow = s;
 	  }(0, e, !1);
 	}),
-	    el$1 = K$4(function (e) {
+	    dl$1 = K$4(function (e) {
 	  !function (e, t, n) {
 	    function r(e) {
 	      var t = this;
@@ -84736,7 +84976,7 @@
 	    }) : this.xorshift7 = s;
 	  }(0, e, !1);
 	}),
-	    tl$1 = K$4(function (e) {
+	    ml$1 = K$4(function (e) {
 	  !function (e, t, n) {
 	    function r(e) {
 	      var t = this;
@@ -84797,7 +85037,7 @@
 	    }) : this.xor4096 = s;
 	  }(0, e, !1);
 	}),
-	    nl$1 = K$4(function (e) {
+	    hl$1 = K$4(function (e) {
 	  !function (e, t, n) {
 	    function r(e) {
 	      var t = this,
@@ -84842,11 +85082,11 @@
 	    }) : this.tychei = s;
 	  }(0, e, !1);
 	}),
-	    rl$1 = H$5(Object.freeze({
+	    fl$1 = H$5(Object.freeze({
 	  __proto__: null,
 	  "default": {}
 	})),
-	    al$1 = K$4(function (e) {
+	    gl$1 = K$4(function (e) {
 	  !function (t, n) {
 	    var r,
 	        a = this,
@@ -84952,13 +85192,13 @@
 	      e.exports = l;
 
 	      try {
-	        r = rl$1;
+	        r = fl$1;
 	      } catch (e) {}
 	    }
 	  }([], Math);
 	});
-	al$1.alea = Qc$2, al$1.xor128 = Zc$2, al$1.xorwow = Jc$2, al$1.xorshift7 = el$1, al$1.xor4096 = tl$1, al$1.tychei = nl$1;
-	var sl$1 = al$1;
+	gl$1.alea = cl$1, gl$1.xor128 = ll$1, gl$1.xorwow = pl$1, gl$1.xorshift7 = dl$1, gl$1.xor4096 = ml$1, gl$1.tychei = hl$1;
+	var yl$1 = gl$1;
 	/**
 	 * @license
 	 * Copyright 2018 Google LLC. All Rights Reserved.
@@ -84976,16 +85216,16 @@
 	 * =============================================================================
 	 */
 
-	var ol$1 = /*#__PURE__*/function () {
-	  function ol(e, t, n, r, a) {
-	    _classCallCheck(this, ol);
+	var bl$1 = /*#__PURE__*/function () {
+	  function bl(e, t, n, r, a) {
+	    _classCallCheck(this, bl);
 
 	    this.mean = e, this.stdDev = t, this.dtype = n, this.nextVal = NaN, this.truncated = r, this.truncated && (this.upper = this.mean + 2 * this.stdDev, this.lower = this.mean - 2 * this.stdDev);
 	    var s = a || Math.random();
-	    this.random = sl$1.alea(s.toString());
+	    this.random = yl$1.alea(s.toString());
 	  }
 
-	  _createClass(ol, [{
+	  _createClass(bl, [{
 	    key: "nextValue",
 	    value: function nextValue() {
 	      if (!isNaN(this.nextVal)) {
@@ -85025,11 +85265,11 @@
 	    }
 	  }]);
 
-	  return ol;
+	  return bl;
 	}();
 
-	var il$1 = /*#__PURE__*/function () {
-	  function il() {
+	var vl$1 = /*#__PURE__*/function () {
+	  function vl() {
 	    var _this21 = this;
 
 	    var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
@@ -85037,15 +85277,15 @@
 	    var n = arguments.length > 2 ? arguments[2] : undefined;
 	    var r = arguments.length > 3 ? arguments[3] : undefined;
 
-	    _classCallCheck(this, il);
+	    _classCallCheck(this, vl);
 
 	    if (this.canReturnFloat = function () {
 	      return null == _this21.dtype || "float32" === _this21.dtype;
 	    }, this.min = e, this.range = t - e, this.dtype = n, null == r && (r = Math.random()), "number" == typeof r && (r = r.toString()), !this.canReturnFloat() && this.range <= 1) throw new Error("The difference between ".concat(e, " - ").concat(t, " <= 1 and dtype is not float"));
-	    this.random = sl$1.alea(r);
+	    this.random = yl$1.alea(r);
 	  }
 
-	  _createClass(il, [{
+	  _createClass(vl, [{
 	    key: "convertValue",
 	    value: function convertValue(e) {
 	      return this.canReturnFloat() ? e : Math.round(e);
@@ -85057,7 +85297,7 @@
 	    }
 	  }]);
 
-	  return il;
+	  return vl;
 	}();
 	/**
 	 * @license
@@ -85077,14 +85317,14 @@
 	 */
 
 
-	var ul$1 = si$2({
+	var wl$1 = yi$2({
 	  randomUniform_: function randomUniform_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "float32";
 	    var a = arguments.length > 4 ? arguments[4] : undefined;
-	    var s = Pi$2(e, r),
-	        o = new il$1(t, n, null, a);
+	    var s = Xi$2(e, r),
+	        o = new vl$1(t, n, null, a);
 
 	    for (var _e51 = 0; _e51 < s.values.length; _e51++) {
 	      s.values[_e51] = o.nextValue();
@@ -85110,7 +85350,7 @@
 	 * =============================================================================
 	 */
 
-	function cl$1(e, t) {
+	function xl$1(e, t) {
 	  var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 	  var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "float32";
 	  if (0 === n) throw new Error("Cannot have a step of zero");
@@ -85120,7 +85360,7 @@
 	    step: n,
 	    dtype: r
 	  };
-	  return Qo$1.runKernel("Range", {}, a);
+	  return ci$2.runKernel("Range", {}, a);
 	}
 	/**
 	 * @license
@@ -85140,12 +85380,12 @@
 	 */
 
 
-	var ll$1 = si$2({
+	var kl$1 = yi$2({
 	  real_: function real_(e) {
 	    var t = {
-	      input: ri$2(e, "input", "real")
+	      input: fi$2(e, "input", "real")
 	    };
-	    return Qo$1.runKernel("Real", t);
+	    return ci$2.runKernel("Real", t);
 	  }
 	});
 	/**
@@ -85165,12 +85405,12 @@
 	 * =============================================================================
 	 */
 
-	var pl$1 = si$2({
+	var _l$1 = yi$2({
 	  reciprocal_: function reciprocal_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "reciprocal")
+	      x: fi$2(e, "x", "reciprocal")
 	    };
-	    return Qo$1.runKernel("Reciprocal", t);
+	    return ci$2.runKernel("Reciprocal", t);
 	  }
 	});
 	/**
@@ -85190,12 +85430,13 @@
 	 * =============================================================================
 	 */
 
-	var dl$1 = si$2({
+
+	var Nl$1 = yi$2({
 	  relu_: function relu_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "relu")
+	      x: fi$2(e, "x", "relu")
 	    };
-	    return Qo$1.runKernel("Relu", t);
+	    return ci$2.runKernel("Relu", t);
 	  }
 	});
 	/**
@@ -85215,12 +85456,12 @@
 	 * =============================================================================
 	 */
 
-	var ml$1 = si$2({
+	var El$1 = yi$2({
 	  relu6_: function relu6_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "relu6")
+	      x: fi$2(e, "x", "relu6")
 	    };
-	    return Qo$1.runKernel("Relu6", t);
+	    return ci$2.runKernel("Relu6", t);
 	  }
 	});
 	/**
@@ -85240,15 +85481,15 @@
 	 * =============================================================================
 	 */
 
-	var hl$1 = si$2({
+	var Tl$1 = yi$2({
 	  reverse_: function reverse_(e, t) {
 	    var n = {
-	      x: ri$2(e, "x", "reverse")
+	      x: fi$2(e, "x", "reverse")
 	    },
 	        r = {
 	      dims: t
 	    };
-	    return Qo$1.runKernel("Reverse", n, r);
+	    return ci$2.runKernel("Reverse", n, r);
 	  }
 	});
 	/**
@@ -85268,12 +85509,12 @@
 	 * =============================================================================
 	 */
 
-	var fl$1 = si$2({
+	var Sl$1 = yi$2({
 	  round_: function round_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "round")
+	      x: fi$2(e, "x", "round")
 	    };
-	    return Qo$1.runKernel("Round", t);
+	    return ci$2.runKernel("Round", t);
 	  }
 	});
 	/**
@@ -85293,12 +85534,12 @@
 	 * =============================================================================
 	 */
 
-	var gl$1 = si$2({
+	var Il$1 = yi$2({
 	  rsqrt_: function rsqrt_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "rsqrt")
+	      x: fi$2(e, "x", "rsqrt")
 	    };
-	    return Qo$1.runKernel("Rsqrt", t);
+	    return ci$2.runKernel("Rsqrt", t);
 	  }
 	});
 	/**
@@ -85318,10 +85559,10 @@
 	 * =============================================================================
 	 */
 
-	function yl$1(e, t) {
-	  if ((Qs$1(e) && "string" !== t || Array.isArray(e)) && "complex64" !== t) throw new Error("Error creating a new Scalar: value must be a primitive (number|boolean|string)");
-	  if ("string" === t && Qs$1(e) && !(e instanceof Uint8Array)) throw new Error("When making a scalar from encoded string, the value must be `Uint8Array`.");
-	  return ii$2(e, [], [], t);
+	function Ol$1(e, t) {
+	  if ((co$1(e) && "string" !== t || Array.isArray(e)) && "complex64" !== t) throw new Error("Error creating a new Scalar: value must be a primitive (number|boolean|string)");
+	  if ("string" === t && co$1(e) && !(e instanceof Uint8Array)) throw new Error("When making a scalar from encoded string, the value must be `Uint8Array`.");
+	  return vi$2(e, [], [], t);
 	}
 	/**
 	 * @license
@@ -85341,12 +85582,12 @@
 	 */
 
 
-	var bl$1 = si$2({
+	var Al$1 = yi$2({
 	  selu_: function selu_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "selu")
+	      x: fi$2(e, "x", "selu")
 	    };
-	    return Qo$1.runKernel("Selu", t);
+	    return ci$2.runKernel("Selu", t);
 	  }
 	});
 	/**
@@ -85366,7 +85607,7 @@
 	 * =============================================================================
 	 */
 
-	var vl$1 = /*#__PURE__*/function () {
+	var Dl$1 = /*#__PURE__*/function () {
 	  var _ref8 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee23(e, t) {
 	    var n, r, a, s, o, i, _e52, u, c, _e53, _t52;
 
@@ -85374,12 +85615,12 @@
 	      while (1) {
 	        switch (_context23.prev = _context23.next) {
 	          case 0:
-	            n = ri$2(e, "x", "setdiff1d"), r = ri$2(t, "y", "setdiff1d");
-	            Ws$1(n.dtype === r.dtype, function () {
+	            n = fi$2(e, "x", "setdiff1d"), r = fi$2(t, "y", "setdiff1d");
+	            to$1(n.dtype === r.dtype, function () {
 	              return "x and y should have the same dtype, but got x (".concat(n.dtype, ") and y (").concat(r.dtype, ").");
-	            }), Ws$1(1 === n.rank, function () {
+	            }), to$1(1 === n.rank, function () {
 	              return "x should be 1D tensor, but got x (".concat(n.shape, ").");
-	            }), Ws$1(1 === r.rank, function () {
+	            }), to$1(1 === r.rank, function () {
 	              return "y should be 1D tensor, but got y (".concat(r.shape, ").");
 	            });
 	            _context23.next = 4;
@@ -85399,7 +85640,7 @@
 	              o.has(a[_e52]) || i++;
 	            }
 
-	            u = new Co$1([i], n.dtype), c = new Co$1([i], "int32");
+	            u = new Ko$1([i], n.dtype), c = new Ko$1([i], "int32");
 
 	            for (_e53 = 0, _t52 = 0; _e53 < a.length; _e53++) {
 	              o.has(a[_e53]) || (u.values[_t52] = a[_e53], c.values[_t52] = _e53, _t52++);
@@ -85415,7 +85656,7 @@
 	    }, _callee23);
 	  }));
 
-	  return function vl(_x17, _x18) {
+	  return function Dl(_x17, _x18) {
 	    return _ref8.apply(this, arguments);
 	  };
 	}();
@@ -85437,12 +85678,12 @@
 	 */
 
 
-	var wl$1 = si$2({
+	var Cl$1 = yi$2({
 	  sign_: function sign_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "sign")
+	      x: fi$2(e, "x", "sign")
 	    };
-	    return Qo$1.runKernel("Sign", t);
+	    return ci$2.runKernel("Sign", t);
 	  }
 	});
 	/**
@@ -85462,12 +85703,12 @@
 	 * =============================================================================
 	 */
 
-	var xl$1 = si$2({
+	var Ml$1 = yi$2({
 	  sin_: function sin_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "sin")
+	      x: fi$2(e, "x", "sin")
 	    };
-	    return Qo$1.runKernel("Sin", t);
+	    return ci$2.runKernel("Sin", t);
 	  }
 	});
 	/**
@@ -85487,12 +85728,12 @@
 	 * =============================================================================
 	 */
 
-	var kl$1 = si$2({
+	var Rl$1 = yi$2({
 	  sinh_: function sinh_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "sinh")
+	      x: fi$2(e, "x", "sinh")
 	    };
-	    return Qo$1.runKernel("Sinh", t);
+	    return ci$2.runKernel("Sinh", t);
 	  }
 	});
 	/**
@@ -85512,10 +85753,10 @@
 	 * =============================================================================
 	 */
 
-	var _l$1 = si$2({
+	var $l$1 = yi$2({
 	  softmax_: function softmax_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : -1;
-	    var n = ri$2(e, "logits", "softmax", "float32");
+	    var n = fi$2(e, "logits", "softmax", "float32");
 	    if (-1 === t && (t = n.rank - 1), t !== n.rank - 1) throw Error("Softmax along a non-last dimension is not yet supported. Logits was rank ".concat(n.rank, " and dim was ").concat(t));
 	    var r = {
 	      logits: n
@@ -85523,7 +85764,7 @@
 	        a = {
 	      dim: t
 	    };
-	    return Qo$1.runKernel("Softmax", r, a);
+	    return ci$2.runKernel("Softmax", r, a);
 	  }
 	});
 	/**
@@ -85543,16 +85784,15 @@
 	 * =============================================================================
 	 */
 
-
-	var Nl$1 = si$2({
+	var Fl$1 = yi$2({
 	  fft_: function fft_(e) {
-	    Ws$1("complex64" === e.dtype, function () {
+	    to$1("complex64" === e.dtype, function () {
 	      return "The dtype for tf.spectral.fft() must be complex64 but got ".concat(e.dtype, ".");
 	    });
 	    var t = {
 	      input: e
 	    };
-	    return Qo$1.runKernel("FFT", t);
+	    return ci$2.runKernel("FFT", t);
 	  }
 	});
 	/**
@@ -85572,15 +85812,15 @@
 	 * =============================================================================
 	 */
 
-	var El$1 = si$2({
+	var zl$1 = yi$2({
 	  ifft_: function ifft_(e) {
-	    Ws$1("complex64" === e.dtype, function () {
+	    to$1("complex64" === e.dtype, function () {
 	      return "The dtype for tf.spectral.ifft() must be complex64 but got ".concat(e.dtype, ".");
 	    });
 	    var t = {
 	      input: e
 	    };
-	    return Qo$1.runKernel("IFFT", t);
+	    return ci$2.runKernel("IFFT", t);
 	  }
 	});
 	/**
@@ -85600,33 +85840,33 @@
 	 * =============================================================================
 	 */
 
-	var Tl$1 = si$2({
+	var Pl$1 = yi$2({
 	  irfft_: function irfft_(e) {
 	    var t = e.shape[e.shape.length - 1],
 	        n = e.size / t;
 	    var r;
 
 	    if (t <= 2) {
-	      var _a19 = Nu$1(e, [n, t]);
+	      var _a19 = Fu$1(e, [n, t]);
 
-	      r = El$1(_a19);
+	      r = zl$1(_a19);
 	    } else {
 	      var _a20 = [n, 2 * (t - 1)],
-	          _s16 = Nu$1(ll$1(e), [n, t]),
-	          _o9 = Nu$1(dc$2(e), [n, t]),
-	          _i10 = hl$1(Ou$1(_s16, [0, 1], [n, t - 2]), 1),
-	          _u5 = au$1(hl$1(Ou$1(_o9, [0, 1], [n, t - 2]), 1), yl$1(-1)),
-	          _c2 = Su$1([_s16, _i10], 1),
-	          _l2 = Su$1([_o9, _u5], 1),
-	          _p2 = Nu$1(oi$2(_c2, _l2), [_a20[0], _a20[1]]);
+	          _s16 = Fu$1(kl$1(e), [n, t]),
+	          _o9 = Fu$1(Nc$2(e), [n, t]),
+	          _i10 = Tl$1(Vu$1(_s16, [0, 1], [n, t - 2]), 1),
+	          _u5 = gu$1(Tl$1(Vu$1(_o9, [0, 1], [n, t - 2]), 1), Ol$1(-1)),
+	          _c2 = Lu$1([_s16, _i10], 1),
+	          _l2 = Lu$1([_o9, _u5], 1),
+	          _p2 = Fu$1(bi$2(_c2, _l2), [_a20[0], _a20[1]]);
 
-	      r = El$1(_p2);
+	      r = zl$1(_p2);
 	    }
 
-	    if (r = ll$1(r), 3 === e.rank && 0 !== e.shape[0]) {
+	    if (r = kl$1(r), 3 === e.rank && 0 !== e.shape[0]) {
 	      var _t53 = r,
 	          _n27 = e.shape[0];
-	      r = Nu$1(r, [_n27, r.shape[0] / _n27, r.shape[1]]), _t53.dispose();
+	      r = Fu$1(r, [_n27, r.shape[0] / _n27, r.shape[1]]), _t53.dispose();
 	    }
 
 	    return r;
@@ -85649,17 +85889,17 @@
 	 * =============================================================================
 	 */
 
-	var Sl$1 = si$2({
+	var Ll$1 = yi$2({
 	  split_: function split_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
 	    var r = {
-	      x: ri$2(e, "x", "split")
+	      x: fi$2(e, "x", "split")
 	    },
 	        a = {
 	      numOrSizeSplits: t,
 	      axis: n
 	    };
-	    return Qo$1.runKernel("SplitV", r, a);
+	    return ci$2.runKernel("SplitV", r, a);
 	  }
 	});
 	/**
@@ -85679,9 +85919,9 @@
 	 * =============================================================================
 	 */
 
-	var Il$1 = si$2({
+	var Bl$1 = yi$2({
 	  rfft_: function rfft_(e, t) {
-	    Ws$1("float32" === e.dtype, function () {
+	    to$1("float32" === e.dtype, function () {
 	      return "The dtype for rfft() must be real value but got ".concat(e.dtype);
 	    });
 	    var n = e.shape[e.shape.length - 1];
@@ -85696,25 +85936,25 @@
 	        return e;
 	      });
 
-	      _s17[e.shape.length - 1] = t, a = Ou$1(e, _r31, _s17), n = t;
+	      _s17[e.shape.length - 1] = t, a = Vu$1(e, _r31, _s17), n = t;
 	    } else if (null != t && t > n) {
 	      var _r32 = e.shape.map(function (e) {
 	        return e;
 	      });
 
-	      _r32[e.shape.length - 1] = t - n, a = Su$1([e, Fc$2(_r32)], e.shape.length - 1), n = t;
+	      _r32[e.shape.length - 1] = t - n, a = Lu$1([e, Gc$2(_r32)], e.shape.length - 1), n = t;
 	    } else a = e;
 
-	    var s = Zu$1(a),
-	        o = Nu$1(oi$2(a, s), [r, n]),
-	        i = Nl$1(o),
+	    var s = lc$2(a),
+	        o = Fu$1(bi$2(a, s), [r, n]),
+	        i = Fl$1(o),
 	        u = Math.floor(n / 2) + 1,
-	        c = ll$1(i),
-	        l = dc$2(i),
-	        p = Sl$1(c, [u, n - u], c.shape.length - 1),
-	        d = Sl$1(l, [u, n - u], l.shape.length - 1),
+	        c = kl$1(i),
+	        l = Nc$2(i),
+	        p = Ll$1(c, [u, n - u], c.shape.length - 1),
+	        d = Ll$1(l, [u, n - u], l.shape.length - 1),
 	        m = a.shape.slice();
-	    return m[a.shape.length - 1] = u, Nu$1(oi$2(p[0], d[0]), m);
+	    return m[a.shape.length - 1] = u, Fu$1(bi$2(p[0], d[0]), m);
 	  }
 	});
 	/**
@@ -85734,12 +85974,12 @@
 	 * =============================================================================
 	 */
 
-	var Ol$1 = si$2({
+	var Vl$1 = yi$2({
 	  sqrt_: function sqrt_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "sqrt")
+	      x: fi$2(e, "x", "sqrt")
 	    };
-	    return Qo$1.runKernel("Sqrt", t);
+	    return ci$2.runKernel("Sqrt", t);
 	  }
 	});
 	/**
@@ -85759,18 +85999,18 @@
 	 * =============================================================================
 	 */
 
-	var Al$1 = si$2({
+	var jl$1 = yi$2({
 	  squaredDifference_: function squaredDifference_(e, t) {
-	    var _Uo37, _Uo38;
+	    var _ni37, _ni38;
 
-	    var n = ri$2(e, "a", "squaredDifference"),
-	        r = ri$2(t, "b", "squaredDifference");
-	    (_Uo37 = Uo$1(n, r), _Uo38 = _slicedToArray(_Uo37, 2), n = _Uo38[0], r = _Uo38[1], _Uo37), Yu$1(n.shape, r.shape);
+	    var n = fi$2(e, "a", "squaredDifference"),
+	        r = fi$2(t, "b", "squaredDifference");
+	    (_ni37 = ni$2(n, r), _ni38 = _slicedToArray(_ni37, 2), n = _ni38[0], r = _ni38[1], _ni37), ic$2(n.shape, r.shape);
 	    var a = {
 	      a: n,
 	      b: r
 	    };
-	    return Qo$1.runKernel("SquaredDifference", a, {});
+	    return ci$2.runKernel("SquaredDifference", a, {});
 	  }
 	});
 	/**
@@ -85790,10 +86030,10 @@
 	 * =============================================================================
 	 */
 
-	var Dl$1 = si$2({
+	var Wl$1 = yi$2({
 	  squeeze_: function squeeze_(e, t) {
-	    var n = ri$2(e, "x", "squeeze");
-	    return Nu$1(n, Xs$1(n.shape, t).newShape);
+	    var n = fi$2(e, "x", "squeeze");
+	    return Fu$1(n, uo$1(n.shape, t).newShape);
 	  }
 	});
 	/**
@@ -85813,20 +86053,20 @@
 	 * =============================================================================
 	 */
 
-	var Ml$1 = si$2({
+	var Ul$1 = yi$2({
 	  stack_: function stack_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-	    var n = ai$2(e, "tensors", "stack", "string_or_numeric");
-	    Ws$1(n.length >= 1, function () {
+	    var n = gi$2(e, "tensors", "stack", "string_or_numeric");
+	    to$1(n.length >= 1, function () {
 	      return "Pass at least one tensor to tf.stack";
-	    }), n.length > 0 && Ws$1(t <= n[0].rank, function () {
+	    }), n.length > 0 && to$1(t <= n[0].rank, function () {
 	      return "Axis must be <= rank of the tensor";
 	    });
 	    var r = n,
 	        a = {
 	      axis: t
 	    };
-	    return Qo$1.runKernel("Pack", r, a);
+	    return ci$2.runKernel("Pack", r, a);
 	  }
 	});
 	/**
@@ -85846,16 +86086,16 @@
 	 * =============================================================================
 	 */
 
-	var Cl$1 = si$2({
+	var Kl$1 = yi$2({
 	  step_: function step_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 	    var n = {
-	      x: ri$2(e, "x", "step")
+	      x: fi$2(e, "x", "step")
 	    },
 	        r = {
 	      alpha: t
 	    };
-	    return Qo$1.runKernel("Step", n, r);
+	    return ci$2.runKernel("Step", n, r);
 	  }
 	});
 	/**
@@ -85875,7 +86115,7 @@
 	 * =============================================================================
 	 */
 
-	var Rl$1 = si$2({
+	var Hl$1 = yi$2({
 	  stridedSlice_: function stridedSlice_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
@@ -85883,7 +86123,7 @@
 	    var i = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : 0;
 	    var u = arguments.length > 8 && arguments[8] !== undefined ? arguments[8] : 0;
 	    var c = {
-	      x: ri$2(e, "x", "stridedSlice", "string_or_numeric")
+	      x: fi$2(e, "x", "stridedSlice", "string_or_numeric")
 	    },
 	        l = {
 	      begin: t,
@@ -85895,7 +86135,7 @@
 	      newAxisMask: i,
 	      shrinkAxisMask: u
 	    };
-	    return Qo$1.runKernel("StridedSlice", c, l);
+	    return ci$2.runKernel("StridedSlice", c, l);
 	  }
 	});
 	/**
@@ -85915,12 +86155,12 @@
 	 * =============================================================================
 	 */
 
-	var $l$1 = si$2({
+	var ql$1 = yi$2({
 	  tan_: function tan_(e) {
 	    var t = {
-	      x: ri$2(e, "x", "tan")
+	      x: fi$2(e, "x", "tan")
 	    };
-	    return Qo$1.runKernel("Tan", t);
+	    return ci$2.runKernel("Tan", t);
 	  }
 	});
 	/**
@@ -85940,11 +86180,11 @@
 	 * =============================================================================
 	 */
 
-	function Fl$1(e, t) {
-	  Us$1(e);
-	  var n = ei$2(e, t);
+	function Gl$1(e, t) {
+	  no$1(e);
+	  var n = di$2(e, t);
 	  if (1 !== n.length) throw new Error("tensor1d() requires values to be a flat/TypedArray");
-	  return ii$2(e, null, n, t);
+	  return vi$2(e, null, n, t);
 	}
 	/**
 	 * @license
@@ -85964,11 +86204,11 @@
 	 */
 
 
-	var zl$1 = si$2({
+	var Yl$1 = yi$2({
 	  topk_: function topk_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !0;
-	    var r = ri$2(e, "x", "topk");
+	    var r = fi$2(e, "x", "topk");
 	    if (0 === r.rank) throw new Error("topk() expects the input to be of rank 1 or higher");
 	    var a = r.shape[r.shape.length - 1];
 	    if (t < 0) throw new Error("'k' passed to topk() must be >= 0 but got ".concat(t));
@@ -85981,10 +86221,10 @@
 	      k: t,
 	      sorted: n
 	    },
-	        _Qo$runKernel = Qo$1.runKernel("TopK", s, o),
-	        _Qo$runKernel2 = _slicedToArray(_Qo$runKernel, 2),
-	        i = _Qo$runKernel2[0],
-	        u = _Qo$runKernel2[1];
+	        _ci$runKernel = ci$2.runKernel("TopK", s, o),
+	        _ci$runKernel2 = _slicedToArray(_ci$runKernel, 2),
+	        i = _ci$runKernel2[0],
+	        u = _ci$runKernel2[1];
 
 	    return {
 	      values: i,
@@ -86009,15 +86249,15 @@
 	 * =============================================================================
 	 */
 
-	var Pl$1 = si$2({
+	var Xl$1 = yi$2({
 	  truncatedNormal_: function truncatedNormal_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
 	    var r = arguments.length > 3 ? arguments[3] : undefined;
 	    var a = arguments.length > 4 ? arguments[4] : undefined;
 	    if (null != r && "bool" === r) throw new Error("Unsupported data type $ { dtype }");
-	    var s = new ol$1(t, n, r, !0, a),
-	        o = Pi$2(e, r);
+	    var s = new bl$1(t, n, r, !0, a),
+	        o = Xi$2(e, r);
 
 	    for (var _e54 = 0; _e54 < o.values.length; _e54++) {
 	      o.values[_e54] = s.nextValue();
@@ -86043,11 +86283,11 @@
 	 * =============================================================================
 	 */
 
-	var Ll$1 = si$2({
+	var Ql$1 = yi$2({
 	  unique_: function unique_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-	    var n = ri$2(e, "x", "unique", "string_or_numeric");
-	    Ws$1(n.rank > 0, function () {
+	    var n = fi$2(e, "x", "unique", "string_or_numeric");
+	    to$1(n.rank > 0, function () {
 	      return "The input tensor must be at least 1D";
 	    });
 
@@ -86057,10 +86297,10 @@
 	        a = {
 	      axis: t
 	    },
-	        _Qo$runKernel3 = Qo$1.runKernel("Unique", r, a),
-	        _Qo$runKernel4 = _slicedToArray(_Qo$runKernel3, 2),
-	        s = _Qo$runKernel4[0],
-	        o = _Qo$runKernel4[1];
+	        _ci$runKernel3 = ci$2.runKernel("Unique", r, a),
+	        _ci$runKernel4 = _slicedToArray(_ci$runKernel3, 2),
+	        s = _ci$runKernel4[0],
+	        o = _ci$runKernel4[1];
 
 	    return {
 	      values: s,
@@ -86085,11 +86325,11 @@
 	 * =============================================================================
 	 */
 
-	var Bl$1 = si$2({
+	var Zl$1 = yi$2({
 	  unstack_: function unstack_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-	    var n = ri$2(e, "x", "unstack", "string_or_numeric");
-	    Ws$1(t >= -n.shape.length && t < n.shape.length, function () {
+	    var n = fi$2(e, "x", "unstack", "string_or_numeric");
+	    to$1(t >= -n.shape.length && t < n.shape.length, function () {
 	      return "Axis = ".concat(t, " is not in [-").concat(n.shape.length, ", ").concat(n.shape.length, ")");
 	    });
 	    var r = {
@@ -86098,7 +86338,7 @@
 	        a = {
 	      axis: t
 	    };
-	    return Qo$1.runKernel("Unpack", r, a);
+	    return ci$2.runKernel("Unpack", r, a);
 	  }
 	});
 	/**
@@ -86118,7 +86358,7 @@
 	 * =============================================================================
 	 */
 
-	var Vl$1 =
+	var Jl$1 =
 	/*#__PURE__*/
 
 	/**
@@ -86144,7 +86384,7 @@
 	      while (1) {
 	        switch (_context24.prev = _context24.next) {
 	          case 0:
-	            t = ri$2(e, "condition", "whereAsync", "bool");
+	            t = fi$2(e, "condition", "whereAsync", "bool");
 	            _context24.next = 3;
 	            return t.data();
 
@@ -86158,8 +86398,8 @@
 	                t[_e55] && n.push(_e55);
 	              }
 
-	              var r = Pi$2(e, "int32"),
-	                  a = Pi$2([n.length, e.length], "int32");
+	              var r = Xi$2(e, "int32"),
+	                  a = Xi$2([n.length, e.length], "int32");
 
 	              for (var _t54 = 0; _t54 < n.length; _t54++) {
 	                var _s18 = r.indexToLoc(n[_t54]),
@@ -86181,7 +86421,7 @@
 	    }, _callee24);
 	  }));
 
-	  return function Vl(_x19) {
+	  return function Jl(_x19) {
 	    return _ref9.apply(this, arguments);
 	  };
 	}();
@@ -86203,11 +86443,11 @@
 	 */
 
 
-	var jl$1 = si$2({
+	var ep$1 = yi$2({
 	  scatterND_: function scatterND_(e, t, n) {
-	    var r = ri$2(e, "indices", "scatterND", "int32"),
-	        a = ri$2(t, "updates", "scatterND");
-	    Zi$2(a, r, n);
+	    var r = fi$2(e, "indices", "scatterND", "int32"),
+	        a = fi$2(t, "updates", "scatterND");
+	    lu$1(a, r, n);
 	    var s = {
 	      indices: r,
 	      updates: a
@@ -86215,10 +86455,10 @@
 	        o = {
 	      shape: n
 	    };
-	    return Qo$1.runKernel("ScatterNd", s, o);
+	    return ci$2.runKernel("ScatterNd", s, o);
 	  }
 	});
-	var Wl$1 = si$2({
+	var tp$1 = yi$2({
 	  sparseToDense_:
 	  /**
 	   * @license
@@ -86238,9 +86478,9 @@
 	   */
 	  function sparseToDense_(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-	    var a = ri$2(e, "sparseIndices", "sparseToDense", "int32"),
-	        s = ri$2(t, "sparseValues", "sparseToDense"),
-	        o = ri$2(r, "defaultValue", "sparseToDense", s.dtype);
+	    var a = fi$2(e, "sparseIndices", "sparseToDense", "int32"),
+	        s = fi$2(t, "sparseValues", "sparseToDense"),
+	        o = fi$2(r, "defaultValue", "sparseToDense", s.dtype);
 	    !function (e, t, n, r) {
 	      if ("int32" !== e.dtype) throw new Error("tf.sparseToDense() expects the indices to be int32 type, but the dtype was ".concat(e.dtype, "."));
 	      if (e.rank > 2) throw new Error("sparseIndices should be a scalar, vector, or matrix, but got shape ".concat(e.shape, "."));
@@ -86259,7 +86499,7 @@
 	        u = {
 	      outputShape: n
 	    };
-	    return Qo$1.runKernel("SparseToDense", i, u);
+	    return ci$2.runKernel("SparseToDense", i, u);
 	  }
 	});
 	/**
@@ -86279,14 +86519,14 @@
 	 * =============================================================================
 	 */
 
-	var Ul$1 = si$2({
+	var np$1 = yi$2({
 	  gatherND_: function gatherND_(e, t) {
-	    var n = ri$2(t, "indices", "gatherND", "int32"),
+	    var n = fi$2(t, "indices", "gatherND", "int32"),
 	        r = {
-	      params: ri$2(e, "x", "gatherND", "string_or_numeric"),
+	      params: fi$2(e, "x", "gatherND", "string_or_numeric"),
 	      indices: n
 	    };
-	    return Qo$1.runKernel("GatherNd", r);
+	    return ci$2.runKernel("GatherNd", r);
 	  }
 	});
 	/**
@@ -86306,27 +86546,27 @@
 	 * =============================================================================
 	 */
 
-	var Kl$1 = si$2({
+	var rp$1 = yi$2({
 	  conv2DBackpropFilter_: function conv2DBackpropFilter_(e, t, n, r, a) {
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : "NHWC";
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
 	    var i = e;
-	    3 === e.rank && (i = Nu$1(e, [1, e.shape[0], e.shape[1], e.shape[2]]));
+	    3 === e.rank && (i = Fu$1(e, [1, e.shape[0], e.shape[1], e.shape[2]]));
 	    var u = t;
-	    3 === u.rank && (u = Nu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]])), Ws$1(4 === i.rank, function () {
+	    3 === u.rank && (u = Fu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]])), to$1(4 === i.rank, function () {
 	      return "Error in conv2dDerFilter: input must be rank 4, but got shape ".concat(i.shape, ".");
-	    }), Ws$1(4 === u.rank, function () {
+	    }), to$1(4 === u.rank, function () {
 	      return "Error in conv2dDerFilter: dy must be rank 4, but got shape ".concat(u.shape, ".");
-	    }), Ws$1(4 === n.length, function () {
+	    }), to$1(4 === n.length, function () {
 	      return "Error in conv2dDerFilter: filterShape must be length 4, but got ".concat(n, ".");
 	    });
 	    var c = "NHWC" === s ? i.shape[3] : i.shape[1],
 	        l = "NHWC" === s ? u.shape[3] : u.shape[1];
-	    Ws$1(c === n[2], function () {
+	    to$1(c === n[2], function () {
 	      return "Error in conv2dDerFilter: depth of input ".concat(c, ") must match input depth in filter (").concat(n[2], ".");
-	    }), Ws$1(l === n[3], function () {
+	    }), to$1(l === n[3], function () {
 	      return "Error in conv2dDerFilter: depth of dy (".concat(l, ") must match output depth for filter (").concat(n[3], ").");
-	    }), null != o && Ws$1(Gs$1(a), function () {
+	    }), null != o && to$1(oo$1(a), function () {
 	      return "Error in conv2dDerFilter: pad must be an integer when using, dimRoundingMode ".concat(o, " but got pad ").concat(a, ".");
 	    });
 	    var p = {
@@ -86340,7 +86580,7 @@
 	      dimRoundingMode: o,
 	      filterShape: n
 	    };
-	    return Qo$1.runKernel("Conv2DBackpropFilter", p, d);
+	    return ci$2.runKernel("Conv2DBackpropFilter", p, d);
 	  }
 	});
 	/**
@@ -86360,13 +86600,13 @@
 	 * =============================================================================
 	 */
 
-	function Hl$1(e, t, n) {
+	function ap$1(e, t, n) {
 	  if (null == n || "linear" === n) return e;
-	  if ("relu" === n) return au$1(e, Cl$1(t));
+	  if ("relu" === n) return gu$1(e, Kl$1(t));
 	  throw new Error("Cannot compute gradient for fused activation ".concat(n, "."));
 	}
 
-	function ql$1(e, t) {
+	function sp$1(e, t) {
 	  var n = t;
 
 	  var r = function (e, t) {
@@ -86383,21 +86623,21 @@
 	    return n;
 	  }(e.shape, t.shape);
 
-	  return r.length > 0 && (n = Tc$2(n, r)), Nu$1(n, e.shape);
+	  return r.length > 0 && (n = Pc$2(n, r)), Fu$1(n, e.shape);
 	}
 
-	function Gl$1(e, t, n, r) {
+	function op$1(e, t, n, r) {
 	  if ("linear" === t) return e;
-	  if ("relu" === t) return dl$1(e);
-	  if ("elu" === t) return tc$2(e);
-	  if ("relu6" === t) return ml$1(e);
-	  if ("prelu" === t) return Yc$2(e, n);
-	  if ("leakyrelu" === t) return hc$2(e, r);
-	  if ("sigmoid" === t) return Iu$1(e);
+	  if ("relu" === t) return Nl$1(e);
+	  if ("elu" === t) return mc$2(e);
+	  if ("relu6" === t) return El$1(e);
+	  if ("prelu" === t) return il$1(e, n);
+	  if ("leakyrelu" === t) return Tc$2(e, r);
+	  if ("sigmoid" === t) return Bu$1(e);
 	  throw new Error("Unknown fused activation ".concat(t, "."));
 	}
 
-	var Yl$1 = function Yl(e, t) {
+	var ip$1 = function ip(e, t) {
 	  return !(e > 0) || "linear" === t;
 	};
 	/**
@@ -86418,9 +86658,9 @@
 	 */
 
 
-	var Xl$1 = si$2({
+	var up$1 = yi$2({
 	  fusedConv2d_: function fusedConv2d_(_ref10) {
-	    var _Uo39, _Uo40;
+	    var _ni39, _ni40;
 
 	    var e = _ref10.x,
 	        t = _ref10.filter,
@@ -86437,32 +86677,32 @@
 	        c = _ref10.preluActivationWeights,
 	        l = _ref10.leakyreluAlpha;
 
-	    if (u = u || "linear", !1 === Yl$1(Qo$1.state.gradientDepth, u)) {
-	      var _p3 = zu$1(e, t, n, r, a, s, o);
+	    if (u = u || "linear", !1 === ip$1(ci$2.state.gradientDepth, u)) {
+	      var _p3 = Yu$1(e, t, n, r, a, s, o);
 
-	      return null != i && (_p3 = tu$1(_p3, i)), Gl$1(_p3, u, c, l);
+	      return null != i && (_p3 = mu$1(_p3, i)), op$1(_p3, u, c, l);
 	    }
 
-	    var p = ri$2(e, "x", "conv2d"),
-	        d = ri$2(t, "filter", "conv2d");
+	    var p = fi$2(e, "x", "conv2d"),
+	        d = fi$2(t, "filter", "conv2d");
 	    var m = p,
 	        h = !1;
-	    3 === p.rank && (h = !0, m = Nu$1(p, [1, p.shape[0], p.shape[1], p.shape[2]])), Ws$1(4 === m.rank, function () {
+	    3 === p.rank && (h = !0, m = Fu$1(p, [1, p.shape[0], p.shape[1], p.shape[2]])), to$1(4 === m.rank, function () {
 	      return "Error in fused conv2d: input must be rank 4, but got rank ".concat(m.rank, ".");
-	    }), Ws$1(4 === d.rank, function () {
+	    }), to$1(4 === d.rank, function () {
 	      return "Error in fused conv2d: filter must be rank 4, but got rank ".concat(d.rank, ".");
-	    }), null != o && Ws$1(Gs$1(r), function () {
+	    }), null != o && to$1(oo$1(r), function () {
 	      return "Error in fused conv2d: pad must be an integer when using, dimRoundingMode ".concat(o, " but got pad ").concat(r, ".");
-	    }), Ws$1(m.shape[3] === d.shape[2], function () {
+	    }), to$1(m.shape[3] === d.shape[2], function () {
 	      return "Error in conv2d: depth of input (".concat(m.shape[3], ") must match input depth for filter ").concat(d.shape[2], ".");
-	    }), Ws$1(_u$1(n, s), function () {
+	    }), to$1($u$1(n, s), function () {
 	      return "Error in conv2D: Either strides or dilations must be 1. Got strides ".concat(n, " and dilations '").concat(s, "'");
-	    }), Ws$1("NHWC" === a, function () {
+	    }), to$1("NHWC" === a, function () {
 	      return "Error in conv2d: got dataFormat of ".concat(a, " but only NHWC is currently supported.");
 	    });
-	    var f = bu$1(m.shape, d.shape, n, s, r, o);
+	    var f = Au$1(m.shape, d.shape, n, s, r, o);
 	    var g, y;
-	    null != i && (g = ri$2(i, "bias", "fused conv2d"), (_Uo39 = Uo$1(g, p), _Uo40 = _slicedToArray(_Uo39, 1), g = _Uo40[0], _Uo39), Yu$1(f.outShape, g.shape)), null != c && (y = ri$2(c, "prelu weights", "fused conv2d"));
+	    null != i && (g = fi$2(i, "bias", "fused conv2d"), (_ni39 = ni$2(g, p), _ni40 = _slicedToArray(_ni39, 1), g = _ni40[0], _ni39), ic$2(f.outShape, g.shape)), null != c && (y = fi$2(c, "prelu weights", "fused conv2d"));
 
 	    var b = function b(e, t) {
 	      var _t55 = _slicedToArray(t, 4),
@@ -86470,15 +86710,15 @@
 	          o = _t55[1],
 	          i = _t55[2],
 	          c = _t55[3],
-	          l = Hl$1(e, i, u);
+	          l = ap$1(e, i, u);
 
-	      Ws$1(ku$1(s), function () {
+	      to$1(Ru$1(s), function () {
 	        return "Error in gradient of fused conv2D: dilation rates greater than 1 are not yet supported in gradients. Got dilations '".concat(s, "'");
 	      });
-	      var p = [Lu$1(o.shape, l, a, n, r), Kl$1(o, l, a.shape, n, r)];
+	      var p = [Qu$1(o.shape, l, a, n, r), rp$1(o, l, a.shape, n, r)];
 
 	      if (null != c) {
-	        var _e56 = ql$1(c, l);
+	        var _e56 = sp$1(c, l);
 
 	        p.push(_e56);
 	      }
@@ -86502,18 +86742,18 @@
 	    };
 
 	    if (null == i) {
-	      return xc$2(function (e, t, n) {
-	        var r = Qo$1.runKernel("FusedConv2D", v, w);
-	        return n([t, e, r]), h && (r = Nu$1(r, [r.shape[1], r.shape[2], r.shape[3]])), {
+	      return Mc$2(function (e, t, n) {
+	        var r = ci$2.runKernel("FusedConv2D", v, w);
+	        return n([t, e, r]), h && (r = Fu$1(r, [r.shape[1], r.shape[2], r.shape[3]])), {
 	          value: r,
 	          gradFunc: b
 	        };
 	      })(m, d);
 	    }
 
-	    return xc$2(function (e, t, n, r) {
-	      var a = Qo$1.runKernel("FusedConv2D", v, w);
-	      return r([t, e, a, n]), h && (a = Nu$1(a, [a.shape[1], a.shape[2], a.shape[3]])), {
+	    return Mc$2(function (e, t, n, r) {
+	      var a = ci$2.runKernel("FusedConv2D", v, w);
+	      return r([t, e, a, n]), h && (a = Fu$1(a, [a.shape[1], a.shape[2], a.shape[3]])), {
 	        value: a,
 	        gradFunc: b
 	      };
@@ -86537,14 +86777,14 @@
 	 * =============================================================================
 	 */
 
-	var Ql$1 = si$2({
+	var cp$1 = yi$2({
 	  depthwiseConv2dNativeBackpropFilter_: function depthwiseConv2dNativeBackpropFilter_(e, t, n, r, a) {
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : [1, 1];
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
 	    var i = e;
-	    3 === e.rank && (i = Nu$1(e, [1, e.shape[0], e.shape[1], e.shape[2]]));
+	    3 === e.rank && (i = Fu$1(e, [1, e.shape[0], e.shape[1], e.shape[2]]));
 	    var u = t;
-	    3 === u.rank && (u = Nu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]]));
+	    3 === u.rank && (u = Fu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]]));
 	    var c = {
 	      x: i,
 	      dy: u
@@ -86556,7 +86796,7 @@
 	      dilations: s,
 	      filterShape: n
 	    };
-	    return Qo$1.runKernel("DepthwiseConv2dNativeBackpropFilter", c, l);
+	    return ci$2.runKernel("DepthwiseConv2dNativeBackpropFilter", c, l);
 	  }
 	});
 	/**
@@ -86576,13 +86816,13 @@
 	 * =============================================================================
 	 */
 
-	var Zl$1 = si$2({
+	var lp$1 = yi$2({
 	  depthwiseConv2dNativeBackpropInput_: function depthwiseConv2dNativeBackpropInput_(e, t, n, r, a) {
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : [1, 1];
 	    var o = arguments.length > 6 ? arguments[6] : undefined;
 	    var i = t,
 	        u = !1;
-	    3 === t.rank && (u = !0, i = Nu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]]));
+	    3 === t.rank && (u = !0, i = Fu$1(t, [1, t.shape[0], t.shape[1], t.shape[2]]));
 	    var c = {
 	      dy: i,
 	      filter: n
@@ -86594,8 +86834,8 @@
 	      dilations: s,
 	      inputShape: e
 	    },
-	        p = Qo$1.runKernel("DepthwiseConv2dNativeBackpropInput", c, l);
-	    return u ? Nu$1(p, [p.shape[1], p.shape[2], p.shape[3]]) : p;
+	        p = ci$2.runKernel("DepthwiseConv2dNativeBackpropInput", c, l);
+	    return u ? Fu$1(p, [p.shape[1], p.shape[2], p.shape[3]]) : p;
 	  }
 	});
 	/**
@@ -86615,9 +86855,9 @@
 	 * =============================================================================
 	 */
 
-	var Jl$1 = si$2({
+	var pp$1 = yi$2({
 	  fusedDepthwiseConv2d_: function fusedDepthwiseConv2d_(_ref11) {
-	    var _Uo41, _Uo42;
+	    var _ni41, _ni42;
 
 	    var e = _ref11.x,
 	        t = _ref11.filter,
@@ -86634,33 +86874,33 @@
 	        c = _ref11.preluActivationWeights,
 	        l = _ref11.leakyreluAlpha;
 
-	    if (!1 === Yl$1(Qo$1.state.gradientDepth, u)) {
-	      var _p4 = qu$1(e, t, n, r, a, s, o);
+	    if (!1 === ip$1(ci$2.state.gradientDepth, u)) {
+	      var _p4 = sc$2(e, t, n, r, a, s, o);
 
-	      return null != i && (_p4 = tu$1(_p4, i)), Gl$1(_p4, u, c, l);
+	      return null != i && (_p4 = mu$1(_p4, i)), op$1(_p4, u, c, l);
 	    }
 
-	    var p = ri$2(e, "x", "depthwiseConv2d"),
-	        d = ri$2(t, "filter", "depthwiseConv2d");
+	    var p = fi$2(e, "x", "depthwiseConv2d"),
+	        d = fi$2(t, "filter", "depthwiseConv2d");
 	    var m = p,
 	        h = !1;
-	    3 === p.rank && (h = !0, m = Nu$1(p, [1, p.shape[0], p.shape[1], p.shape[2]])), Ws$1(4 === m.rank, function () {
+	    3 === p.rank && (h = !0, m = Fu$1(p, [1, p.shape[0], p.shape[1], p.shape[2]])), to$1(4 === m.rank, function () {
 	      return "Error in fused depthwiseConv2d: input must be rank 4, but got rank ".concat(m.rank, ".");
-	    }), Ws$1(4 === d.rank, function () {
+	    }), to$1(4 === d.rank, function () {
 	      return "Error in fused depthwiseConv2d: filter must be rank 4, but got rank ".concat(d.rank, ".");
-	    }), Ws$1(m.shape[3] === d.shape[2], function () {
+	    }), to$1(m.shape[3] === d.shape[2], function () {
 	      return "Error in fused depthwiseConv2d: number of input channels (".concat(m.shape[3], ") must match the inChannels dimension in filter ").concat(d.shape[2], ".");
-	    }), null == s && (s = [1, 1]), Ws$1(_u$1(n, s), function () {
+	    }), null == s && (s = [1, 1]), to$1($u$1(n, s), function () {
 	      return "Error in fused depthwiseConv2d: Either strides or dilations must be 1. Got strides ".concat(n, " and dilations '").concat(s, "'");
-	    }), null != o && Ws$1(Gs$1(r), function () {
+	    }), null != o && to$1(oo$1(r), function () {
 	      return "Error in fused depthwiseConv2d: pad must be an integer when using dimRoundingMode ".concat(o, " but got pad ").concat(r, ".");
 	    });
-	    var f = bu$1(m.shape, d.shape, n, s, r, o, !0);
+	    var f = Au$1(m.shape, d.shape, n, s, r, o, !0);
 	    var g, y;
-	    null != i && (g = ri$2(i, "bias", "fused conv2d"), (_Uo41 = Uo$1(g, p), _Uo42 = _slicedToArray(_Uo41, 1), g = _Uo42[0], _Uo41), Yu$1(f.outShape, g.shape)), null != c && (y = ri$2(c, "prelu weights", "fused depthwiseConv2d"));
+	    null != i && (g = fi$2(i, "bias", "fused conv2d"), (_ni41 = ni$2(g, p), _ni42 = _slicedToArray(_ni41, 1), g = _ni42[0], _ni41), ic$2(f.outShape, g.shape)), null != c && (y = fi$2(c, "prelu weights", "fused depthwiseConv2d"));
 
 	    var b = function b(e, t) {
-	      Ws$1(ku$1(s), function () {
+	      to$1(Ru$1(s), function () {
 	        return "Error in gradient of fused depthwiseConv2d: dilation rates greater than 1 are not yet supported. Got dilations '".concat(s, "'");
 	      });
 
@@ -86669,12 +86909,12 @@
 	          i = _t56[1],
 	          c = _t56[2],
 	          l = _t56[3],
-	          p = Hl$1(e, c, u),
-	          d = Zl$1(i.shape, p, a, n, r, s, o),
-	          m = Ql$1(i, p, a.shape, n, r, s, o);
+	          p = ap$1(e, c, u),
+	          d = lp$1(i.shape, p, a, n, r, s, o),
+	          m = cp$1(i, p, a.shape, n, r, s, o);
 
 	      if (null != l) {
-	        return [d, m, ql$1(g, p)];
+	        return [d, m, sp$1(g, p)];
 	      }
 
 	      return [d, m];
@@ -86696,18 +86936,18 @@
 	    };
 
 	    if (null == i) {
-	      return xc$2(function (e, t, n) {
-	        var r = Qo$1.runKernel("FusedDepthwiseConv2D", v, w);
-	        return n([t, e, r]), h && (r = Nu$1(r, [r.shape[1], r.shape[2], r.shape[3]])), {
+	      return Mc$2(function (e, t, n) {
+	        var r = ci$2.runKernel("FusedDepthwiseConv2D", v, w);
+	        return n([t, e, r]), h && (r = Fu$1(r, [r.shape[1], r.shape[2], r.shape[3]])), {
 	          value: r,
 	          gradFunc: b
 	        };
 	      })(m, d);
 	    }
 
-	    return xc$2(function (e, t, n, r) {
-	      var a = Qo$1.runKernel("FusedDepthwiseConv2D", v, w);
-	      return r([t, e, a, n]), h && (a = Nu$1(a, [a.shape[1], a.shape[2], a.shape[3]])), {
+	    return Mc$2(function (e, t, n, r) {
+	      var a = ci$2.runKernel("FusedDepthwiseConv2D", v, w);
+	      return r([t, e, a, n]), h && (a = Fu$1(a, [a.shape[1], a.shape[2], a.shape[3]])), {
 	        value: a,
 	        gradFunc: b
 	      };
@@ -86731,9 +86971,9 @@
 	 * =============================================================================
 	 */
 
-	var ep$1 = si$2({
+	var dp$1 = yi$2({
 	  fusedMatMul_: function fusedMatMul_(_ref12) {
-	    var _Uo45, _Uo46;
+	    var _ni45, _ni46;
 
 	    var e = _ref12.a,
 	        t = _ref12.b,
@@ -86747,41 +86987,41 @@
 	        o = _ref12.preluActivationWeights,
 	        i = _ref12.leakyreluAlpha;
 
-	    if (!1 === Yl$1(Qo$1.state.gradientDepth, s)) {
-	      var _u6 = qi$2(e, t, n, r);
+	    if (!1 === ip$1(ci$2.state.gradientDepth, s)) {
+	      var _u6 = su$1(e, t, n, r);
 
-	      return null != a && (_u6 = tu$1(_u6, a)), Gl$1(_u6, s, o, i);
+	      return null != a && (_u6 = mu$1(_u6, a)), op$1(_u6, s, o, i);
 	    }
 
-	    var u = ri$2(e, "a", "fused matMul"),
-	        c = ri$2(t, "b", "fused matMul");
+	    var u = fi$2(e, "a", "fused matMul"),
+	        c = fi$2(t, "b", "fused matMul");
 
-	    var _Uo43 = Uo$1(u, c);
+	    var _ni43 = ni$2(u, c);
 
-	    var _Uo44 = _slicedToArray(_Uo43, 2);
+	    var _ni44 = _slicedToArray(_ni43, 2);
 
-	    u = _Uo44[0];
-	    c = _Uo44[1];
+	    u = _ni44[0];
+	    c = _ni44[1];
 	    var l = n ? u.shape[u.rank - 2] : u.shape[u.rank - 1],
 	        p = r ? c.shape[c.rank - 1] : c.shape[c.rank - 2],
 	        d = n ? u.shape[u.rank - 1] : u.shape[u.rank - 2],
 	        m = r ? c.shape[c.rank - 2] : c.shape[c.rank - 1],
 	        h = u.shape.slice(0, -2),
 	        f = c.shape.slice(0, -2),
-	        g = Hs$1(h),
-	        y = Hs$1(f);
-	    Ws$1(u.rank >= 2 && c.rank >= 2 && u.rank === c.rank, function () {
+	        g = ao$1(h),
+	        y = ao$1(f);
+	    to$1(u.rank >= 2 && c.rank >= 2 && u.rank === c.rank, function () {
 	      return "Error in fused matMul: inputs must have the same rank of at least 2, got ranks ".concat(u.rank, " and ").concat(c.rank, ".");
-	    }), Ws$1(qs$1(h, f), function () {
+	    }), to$1(so$1(h, f), function () {
 	      return "Error in fused matMul: outer dimensions (".concat(h, ") and (").concat(f, ") of Tensors with shapes ").concat(u.shape, " and ").concat(c.shape, " must match.");
-	    }), Ws$1(l === p, function () {
+	    }), to$1(l === p, function () {
 	      return "Error in fused matMul: inner shapes (".concat(l, ") and (").concat(p, ") of Tensors with shapes ").concat(u.shape, " and ").concat(c.shape, " and transposeA=").concat(n, " and transposeB=").concat(r, " must match.");
 	    });
 	    var b = u.shape.slice(0, -2).concat([d, m]),
-	        v = Nu$1(u, n ? [g, l, d] : [g, d, l]),
-	        w = Nu$1(c, r ? [y, m, p] : [y, p, m]);
+	        v = Fu$1(u, n ? [g, l, d] : [g, d, l]),
+	        w = Fu$1(c, r ? [y, m, p] : [y, p, m]);
 	    var x, k;
-	    null != a && (x = ri$2(a, "bias", "fused matMul"), (_Uo45 = Uo$1(x, u), _Uo46 = _slicedToArray(_Uo45, 1), x = _Uo46[0], _Uo45), Yu$1(b, x.shape)), null != o && (k = ri$2(o, "prelu weights", "fused matMul"));
+	    null != a && (x = fi$2(a, "bias", "fused matMul"), (_ni45 = ni$2(x, u), _ni46 = _slicedToArray(_ni45, 1), x = _ni46[0], _ni45), ic$2(b, x.shape)), null != o && (k = fi$2(o, "prelu weights", "fused matMul"));
 
 	    var _ = function _(e, t) {
 	      var _t57 = _slicedToArray(t, 4),
@@ -86789,12 +87029,12 @@
 	          i = _t57[1],
 	          u = _t57[2],
 	          c = _t57[3],
-	          l = Hl$1(Nu$1(e, u.shape), u, s);
+	          l = ap$1(Fu$1(e, u.shape), u, s);
 
 	      var p, d;
 
-	      if (n || r ? !n && r ? (p = qi$2(l, i, !1, !1), d = qi$2(l, o, !0, !1)) : n && !r ? (p = qi$2(i, l, !1, !0), d = qi$2(o, l, !1, !1)) : (p = qi$2(i, l, !0, !0), d = qi$2(l, o, !0, !0)) : (p = qi$2(l, i, !1, !0), d = qi$2(o, l, !0, !1)), null != a) {
-	        return [p, d, ql$1(c, l)];
+	      if (n || r ? !n && r ? (p = su$1(l, i, !1, !1), d = su$1(l, o, !0, !1)) : n && !r ? (p = su$1(i, l, !1, !0), d = su$1(o, l, !1, !1)) : (p = su$1(i, l, !0, !0), d = su$1(l, o, !0, !0)) : (p = su$1(l, i, !1, !0), d = su$1(o, l, !0, !1)), null != a) {
+	        return [p, d, sp$1(c, l)];
 	      }
 
 	      return [p, d];
@@ -86813,19 +87053,19 @@
 	    };
 
 	    if (null == a) {
-	      return xc$2(function (e, t, n) {
-	        var r = Qo$1.runKernel("_FusedMatMul", N, E);
+	      return Mc$2(function (e, t, n) {
+	        var r = ci$2.runKernel("_FusedMatMul", N, E);
 	        return n([e, t, r]), {
-	          value: Nu$1(r, b),
+	          value: Fu$1(r, b),
 	          gradFunc: _
 	        };
 	      })(v, w);
 	    }
 
-	    return xc$2(function (e, t, n, r) {
-	      var a = Qo$1.runKernel("_FusedMatMul", N, E);
+	    return Mc$2(function (e, t, n, r) {
+	      var a = ci$2.runKernel("_FusedMatMul", N, E);
 	      return r([e, t, a, n]), {
-	        value: Nu$1(a, b),
+	        value: Fu$1(a, b),
 	        gradFunc: _
 	      };
 	    })(v, w, x);
@@ -86848,25 +87088,25 @@
 	 * =============================================================================
 	 */
 
-	var tp$1 = si$2({
+	var mp$1 = yi$2({
 	  cropAndResize_: function cropAndResize_(e, t, n, r) {
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : "bilinear";
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
-	    var o = ri$2(e, "image", "cropAndResize"),
-	        i = ri$2(t, "boxes", "cropAndResize", "float32"),
-	        u = ri$2(n, "boxInd", "cropAndResize", "int32"),
+	    var o = fi$2(e, "image", "cropAndResize"),
+	        i = fi$2(t, "boxes", "cropAndResize", "float32"),
+	        u = fi$2(n, "boxInd", "cropAndResize", "int32"),
 	        c = i.shape[0];
-	    Ws$1(4 === o.rank, function () {
+	    to$1(4 === o.rank, function () {
 	      return "Error in cropAndResize: image must be rank 4,but got rank ".concat(o.rank, ".");
-	    }), Ws$1(2 === i.rank && 4 === i.shape[1], function () {
+	    }), to$1(2 === i.rank && 4 === i.shape[1], function () {
 	      return "Error in cropAndResize: boxes must be have size [".concat(c, ",4] but had shape ").concat(i.shape, ".");
-	    }), Ws$1(1 === u.rank && u.shape[0] === c, function () {
+	    }), to$1(1 === u.rank && u.shape[0] === c, function () {
 	      return "Error in cropAndResize: boxInd must be have size [".concat(c, "] but had shape ").concat(i.shape, ".");
-	    }), Ws$1(2 === r.length, function () {
+	    }), to$1(2 === r.length, function () {
 	      return "Error in cropAndResize: cropSize must be of length 2, but got length ".concat(r.length, ".");
-	    }), Ws$1(r[0] >= 1 && r[1] >= 1, function () {
+	    }), to$1(r[0] >= 1 && r[1] >= 1, function () {
 	      return "cropSize must be atleast [1,1], but was ".concat(r);
-	    }), Ws$1("bilinear" === a || "nearest" === a, function () {
+	    }), to$1("bilinear" === a || "nearest" === a, function () {
 	      return "method must be bilinear or nearest, but was ".concat(a);
 	    });
 	    var l = {
@@ -86879,7 +87119,7 @@
 	      extrapolationValue: s,
 	      cropSize: r
 	    };
-	    return Qo$1.runKernel("CropAndResize", l, p);
+	    return ci$2.runKernel("CropAndResize", l, p);
 	  }
 	});
 	/**
@@ -86899,16 +87139,16 @@
 	 * =============================================================================
 	 */
 
-	var np$1 = si$2({
+	var hp$1 = yi$2({
 	  flipLeftRight_: function flipLeftRight_(e) {
-	    var t = ri$2(e, "image", "flipLeftRight", "float32");
-	    Ws$1(4 === t.rank, function () {
+	    var t = fi$2(e, "image", "flipLeftRight", "float32");
+	    to$1(4 === t.rank, function () {
 	      return "Error in flipLeftRight: image must be rank 4,but got rank ".concat(t.rank, ".");
 	    });
 	    var n = {
 	      image: t
 	    };
-	    return Qo$1.runKernel("FlipLeftRight", n, {});
+	    return ci$2.runKernel("FlipLeftRight", n, {});
 	  }
 	});
 	/**
@@ -86928,12 +87168,12 @@
 	 * =============================================================================
 	 */
 
-	var rp$1 = si$2({
+	var fp$1 = yi$2({
 	  rotateWithOffset_: function rotateWithOffset_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : .5;
-	    var a = ri$2(e, "image", "rotateWithOffset", "float32");
-	    Ws$1(4 === a.rank, function () {
+	    var a = fi$2(e, "image", "rotateWithOffset", "float32");
+	    to$1(4 === a.rank, function () {
 	      return "Error in rotateWithOffset: image must be rank 4,but got rank ".concat(a.rank, ".");
 	    });
 	    var s = {
@@ -86944,7 +87184,7 @@
 	      fillValue: n,
 	      center: r
 	    };
-	    return Qo$1.runKernel("RotateWithOffset", s, o);
+	    return ci$2.runKernel("RotateWithOffset", s, o);
 	  }
 	});
 	/**
@@ -86964,20 +87204,20 @@
 	 * =============================================================================
 	 */
 
-	function ap$1(e, t, n, r, a, s) {
+	function gp$1(e, t, n, r, a, s) {
 	  null == r && (r = .5), null == a && (a = Number.NEGATIVE_INFINITY), null == s && (s = 0);
 	  var o = e.shape[0];
-	  return n = Math.min(n, o), Ws$1(0 <= r && r <= 1, function () {
+	  return n = Math.min(n, o), to$1(0 <= r && r <= 1, function () {
 	    return "iouThreshold must be in [0, 1], but was '".concat(r, "'");
-	  }), Ws$1(2 === e.rank, function () {
+	  }), to$1(2 === e.rank, function () {
 	    return "boxes must be a 2D tensor, but was of rank '".concat(e.rank, "'");
-	  }), Ws$1(4 === e.shape[1], function () {
+	  }), to$1(4 === e.shape[1], function () {
 	    return "boxes must have 4 columns, but 2nd dimension was ".concat(e.shape[1]);
-	  }), Ws$1(1 === t.rank, function () {
+	  }), to$1(1 === t.rank, function () {
 	    return "scores must be a 1D tensor";
-	  }), Ws$1(t.shape[0] === o, function () {
+	  }), to$1(t.shape[0] === o, function () {
 	    return "scores has incompatible shape with boxes. Expected ".concat(o, ", but was ").concat(t.shape[0]);
-	  }), Ws$1(0 <= s && s <= 1, function () {
+	  }), to$1(0 <= s && s <= 1, function () {
 	    return "softNmsSigma must be in [0, 1], but was '".concat(s, "'");
 	  }), {
 	    maxOutputSize: n,
@@ -87004,19 +87244,19 @@
 	 */
 
 
-	var sp$1 = si$2({
+	var yp$1 = yi$2({
 	  nonMaxSuppression_: function nonMaxSuppression_(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : .5;
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : Number.NEGATIVE_INFINITY;
-	    var s = ri$2(e, "boxes", "nonMaxSuppression"),
-	        o = ri$2(t, "scores", "nonMaxSuppression"),
-	        i = ap$1(s, o, n, r, a),
+	    var s = fi$2(e, "boxes", "nonMaxSuppression"),
+	        o = fi$2(t, "scores", "nonMaxSuppression"),
+	        i = gp$1(s, o, n, r, a),
 	        u = {
 	      maxOutputSize: n = i.maxOutputSize,
 	      iouThreshold: r = i.iouThreshold,
 	      scoreThreshold: a = i.scoreThreshold
 	    };
-	    return Qo$1.runKernel("NonMaxSuppressionV3", {
+	    return ci$2.runKernel("NonMaxSuppressionV3", {
 	      boxes: s,
 	      scores: o
 	    }, u);
@@ -87039,7 +87279,7 @@
 	 * =============================================================================
 	 */
 
-	function op$1(e, t, n) {
+	function bp$1(e, t, n) {
 	  var r = function (e, t, n) {
 	    return function (e, t, n) {
 	      var r = 0,
@@ -87073,18 +87313,18 @@
 	     * limitations under the License.
 	     * =============================================================================
 	     */
-	    (e, t, n || ip$1);
+	    (e, t, n || vp$1);
 	  }(e, t, n),
 	      a = r < 0 ? -(r + 1) : r;
 
 	  e.splice(a, 0, t);
 	}
 
-	function ip$1(e, t) {
+	function vp$1(e, t) {
 	  return e > t ? 1 : e < t ? -1 : 0;
 	}
 
-	function up$1(e, t, n, r, a, s) {
+	function wp$1(e, t, n, r, a, s) {
 	  var o = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : !1;
 	  var i = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : !1;
 	  var u = arguments.length > 8 && arguments[8] !== undefined ? arguments[8] : !1;
@@ -87098,7 +87338,7 @@
 	    });
 	  }
 
-	  c.sort(pp$1);
+	  c.sort(_p$1);
 	  var l = s > 0 ? -.5 / s : 0,
 	      p = [],
 	      d = [];
@@ -87114,17 +87354,17 @@
 	    var _i12 = !1;
 
 	    for (var _n29 = p.length - 1; _n29 >= _o12; --_n29) {
-	      var _o13 = cp$1(e, _s20, p[_n29]);
+	      var _o13 = xp$1(e, _s20, p[_n29]);
 
 	      if (_o13 >= r) {
 	        _i12 = !0;
 	        break;
 	      }
 
-	      if (_t58.score = _t58.score * lp$1(r, l, _o13), _t58.score <= a) break;
+	      if (_t58.score = _t58.score * kp$1(r, l, _o13), _t58.score <= a) break;
 	    }
 
-	    _t58.suppressBeginIndex = p.length, _i12 || (_t58.score === _n28 ? (p.push(_s20), d.push(_t58.score)) : _t58.score > a && op$1(c, _t58, pp$1));
+	    _t58.suppressBeginIndex = p.length, _i12 || (_t58.score === _n28 ? (p.push(_s20), d.push(_t58.score)) : _t58.score > a && bp$1(c, _t58, _p$1));
 	  }
 
 	  var m = p.length,
@@ -87136,7 +87376,7 @@
 	  return o && (f.selectedScores = d), u && (f.validOutputs = m), f;
 	}
 
-	function cp$1(e, t, n) {
+	function xp$1(e, t, n) {
 	  var r = e.subarray(4 * t, 4 * t + 4),
 	      a = e.subarray(4 * n, 4 * n + 4),
 	      s = Math.min(r[0], r[2]),
@@ -87158,12 +87398,12 @@
 	  return v / (m + h - v);
 	}
 
-	function lp$1(e, t, n) {
+	function kp$1(e, t, n) {
 	  var r = Math.exp(t * n * n);
 	  return n <= e ? r : 0;
 	}
 
-	function pp$1(e, t) {
+	function _p$1(e, t) {
 	  return e.score - t.score || e.score === t.score && t.boxIndex - e.boxIndex;
 	}
 	/**
@@ -87184,7 +87424,7 @@
 	 */
 
 
-	var dp$1 = /*#__PURE__*/function () {
+	var Np$1 = /*#__PURE__*/function () {
 	  var _ref13 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee25(e, t, n) {
 	    var r,
 	        a,
@@ -87204,7 +87444,7 @@
 	          case 0:
 	            r = _args25.length > 3 && _args25[3] !== undefined ? _args25[3] : .5;
 	            a = _args25.length > 4 && _args25[4] !== undefined ? _args25[4] : Number.NEGATIVE_INFINITY;
-	            s = ri$2(e, "boxes", "nonMaxSuppressionAsync"), o = ri$2(t, "scores", "nonMaxSuppressionAsync"), i = ap$1(s, o, n, r, a);
+	            s = fi$2(e, "boxes", "nonMaxSuppressionAsync"), o = fi$2(t, "scores", "nonMaxSuppressionAsync"), i = gp$1(s, o, n, r, a);
 	            n = i.maxOutputSize, r = i.iouThreshold, a = i.scoreThreshold;
 	            _context25.next = 6;
 	            return Promise.all([s.data(), o.data()]);
@@ -87215,11 +87455,11 @@
 	            l = u[1];
 
 	            _ref14 = function (e, t, n, r, a) {
-	              return up$1(e, t, n, r, a, 0);
+	              return wp$1(e, t, n, r, a, 0);
 	            }(c, l, n, r, a);
 
 	            p = _ref14.selectedIndices;
-	            return _context25.abrupt("return", (s !== e && s.dispose(), o !== t && o.dispose(), Fl$1(p, "int32")));
+	            return _context25.abrupt("return", (s !== e && s.dispose(), o !== t && o.dispose(), Gl$1(p, "int32")));
 
 	          case 12:
 	          case "end":
@@ -87229,7 +87469,7 @@
 	    }, _callee25);
 	  }));
 
-	  return function dp(_x20, _x21, _x22) {
+	  return function Np(_x20, _x21, _x22) {
 	    return _ref13.apply(this, arguments);
 	  };
 	}();
@@ -87251,14 +87491,14 @@
 	 */
 
 
-	var mp$1 = si$2({
+	var Ep$1 = yi$2({
 	  nonMaxSuppressionWithScore_: function nonMaxSuppressionWithScore_(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : .5;
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : Number.NEGATIVE_INFINITY;
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
-	    var o = ri$2(e, "boxes", "nonMaxSuppression"),
-	        i = ri$2(t, "scores", "nonMaxSuppression"),
-	        u = ap$1(o, i, n, r, a, s),
+	    var o = fi$2(e, "boxes", "nonMaxSuppression"),
+	        i = fi$2(t, "scores", "nonMaxSuppression"),
+	        u = gp$1(o, i, n, r, a, s),
 	        c = {
 	      boxes: o,
 	      scores: i
@@ -87269,7 +87509,7 @@
 	      scoreThreshold: a = u.scoreThreshold,
 	      softNmsSigma: s = u.softNmsSigma
 	    },
-	        p = Qo$1.runKernel("NonMaxSuppressionV5", c, l);
+	        p = ci$2.runKernel("NonMaxSuppressionV5", c, l);
 	    return {
 	      selectedIndices: p[0],
 	      selectedScores: p[1]
@@ -87293,7 +87533,7 @@
 	 * =============================================================================
 	 */
 
-	var hp$1 = /*#__PURE__*/function () {
+	var Tp$1 = /*#__PURE__*/function () {
 	  var _ref15 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee26(e, t, n) {
 	    var r,
 	        a,
@@ -87316,7 +87556,7 @@
 	            r = _args26.length > 3 && _args26[3] !== undefined ? _args26[3] : .5;
 	            a = _args26.length > 4 && _args26[4] !== undefined ? _args26[4] : Number.NEGATIVE_INFINITY;
 	            s = _args26.length > 5 && _args26[5] !== undefined ? _args26[5] : 0;
-	            o = ri$2(e, "boxes", "nonMaxSuppressionAsync"), i = ri$2(t, "scores", "nonMaxSuppressionAsync"), u = ap$1(o, i, n, r, a, s);
+	            o = fi$2(e, "boxes", "nonMaxSuppressionAsync"), i = fi$2(t, "scores", "nonMaxSuppressionAsync"), u = gp$1(o, i, n, r, a, s);
 	            n = u.maxOutputSize, r = u.iouThreshold, a = u.scoreThreshold, s = u.softNmsSigma;
 	            _context26.next = 7;
 	            return Promise.all([o.data(), i.data()]);
@@ -87327,14 +87567,14 @@
 	            p = c[1];
 
 	            _ref16 = function (e, t, n, r, a, s) {
-	              return up$1(e, t, n, r, a, s, !0);
+	              return wp$1(e, t, n, r, a, s, !0);
 	            }(l, p, n, r, a, s);
 
 	            d = _ref16.selectedIndices;
 	            m = _ref16.selectedScores;
 	            return _context26.abrupt("return", (o !== e && o.dispose(), i !== t && i.dispose(), {
-	              selectedIndices: Fl$1(d, "int32"),
-	              selectedScores: Fl$1(m)
+	              selectedIndices: Gl$1(d, "int32"),
+	              selectedScores: Gl$1(m)
 	            }));
 
 	          case 14:
@@ -87345,7 +87585,7 @@
 	    }, _callee26);
 	  }));
 
-	  return function hp(_x23, _x24, _x25) {
+	  return function Tp(_x23, _x24, _x25) {
 	    return _ref15.apply(this, arguments);
 	  };
 	}();
@@ -87367,14 +87607,14 @@
 	 */
 
 
-	var fp$1 = si$2({
+	var Sp$1 = yi$2({
 	  nonMaxSuppressionPadded_: function nonMaxSuppressionPadded_(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : .5;
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : Number.NEGATIVE_INFINITY;
 	    var s = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : !1;
-	    var o = ri$2(e, "boxes", "nonMaxSuppression"),
-	        i = ri$2(t, "scores", "nonMaxSuppression"),
-	        u = ap$1(o, i, n, r, a, null),
+	    var o = fi$2(e, "boxes", "nonMaxSuppression"),
+	        i = fi$2(t, "scores", "nonMaxSuppression"),
+	        u = gp$1(o, i, n, r, a, null),
 	        c = {
 	      boxes: o,
 	      scores: i
@@ -87385,7 +87625,7 @@
 	      scoreThreshold: u.scoreThreshold,
 	      padToMaxOutputSize: s
 	    },
-	        p = Qo$1.runKernel("NonMaxSuppressionV4", c, l);
+	        p = ci$2.runKernel("NonMaxSuppressionV4", c, l);
 	    return {
 	      selectedIndices: p[0],
 	      validOutputs: p[1]
@@ -87409,7 +87649,7 @@
 	 * =============================================================================
 	 */
 
-	var gp$1 = /*#__PURE__*/function () {
+	var Ip$1 = /*#__PURE__*/function () {
 	  var _ref17 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee27(e, t, n) {
 	    var r,
 	        a,
@@ -87436,9 +87676,9 @@
 	            r = _args27.length > 3 && _args27[3] !== undefined ? _args27[3] : .5;
 	            a = _args27.length > 4 && _args27[4] !== undefined ? _args27[4] : Number.NEGATIVE_INFINITY;
 	            s = _args27.length > 5 && _args27[5] !== undefined ? _args27[5] : !1;
-	            o = ri$2(e, "boxes", "nonMaxSuppressionAsync");
-	            i = ri$2(t, "scores", "nonMaxSuppressionAsync");
-	            u = ap$1(o, i, n, r, a, null);
+	            o = fi$2(e, "boxes", "nonMaxSuppressionAsync");
+	            i = fi$2(t, "scores", "nonMaxSuppressionAsync");
+	            u = gp$1(o, i, n, r, a, null);
 	            c = u.maxOutputSize;
 	            l = u.iouThreshold;
 	            p = u.scoreThreshold;
@@ -87452,14 +87692,14 @@
 	            m = _yield$Promise$all2[1];
 
 	            _ref18 = function (e, t, n, r, a, s) {
-	              return up$1(e, t, n, r, a, 0, !1, s, !0);
+	              return wp$1(e, t, n, r, a, 0, !1, s, !0);
 	            }(d, m, c, l, p, s);
 
 	            h = _ref18.selectedIndices;
 	            f = _ref18.validOutputs;
 	            return _context27.abrupt("return", (o !== e && o.dispose(), i !== t && i.dispose(), {
-	              selectedIndices: Fl$1(h, "int32"),
-	              validOutputs: yl$1(f, "int32")
+	              selectedIndices: Gl$1(h, "int32"),
+	              validOutputs: Ol$1(f, "int32")
 	            }));
 
 	          case 19:
@@ -87470,7 +87710,7 @@
 	    }, _callee27);
 	  }));
 
-	  return function gp(_x26, _x27, _x28) {
+	  return function Ip(_x26, _x27, _x28) {
 	    return _ref17.apply(this, arguments);
 	  };
 	}();
@@ -87492,21 +87732,21 @@
 	 */
 
 
-	var yp$1 = si$2({
+	var Op$1 = yi$2({
 	  resizeBilinear_: function resizeBilinear_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
-	    var a = ri$2(e, "images", "resizeBilinear");
-	    Ws$1(3 === a.rank || 4 === a.rank, function () {
+	    var a = fi$2(e, "images", "resizeBilinear");
+	    to$1(3 === a.rank || 4 === a.rank, function () {
 	      return "Error in resizeBilinear: x must be rank 3 or 4, but got rank ".concat(a.rank, ".");
-	    }), Ws$1(2 === t.length, function () {
+	    }), to$1(2 === t.length, function () {
 	      return "Error in resizeBilinear: new shape must 2D, but got shape ".concat(t, ".");
-	    }), Ws$1(!1 === r || !1 === n, function () {
+	    }), to$1(!1 === r || !1 === n, function () {
 	      return "Error in resizeBilinear: If halfPixelCenters is true, alignCorners must be false.";
 	    });
 	    var s = a,
 	        o = !1;
-	    3 === a.rank && (o = !0, s = Nu$1(a, [1, a.shape[0], a.shape[1], a.shape[2]]));
+	    3 === a.rank && (o = !0, s = Fu$1(a, [1, a.shape[0], a.shape[1], a.shape[2]]));
 	    var i = {
 	      images: s
 	    },
@@ -87515,8 +87755,8 @@
 	      halfPixelCenters: r,
 	      size: t
 	    },
-	        c = Qo$1.runKernel("ResizeBilinear", i, u);
-	    return o ? Nu$1(c, [c.shape[1], c.shape[2], c.shape[3]]) : c;
+	        c = ci$2.runKernel("ResizeBilinear", i, u);
+	    return o ? Fu$1(c, [c.shape[1], c.shape[2], c.shape[3]]) : c;
 	  }
 	});
 	/**
@@ -87536,23 +87776,23 @@
 	 * =============================================================================
 	 */
 
-	var bp$1 = si$2({
+	var Ap$1 = yi$2({
 	  resizeNearestNeighbor_: function resizeNearestNeighbor_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
-	    var a = ri$2(e, "images", "resizeNearestNeighbor");
-	    Ws$1(3 === a.rank || 4 === a.rank, function () {
+	    var a = fi$2(e, "images", "resizeNearestNeighbor");
+	    to$1(3 === a.rank || 4 === a.rank, function () {
 	      return "Error in resizeNearestNeighbor: x must be rank 3 or 4, but got rank ".concat(a.rank, ".");
-	    }), Ws$1(2 === t.length, function () {
+	    }), to$1(2 === t.length, function () {
 	      return "Error in resizeNearestNeighbor: new shape must 2D, but got shape ".concat(t, ".");
-	    }), Ws$1("float32" === a.dtype || "int32" === a.dtype, function () {
+	    }), to$1("float32" === a.dtype || "int32" === a.dtype, function () {
 	      return "`images` must have `int32` or `float32` as dtype";
-	    }), Ws$1(!1 === r || !1 === n, function () {
+	    }), to$1(!1 === r || !1 === n, function () {
 	      return "Error in resizeNearestNeighbor: If halfPixelCenters is true, alignCorners must be false.";
 	    });
 	    var s = a,
 	        o = !1;
-	    3 === a.rank && (o = !0, s = Nu$1(a, [1, a.shape[0], a.shape[1], a.shape[2]]));
+	    3 === a.rank && (o = !0, s = Fu$1(a, [1, a.shape[0], a.shape[1], a.shape[2]]));
 	    var i = {
 	      images: s
 	    },
@@ -87561,8 +87801,8 @@
 	      halfPixelCenters: r,
 	      size: t
 	    },
-	        c = Qo$1.runKernel("ResizeNearestNeighbor", i, u);
-	    return o ? Nu$1(c, [c.shape[1], c.shape[2], c.shape[3]]) : c;
+	        c = ci$2.runKernel("ResizeNearestNeighbor", i, u);
+	    return o ? Fu$1(c, [c.shape[1], c.shape[2], c.shape[3]]) : c;
 	  }
 	});
 	/**
@@ -87582,41 +87822,41 @@
 	 * =============================================================================
 	 */
 
-	var vp$1 = si$2({
+	var Dp$1 = yi$2({
 	  threshold_: function threshold_(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "binary";
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !1;
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : .5;
-	    var a = ri$2(e, "image", "threshold"),
+	    var a = fi$2(e, "image", "threshold"),
 	        s = a.shape[0] * a.shape[1];
 	    var o,
 	        i,
 	        u,
 	        c,
-	        l = au$1(Fl$1([r]), 255);
+	        l = gu$1(Gl$1([r]), 255);
 
-	    if (Ws$1(3 === a.rank, function () {
+	    if (to$1(3 === a.rank, function () {
 	      return "Error in threshold: image must be rank 3,but got rank ".concat(a.rank, ".");
-	    }), Ws$1(3 === a.shape[2] || 1 === a.shape[2], function () {
+	    }), to$1(3 === a.shape[2] || 1 === a.shape[2], function () {
 	      return "Error in threshold: image color channel must be equal to 3 or 1but got ".concat(a.shape[2], ".");
-	    }), Ws$1("int32" === a.dtype || "float32" === a.dtype, function () {
+	    }), to$1("int32" === a.dtype || "float32" === a.dtype, function () {
 	      return "Error in dtype: image dtype must be int32 or float32,but got dtype ".concat(a.dtype, ".");
-	    }), Ws$1("otsu" === t || "binary" === t, function () {
+	    }), to$1("otsu" === t || "binary" === t, function () {
 	      return "Method must be binary or otsu, but was ".concat(t);
 	    }), 3 === a.shape[2]) {
-	      var _Sl = Sl$1(a, [1, 1, 1], -1);
+	      var _Ll = Ll$1(a, [1, 1, 1], -1);
 
-	      var _Sl2 = _slicedToArray(_Sl, 3);
+	      var _Ll2 = _slicedToArray(_Ll, 3);
 
-	      o = _Sl2[0];
-	      i = _Sl2[1];
-	      u = _Sl2[2];
+	      o = _Ll2[0];
+	      i = _Ll2[1];
+	      u = _Ll2[2];
 
-	      var _e58 = au$1(o, .2989),
-	          _t59 = au$1(i, .587),
-	          _n30 = au$1(u, .114);
+	      var _e58 = gu$1(o, .2989),
+	          _t59 = gu$1(i, .587),
+	          _n30 = gu$1(u, .114);
 
-	      c = tu$1(tu$1(_e58, _t59), _n30);
+	      c = mu$1(mu$1(_e58, _t59), _n30);
 	    } else c = e;
 
 	    if ("otsu" === t) {
@@ -87627,40 +87867,40 @@
 	            s,
 	            o,
 	            i,
-	            u = Fl$1([-1]),
-	            c = Fl$1([0]),
-	            l = Fl$1([0]);
+	            u = Gl$1([-1]),
+	            c = Gl$1([0]),
+	            l = Gl$1([0]);
 
 	        for (var _p5 = 0; _p5 < e.size - 1; _p5++) {
-	          n = Ou$1(e, 0, _p5 + 1), r = Ou$1(e, _p5 + 1), o = ru$1(Tc$2(n), t), i = ru$1(Tc$2(r), t);
+	          n = Vu$1(e, 0, _p5 + 1), r = Vu$1(e, _p5 + 1), o = fu$1(Pc$2(n), t), i = fu$1(Pc$2(r), t);
 
-	          var _d4 = Tc$2(au$1(n, cl$1(0, n.size)));
+	          var _d4 = Pc$2(gu$1(n, xl$1(0, n.size)));
 
-	          a = ru$1(_d4, Tc$2(n));
+	          a = fu$1(_d4, Pc$2(n));
 
-	          var _m4 = ic$2(r.shape, n.size),
-	              _h3 = tu$1(cl$1(0, r.size), _m4),
-	              _f3 = au$1(r, _h3);
+	          var _m4 = vc$2(r.shape, n.size),
+	              _h3 = mu$1(xl$1(0, r.size), _m4),
+	              _f3 = gu$1(r, _h3);
 
-	          s = ru$1(Tc$2(_f3), Tc$2(r));
+	          s = fu$1(Pc$2(_f3), Pc$2(r));
 
-	          var _g = Ec$2(a, s),
-	              _y = Ec$2(a, s),
-	              _b = au$1(o, i);
+	          var _g = zc$2(a, s),
+	              _y = zc$2(a, s),
+	              _b = gu$1(o, i);
 
-	          l = au$1(au$1(_b, _g), _y);
+	          l = gu$1(gu$1(_b, _g), _y);
 
-	          var _v = lc$2(l, c);
+	          var _v = kc$2(l, c);
 
-	          c = Qu$1(_v, l, c), u = Qu$1(_v, Fl$1([_p5]), u);
+	          c = cc$2(_v, l, c), u = cc$2(_v, Gl$1([_p5]), u);
 	        }
 
 	        return u;
-	      }(Cu$1(Li$2(fl$1(c), "int32"), ui$2([]), 256), s);
+	      }(Ku$1(Qi$2(Sl$1(c), "int32"), wi$2([]), 256), s);
 	    }
 
-	    var p = n ? gc$2(c, l) : lc$2(c, l);
-	    return Li$2(au$1(p, 255), "int32");
+	    var p = n ? Ic$2(c, l) : kc$2(c, l);
+	    return Qi$2(gu$1(p, 255), "int32");
 	  }
 	});
 	/**
@@ -87680,19 +87920,19 @@
 	 * =============================================================================
 	 */
 
-	var wp$1 = si$2({
+	var Cp$1 = yi$2({
 	  transform_: function transform_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "nearest";
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "constant";
 	    var a = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
 	    var s = arguments.length > 5 ? arguments[5] : undefined;
-	    var o = ri$2(e, "image", "transform", "float32"),
-	        i = ri$2(t, "transforms", "transform", "float32");
-	    Ws$1(4 === o.rank, function () {
+	    var o = fi$2(e, "image", "transform", "float32"),
+	        i = fi$2(t, "transforms", "transform", "float32");
+	    to$1(4 === o.rank, function () {
 	      return "Error in transform: image must be rank 4,but got rank ".concat(o.rank, ".");
-	    }), Ws$1(2 === i.rank && (i.shape[0] === o.shape[0] || 1 === i.shape[0]) && 8 === i.shape[1], function () {
+	    }), to$1(2 === i.rank && (i.shape[0] === o.shape[0] || 1 === i.shape[0]) && 8 === i.shape[1], function () {
 	      return "Error in transform: Input transform should be batch x 8 or 1 x 8";
-	    }), Ws$1(null == s || 2 === s.length, function () {
+	    }), to$1(null == s || 2 === s.length, function () {
 	      return "Error in transform: outputShape must be [height, width] or null, but got ".concat(s, ".");
 	    });
 	    var u = {
@@ -87705,7 +87945,7 @@
 	      fillValue: a,
 	      outputShape: s
 	    };
-	    return Qo$1.runKernel("Transform", u, c);
+	    return ci$2.runKernel("Transform", u, c);
 	  }
 	});
 	/**
@@ -87725,12 +87965,12 @@
 	 * =============================================================================
 	 */
 
-	var xp$1 = si$2({
+	var Mp$1 = yi$2({
 	  sparseFillEmptyRows_: function sparseFillEmptyRows_(e, t, n, r) {
-	    var a = ri$2(e, "indices", "sparseFillEmptyRows"),
-	        s = ri$2(t, "values", "sparseFillEmptyRows"),
-	        o = ri$2(n, "denseShape", "sparseFillEmptyRows"),
-	        i = ri$2(r, "defaultValue", "sparseFillEmptyRows", s.dtype);
+	    var a = fi$2(e, "indices", "sparseFillEmptyRows"),
+	        s = fi$2(t, "values", "sparseFillEmptyRows"),
+	        o = fi$2(n, "denseShape", "sparseFillEmptyRows"),
+	        i = fi$2(r, "defaultValue", "sparseFillEmptyRows", s.dtype);
 	    if (2 !== a.rank) throw new Error("Indices should be Tensor2D but received shape\n        ".concat(a.shape));
 	    if (1 !== s.rank) throw new Error("Values should be Tensor1D but received shape ".concat(s.shape));
 	    if (1 !== o.rank) throw new Error("Dense shape should be Tensor1D but received shape ".concat(o.shape));
@@ -87741,7 +87981,7 @@
 	      denseShape: o,
 	      defaultValue: i
 	    },
-	        c = Qo$1.runKernel("SparseFillEmptyRows", u);
+	        c = ci$2.runKernel("SparseFillEmptyRows", u);
 	    return {
 	      outputIndices: c[0],
 	      outputValues: c[1],
@@ -87767,11 +88007,11 @@
 	 * =============================================================================
 	 */
 
-	var kp$1 = si$2({
+	var Rp$1 = yi$2({
 	  sparseReshape_: function sparseReshape_(e, t, n) {
-	    var r = ri$2(e, "inputIndices", "sparseReshape"),
-	        a = ri$2(t, "inputShape", "sparseReshape"),
-	        s = ri$2(n, "newShape", "sparseReshape");
+	    var r = fi$2(e, "inputIndices", "sparseReshape"),
+	        a = fi$2(t, "inputShape", "sparseReshape"),
+	        s = fi$2(n, "newShape", "sparseReshape");
 	    if (2 !== r.rank) throw new Error("Input indices should be Tensor2D but received shape\n        ".concat(r.shape));
 	    if (1 !== a.rank) throw new Error("Input shape should be Tensor1D but received shape ".concat(a.shape));
 	    if (1 !== s.rank) throw new Error("New shape should be Tensor1D but received shape ".concat(s.shape));
@@ -87780,7 +88020,7 @@
 	      inputShape: a,
 	      newShape: s
 	    },
-	        i = Qo$1.runKernel("SparseReshape", o);
+	        i = ci$2.runKernel("SparseReshape", o);
 	    return {
 	      outputIndices: i[0],
 	      outputShape: i[1]
@@ -87804,11 +88044,11 @@
 	 * =============================================================================
 	 */
 
-	var _p$1 = si$2({
+	var $p$1 = yi$2({
 	  sparseSegmentMean_: function sparseSegmentMean_(e, t, n) {
-	    var r = ri$2(e, "data", "sparseSegmentMean"),
-	        a = ri$2(t, "indices", "sparseSegmentMean"),
-	        s = ri$2(n, "segmentIds", "sparseSegmentMean");
+	    var r = fi$2(e, "data", "sparseSegmentMean"),
+	        a = fi$2(t, "indices", "sparseSegmentMean"),
+	        s = fi$2(n, "segmentIds", "sparseSegmentMean");
 	    if (r.rank < 1) throw new Error("Data should be at least 1 dimensional but received scalar");
 	    if (1 !== a.rank) throw new Error("Indices should be Tensor1D but received shape\n          ".concat(a.shape));
 	    if (1 !== s.rank) throw new Error("Segment ids should be Tensor1D but received shape\n          ".concat(s.shape));
@@ -87817,7 +88057,7 @@
 	      indices: a,
 	      segmentIds: s
 	    };
-	    return Qo$1.runKernel("SparseSegmentMean", o);
+	    return ci$2.runKernel("SparseSegmentMean", o);
 	  }
 	});
 	/**
@@ -87837,12 +88077,11 @@
 	 * =============================================================================
 	 */
 
-
-	var Np$1 = si$2({
+	var Fp$1 = yi$2({
 	  sparseSegmentSum_: function sparseSegmentSum_(e, t, n) {
-	    var r = ri$2(e, "data", "sparseSegmentSum"),
-	        a = ri$2(t, "indices", "sparseSegmentSum"),
-	        s = ri$2(n, "segmentIds", "sparseSegmentSum");
+	    var r = fi$2(e, "data", "sparseSegmentSum"),
+	        a = fi$2(t, "indices", "sparseSegmentSum"),
+	        s = fi$2(n, "segmentIds", "sparseSegmentSum");
 	    if (r.rank < 1) throw new Error("Data should be at least 1 dimensional but received scalar");
 	    if (1 !== a.rank) throw new Error("Indices should be Tensor1D but received shape\n         ".concat(a.shape));
 	    if (1 !== s.rank) throw new Error("Segment ids should be Tensor1D but received shape\n         ".concat(s.shape));
@@ -87851,7 +88090,7 @@
 	      indices: a,
 	      segmentIds: s
 	    };
-	    return Qo$1.runKernel("SparseSegmentSum", o);
+	    return ci$2.runKernel("SparseSegmentSum", o);
 	  }
 	});
 	/**
@@ -87871,12 +88110,12 @@
 	 * =============================================================================
 	 */
 
-	var Ep$1 = si$2({
+	var zp$1 = yi$2({
 	  stringNGrams_: function stringNGrams_(e, t, n, r, a, s, o, i) {
-	    var u = ri$2(e, "data", "stringNGrams", "string");
+	    var u = fi$2(e, "data", "stringNGrams", "string");
 	    if ("string" !== u.dtype) throw new Error("Data must be of datatype string");
 	    if (1 !== u.shape.length) throw new Error("Data must be a vector, saw: ".concat(u.shape));
-	    var c = ri$2(t, "dataSplits", "stringNGrams");
+	    var c = fi$2(t, "dataSplits", "stringNGrams");
 	    if ("int32" !== c.dtype) throw new Error("Data splits must be of datatype int32");
 	    var l = {
 	      separator: n,
@@ -87890,7 +88129,7 @@
 	      data: u,
 	      dataSplits: c
 	    },
-	        d = Qo$1.runKernel("StringNGrams", p, l);
+	        d = ci$2.runKernel("StringNGrams", p, l);
 	    return {
 	      nGrams: d[0],
 	      nGramsSplits: d[1]
@@ -87914,11 +88153,11 @@
 	 * =============================================================================
 	 */
 
-	var Tp$1 = si$2({
+	var Pp$1 = yi$2({
 	  stringSplit_: function stringSplit_(e, t) {
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !0;
-	    var r = ri$2(e, "input", "stringSplit", "string"),
-	        a = ri$2(t, "delimiter", "stringSplit", "string");
+	    var r = fi$2(e, "input", "stringSplit", "string"),
+	        a = fi$2(t, "delimiter", "stringSplit", "string");
 	    if (1 !== r.rank) throw new Error("Input should be Tensor1D but received shape ".concat(r.shape));
 	    if (0 !== a.rank) throw new Error("Delimiter should be a scalar but received shape ".concat(a.shape));
 	    var s = {
@@ -87928,7 +88167,7 @@
 	      input: r,
 	      delimiter: a
 	    },
-	        i = Qo$1.runKernel("StringSplit", o, s);
+	        i = ci$2.runKernel("StringSplit", o, s);
 	    return {
 	      indices: i[0],
 	      values: i[1],
@@ -87953,9 +88192,9 @@
 	 * =============================================================================
 	 */
 
-	var Sp$1 = si$2({
+	var Lp$1 = yi$2({
 	  stringToHashBucketFast_: function stringToHashBucketFast_(e, t) {
-	    var n = ri$2(e, "input", "stringToHashBucketFast", "string"),
+	    var n = fi$2(e, "input", "stringToHashBucketFast", "string"),
 	        r = {
 	      numBuckets: t
 	    };
@@ -87963,34 +88202,34 @@
 	    var a = {
 	      input: n
 	    };
-	    return Qo$1.runKernel("StringToHashBucketFast", a, r);
+	    return ci$2.runKernel("StringToHashBucketFast", a, r);
 	  }
 	}),
-	    Ip$1 = {
-	  flipLeftRight: np$1,
-	  resizeNearestNeighbor: bp$1,
-	  resizeBilinear: yp$1,
-	  rotateWithOffset: rp$1,
-	  cropAndResize: tp$1,
-	  nonMaxSuppression: sp$1,
-	  nonMaxSuppressionAsync: dp$1,
-	  nonMaxSuppressionWithScore: mp$1,
-	  nonMaxSuppressionWithScoreAsync: hp$1,
-	  nonMaxSuppressionPadded: fp$1,
-	  nonMaxSuppressionPaddedAsync: gp$1,
-	  threshold: vp$1,
-	  transform: wp$1
+	    Bp$1 = {
+	  flipLeftRight: hp$1,
+	  resizeNearestNeighbor: Ap$1,
+	  resizeBilinear: Op$1,
+	  rotateWithOffset: fp$1,
+	  cropAndResize: mp$1,
+	  nonMaxSuppression: yp$1,
+	  nonMaxSuppressionAsync: Np$1,
+	  nonMaxSuppressionWithScore: Ep$1,
+	  nonMaxSuppressionWithScoreAsync: Tp$1,
+	  nonMaxSuppressionPadded: Sp$1,
+	  nonMaxSuppressionPaddedAsync: Ip$1,
+	  threshold: Dp$1,
+	  transform: Cp$1
 	},
-	    Op$1 = {
-	  sparseFillEmptyRows: xp$1,
-	  sparseReshape: kp$1,
-	  sparseSegmentMean: _p$1,
-	  sparseSegmentSum: Np$1
+	    Vp$1 = {
+	  sparseFillEmptyRows: Mp$1,
+	  sparseReshape: Rp$1,
+	  sparseSegmentMean: $p$1,
+	  sparseSegmentSum: Fp$1
 	},
-	    Ap$1 = {
-	  stringNGrams: Ep$1,
-	  stringSplit: Tp$1,
-	  stringToHashBucketFast: Sp$1
+	    jp$1 = {
+	  stringNGrams: zp$1,
+	  stringSplit: Pp$1,
+	  stringToHashBucketFast: Lp$1
 	};
 	/**
 	 * @license
@@ -88027,15 +88266,15 @@
 	 * =============================================================================
 	 */
 
-	var Dp$1, Mp$1;
+	var Wp$1, Up$1;
 	!function (e) {
 	  e[e.DT_INVALID = 0] = "DT_INVALID", e[e.DT_FLOAT = 1] = "DT_FLOAT", e[e.DT_DOUBLE = 2] = "DT_DOUBLE", e[e.DT_INT32 = 3] = "DT_INT32", e[e.DT_UINT8 = 4] = "DT_UINT8", e[e.DT_INT16 = 5] = "DT_INT16", e[e.DT_INT8 = 6] = "DT_INT8", e[e.DT_STRING = 7] = "DT_STRING", e[e.DT_COMPLEX64 = 8] = "DT_COMPLEX64", e[e.DT_INT64 = 9] = "DT_INT64", e[e.DT_BOOL = 10] = "DT_BOOL", e[e.DT_QINT8 = 11] = "DT_QINT8", e[e.DT_QUINT8 = 12] = "DT_QUINT8", e[e.DT_QINT32 = 13] = "DT_QINT32", e[e.DT_BFLOAT16 = 14] = "DT_BFLOAT16", e[e.DT_FLOAT_REF = 101] = "DT_FLOAT_REF", e[e.DT_DOUBLE_REF = 102] = "DT_DOUBLE_REF", e[e.DT_INT32_REF = 103] = "DT_INT32_REF", e[e.DT_UINT8_REF = 104] = "DT_UINT8_REF", e[e.DT_INT16_REF = 105] = "DT_INT16_REF", e[e.DT_INT8_REF = 106] = "DT_INT8_REF", e[e.DT_STRING_REF = 107] = "DT_STRING_REF", e[e.DT_COMPLEX64_REF = 108] = "DT_COMPLEX64_REF", e[e.DT_INT64_REF = 109] = "DT_INT64_REF", e[e.DT_BOOL_REF = 110] = "DT_BOOL_REF", e[e.DT_QINT8_REF = 111] = "DT_QINT8_REF", e[e.DT_QUINT8_REF = 112] = "DT_QUINT8_REF", e[e.DT_QINT32_REF = 113] = "DT_QINT32_REF", e[e.DT_BFLOAT16_REF = 114] = "DT_BFLOAT16_REF";
-	}(Dp$1 || (Dp$1 = {})), function (e) {
+	}(Wp$1 || (Wp$1 = {})), function (e) {
 	  var t;
 	  !function (e) {
 	    e[e.LEGACY = 0] = "LEGACY", e[e.V1 = 1] = "V1", e[e.V2 = 2] = "V2";
 	  }(t = e.CheckpointFormatVersion || (e.CheckpointFormatVersion = {}));
-	}(Mp$1 || (Mp$1 = {}));
+	}(Up$1 || (Up$1 = {}));
 	/**
 	 * @license
 	 * Copyright 2019 Google LLC. All Rights Reserved.
@@ -88053,10 +88292,10 @@
 	 * =============================================================================
 	 */
 
-	var Cp$1 = {};
+	var Kp$1 = {};
 
-	function Rp$1(e) {
-	  return Cp$1[e];
+	function Hp$1(e) {
+	  return Kp$1[e];
 	}
 	/**
 	 * @license
@@ -88076,36 +88315,36 @@
 	 */
 
 
-	function $p$1(e, t, n, r, a) {
+	function qp$1(e, t, n, r, a) {
 	  var s = t.inputParams[e];
 
 	  if (s && void 0 !== s.inputIndexStart) {
 	    var _e59 = s.inputIndexStart,
 	        _o14 = 0 === s.inputIndexEnd ? void 0 : void 0 === s.inputIndexEnd ? _e59 + 1 : s.inputIndexEnd;
 
-	    if ("tensor" === s.type) return Fp$1(t.inputNames[s.inputIndexStart], n, r, a);
+	    if ("tensor" === s.type) return Gp$1(t.inputNames[s.inputIndexStart], n, r, a);
 
 	    if ("tensors" === s.type) {
 	      return t.inputNames.slice(_e59, _o14).map(function (e) {
-	        return Fp$1(e, n, r, a);
+	        return Gp$1(e, n, r, a);
 	      });
 	    }
 
-	    var _i13 = Fp$1(t.inputNames.slice(_e59)[0], n, r, a),
+	    var _i13 = Gp$1(t.inputNames.slice(_e59)[0], n, r, a),
 	        _u7 = _i13.dataSync();
 
-	    return "number" === s.type ? _u7[0] : ao$1(_i13.shape, _u7);
+	    return "number" === s.type ? _u7[0] : yo$1(_i13.shape, _u7);
 	  }
 
 	  var o = t.attrParams[e];
 	  return o && o.value;
 	}
 
-	function Fp$1(e, t, n, r) {
-	  var _Lp = Lp$1(e),
-	      _Lp2 = _slicedToArray(_Lp, 2),
-	      a = _Lp2[0],
-	      s = _Lp2[1];
+	function Gp$1(e, t, n, r) {
+	  var _Qp = Qp$1(e),
+	      _Qp2 = _slicedToArray(_Qp, 2),
+	      a = _Qp2[0],
+	      s = _Qp2[1];
 
 	  if (null != r) {
 	    var _e60 = r.getHashTableHandleByName(a);
@@ -88114,26 +88353,26 @@
 	  }
 
 	  var o = n.currentContextIds.find(function (e) {
-	    return !!t[Pp$1(a, e)];
+	    return !!t[Xp$1(a, e)];
 	  });
-	  return void 0 !== o ? t[Pp$1(a, o)][s] : void 0;
+	  return void 0 !== o ? t[Xp$1(a, o)][s] : void 0;
 	}
 
-	function zp$1(e, t) {
-	  var _Lp3 = Lp$1(e),
-	      _Lp4 = _slicedToArray(_Lp3, 3),
-	      n = _Lp4[0],
-	      r = _Lp4[1],
-	      a = _Lp4[2];
+	function Yp$1(e, t) {
+	  var _Qp3 = Qp$1(e),
+	      _Qp4 = _slicedToArray(_Qp3, 3),
+	      n = _Qp4[0],
+	      r = _Qp4[1],
+	      a = _Qp4[2];
 
-	  return [Pp$1(n, t && t.currentContextId), r, a];
+	  return [Xp$1(n, t && t.currentContextId), r, a];
 	}
 
-	function Pp$1(e, t) {
+	function Xp$1(e, t) {
 	  return t ? "".concat(e, "-").concat(t) : e;
 	}
 
-	function Lp$1(e) {
+	function Qp$1(e) {
 	  var t = e.split(":");
 	  if (1 === t.length) return [e, 0, void 0];
 	  var n = t[0],
@@ -88141,11 +88380,11 @@
 	  return [n, Number(t[t.length - 1]), r];
 	}
 
-	function Bp$1(e, t, n) {
-	  var r = $p$1("pad", e, t, n);
+	function Zp$1(e, t, n) {
+	  var r = qp$1("pad", e, t, n);
 
 	  if ("explicit" === r) {
-	    r = $p$1("explicitPaddings", e, t, n);
+	    r = qp$1("explicitPaddings", e, t, n);
 	    var _a22 = [[0, 0], [0, 0], [0, 0], [0, 0]];
 
 	    for (var _e61 = 0; _e61 < 4; _e61++) {
@@ -88158,8 +88397,8 @@
 	  return r;
 	}
 
-	function Vp$1(e) {
-	  return e.kept ? e : Bi$2(e);
+	function Jp$1(e) {
+	  return e.kept ? e : Zi$2(e);
 	}
 	/**
 	 * @license
@@ -88179,7 +88418,7 @@
 	 */
 
 
-	var jp$1 = Object.freeze({
+	var ed$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "Add",
@@ -88484,7 +88723,7 @@
 	 * =============================================================================
 	 */
 
-	var Wp$1 = Object.freeze({
+	var td$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "Abs",
@@ -89134,7 +89373,7 @@
 	    }]
 	  }]
 	});
-	var Up$1 = Object.freeze({
+	var nd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "EmptyTensorList",
@@ -89765,7 +90004,7 @@
 	 * =============================================================================
 	 */
 
-	var Kp$1 = Object.freeze({
+	var rd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "AvgPool",
@@ -90315,7 +90554,7 @@
 	 * =============================================================================
 	 */
 
-	var Hp$1 = Object.freeze({
+	var ad$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "Fill",
@@ -90588,7 +90827,7 @@
 	 * =============================================================================
 	 */
 
-	var qp$1 = Object.freeze({
+	var sd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "NonMaxSuppressionV2",
@@ -90752,7 +90991,7 @@
 	 * =============================================================================
 	 */
 
-	var Gp$1 = Object.freeze({
+	var od$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "TopKV2",
@@ -90810,7 +91049,7 @@
 	 * =============================================================================
 	 */
 
-	var Yp$1 = Object.freeze({
+	var id$4 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "PlaceholderWithDefault",
@@ -90960,7 +91199,7 @@
 	    }]
 	  }]
 	});
-	var Xp$1 = Object.freeze({
+	var ud$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "HashTable",
@@ -91147,7 +91386,7 @@
 	 * =============================================================================
 	 */
 
-	var Qp$1 = Object.freeze({
+	var cd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "ResizeBilinear",
@@ -91249,7 +91488,7 @@
 	 * =============================================================================
 	 */
 
-	var Zp$1 = Object.freeze({
+	var ld$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "Equal",
@@ -91472,7 +91711,7 @@
 	 * =============================================================================
 	 */
 
-	var Jp$1 = Object.freeze({
+	var pd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "_FusedMatMul",
@@ -91665,7 +91904,7 @@
 	 * =============================================================================
 	 */
 
-	var ed$2 = Object.freeze({
+	var dd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "FusedBatchNorm",
@@ -91863,7 +92102,7 @@
 	 * =============================================================================
 	 */
 
-	var td$2 = Object.freeze({
+	var md$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "Bincount",
@@ -92085,7 +92324,7 @@
 	 * =============================================================================
 	 */
 
-	var nd$2 = Object.freeze({
+	var hd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "ConcatV2",
@@ -92409,7 +92648,7 @@
 	 * =============================================================================
 	 */
 
-	var rd$2 = Object.freeze({
+	var fd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "SparseFillEmptyRows",
@@ -92504,7 +92743,7 @@
 	 * =============================================================================
 	 */
 
-	var ad$2 = Object.freeze({
+	var gd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "FFT",
@@ -92567,7 +92806,7 @@
 	 * =============================================================================
 	 */
 
-	var sd$2 = Object.freeze({
+	var yd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "StringNGrams",
@@ -92657,7 +92896,7 @@
 	 * =============================================================================
 	 */
 
-	var od$2 = Object.freeze({
+	var bd$2 = Object.freeze({
 	  __proto__: null,
 	  json: [{
 	    tfOpName: "Cast",
@@ -92848,13 +93087,13 @@
 	 * =============================================================================
 	 */
 
-	var id$4 = /*#__PURE__*/function () {
-	  function id() {
+	var vd$2 = /*#__PURE__*/function () {
+	  function vd() {
 	    var _ref19;
 
-	    _classCallCheck(this, id);
+	    _classCallCheck(this, vd);
 
-	    var e = (_ref19 = []).concat.apply(_ref19, _toConsumableArray([jp$1, Wp$1, Up$1, Kp$1, Hp$1, qp$1, Gp$1, Yp$1, Xp$1, Qp$1, Zp$1, Jp$1, ed$2, td$2, nd$2, rd$2, ad$2, sd$2, od$2].map(function (e) {
+	    var e = (_ref19 = []).concat.apply(_ref19, _toConsumableArray([ed$2, td$2, nd$2, rd$2, ad$2, sd$2, od$2, id$4, ud$2, cd$2, ld$2, pd$2, dd$2, md$2, hd$2, fd$2, gd$2, yd$2, bd$2].map(function (e) {
 	      return e.json;
 	    })));
 
@@ -92863,7 +93102,7 @@
 	    }, {});
 	  }
 
-	  _createClass(id, [{
+	  _createClass(vd, [{
 	    key: "transformGraph",
 	    value: function transformGraph(e) {
 	      var _this22 = this;
@@ -92885,10 +93124,10 @@
 	      p.forEach(function (e) {
 	        var t = o[e];
 	        t.inputNames.forEach(function (e, n) {
-	          var _zp = zp$1(e),
-	              _zp2 = _slicedToArray(_zp, 3),
-	              r = _zp2[0],
-	              a = _zp2[2],
+	          var _Yp = Yp$1(e),
+	              _Yp2 = _slicedToArray(_Yp, 3),
+	              r = _Yp2[0],
+	              a = _Yp2[2],
 	              s = o[r];
 
 	          if (null != s.outputs) {
@@ -92907,16 +93146,16 @@
 	        var t = o[e];
 	        0 === t.children.length && u.push(t);
 	      }) : Object.keys(l).forEach(function (e) {
-	        var _zp3 = zp$1(e),
-	            _zp4 = _slicedToArray(_zp3, 1),
-	            t = _zp4[0],
+	        var _Yp3 = Yp$1(e),
+	            _Yp4 = _slicedToArray(_Yp3, 1),
+	            t = _Yp4[0],
 	            n = o[t];
 
 	        null != n && (n.signatureKey = l[e], u.push(n));
 	      }), Object.keys(c).length > 0 ? Object.keys(c).forEach(function (e) {
-	        var _zp5 = zp$1(e),
-	            _zp6 = _slicedToArray(_zp5, 1),
-	            t = _zp6[0],
+	        var _Yp5 = Yp$1(e),
+	            _Yp6 = _slicedToArray(_Yp5, 1),
+	            t = _Yp6[0],
 	            n = o[t];
 
 	        n && (n.signatureKey = c[e], i.push(n));
@@ -92946,7 +93185,7 @@
 	  }, {
 	    key: "mapNode",
 	    value: function mapNode(e) {
-	      var t = Rp$1(e.op) || this.opMappers[e.op] || {};
+	      var t = Hp$1(e.op) || this.opMappers[e.op] || {};
 	      null == e.attr && (e.attr = {});
 	      var n = {
 	        name: e.name,
@@ -92974,47 +93213,47 @@
 
 	        switch (n.type) {
 	          case "string":
-	            a = cd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = cd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
-	            break;
-
-	          case "string[]":
-	            a = vd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = vd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
-	            break;
-
-	          case "number":
-	            a = pd$2(e.attr, n.tfName, n.defaultValue || 0), void 0 === a && n.tfDeprecatedName && (a = pd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
-	            break;
-
-	          case "number[]":
-	            a = bd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = bd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
-	            break;
-
-	          case "bool":
-	            a = ld$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = ld$2(e.attr, n.tfDeprecatedName, n.defaultValue));
-	            break;
-
-	          case "bool[]":
 	            a = xd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = xd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
 	            break;
 
+	          case "string[]":
+	            a = Dd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Dd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            break;
+
+	          case "number":
+	            a = _d$1(e.attr, n.tfName, n.defaultValue || 0), void 0 === a && n.tfDeprecatedName && (a = _d$1(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            break;
+
+	          case "number[]":
+	            a = Ad$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Ad$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            break;
+
+	          case "bool":
+	            a = kd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = kd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            break;
+
+	          case "bool[]":
+	            a = Md$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Md$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            break;
+
 	          case "shape":
-	            a = yd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = yd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            a = Od$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Od$2(e.attr, n.tfDeprecatedName, n.defaultValue));
 	            break;
 
 	          case "shape[]":
-	            a = wd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = wd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            a = Cd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Cd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
 	            break;
 
 	          case "dtype":
-	            a = hd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = hd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            a = Td$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Td$2(e.attr, n.tfDeprecatedName, n.defaultValue));
 	            break;
 
 	          case "dtype[]":
-	            a = fd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = fd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            a = Sd$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Sd$2(e.attr, n.tfDeprecatedName, n.defaultValue));
 	            break;
 
 	          case "func":
-	            a = md$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = md$2(e.attr, n.tfDeprecatedName, n.defaultValue));
+	            a = Ed$2(e.attr, n.tfName, n.defaultValue), void 0 === a && n.tfDeprecatedName && (a = Ed$2(e.attr, n.tfDeprecatedName, n.defaultValue));
 	            break;
 
 	          case "tensor":
@@ -93045,9 +93284,9 @@
 	      var a = [],
 	          s = [];
 	      e.signature.inputArg.forEach(function (e) {
-	        var _zp7 = zp$1(e.name),
-	            _zp8 = _slicedToArray(_zp7, 1),
-	            t = _zp8[0],
+	        var _Yp7 = Yp$1(e.name),
+	            _Yp8 = _slicedToArray(_Yp7, 1),
+	            t = _Yp8[0],
 	            n = {
 	          name: t,
 	          op: "Placeholder",
@@ -93057,7 +93296,7 @@
 	          inputParams: {},
 	          attrParams: {
 	            dtype: {
-	              value: dd$2(e.type),
+	              value: Nd$2(e.type),
 	              type: "dtype"
 	            }
 	          },
@@ -93069,10 +93308,10 @@
 	      Object.keys(r).forEach(function (e) {
 	        var t = r[e];
 	        t.inputNames.forEach(function (e, n) {
-	          var _zp9 = zp$1(e),
-	              _zp10 = _slicedToArray(_zp9, 3),
-	              a = _zp10[0],
-	              s = _zp10[2],
+	          var _Yp9 = Yp$1(e),
+	              _Yp10 = _slicedToArray(_Yp9, 3),
+	              a = _Yp10[0],
+	              s = _Yp10[2],
 	              o = r[a];
 
 	          if (null != o.outputs) {
@@ -93090,10 +93329,10 @@
 	      });
 	      var o = e.ret;
 	      e.signature.outputArg.forEach(function (e) {
-	        var _zp11 = zp$1(o[e.name]),
-	            _zp12 = _slicedToArray(_zp11, 2),
-	            t = _zp12[0],
-	            n = _zp12[1],
+	        var _Yp11 = Yp$1(o[e.name]),
+	            _Yp12 = _slicedToArray(_Yp11, 2),
+	            t = _Yp12[0],
+	            n = _Yp12[1],
 	            a = r[t];
 
 	        null != a && (a.defaultOutput = n, s.push(a));
@@ -93139,12 +93378,12 @@
 	    }
 	  }]);
 
-	  return id;
+	  return vd;
 	}();
 
-	function ud$2(e, t) {
+	function wd$2(e, t) {
 	  var n = Array.isArray(e) ? String.fromCharCode.apply(null, e) : function (e) {
-	    var t = po$1().global;
+	    var t = No$1().global;
 	    if (void 0 !== t.atob) return t.atob(e);
 	    if ("undefined" != typeof Buffer) return new Buffer(e, "base64").toString();
 	    throw new Error("Unable to decode base64 in this environment. Missing built-in atob() or Buffer()");
@@ -93152,41 +93391,41 @@
 	  return t ? n : n.toLowerCase();
 	}
 
-	function cd$2(e, t, n) {
+	function xd$2(e, t, n) {
 	  var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
 	  var a = e[t];
-	  return null != a ? ud$2(a.s, r) : n;
+	  return null != a ? wd$2(a.s, r) : n;
 	}
 
-	function ld$2(e, t, n) {
+	function kd$2(e, t, n) {
 	  var r = e[t];
 	  return r ? r.b : n;
 	}
 
-	function pd$2(e, t, n) {
+	function _d$1(e, t, n) {
 	  var r = e[t] || {},
 	      a = null != r.i ? r.i : null != r.f ? r.f : n;
 	  return "number" == typeof a ? a : parseInt(a, 10);
 	}
 
-	function dd$2(e) {
-	  switch ("string" == typeof e && (e = Dp$1[e]), e) {
-	    case Dp$1.DT_FLOAT:
+	function Nd$2(e) {
+	  switch ("string" == typeof e && (e = Wp$1[e]), e) {
+	    case Wp$1.DT_FLOAT:
 	      return "float32";
 
-	    case Dp$1.DT_INT32:
-	    case Dp$1.DT_INT64:
-	    case Dp$1.DT_INT8:
-	    case Dp$1.DT_UINT8:
+	    case Wp$1.DT_INT32:
+	    case Wp$1.DT_INT64:
+	    case Wp$1.DT_INT8:
+	    case Wp$1.DT_UINT8:
 	      return "int32";
 
-	    case Dp$1.DT_BOOL:
+	    case Wp$1.DT_BOOL:
 	      return "bool";
 
-	    case Dp$1.DT_DOUBLE:
+	    case Wp$1.DT_DOUBLE:
 	      return "float32";
 
-	    case Dp$1.DT_STRING:
+	    case Wp$1.DT_STRING:
 	      return "string";
 
 	    default:
@@ -93194,57 +93433,57 @@
 	  }
 	}
 
-	function md$2(e, t, n) {
+	function Ed$2(e, t, n) {
 	  var r = e[t];
 	  return r && r.func ? r.func.name : n;
 	}
 
-	function hd$2(e, t, n) {
+	function Td$2(e, t, n) {
 	  var r = e[t];
-	  return r && r.type ? dd$2(r.type) : n;
+	  return r && r.type ? Nd$2(r.type) : n;
 	}
 
-	function fd$2(e, t, n) {
+	function Sd$2(e, t, n) {
 	  var r = e[t];
 	  return r && r.list && r.list.type ? r.list.type.map(function (e) {
-	    return dd$2(e);
+	    return Nd$2(e);
 	  }) : n;
 	}
 
-	function gd$2(e) {
+	function Id$2(e) {
 	  if (!e.unknownRank) return null != e.dim ? e.dim.map(function (e) {
 	    return "number" == typeof e.size ? e.size : parseInt(e.size, 10);
 	  }) : [];
 	}
 
-	function yd$2(e, t, n) {
+	function Od$2(e, t, n) {
 	  var r = e[t];
-	  return r && r.shape ? gd$2(r.shape) : n;
+	  return r && r.shape ? Id$2(r.shape) : n;
 	}
 
-	function bd$2(e, t, n) {
+	function Ad$2(e, t, n) {
 	  var r = e[t];
 	  return r ? ((r.list.f && r.list.f.length ? r.list.f : r.list.i) || []).map(function (e) {
 	    return "number" == typeof e ? e : parseInt(e, 10);
 	  }) : n;
 	}
 
-	function vd$2(e, t, n) {
+	function Dd$2(e, t, n) {
 	  var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : !1;
 	  var a = e[t];
 	  return a && a.list && a.list.s ? a.list.s.map(function (e) {
-	    return ud$2(e, r);
+	    return wd$2(e, r);
 	  }) : n;
 	}
 
-	function wd$2(e, t, n) {
+	function Cd$2(e, t, n) {
 	  var r = e[t];
 	  return r && r.list && r.list.shape ? r.list.shape.map(function (e) {
-	    return gd$2(e);
+	    return Id$2(e);
 	  }) : n;
 	}
 
-	function xd$2(e, t, n) {
+	function Md$2(e, t, n) {
 	  var r = e[t];
 	  return r && r.list && r.list.b ? r.list.b : n;
 	}
@@ -93266,11 +93505,11 @@
 	 */
 
 
-	var kd$2 = /*#__PURE__*/function () {
-	  function kd(e, t, n) {
+	var Rd$2 = /*#__PURE__*/function () {
+	  function Rd(e, t, n) {
 	    var _this25 = this;
 
-	    _classCallCheck(this, kd);
+	    _classCallCheck(this, Rd);
 
 	    this.node = e, this.tensorMap = t, this.context = n, this.inputs = [], this.attrs = {}, this.inputs = e.inputNames.map(function (e) {
 	      return _this25.getInput(e);
@@ -93279,35 +93518,35 @@
 	    }, {}));
 	  }
 
-	  _createClass(kd, [{
+	  _createClass(Rd, [{
 	    key: "getInput",
 	    value: function getInput(e) {
-	      return Fp$1(e, this.tensorMap, this.context);
+	      return Gp$1(e, this.tensorMap, this.context);
 	    }
 	  }, {
 	    key: "getAttr",
 	    value: function getAttr(e, t) {
 	      var n = this.node.rawAttrs[e];
-	      if (null != n.tensor) return Fp$1(e, this.tensorMap, this.context);
-	      if (null != n.i || null != n.f) return pd$2(this.node.rawAttrs, e, t);
-	      if (null != n.s) return cd$2(this.node.rawAttrs, e, t);
-	      if (null != n.b) return ld$2(this.node.rawAttrs, e, t);
-	      if (null != n.shape) return yd$2(this.node.rawAttrs, e, t);
-	      if (null != n.type) return hd$2(this.node.rawAttrs, e, t);
+	      if (null != n.tensor) return Gp$1(e, this.tensorMap, this.context);
+	      if (null != n.i || null != n.f) return _d$1(this.node.rawAttrs, e, t);
+	      if (null != n.s) return xd$2(this.node.rawAttrs, e, t);
+	      if (null != n.b) return kd$2(this.node.rawAttrs, e, t);
+	      if (null != n.shape) return Od$2(this.node.rawAttrs, e, t);
+	      if (null != n.type) return Td$2(this.node.rawAttrs, e, t);
 
 	      if (null != n.list) {
-	        if (null != n.list.i || null != n.list.f) return bd$2(this.node.rawAttrs, e, t);
-	        if (null != n.list.s) return vd$2(this.node.rawAttrs, e, t);
-	        if (null != n.list.shape) return wd$2(this.node.rawAttrs, e, t);
-	        if (null != n.list.b) return xd$2(this.node.rawAttrs, e, t);
-	        if (null != n.list.type) return fd$2(this.node.rawAttrs, e, t);
+	        if (null != n.list.i || null != n.list.f) return Ad$2(this.node.rawAttrs, e, t);
+	        if (null != n.list.s) return Dd$2(this.node.rawAttrs, e, t);
+	        if (null != n.list.shape) return Cd$2(this.node.rawAttrs, e, t);
+	        if (null != n.list.b) return Md$2(this.node.rawAttrs, e, t);
+	        if (null != n.list.type) return Sd$2(this.node.rawAttrs, e, t);
 	      }
 
 	      return t;
 	    }
 	  }]);
 
-	  return kd;
+	  return Rd;
 	}();
 	/**
 	 * @license
@@ -93344,41 +93583,41 @@
 	 */
 
 
-	function _d$1(e, t) {
+	function $d$2(e, t) {
 	  var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
 
 	  if ("number" != typeof e && "number" != typeof t) {
-	    Ws$1(e.length === t.length, function () {
+	    to$1(e.length === t.length, function () {
 	      return n + " Shapes ".concat(e, " and ").concat(t, " must match");
 	    });
 
 	    for (var _r35 = 0; _r35 < e.length; _r35++) {
 	      var _a24 = e[_r35],
 	          _s21 = t[_r35];
-	      Ws$1(_a24 < 0 || _s21 < 0 || _a24 === _s21, function () {
+	      to$1(_a24 < 0 || _s21 < 0 || _a24 === _s21, function () {
 	        return n + " Shapes ".concat(e, " and ").concat(t, " must match");
 	      });
 	    }
 	  }
 	}
 
-	function Nd$2(e) {
+	function Fd$2(e) {
 	  return "number" != typeof e && !e.some(function (e) {
 	    return e < 0;
 	  });
 	}
 
-	function Ed$2(e, t, n) {
-	  var r = Td$2(e, n);
-	  var a = !Nd$2(r);
+	function zd$2(e, t, n) {
+	  var r = Pd$2(e, n);
+	  var a = !Fd$2(r);
 	  if (a && 0 === t.length) throw new Error("Tried to calculate elements of an empty list with non-fully-defined elementShape: ".concat(r));
 	  if (a && t.forEach(function (e) {
-	    r = Td$2(e.shape, r);
-	  }), !Nd$2(r)) throw new Error("Non-fully-defined elementShape: ".concat(r));
+	    r = Pd$2(e.shape, r);
+	  }), !Fd$2(r)) throw new Error("Non-fully-defined elementShape: ".concat(r));
 	  return r;
 	}
 
-	function Td$2(e, t) {
+	function Pd$2(e, t) {
 	  if ("number" == typeof e) return t;
 	  if ("number" == typeof t) return e;
 	  if (e.length !== t.length) throw new Error("Incompatible ranks during merge: ".concat(e, " vs. ").concat(t));
@@ -93411,14 +93650,14 @@
 	 */
 
 
-	var Sd$2 = /*#__PURE__*/function () {
-	  function Sd(e, t, n, r, a, s, o) {
-	    _classCallCheck(this, Sd);
+	var Ld$2 = /*#__PURE__*/function () {
+	  function Ld(e, t, n, r, a, s, o) {
+	    _classCallCheck(this, Ld);
 
-	    this.name = e, this.dtype = t, this.maxSize = n, this.elementShape = r, this.identicalElementShapes = a, this.dynamicSize = s, this.clearAfterRead = o, this.tensors = [], this.closed_ = !1, this.idTensor = yl$1(0), eu$1(this.idTensor);
+	    this.name = e, this.dtype = t, this.maxSize = n, this.elementShape = r, this.identicalElementShapes = a, this.dynamicSize = s, this.clearAfterRead = o, this.tensors = [], this.closed_ = !1, this.idTensor = Ol$1(0), du$1(this.idTensor);
 	  }
 
-	  _createClass(Sd, [{
+	  _createClass(Ld, [{
 	    key: "id",
 	    get: function get() {
 	      return this.idTensor.id;
@@ -93465,9 +93704,9 @@
 	      if (e < 0 || !this.dynamicSize && e >= this.maxSize) throw new Error("Tried to write to index ".concat(e, ", but array is not resizeable and size is: ").concat(this.maxSize));
 	      var n = this.tensors[e] || {};
 	      if (t.dtype !== this.dtype) throw new Error("TensorArray ".concat(this.name, ": Could not write to TensorArray index ").concat(e, ",\n          because the value dtype is ").concat(t.dtype, ", but TensorArray dtype is ").concat(this.dtype, "."));
-	      if (0 !== this.size() || null != this.elementShape && 0 !== this.elementShape.length || (this.elementShape = t.shape), _d$1(this.elementShape, t.shape, "TensorArray ".concat(this.name, ": Could not write to TensorArray index ").concat(e, ".")), n.read) throw new Error("TensorArray ".concat(this.name, ": Could not write to TensorArray index ").concat(e, ", because it has already been read."));
+	      if (0 !== this.size() || null != this.elementShape && 0 !== this.elementShape.length || (this.elementShape = t.shape), $d$2(this.elementShape, t.shape, "TensorArray ".concat(this.name, ": Could not write to TensorArray index ").concat(e, ".")), n.read) throw new Error("TensorArray ".concat(this.name, ": Could not write to TensorArray index ").concat(e, ", because it has already been read."));
 	      if (n.written) throw new Error("TensorArray ".concat(this.name, ": Could not write to TensorArray index ").concat(e, ", because it has already been written."));
-	      n.tensor = t, eu$1(t), n.written = !0, this.tensors[e] = n;
+	      n.tensor = t, du$1(t), n.written = !0, this.tensors[e] = n;
 	    }
 	  }, {
 	    key: "writeMany",
@@ -93490,15 +93729,15 @@
 	          e.push(_t60);
 	        }
 	      }
-	      if (0 === e.length) return ui$2([], [0].concat(this.elementShape));
+	      if (0 === e.length) return wi$2([], [0].concat(this.elementShape));
 	      var n = this.readMany(e);
-	      return _d$1(this.elementShape, n[0].shape, "TensorArray shape mismatch: "), Ml$1(n, 0);
+	      return $d$2(this.elementShape, n[0].shape, "TensorArray shape mismatch: "), Ul$1(n, 0);
 	    }
 	  }, {
 	    key: "concat",
 	    value: function concat(e) {
 	      if (e && e !== this.dtype) throw new Error("TensorArray dtype is ".concat(this.dtype, " but concat requested dtype ").concat(e));
-	      if (0 === this.size()) return ui$2([], [0].concat(this.elementShape));
+	      if (0 === this.size()) return wi$2([], [0].concat(this.elementShape));
 	      var t = [];
 
 	      for (var _e64 = 0; _e64 < this.size(); _e64++) {
@@ -93506,7 +93745,7 @@
 	      }
 
 	      var n = this.readMany(t);
-	      return _d$1(this.elementShape, n[0].shape, "TensorArray shape mismatch: tensor array shape (".concat(this.elementShape, ") vs first tensor shape (").concat(n[0].shape, ")")), Su$1(n, 0);
+	      return $d$2(this.elementShape, n[0].shape, "TensorArray shape mismatch: tensor array shape (".concat(this.elementShape, ") vs first tensor shape (").concat(n[0].shape, ")")), Lu$1(n, 0);
 	    }
 	  }, {
 	    key: "scatter",
@@ -93515,7 +93754,7 @@
 	      if (e.length !== t.shape[0]) throw new Error("Expected len(indices) == tensor.shape[0], but saw: ".concat(e.length, " vs. ").concat(t.shape[0]));
 	      var n = Math.max.apply(Math, _toConsumableArray(e));
 	      if (!this.dynamicSize && n >= this.maxSize) throw new Error("Max index must be < array size (".concat(n, "  vs. ").concat(this.maxSize, ")"));
-	      this.writeMany(e, Bl$1(t, 0));
+	      this.writeMany(e, Zl$1(t, 0));
 	    }
 	  }, {
 	    key: "split",
@@ -93531,13 +93770,13 @@
 	      if (!this.dynamicSize && e.length !== this.maxSize) throw new Error("TensorArray's size is not equal to the size of lengths (".concat(this.maxSize, " vs. ").concat(e.length, "), and the TensorArray is not marked as dynamically resizeable"));
 	      var a = 0 === n ? 0 : t.size / n,
 	          s = [];
-	      Ji$2(function () {
-	        t = Nu$1(t, [1, n, a]);
+	      pu$1(function () {
+	        t = Fu$1(t, [1, n, a]);
 
 	        for (var _n31 = 0; _n31 < e.length; ++_n31) {
 	          var _o15 = [0, 0 === _n31 ? 0 : r[_n31 - 1], 0],
 	              _i14 = [1, e[_n31], a];
-	          s[_n31] = Nu$1(Ou$1(t, _o15, _i14), _this28.elementShape);
+	          s[_n31] = Fu$1(Vu$1(t, _o15, _i14), _this28.elementShape);
 	        }
 
 	        return s;
@@ -93552,7 +93791,7 @@
 	    }
 	  }]);
 
-	  return Sd;
+	  return Ld;
 	}();
 	/**
 	 * @license
@@ -93572,19 +93811,19 @@
 	 */
 
 
-	var Id$2 = /*#__PURE__*/function () {
-	  function Id(e, t, n) {
+	var Bd$2 = /*#__PURE__*/function () {
+	  function Bd(e, t, n) {
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : -1;
 
-	    _classCallCheck(this, Id);
+	    _classCallCheck(this, Bd);
 
 	    this.tensors = e, this.elementShape = t, this.elementDtype = n, null != e && e.forEach(function (e) {
 	      if (n !== e.dtype) throw new Error("Invalid data types; op elements ".concat(n, ", but list elements ").concat(e.dtype));
-	      _d$1(t, e.shape, "TensorList shape mismatch: "), eu$1(e);
-	    }), this.idTensor = yl$1(0), this.maxNumElements = r, eu$1(this.idTensor);
+	      $d$2(t, e.shape, "TensorList shape mismatch: "), du$1(e);
+	    }), this.idTensor = Ol$1(0), this.maxNumElements = r, du$1(this.idTensor);
 	  }
 
-	  _createClass(Id, [{
+	  _createClass(Bd, [{
 	    key: "id",
 	    get: function get() {
 	      return this.idTensor.id;
@@ -93592,7 +93831,7 @@
 	  }, {
 	    key: "copy",
 	    value: function copy() {
-	      return new Id(_toConsumableArray(this.tensors), this.elementShape, this.elementDtype);
+	      return new Bd(_toConsumableArray(this.tensors), this.elementShape, this.elementDtype);
 	    }
 	  }, {
 	    key: "clearAndClose",
@@ -93614,16 +93853,14 @@
 	      var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -1;
 	      if (t !== this.elementDtype) throw new Error("Invalid data types; op elements ".concat(t, ", but list elements ").concat(this.elementDtype));
 	      if (-1 !== n && this.tensors.length !== n) throw new Error("Operation expected a list with ".concat(n, " elements but got a list with ").concat(this.tensors.length, " elements."));
-
-	      _d$1(e, this.elementShape, "TensorList shape mismatch: ");
-
-	      var r = Ed$2(this.elementShape, this.tensors, e);
-	      return Ji$2(function () {
+	      $d$2(e, this.elementShape, "TensorList shape mismatch: ");
+	      var r = zd$2(this.elementShape, this.tensors, e);
+	      return pu$1(function () {
 	        var e = _this29.tensors.map(function (e) {
-	          return Nu$1(e, r);
+	          return Fu$1(e, r);
 	        });
 
-	        return Ml$1(e, 0);
+	        return Ul$1(e, 0);
 	      });
 	    }
 	  }, {
@@ -93631,16 +93868,16 @@
 	    value: function popBack(e, t) {
 	      if (t !== this.elementDtype) throw new Error("Invalid data types; op elements ".concat(t, ", but list elements ").concat(this.elementDtype));
 	      if (0 === this.size()) throw new Error("Trying to pop from an empty list.");
-	      var n = Ed$2(this.elementShape, this.tensors, e),
+	      var n = zd$2(this.elementShape, this.tensors, e),
 	          r = this.tensors.pop();
-	      return _d$1(r.shape, e, "TensorList shape mismatch: "), Nu$1(r, n);
+	      return $d$2(r.shape, e, "TensorList shape mismatch: "), Fu$1(r, n);
 	    }
 	  }, {
 	    key: "pushBack",
 	    value: function pushBack(e) {
 	      if (e.dtype !== this.elementDtype) throw new Error("Invalid data types; op elements ".concat(e.dtype, ", but list elements ").concat(this.elementDtype));
-	      if (_d$1(e.shape, this.elementShape, "TensorList shape mismatch: "), this.maxNumElements === this.size()) throw new Error("Trying to push element into a full list.");
-	      eu$1(e), this.tensors.push(e);
+	      if ($d$2(e.shape, this.elementShape, "TensorList shape mismatch: "), this.maxNumElements === this.size()) throw new Error("Trying to push element into a full list.");
+	      du$1(e), this.tensors.push(e);
 	    }
 	  }, {
 	    key: "resize",
@@ -93655,18 +93892,16 @@
 	      if (n !== this.elementDtype) throw new Error("Invalid data types; op elements ".concat(n, ", but list elements ").concat(this.elementDtype));
 	      if (e < 0 || e > this.tensors.length) throw new Error("Trying to access element ".concat(e, " in a list with ").concat(this.tensors.length, " elements."));
 	      if (null == this.tensors[e]) throw new Error("element at index ".concat(e, " is null."));
-
-	      _d$1(this.tensors[e].shape, t, "TensorList shape mismatch: ");
-
-	      var r = Ed$2(this.elementShape, this.tensors, t);
-	      return Nu$1(this.tensors[e], r);
+	      $d$2(this.tensors[e].shape, t, "TensorList shape mismatch: ");
+	      var r = zd$2(this.elementShape, this.tensors, t);
+	      return Fu$1(this.tensors[e], r);
 	    }
 	  }, {
 	    key: "setItem",
 	    value: function setItem(e, t) {
 	      if (t.dtype !== this.elementDtype) throw new Error("Invalid data types; op elements ".concat(t.dtype, ", but list elements ").concat(this.elementDtype));
 	      if (e < 0 || -1 !== this.maxNumElements && e >= this.maxNumElements) throw new Error("Trying to set element ".concat(e, " in a list with max ").concat(this.maxNumElements, " elements."));
-	      _d$1(this.elementShape, t.shape, "TensorList shape mismatch: "), eu$1(t), this.tensors[e] = t;
+	      $d$2(this.elementShape, t.shape, "TensorList shape mismatch: "), du$1(t), this.tensors[e] = t;
 	    }
 	  }, {
 	    key: "gather",
@@ -93674,13 +93909,13 @@
 	      var _this30 = this;
 
 	      if (t !== this.elementDtype) throw new Error("Invalid data types; op elements ".concat(t, ", but list elements ").concat(this.elementDtype));
-	      _d$1(this.elementShape, n, "TensorList shape mismatch: "), e = e.slice(0, this.size());
-	      var r = Ed$2(this.elementShape, this.tensors, n);
-	      return 0 === e.length ? ui$2([], [0].concat(r)) : Ji$2(function () {
+	      $d$2(this.elementShape, n, "TensorList shape mismatch: "), e = e.slice(0, this.size());
+	      var r = zd$2(this.elementShape, this.tensors, n);
+	      return 0 === e.length ? wi$2([], [0].concat(r)) : pu$1(function () {
 	        var t = e.map(function (e) {
-	          return Nu$1(_this30.tensors[e], r);
+	          return Fu$1(_this30.tensors[e], r);
 	        });
-	        return Ml$1(t, 0);
+	        return Ul$1(t, 0);
 	      });
 	    }
 	  }, {
@@ -93689,21 +93924,19 @@
 	      var _this31 = this;
 
 	      if (e && e !== this.elementDtype) throw new Error("TensorList dtype is ".concat(this.elementDtype, " but concat requested dtype ").concat(e));
-
-	      _d$1(this.elementShape, t, "TensorList shape mismatch: ");
-
-	      var n = Ed$2(this.elementShape, this.tensors, t);
-	      return 0 === this.size() ? ui$2([], [0].concat(n)) : Ji$2(function () {
+	      $d$2(this.elementShape, t, "TensorList shape mismatch: ");
+	      var n = zd$2(this.elementShape, this.tensors, t);
+	      return 0 === this.size() ? wi$2([], [0].concat(n)) : pu$1(function () {
 	        var e = _this31.tensors.map(function (e) {
-	          return Nu$1(e, n);
+	          return Fu$1(e, n);
 	        });
 
-	        return Su$1(e, 0);
+	        return Lu$1(e, 0);
 	      });
 	    }
 	  }]);
 
-	  return Id;
+	  return Bd;
 	}();
 	/**
 	 * @license
@@ -93723,7 +93956,7 @@
 	 */
 
 
-	var Od$2 = /*#__PURE__*/function () {
+	var Vd$2 = /*#__PURE__*/function () {
 	  var _ref20 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee29(e, t, n) {
 	    var _r37, _a26, _s23, _o16, _ret, _r38, _a27, _r39, _r40, _a28, _r41, _r42, _r43, _a29, _s24, _o17, _i15, _u8, _c3, _l3, _r44, _a30, _s25, _o18, _r45, _a31, _r46, _a32, _s26, _r47, _a33, _s27, _o19, _r48, _a34, _s28, _r49, _a35, _s29, _o20, _r50, _r51, _a36, _r52, _a37, _s30, _o21, _r53, _a38, _s31, _o22, _r54, _a39, _r55, _a40, _s32, _o23, _r56, _a41, _s33, _o24, _r57, _a42, _s34, _o25, _r58, _r59, _a43, _s35, _o26, _r60, _a44, _s36, _r61, _a45, _s37, _r62, _a46, _s38;
 
@@ -93736,7 +93969,7 @@
 	            break;
 
 	          case 3:
-	            _r37 = $p$1("thenBranch", e, t, n), _a26 = $p$1("elseBranch", e, t, n), _s23 = $p$1("cond", e, t, n), _o16 = $p$1("args", e, t, n);
+	            _r37 = qp$1("thenBranch", e, t, n), _a26 = qp$1("elseBranch", e, t, n), _s23 = qp$1("cond", e, t, n), _o16 = qp$1("args", e, t, n);
 	            _context30.next = 6;
 	            return _s23.data();
 
@@ -93764,9 +93997,9 @@
 	                while (1) {
 	                  switch (_context29.prev = _context29.next) {
 	                    case 0:
-	                      r = $p$1("body", e, t, n);
-	                      a = $p$1("cond", e, t, n);
-	                      s = $p$1("args", e, t, n);
+	                      r = qp$1("body", e, t, n);
+	                      a = qp$1("cond", e, t, n);
+	                      s = qp$1("args", e, t, n);
 	                      _context29.next = 5;
 	                      return n.functionMap[a].executeFunctionAsync(s, n.tensorArrayMap, n.tensorListMap);
 
@@ -93860,12 +94093,12 @@
 	            return _context30.abrupt("return", _ret.v);
 
 	          case 16:
-	            return _context30.abrupt("return", [Vp$1($p$1("pred", e, t, n))]);
+	            return _context30.abrupt("return", [Jp$1(qp$1("pred", e, t, n))]);
 
 	          case 17:
-	            _r38 = $p$1("pred", e, t, n);
-	            _a27 = $p$1("data", e, t, n);
-	            _a27.kept || (_a27 = Vp$1(_a27));
+	            _r38 = qp$1("pred", e, t, n);
+	            _a27 = qp$1("data", e, t, n);
+	            _a27.kept || (_a27 = Jp$1(_a27));
 	            _context30.next = 22;
 	            return _r38.data();
 
@@ -93887,7 +94120,7 @@
 
 	          case 28:
 	            _r39 = e.inputNames.find(function (e) {
-	              return void 0 !== Fp$1(e, t, n);
+	              return void 0 !== Gp$1(e, t, n);
 	            });
 
 	            if (!_r39) {
@@ -93895,96 +94128,96 @@
 	              break;
 	            }
 
-	            return _context30.abrupt("return", [Vp$1(Fp$1(_r39, t, n))]);
+	            return _context30.abrupt("return", [Jp$1(Gp$1(_r39, t, n))]);
 
 	          case 31:
 	            return _context30.abrupt("return");
 
 	          case 32:
-	            _r40 = $p$1("frameName", e, t, n), _a28 = $p$1("tensor", e, t, n);
-	            return _context30.abrupt("return", (n.enterFrame(_r40), [Vp$1(_a28)]));
+	            _r40 = qp$1("frameName", e, t, n), _a28 = qp$1("tensor", e, t, n);
+	            return _context30.abrupt("return", (n.enterFrame(_r40), [Jp$1(_a28)]));
 
 	          case 34:
-	            _r41 = $p$1("tensor", e, t, n);
-	            return _context30.abrupt("return", (n.exitFrame(), [Vp$1(_r41)]));
+	            _r41 = qp$1("tensor", e, t, n);
+	            return _context30.abrupt("return", (n.exitFrame(), [Jp$1(_r41)]));
 
 	          case 36:
-	            _r42 = $p$1("tensor", e, t, n);
-	            return _context30.abrupt("return", (n.nextIteration(), [Vp$1(_r42)]));
+	            _r42 = qp$1("tensor", e, t, n);
+	            return _context30.abrupt("return", (n.nextIteration(), [Jp$1(_r42)]));
 
 	          case 38:
-	            _r43 = $p$1("size", e, t, n), _a29 = $p$1("dtype", e, t, n), _s24 = $p$1("elementShape", e, t, n), _o17 = $p$1("dynamicSize", e, t, n), _i15 = $p$1("clearAfterRead", e, t, n), _u8 = $p$1("identicalElementShapes", e, t, n), _c3 = $p$1("name", e, t, n), _l3 = new Sd$2(_c3, _a29, _r43, _s24, _u8, _o17, _i15);
-	            return _context30.abrupt("return", (n.addTensorArray(_l3), [_l3.idTensor, yl$1(1)]));
+	            _r43 = qp$1("size", e, t, n), _a29 = qp$1("dtype", e, t, n), _s24 = qp$1("elementShape", e, t, n), _o17 = qp$1("dynamicSize", e, t, n), _i15 = qp$1("clearAfterRead", e, t, n), _u8 = qp$1("identicalElementShapes", e, t, n), _c3 = qp$1("name", e, t, n), _l3 = new Ld$2(_c3, _a29, _r43, _s24, _u8, _o17, _i15);
+	            return _context30.abrupt("return", (n.addTensorArray(_l3), [_l3.idTensor, Ol$1(1)]));
 
 	          case 40:
-	            _r44 = $p$1("tensorArrayId", e, t, n), _a30 = $p$1("index", e, t, n), _s25 = $p$1("tensor", e, t, n), _o18 = n.getTensorArray(_r44.id);
+	            _r44 = qp$1("tensorArrayId", e, t, n), _a30 = qp$1("index", e, t, n), _s25 = qp$1("tensor", e, t, n), _o18 = n.getTensorArray(_r44.id);
 	            return _context30.abrupt("return", (_o18.write(_a30, _s25), [_o18.idTensor]));
 
 	          case 42:
-	            _r45 = $p$1("tensorArrayId", e, t, n), _a31 = $p$1("index", e, t, n);
+	            _r45 = qp$1("tensorArrayId", e, t, n), _a31 = qp$1("index", e, t, n);
 	            return _context30.abrupt("return", [n.getTensorArray(_r45.id).read(_a31)]);
 
 	          case 44:
-	            _r46 = $p$1("tensorArrayId", e, t, n), _a32 = $p$1("indices", e, t, n), _s26 = $p$1("dtype", e, t, n);
+	            _r46 = qp$1("tensorArrayId", e, t, n), _a32 = qp$1("indices", e, t, n), _s26 = qp$1("dtype", e, t, n);
 	            return _context30.abrupt("return", [n.getTensorArray(_r46.id).gather(_a32, _s26)]);
 
 	          case 46:
-	            _r47 = $p$1("tensorArrayId", e, t, n), _a33 = $p$1("indices", e, t, n), _s27 = $p$1("tensor", e, t, n), _o19 = n.getTensorArray(_r47.id);
+	            _r47 = qp$1("tensorArrayId", e, t, n), _a33 = qp$1("indices", e, t, n), _s27 = qp$1("tensor", e, t, n), _o19 = n.getTensorArray(_r47.id);
 	            return _context30.abrupt("return", (_o19.scatter(_a33, _s27), [_o19.idTensor]));
 
 	          case 48:
-	            _r48 = $p$1("tensorArrayId", e, t, n), _a34 = n.getTensorArray(_r48.id), _s28 = $p$1("dtype", e, t, n);
+	            _r48 = qp$1("tensorArrayId", e, t, n), _a34 = n.getTensorArray(_r48.id), _s28 = qp$1("dtype", e, t, n);
 	            return _context30.abrupt("return", [_a34.concat(_s28)]);
 
 	          case 50:
-	            _r49 = $p$1("tensorArrayId", e, t, n), _a35 = $p$1("tensor", e, t, n), _s29 = $p$1("lengths", e, t, n), _o20 = n.getTensorArray(_r49.id);
+	            _r49 = qp$1("tensorArrayId", e, t, n), _a35 = qp$1("tensor", e, t, n), _s29 = qp$1("lengths", e, t, n), _o20 = n.getTensorArray(_r49.id);
 	            return _context30.abrupt("return", (_o20.split(_s29, _a35), [_o20.idTensor]));
 
 	          case 52:
-	            _r50 = $p$1("tensorArrayId", e, t, n);
-	            return _context30.abrupt("return", [yl$1(n.getTensorArray(_r50.id).size(), "int32")]);
+	            _r50 = qp$1("tensorArrayId", e, t, n);
+	            return _context30.abrupt("return", [Ol$1(n.getTensorArray(_r50.id).size(), "int32")]);
 
 	          case 54:
-	            _r51 = $p$1("tensorArrayId", e, t, n), _a36 = n.getTensorArray(_r51.id);
+	            _r51 = qp$1("tensorArrayId", e, t, n), _a36 = n.getTensorArray(_r51.id);
 	            return _context30.abrupt("return", (_a36.clearAndClose(), [_a36.idTensor]));
 
 	          case 56:
-	            _r52 = $p$1("tensorListId", e, t, n), _a37 = $p$1("index", e, t, n), _s30 = $p$1("tensor", e, t, n), _o21 = n.getTensorList(_r52.id);
+	            _r52 = qp$1("tensorListId", e, t, n), _a37 = qp$1("index", e, t, n), _s30 = qp$1("tensor", e, t, n), _o21 = n.getTensorList(_r52.id);
 	            return _context30.abrupt("return", (_o21.setItem(_a37, _s30), [_o21.idTensor]));
 
 	          case 58:
-	            _r53 = $p$1("tensorListId", e, t, n), _a38 = $p$1("index", e, t, n), _s31 = $p$1("elementShape", e, t, n), _o22 = $p$1("elementDType", e, t, n);
+	            _r53 = qp$1("tensorListId", e, t, n), _a38 = qp$1("index", e, t, n), _s31 = qp$1("elementShape", e, t, n), _o22 = qp$1("elementDType", e, t, n);
 	            return _context30.abrupt("return", [n.getTensorList(_r53.id).getItem(_a38, _s31, _o22)]);
 
 	          case 60:
-	            _r54 = $p$1("indices", e, t, n), _a39 = function (e, t, n, r) {
+	            _r54 = qp$1("indices", e, t, n), _a39 = function (e, t, n, r) {
 	              if (t.length !== e.shape[0]) throw new Error("Expected len(indices) == tensor.shape[0], but saw: ".concat(t.length, " vs. ").concat(e.shape[0]));
 	              var a = Math.max.apply(Math, _toConsumableArray(t));
 	              if (null != r && -1 !== r && a >= r) throw new Error("Max index must be < array size (".concat(a, "  vs. ").concat(r, ")"));
-	              var s = new Id$2([], n, e.dtype, r),
-	                  o = Bl$1(e, 0);
+	              var s = new Bd$2([], n, e.dtype, r),
+	                  o = Zl$1(e, 0);
 	              return t.forEach(function (e, t) {
 	                s.setItem(e, o[t]);
 	              }), s;
-	            }($p$1("tensor", e, t, n), _r54, $p$1("elementShape", e, t, n), $p$1("numElements", e, t, n));
+	            }(qp$1("tensor", e, t, n), _r54, qp$1("elementShape", e, t, n), qp$1("numElements", e, t, n));
 	            return _context30.abrupt("return", (n.addTensorList(_a39), [_a39.idTensor]));
 
 	          case 62:
-	            _r55 = $p$1("elementShape", e, t, n), _a40 = $p$1("elementDType", e, t, n);
+	            _r55 = qp$1("elementShape", e, t, n), _a40 = qp$1("elementDType", e, t, n);
 	            _s32 = "TensorListReserve" === e.op ? "numElements" : "maxNumElements";
 
 	            _o23 = function (e, t, n) {
-	              return new Id$2([], e, t, n);
-	            }(_r55, _a40, $p$1(_s32, e, t, n));
+	              return new Bd$2([], e, t, n);
+	            }(_r55, _a40, qp$1(_s32, e, t, n));
 
 	            return _context30.abrupt("return", (n.addTensorList(_o23), [_o23.idTensor]));
 
 	          case 66:
-	            _r56 = $p$1("tensorListId", e, t, n), _a41 = $p$1("indices", e, t, n), _s33 = $p$1("elementShape", e, t, n), _o24 = $p$1("elementDType", e, t, n);
+	            _r56 = qp$1("tensorListId", e, t, n), _a41 = qp$1("indices", e, t, n), _s33 = qp$1("elementShape", e, t, n), _o24 = qp$1("elementDType", e, t, n);
 	            return _context30.abrupt("return", [n.getTensorList(_r56.id).gather(_a41, _o24, _s33)]);
 
 	          case 68:
-	            _r57 = $p$1("tensorListId", e, t, n), _a42 = $p$1("elementShape", e, t, n), _s34 = $p$1("elementDType", e, t, n), _o25 = $p$1("numElements", e, t, n);
+	            _r57 = qp$1("tensorListId", e, t, n), _a42 = qp$1("elementShape", e, t, n), _s34 = qp$1("elementDType", e, t, n), _o25 = qp$1("numElements", e, t, n);
 	            return _context30.abrupt("return", [n.getTensorList(_r57.id).stack(_a42, _s34, _o25)]);
 
 	          case 70:
@@ -93992,56 +94225,54 @@
 	              var r = e.dtype;
 	              if (e.shape.length < 1) throw new Error("Tensor must be at least a vector, but saw shape: ".concat(e.shape));
 	              if (e.dtype !== n) throw new Error("Invalid data types; op elements ".concat(e.dtype, ", but list elements ").concat(n));
-
-	              _d$1(e.shape.slice(1), t, "TensorList shape mismatch: ");
-
-	              var a = Bl$1(e);
-	              return new Id$2(a, t, r);
-	            }($p$1("tensor", e, t, n), $p$1("elementShape", e, t, n), $p$1("elementDType", e, t, n));
+	              $d$2(e.shape.slice(1), t, "TensorList shape mismatch: ");
+	              var a = Zl$1(e);
+	              return new Bd$2(a, t, r);
+	            }(qp$1("tensor", e, t, n), qp$1("elementShape", e, t, n), qp$1("elementDType", e, t, n));
 
 	            return _context30.abrupt("return", (n.addTensorList(_r58), [_r58.idTensor]));
 
 	          case 72:
-	            _r59 = $p$1("tensorListId", e, t, n), _a43 = n.getTensorList(_r59.id), _s35 = $p$1("dtype", e, t, n), _o26 = $p$1("elementShape", e, t, n);
+	            _r59 = qp$1("tensorListId", e, t, n), _a43 = n.getTensorList(_r59.id), _s35 = qp$1("dtype", e, t, n), _o26 = qp$1("elementShape", e, t, n);
 	            return _context30.abrupt("return", [_a43.concat(_s35, _o26)]);
 
 	          case 74:
-	            _r60 = $p$1("tensorListId", e, t, n), _a44 = $p$1("tensor", e, t, n), _s36 = n.getTensorList(_r60.id);
+	            _r60 = qp$1("tensorListId", e, t, n), _a44 = qp$1("tensor", e, t, n), _s36 = n.getTensorList(_r60.id);
 	            return _context30.abrupt("return", (_s36.pushBack(_a44), [_s36.idTensor]));
 
 	          case 76:
-	            _r61 = $p$1("tensorListId", e, t, n), _a45 = $p$1("elementShape", e, t, n), _s37 = $p$1("elementDType", e, t, n);
+	            _r61 = qp$1("tensorListId", e, t, n), _a45 = qp$1("elementShape", e, t, n), _s37 = qp$1("elementDType", e, t, n);
 	            return _context30.abrupt("return", [n.getTensorList(_r61.id).popBack(_a45, _s37)]);
 
 	          case 78:
-	            _r62 = $p$1("tensor", e, t, n), _a46 = $p$1("elementShape", e, t, n), _s38 = function (e, t, n) {
+	            _r62 = qp$1("tensor", e, t, n), _a46 = qp$1("elementShape", e, t, n), _s38 = function (e, t, n) {
 	              var r = 0;
 	              var a = t.map(function (e) {
 	                return r += e, r;
 	              });
 	              if (r !== e.shape[0]) throw new Error("Expected sum of lengths to be equal to\n          tensor.shape[0], but sum of lengths is\n        ".concat(r, ", and tensor's shape is: ").concat(e.shape));
-	              var s = Td$2(e.shape.slice(1), n),
+	              var s = Pd$2(e.shape.slice(1), n),
 	                  o = 0 === r ? 0 : e.size / r,
-	                  i = Ji$2(function () {
+	                  i = pu$1(function () {
 	                var n = [];
-	                e = Nu$1(e, [1, r, o]);
+	                e = Fu$1(e, [1, r, o]);
 
 	                for (var _r63 = 0; _r63 < t.length; ++_r63) {
 	                  var _i16 = [0, 0 === _r63 ? 0 : a[_r63 - 1], 0],
 	                      _u9 = [1, t[_r63], o];
-	                  n[_r63] = Nu$1(Ou$1(e, _i16, _u9), s);
+	                  n[_r63] = Fu$1(Vu$1(e, _i16, _u9), s);
 	                }
 
 	                return e.dispose(), n;
 	              }),
-	                  u = new Id$2([], n, e.dtype, t.length);
+	                  u = new Bd$2([], n, e.dtype, t.length);
 
 	              for (var _e65 = 0; _e65 < i.length; _e65++) {
 	                u.setItem(_e65, i[_e65]);
 	              }
 
 	              return u;
-	            }(_r62, $p$1("lengths", e, t, n), _a46);
+	            }(_r62, qp$1("lengths", e, t, n), _a46);
 	            return _context30.abrupt("return", (n.addTensorList(_s38), [_s38.idTensor]));
 
 	          case 80:
@@ -94055,7 +94286,7 @@
 	    }, _callee29);
 	  }));
 
-	  return function Od(_x29, _x30, _x31) {
+	  return function Vd(_x29, _x30, _x31) {
 	    return _ref20.apply(this, arguments);
 	  };
 	}();
@@ -94077,16 +94308,16 @@
 	 */
 
 
-	function Ad$2(e, t, n) {
-	  var _$p = $p$1("fusedOps", e, t, n),
-	      _$p2 = _slicedToArray(_$p, 2),
-	      r = _$p2[0],
-	      a = _$p2[1],
+	function jd$2(e, t, n) {
+	  var _qp = qp$1("fusedOps", e, t, n),
+	      _qp2 = _slicedToArray(_qp, 2),
+	      r = _qp2[0],
+	      a = _qp2[1],
 	      s = "biasadd" === r,
 	      o = !s,
 	      i = "prelu" === a,
 	      u = "fusedbatchnorm" === r,
-	      c = $p$1("numArgs", e, t, n);
+	      c = qp$1("numArgs", e, t, n);
 
 	  if (s) {
 	    if (i && 2 !== c) throw new Error("FusedConv2d and DepthwiseConv2d with BiasAdd and Prelu must have two extra arguments: bias and alpha.");
@@ -94094,15 +94325,15 @@
 	  }
 
 	  if (u) throw new Error("FusedConv2d and DepthwiseConv2d with FusedBatchNorm is not supported");
-	  var l = $p$1("strides", e, t, n),
-	      p = Bp$1(e, t, n),
-	      d = $p$1("dataFormat", e, t, n).toUpperCase(),
-	      m = $p$1("dilations", e, t, n);
+	  var l = qp$1("strides", e, t, n),
+	      p = Zp$1(e, t, n),
+	      d = qp$1("dataFormat", e, t, n).toUpperCase(),
+	      m = qp$1("dilations", e, t, n);
 
-	  var _$p3 = $p$1("args", e, t, n),
-	      _$p4 = _slicedToArray(_$p3, 2),
-	      h = _$p4[0],
-	      f = _$p4[1];
+	  var _qp3 = qp$1("args", e, t, n),
+	      _qp4 = _slicedToArray(_qp3, 2),
+	      h = _qp4[0],
+	      f = _qp4[1];
 
 	  o && (f = h, h = void 0);
 	  return {
@@ -94113,7 +94344,7 @@
 	    biasArg: h,
 	    preluArg: f,
 	    activationFunc: a,
-	    leakyreluAlpha: $p$1("leakyreluAlpha", e, t, n)
+	    leakyreluAlpha: qp$1("leakyreluAlpha", e, t, n)
 	  };
 	}
 	/**
@@ -94134,14 +94365,14 @@
 	 */
 
 
-	function Dd$2(e, t, n) {
+	function Wd$2(e, t, n) {
 	  return {
-	    boxes: $p$1("boxes", e, t, n),
-	    scores: $p$1("scores", e, t, n),
-	    maxOutputSize: $p$1("maxOutputSize", e, t, n),
-	    iouThreshold: $p$1("iouThreshold", e, t, n),
-	    scoreThreshold: $p$1("scoreThreshold", e, t, n),
-	    softNmsSigma: $p$1("softNmsSigma", e, t, n)
+	    boxes: qp$1("boxes", e, t, n),
+	    scores: qp$1("scores", e, t, n),
+	    maxOutputSize: qp$1("maxOutputSize", e, t, n),
+	    iouThreshold: qp$1("iouThreshold", e, t, n),
+	    scoreThreshold: qp$1("scoreThreshold", e, t, n),
+	    softNmsSigma: qp$1("softNmsSigma", e, t, n)
 	  };
 	}
 	/**
@@ -94162,14 +94393,14 @@
 	 */
 
 
-	var Md$2 = /*#__PURE__*/function () {
-	  function Md(e, t) {
-	    _classCallCheck(this, Md);
+	var Ud$2 = /*#__PURE__*/function () {
+	  function Ud(e, t) {
+	    _classCallCheck(this, Ud);
 
-	    this.keyDType = e, this.valueDType = t, this.handle = yl$1(0), this.tensorMap = new Map(), eu$1(this.handle);
+	    this.keyDType = e, this.valueDType = t, this.handle = Ol$1(0), this.tensorMap = new Map(), du$1(this.handle);
 	  }
 
-	  _createClass(Md, [{
+	  _createClass(Ud, [{
 	    key: "id",
 	    get: function get() {
 	      return this.handle.id;
@@ -94189,7 +94420,7 @@
 	  }, {
 	    key: "tensorSize",
 	    value: function tensorSize() {
-	      return yl$1(this.size(), "int32");
+	      return Ol$1(this.size(), "int32");
 	    }
 	  }, {
 	    key: "import",
@@ -94210,18 +94441,18 @@
 	                n = _context31.sent;
 	                return _context31.abrupt("return", (this.tensorMap.forEach(function (e) {
 	                  return e.dispose();
-	                }), this.tensorMap.clear(), Ji$2(function () {
-	                  var e = Bl$1(t),
+	                }), this.tensorMap.clear(), pu$1(function () {
+	                  var e = Zl$1(t),
 	                      r = n.length,
 	                      a = e.length;
-	                  Ws$1(r === a, function () {
+	                  to$1(r === a, function () {
 	                    return "The number of elements doesn't match, keys has ".concat(r, " elements, the values has ").concat(a, " elements.");
 	                  });
 
 	                  for (var _t62 = 0; _t62 < r; _t62++) {
 	                    var _r64 = n[_t62],
 	                        _a47 = e[_t62];
-	                    eu$1(_a47), _this32.tensorMap.set(_r64, _a47);
+	                    du$1(_a47), _this32.tensorMap.set(_r64, _a47);
 	                  }
 
 	                  return _this32.handle;
@@ -94258,7 +94489,7 @@
 
 	              case 3:
 	                n = _context32.sent;
-	                return _context32.abrupt("return", Ji$2(function () {
+	                return _context32.abrupt("return", pu$1(function () {
 	                  var e = [];
 
 	                  for (var _r65 = 0; _r65 < n.length; _r65++) {
@@ -94268,7 +94499,7 @@
 	                    e.push(_s39);
 	                  }
 
-	                  return Ml$1(e);
+	                  return Ul$1(e);
 	                }));
 
 	              case 5:
@@ -94299,7 +94530,7 @@
 	    }
 	  }]);
 
-	  return Md;
+	  return Ud;
 	}();
 	/**
 	 * @license
@@ -94336,52 +94567,52 @@
 	 */
 
 
-	function Cd$2(e, t, n, r) {
+	function Kd$2(e, t, n, r) {
 	  var a = function (e, t, n) {
 	    switch (e.category) {
 	      case "arithmetic":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "BiasAdd":
 	              case "AddV2":
 	              case "Add":
-	                return [tu$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [mu$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "AddN":
-	                return [uu$1($p$1("tensors", e, t, n))];
+	                return [wu$1(qp$1("tensors", e, t, n))];
 
 	              case "FloorMod":
 	              case "Mod":
-	                return [Vc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [Jc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Mul":
-	                return [au$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [gu$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "RealDiv":
 	              case "Div":
-	                return [ru$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [fu$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "DivNoNan":
-	                return [Ju$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [pc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "FloorDiv":
-	                return [nu$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [hu$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Sub":
-	                return [Ec$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [zc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Minimum":
-	                return [Lc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [Qc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Maximum":
-	                return [Rc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [Hc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Pow":
-	                return [Gc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [ol$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "SquaredDifference":
-	                return [Al$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [jl$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -94390,135 +94621,135 @@
 	        });
 
 	      case "basic_math":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Abs":
 	              case "ComplexAbs":
-	                return [su$1($p$1("x", e, t, n))];
+	                return [yu$1(qp$1("x", e, t, n))];
 
 	              case "Acos":
-	                return [ou$1($p$1("x", e, t, n))];
+	                return [bu$1(qp$1("x", e, t, n))];
 
 	              case "Acosh":
-	                return [iu$1($p$1("x", e, t, n))];
+	                return [vu$1(qp$1("x", e, t, n))];
 
 	              case "Asin":
-	                return [mu$1($p$1("x", e, t, n))];
+	                return [Eu$1(qp$1("x", e, t, n))];
 
 	              case "Asinh":
-	                return [hu$1($p$1("x", e, t, n))];
+	                return [Tu$1(qp$1("x", e, t, n))];
 
 	              case "Atan":
-	                return [fu$1($p$1("x", e, t, n))];
+	                return [Su$1(qp$1("x", e, t, n))];
 
 	              case "Atan2":
-	                return [gu$1($p$1("x", e, t, n), $p$1("y", e, t, n))];
+	                return [Iu$1(qp$1("x", e, t, n), qp$1("y", e, t, n))];
 
 	              case "Atanh":
-	                return [yu$1($p$1("x", e, t, n))];
+	                return [Ou$1(qp$1("x", e, t, n))];
 
 	              case "Ceil":
-	                return [$u$1($p$1("x", e, t, n))];
+	                return [qu$1(qp$1("x", e, t, n))];
 
 	              case "Complex":
-	                return [oi$2($p$1("real", e, t, n), $p$1("imag", e, t, n))];
+	                return [bi$2(qp$1("real", e, t, n), qp$1("imag", e, t, n))];
 
 	              case "Cos":
-	                return [ju$1($p$1("x", e, t, n))];
+	                return [ec$2(qp$1("x", e, t, n))];
 
 	              case "Cosh":
-	                return [Wu$1($p$1("x", e, t, n))];
+	                return [tc$2(qp$1("x", e, t, n))];
 
 	              case "Elu":
-	                return [tc$2($p$1("x", e, t, n))];
+	                return [mc$2(qp$1("x", e, t, n))];
 
 	              case "Erf":
-	                return [nc$2($p$1("x", e, t, n))];
+	                return [hc$2(qp$1("x", e, t, n))];
 
 	              case "Exp":
-	                return [rc$2($p$1("x", e, t, n))];
+	                return [fc$2(qp$1("x", e, t, n))];
 
 	              case "Expm1":
-	                return [sc$2($p$1("x", e, t, n))];
+	                return [yc$2(qp$1("x", e, t, n))];
 
 	              case "Floor":
-	                return [uc$2($p$1("x", e, t, n))];
+	                return [wc$2(qp$1("x", e, t, n))];
 
 	              case "Log":
-	                return [vc$2($p$1("x", e, t, n))];
+	                return [Dc$2(qp$1("x", e, t, n))];
 
 	              case "Log1p":
-	                return [wc$2($p$1("x", e, t, n))];
+	                return [Cc$2(qp$1("x", e, t, n))];
 
 	              case "Imag":
-	                return [dc$2($p$1("x", e, t, n))];
+	                return [Nc$2(qp$1("x", e, t, n))];
 
 	              case "Neg":
-	                return [kc$2($p$1("x", e, t, n))];
+	                return [Rc$2(qp$1("x", e, t, n))];
 
 	              case "Reciprocal":
-	                return [pl$1($p$1("x", e, t, n))];
+	                return [_l$1(qp$1("x", e, t, n))];
 
 	              case "Real":
-	                return [ll$1($p$1("x", e, t, n))];
+	                return [kl$1(qp$1("x", e, t, n))];
 
 	              case "Relu":
-	                return [dl$1($p$1("x", e, t, n))];
+	                return [Nl$1(qp$1("x", e, t, n))];
 
 	              case "Round":
-	                return [fl$1($p$1("x", e, t, n))];
+	                return [Sl$1(qp$1("x", e, t, n))];
 
 	              case "Selu":
-	                return [bl$1($p$1("x", e, t, n))];
+	                return [Al$1(qp$1("x", e, t, n))];
 
 	              case "Sigmoid":
-	                return [Iu$1($p$1("x", e, t, n))];
+	                return [Bu$1(qp$1("x", e, t, n))];
 
 	              case "Sin":
-	                return [xl$1($p$1("x", e, t, n))];
+	                return [Ml$1(qp$1("x", e, t, n))];
 
 	              case "Sign":
-	                return [wl$1($p$1("x", e, t, n))];
+	                return [Cl$1(qp$1("x", e, t, n))];
 
 	              case "Sinh":
-	                return [kl$1($p$1("x", e, t, n))];
+	                return [Rl$1(qp$1("x", e, t, n))];
 
 	              case "Softplus":
-	                return [_c$1($p$1("x", e, t, n))];
+	                return [$c$2(qp$1("x", e, t, n))];
 
 	              case "Sqrt":
-	                return [Ol$1($p$1("x", e, t, n))];
+	                return [Vl$1(qp$1("x", e, t, n))];
 
 	              case "Square":
-	                return [jc$2($p$1("x", e, t, n))];
+	                return [el$1(qp$1("x", e, t, n))];
 
 	              case "Tanh":
-	                return [Au$1($p$1("x", e, t, n))];
+	                return [ju$1(qp$1("x", e, t, n))];
 
 	              case "Tan":
-	                return [$l$1($p$1("x", e, t, n))];
+	                return [ql$1(qp$1("x", e, t, n))];
 
 	              case "ClipByValue":
-	                return [Fu$1($p$1("x", e, t, n), $p$1("clipValueMin", e, t, n), $p$1("clipValueMax", e, t, n))];
+	                return [Gu$1(qp$1("x", e, t, n), qp$1("clipValueMin", e, t, n), qp$1("clipValueMax", e, t, n))];
 
 	              case "Relu6":
-	                return [ml$1($p$1("x", e, t, n))];
+	                return [El$1(qp$1("x", e, t, n))];
 
 	              case "Rsqrt":
-	                return [gl$1(Fp$1(e.inputNames[0], t, n))];
+	                return [Il$1(Gp$1(e.inputNames[0], t, n))];
 
 	              case "Prod":
-	                return [Xc$1($p$1("x", e, t, n), $p$1("axes", e, t, n))];
+	                return [ul$1(qp$1("x", e, t, n), qp$1("axes", e, t, n))];
 
 	              case "LeakyRelu":
-	                return [hc$2($p$1("x", e, t, n), $p$1("alpha", e, t, n))];
+	                return [Tc$2(qp$1("x", e, t, n), qp$1("alpha", e, t, n))];
 
 	              case "Prelu":
-	                return [Yc$2($p$1("x", e, t, n), $p$1("alpha", e, t, n))];
+	                return [il$1(qp$1("x", e, t, n), qp$1("alpha", e, t, n))];
 
 	              case "IsNan":
-	                return [mc$2(Fp$1(e.inputNames[0], t, n))];
+	                return [Ec$2(Gp$1(e.inputNames[0], t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -94527,47 +94758,47 @@
 	        });
 
 	      case "control":
-	        return Od$2(e, t, n);
+	        return Vd$2(e, t, n);
 
 	      case "convolution":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Conv1D":
 	                {
-	                  var _r66 = $p$1("stride", e, t, n),
-	                      _a50 = $p$1("pad", e, t, n),
-	                      _s40 = $p$1("dataFormat", e, t, n).toUpperCase(),
-	                      _o27 = $p$1("dilation", e, t, n);
+	                  var _r66 = qp$1("stride", e, t, n),
+	                      _a50 = qp$1("pad", e, t, n),
+	                      _s40 = qp$1("dataFormat", e, t, n).toUpperCase(),
+	                      _o27 = qp$1("dilation", e, t, n);
 
-	                  return [Pu$1($p$1("x", e, t, n), $p$1("filter", e, t, n), _r66, _a50, _s40, _o27)];
+	                  return [Xu$1(qp$1("x", e, t, n), qp$1("filter", e, t, n), _r66, _a50, _s40, _o27)];
 	                }
 
 	              case "Conv2D":
 	                {
-	                  var _r67 = $p$1("strides", e, t, n),
-	                      _a51 = Bp$1(e, t, n),
-	                      _s41 = $p$1("dataFormat", e, t, n).toUpperCase(),
-	                      _o28 = $p$1("dilations", e, t, n);
+	                  var _r67 = qp$1("strides", e, t, n),
+	                      _a51 = Zp$1(e, t, n),
+	                      _s41 = qp$1("dataFormat", e, t, n).toUpperCase(),
+	                      _o28 = qp$1("dilations", e, t, n);
 
-	                  return [zu$1($p$1("x", e, t, n), $p$1("filter", e, t, n), [_r67[1], _r67[2]], _a51, _s41, [_o28[1], _o28[2]])];
+	                  return [Yu$1(qp$1("x", e, t, n), qp$1("filter", e, t, n), [_r67[1], _r67[2]], _a51, _s41, [_o28[1], _o28[2]])];
 	                }
 
 	              case "_FusedConv2D":
 	                {
-	                  var _Ad = Ad$2(e, t, n),
-	                      _r68 = _Ad.stride,
-	                      _a52 = _Ad.pad,
-	                      _s42 = _Ad.dataFormat,
-	                      _o29 = _Ad.dilations,
-	                      _i17 = _Ad.biasArg,
-	                      _u10 = _Ad.preluArg,
-	                      _c4 = _Ad.activationFunc,
-	                      _l4 = _Ad.leakyreluAlpha;
+	                  var _jd = jd$2(e, t, n),
+	                      _r68 = _jd.stride,
+	                      _a52 = _jd.pad,
+	                      _s42 = _jd.dataFormat,
+	                      _o29 = _jd.dilations,
+	                      _i17 = _jd.biasArg,
+	                      _u10 = _jd.preluArg,
+	                      _c4 = _jd.activationFunc,
+	                      _l4 = _jd.leakyreluAlpha;
 
-	                  return [Xl$1({
-	                    x: $p$1("x", e, t, n),
-	                    filter: $p$1("filter", e, t, n),
+	                  return [up$1({
+	                    x: qp$1("x", e, t, n),
+	                    filter: qp$1("filter", e, t, n),
 	                    strides: [_r68[1], _r68[2]],
 	                    pad: _a52,
 	                    dataFormat: _s42,
@@ -94581,19 +94812,19 @@
 
 	              case "FusedDepthwiseConv2dNative":
 	                {
-	                  var _Ad2 = Ad$2(e, t, n),
-	                      _r69 = _Ad2.stride,
-	                      _a53 = _Ad2.pad,
-	                      _s43 = _Ad2.dataFormat,
-	                      _o30 = _Ad2.dilations,
-	                      _i18 = _Ad2.biasArg,
-	                      _u11 = _Ad2.preluArg,
-	                      _c5 = _Ad2.activationFunc,
-	                      _l5 = _Ad2.leakyreluAlpha;
+	                  var _jd2 = jd$2(e, t, n),
+	                      _r69 = _jd2.stride,
+	                      _a53 = _jd2.pad,
+	                      _s43 = _jd2.dataFormat,
+	                      _o30 = _jd2.dilations,
+	                      _i18 = _jd2.biasArg,
+	                      _u11 = _jd2.preluArg,
+	                      _c5 = _jd2.activationFunc,
+	                      _l5 = _jd2.leakyreluAlpha;
 
-	                  return [Jl$1({
-	                    x: $p$1("x", e, t, n),
-	                    filter: $p$1("filter", e, t, n),
+	                  return [pp$1({
+	                    x: qp$1("x", e, t, n),
+	                    filter: qp$1("filter", e, t, n),
 	                    strides: [_r69[1], _r69[2]],
 	                    pad: _a53,
 	                    dataFormat: _s43,
@@ -94608,94 +94839,94 @@
 	              case "Conv2DBackpropInput":
 	              case "Conv2dTranspose":
 	                {
-	                  var _r70 = $p$1("outputShape", e, t, n),
-	                      _a54 = $p$1("strides", e, t, n),
-	                      _s44 = Bp$1(e, t, n);
+	                  var _r70 = qp$1("outputShape", e, t, n),
+	                      _a54 = qp$1("strides", e, t, n),
+	                      _s44 = Zp$1(e, t, n);
 
-	                  return [Bu$1($p$1("x", e, t, n), $p$1("filter", e, t, n), _r70, [_a54[1], _a54[2]], _s44)];
+	                  return [Zu$1(qp$1("x", e, t, n), qp$1("filter", e, t, n), _r70, [_a54[1], _a54[2]], _s44)];
 	                }
 
 	              case "DepthwiseConv2dNative":
 	              case "DepthwiseConv2d":
 	                {
-	                  var _r71 = $p$1("strides", e, t, n),
-	                      _a55 = Bp$1(e, t, n),
-	                      _s45 = $p$1("dilations", e, t, n),
-	                      _o31 = $p$1("dataFormat", e, t, n).toUpperCase();
+	                  var _r71 = qp$1("strides", e, t, n),
+	                      _a55 = Zp$1(e, t, n),
+	                      _s45 = qp$1("dilations", e, t, n),
+	                      _o31 = qp$1("dataFormat", e, t, n).toUpperCase();
 
-	                  return [qu$1($p$1("input", e, t, n), $p$1("filter", e, t, n), [_r71[1], _r71[2]], _a55, _o31, [_s45[1], _s45[2]])];
+	                  return [sc$2(qp$1("input", e, t, n), qp$1("filter", e, t, n), [_r71[1], _r71[2]], _a55, _o31, [_s45[1], _s45[2]])];
 	                }
 
 	              case "Conv3D":
 	                {
-	                  var _r72 = $p$1("strides", e, t, n),
-	                      _a56 = $p$1("pad", e, t, n),
-	                      _s46 = $p$1("dataFormat", e, t, n).toUpperCase(),
-	                      _o32 = $p$1("dilations", e, t, n);
+	                  var _r72 = qp$1("strides", e, t, n),
+	                      _a56 = qp$1("pad", e, t, n),
+	                      _s46 = qp$1("dataFormat", e, t, n).toUpperCase(),
+	                      _o32 = qp$1("dilations", e, t, n);
 
-	                  return [Vu$1($p$1("x", e, t, n), $p$1("filter", e, t, n), [_r72[1], _r72[2], _r72[3]], _a56, _s46, [_o32[1], _o32[2], _o32[3]])];
+	                  return [Ju$1(qp$1("x", e, t, n), qp$1("filter", e, t, n), [_r72[1], _r72[2], _r72[3]], _a56, _s46, [_o32[1], _o32[2], _o32[3]])];
 	                }
 
 	              case "AvgPool":
 	                {
-	                  var _r73 = $p$1("strides", e, t, n),
-	                      _a57 = $p$1("pad", e, t, n),
-	                      _s47 = $p$1("kernelSize", e, t, n);
+	                  var _r73 = qp$1("strides", e, t, n),
+	                      _a57 = qp$1("pad", e, t, n),
+	                      _s47 = qp$1("kernelSize", e, t, n);
 
-	                  return [Eu$1($p$1("x", e, t, n), [_s47[1], _s47[2]], [_r73[1], _r73[2]], _a57)];
+	                  return [zu$1(qp$1("x", e, t, n), [_s47[1], _s47[2]], [_r73[1], _r73[2]], _a57)];
 	                }
 
 	              case "MaxPool":
 	                {
-	                  var _r74 = $p$1("strides", e, t, n),
-	                      _a58 = $p$1("pad", e, t, n),
-	                      _s48 = $p$1("kernelSize", e, t, n);
+	                  var _r74 = qp$1("strides", e, t, n),
+	                      _a58 = qp$1("pad", e, t, n),
+	                      _s48 = qp$1("kernelSize", e, t, n);
 
-	                  return [Dc$2($p$1("x", e, t, n), [_s48[1], _s48[2]], [_r74[1], _r74[2]], _a58)];
+	                  return [Wc$2(qp$1("x", e, t, n), [_s48[1], _s48[2]], [_r74[1], _r74[2]], _a58)];
 	                }
 
 	              case "MaxPoolWithArgmax":
 	                {
-	                  var _r75 = $p$1("strides", e, t, n),
-	                      _a59 = $p$1("pad", e, t, n),
-	                      _s49 = $p$1("kernelSize", e, t, n),
-	                      _o33 = $p$1("includeBatchInIndex", e, t, n),
-	                      _Cc = Cc$2($p$1("x", e, t, n), [_s49[1], _s49[2]], [_r75[1], _r75[2]], _a59, _o33),
-	                      _i19 = _Cc.result,
-	                      _u12 = _Cc.indexes;
+	                  var _r75 = qp$1("strides", e, t, n),
+	                      _a59 = qp$1("pad", e, t, n),
+	                      _s49 = qp$1("kernelSize", e, t, n),
+	                      _o33 = qp$1("includeBatchInIndex", e, t, n),
+	                      _Kc = Kc$2(qp$1("x", e, t, n), [_s49[1], _s49[2]], [_r75[1], _r75[2]], _a59, _o33),
+	                      _i19 = _Kc.result,
+	                      _u12 = _Kc.indexes;
 
 	                  return [_i19, _u12];
 	                }
 
 	              case "AvgPool3D":
 	                {
-	                  var _r76 = $p$1("strides", e, t, n),
-	                      _a60 = $p$1("pad", e, t, n),
-	                      _s50 = $p$1("kernelSize", e, t, n);
+	                  var _r76 = qp$1("strides", e, t, n),
+	                      _a60 = qp$1("pad", e, t, n),
+	                      _s50 = qp$1("kernelSize", e, t, n);
 
-	                  return [Tu$1($p$1("x", e, t, n), [_s50[1], _s50[2], _s50[3]], [_r76[1], _r76[2], _r76[3]], _a60)];
+	                  return [Pu$1(qp$1("x", e, t, n), [_s50[1], _s50[2], _s50[3]], [_r76[1], _r76[2], _r76[3]], _a60)];
 	                }
 
 	              case "MaxPool3D":
 	                {
-	                  var _r77 = $p$1("strides", e, t, n),
-	                      _a61 = $p$1("pad", e, t, n),
-	                      _s51 = $p$1("kernelSize", e, t, n);
+	                  var _r77 = qp$1("strides", e, t, n),
+	                      _a61 = qp$1("pad", e, t, n),
+	                      _s51 = qp$1("kernelSize", e, t, n);
 
-	                  return [Mc$2($p$1("x", e, t, n), [_s51[1], _s51[2], _s51[3]], [_r77[1], _r77[2], _r77[3]], _a61)];
+	                  return [Uc$2(qp$1("x", e, t, n), [_s51[1], _s51[2], _s51[3]], [_r77[1], _r77[2], _r77[3]], _a61)];
 	                }
 
 	              case "Dilation2D":
 	                {
-	                  var _r78 = $p$1("strides", e, t, n),
-	                      _a62 = $p$1("pad", e, t, n),
-	                      _s52 = $p$1("dilations", e, t, n),
+	                  var _r78 = qp$1("strides", e, t, n),
+	                      _a62 = qp$1("pad", e, t, n),
+	                      _s52 = qp$1("dilations", e, t, n),
 	                      _o34 = _r78[1],
 	                      _i20 = _r78[2],
 	                      _u13 = _s52[1],
 	                      _c6 = _s52[2];
 
-	                  return [Gu$1($p$1("x", e, t, n), $p$1("filter", e, t, n), [_o34, _i20], _a62, [_u13, _c6], "NHWC")];
+	                  return [oc$2(qp$1("x", e, t, n), qp$1("filter", e, t, n), [_o34, _i20], _a62, [_u13, _c6], "NHWC")];
 	                }
 
 	              default:
@@ -94705,66 +94936,66 @@
 	        });
 
 	      case "creation":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Fill":
 	                {
-	                  var _r79 = $p$1("shape", e, t, n),
-	                      _a63 = $p$1("dtype", e, t, n);
+	                  var _r79 = qp$1("shape", e, t, n),
+	                      _a63 = qp$1("dtype", e, t, n);
 
-	                  return [ic$2(_r79, $p$1("value", e, t, n), _a63)];
+	                  return [vc$2(_r79, qp$1("value", e, t, n), _a63)];
 	                }
 
 	              case "LinSpace":
-	                return [yc$2($p$1("start", e, t, n), $p$1("stop", e, t, n), $p$1("num", e, t, n))];
+	                return [Oc$2(qp$1("start", e, t, n), qp$1("stop", e, t, n), qp$1("num", e, t, n))];
 
 	              case "Multinomial":
 	                {
-	                  var _r80 = $p$1("logits", e, t, n),
-	                      _a64 = $p$1("numSamples", e, t, n),
-	                      _s53 = $p$1("seed", e, t, n);
+	                  var _r80 = qp$1("logits", e, t, n),
+	                      _a64 = qp$1("numSamples", e, t, n),
+	                      _s53 = qp$1("seed", e, t, n);
 
-	                  return [Wc$2(_r80, _a64, _s53)];
+	                  return [tl$1(_r80, _a64, _s53)];
 	                }
 
 	              case "OneHot":
 	                {
-	                  var _r81 = $p$1("indices", e, t, n),
-	                      _a65 = $p$1("depth", e, t, n),
-	                      _s54 = $p$1("onValue", e, t, n),
-	                      _o35 = $p$1("offValue", e, t, n);
+	                  var _r81 = qp$1("indices", e, t, n),
+	                      _a65 = qp$1("depth", e, t, n),
+	                      _s54 = qp$1("onValue", e, t, n),
+	                      _o35 = qp$1("offValue", e, t, n);
 
-	                  return [Gi$2(_r81, _a65, _s54, _o35)];
+	                  return [ou$1(_r81, _a65, _s54, _o35)];
 	                }
 
 	              case "Ones":
-	                return [zc$2($p$1("shape", e, t, n), $p$1("dtype", e, t, n))];
+	                return [Yc$2(qp$1("shape", e, t, n), qp$1("dtype", e, t, n))];
 
 	              case "OnesLike":
-	                return [Kc$2($p$1("x", e, t, n))];
+	                return [rl$1(qp$1("x", e, t, n))];
 
 	              case "RandomUniform":
-	                return [ul$1($p$1("shape", e, t, n), $p$1("minval", e, t, n), $p$1("maxval", e, t, n), $p$1("dtype", e, t, n))];
+	                return [wl$1(qp$1("shape", e, t, n), qp$1("minval", e, t, n), qp$1("maxval", e, t, n), qp$1("dtype", e, t, n))];
 
 	              case "Range":
-	                return [cl$1($p$1("start", e, t, n), $p$1("stop", e, t, n), $p$1("step", e, t, n), $p$1("dtype", e, t, n))];
+	                return [xl$1(qp$1("start", e, t, n), qp$1("stop", e, t, n), qp$1("step", e, t, n), qp$1("dtype", e, t, n))];
 
 	              case "TruncatedNormal":
 	                {
-	                  var _r82 = $p$1("shape", e, t, n),
-	                      _a66 = $p$1("mean", e, t, n),
-	                      _s55 = $p$1("stdDev", e, t, n),
-	                      _o36 = $p$1("seed", e, t, n);
+	                  var _r82 = qp$1("shape", e, t, n),
+	                      _a66 = qp$1("mean", e, t, n),
+	                      _s55 = qp$1("stdDev", e, t, n),
+	                      _o36 = qp$1("seed", e, t, n);
 
-	                  return [Pl$1(_r82, _a66, _s55, $p$1("dtype", e, t, n), _o36)];
+	                  return [Xl$1(_r82, _a66, _s55, qp$1("dtype", e, t, n), _o36)];
 	                }
 
 	              case "Zeros":
-	                return [Fc$2($p$1("shape", e, t, n), $p$1("dtype", e, t, n))];
+	                return [Gc$2(qp$1("shape", e, t, n), qp$1("dtype", e, t, n))];
 
 	              case "ZerosLike":
-	                return [Zu$1($p$1("x", e, t, n))];
+	                return [lc$2(qp$1("x", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -94775,7 +95006,7 @@
 	      case "dynamic":
 	        return function () {
 	          var _ref21 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee32(e, t, n) {
-	            var _Dd, _r83, _a67, _s56, _o37, _i21, _u14, _c7, _Dd2, _r84, _a68, _s57, _o38, _i22, _u15, _c8, _Dd3, _r85, _a69, _s58, _o39, _i23, _r86, _a70;
+	            var _Wd, _r83, _a67, _s56, _o37, _i21, _u14, _c7, _Wd2, _r84, _a68, _s57, _o38, _i22, _u15, _c8, _Wd3, _r85, _a69, _s58, _o39, _i23, _r86, _a70;
 
 	            return regeneratorRuntime.wrap(function _callee32$(_context33) {
 	              while (1) {
@@ -94786,48 +95017,48 @@
 	                    break;
 
 	                  case 3:
-	                    _Dd = Dd$2(e, t, n);
-	                    _r83 = _Dd.boxes;
-	                    _a67 = _Dd.scores;
-	                    _s56 = _Dd.maxOutputSize;
-	                    _o37 = _Dd.iouThreshold;
-	                    _i21 = _Dd.scoreThreshold;
-	                    _u14 = _Dd.softNmsSigma;
+	                    _Wd = Wd$2(e, t, n);
+	                    _r83 = _Wd.boxes;
+	                    _a67 = _Wd.scores;
+	                    _s56 = _Wd.maxOutputSize;
+	                    _o37 = _Wd.iouThreshold;
+	                    _i21 = _Wd.scoreThreshold;
+	                    _u14 = _Wd.softNmsSigma;
 	                    _context33.next = 12;
-	                    return Ip$1.nonMaxSuppressionWithScoreAsync(_r83, _a67, _s56, _o37, _i21, _u14);
+	                    return Bp$1.nonMaxSuppressionWithScoreAsync(_r83, _a67, _s56, _o37, _i21, _u14);
 
 	                  case 12:
 	                    _c7 = _context33.sent;
 	                    return _context33.abrupt("return", [_c7.selectedIndices, _c7.selectedScores]);
 
 	                  case 14:
-	                    _Dd2 = Dd$2(e, t, n);
-	                    _r84 = _Dd2.boxes;
-	                    _a68 = _Dd2.scores;
-	                    _s57 = _Dd2.maxOutputSize;
-	                    _o38 = _Dd2.iouThreshold;
-	                    _i22 = _Dd2.scoreThreshold;
-	                    _u15 = $p$1("padToMaxOutputSize", e, t, n);
+	                    _Wd2 = Wd$2(e, t, n);
+	                    _r84 = _Wd2.boxes;
+	                    _a68 = _Wd2.scores;
+	                    _s57 = _Wd2.maxOutputSize;
+	                    _o38 = _Wd2.iouThreshold;
+	                    _i22 = _Wd2.scoreThreshold;
+	                    _u15 = qp$1("padToMaxOutputSize", e, t, n);
 	                    _context33.next = 23;
-	                    return Ip$1.nonMaxSuppressionPaddedAsync(_r84, _a68, _s57, _o38, _i22, _u15);
+	                    return Bp$1.nonMaxSuppressionPaddedAsync(_r84, _a68, _s57, _o38, _i22, _u15);
 
 	                  case 23:
 	                    _c8 = _context33.sent;
 	                    return _context33.abrupt("return", [_c8.selectedIndices, _c8.validOutputs]);
 
 	                  case 25:
-	                    _Dd3 = Dd$2(e, t, n), _r85 = _Dd3.boxes, _a69 = _Dd3.scores, _s58 = _Dd3.maxOutputSize, _o39 = _Dd3.iouThreshold, _i23 = _Dd3.scoreThreshold;
+	                    _Wd3 = Wd$2(e, t, n), _r85 = _Wd3.boxes, _a69 = _Wd3.scores, _s58 = _Wd3.maxOutputSize, _o39 = _Wd3.iouThreshold, _i23 = _Wd3.scoreThreshold;
 	                    _context33.next = 28;
-	                    return Ip$1.nonMaxSuppressionAsync(_r85, _a69, _s58, _o39, _i23);
+	                    return Bp$1.nonMaxSuppressionAsync(_r85, _a69, _s58, _o39, _i23);
 
 	                  case 28:
 	                    _context33.t1 = _context33.sent;
 	                    return _context33.abrupt("return", [_context33.t1]);
 
 	                  case 30:
-	                    _r86 = Li$2($p$1("condition", e, t, n), "bool");
+	                    _r86 = Qi$2(qp$1("condition", e, t, n), "bool");
 	                    _context33.next = 33;
-	                    return Vl$1(_r86);
+	                    return Jl$1(_r86);
 
 	                  case 33:
 	                    _context33.t2 = _context33.sent;
@@ -94835,7 +95066,7 @@
 	                    return _context33.abrupt("return", (_r86.dispose(), _a70));
 
 	                  case 36:
-	                    return _context33.abrupt("return", vl$1($p$1("x", e, t, n), $p$1("y", e, t, n)));
+	                    return _context33.abrupt("return", Dl$1(qp$1("x", e, t, n), qp$1("y", e, t, n)));
 
 	                  case 37:
 	                    throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -94854,32 +95085,32 @@
 	        }()(e, t, n);
 
 	      case "evaluation":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "TopKV2":
 	                {
-	                  var _r87 = $p$1("x", e, t, n),
-	                      _a71 = $p$1("k", e, t, n),
-	                      _s59 = $p$1("sorted", e, t, n),
-	                      _o40 = zl$1(_r87, _a71, _s59);
+	                  var _r87 = qp$1("x", e, t, n),
+	                      _a71 = qp$1("k", e, t, n),
+	                      _s59 = qp$1("sorted", e, t, n),
+	                      _o40 = Yl$1(_r87, _a71, _s59);
 
 	                  return [_o40.values, _o40.indices];
 	                }
 
 	              case "Unique":
 	                {
-	                  var _r88 = $p$1("x", e, t, n),
-	                      _a72 = Ll$1(_r88);
+	                  var _r88 = qp$1("x", e, t, n),
+	                      _a72 = Ql$1(_r88);
 
 	                  return [_a72.values, _a72.indices];
 	                }
 
 	              case "UniqueV2":
 	                {
-	                  var _r89 = $p$1("x", e, t, n),
-	                      _a73 = $p$1("axis", e, t, n),
-	                      _s60 = Ll$1(_r89, _a73);
+	                  var _r89 = qp$1("x", e, t, n),
+	                      _a73 = qp$1("axis", e, t, n),
+	                      _s60 = Ql$1(_r89, _a73);
 
 	                  return [_s60.values, _s60.indices];
 	                }
@@ -94891,39 +95122,39 @@
 	        });
 
 	      case "image":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "ResizeBilinear":
 	                {
-	                  var _r90 = $p$1("images", e, t, n),
-	                      _a74 = $p$1("size", e, t, n),
-	                      _s61 = $p$1("alignCorners", e, t, n),
-	                      _o41 = $p$1("halfPixelCenters", e, t, n);
+	                  var _r90 = qp$1("images", e, t, n),
+	                      _a74 = qp$1("size", e, t, n),
+	                      _s61 = qp$1("alignCorners", e, t, n),
+	                      _o41 = qp$1("halfPixelCenters", e, t, n);
 
-	                  return [Ip$1.resizeBilinear(_r90, [_a74[0], _a74[1]], _s61, _o41)];
+	                  return [Bp$1.resizeBilinear(_r90, [_a74[0], _a74[1]], _s61, _o41)];
 	                }
 
 	              case "ResizeNearestNeighbor":
 	                {
-	                  var _r91 = $p$1("images", e, t, n),
-	                      _a75 = $p$1("size", e, t, n),
-	                      _s62 = $p$1("alignCorners", e, t, n),
-	                      _o42 = $p$1("halfPixelCenters", e, t, n);
+	                  var _r91 = qp$1("images", e, t, n),
+	                      _a75 = qp$1("size", e, t, n),
+	                      _s62 = qp$1("alignCorners", e, t, n),
+	                      _o42 = qp$1("halfPixelCenters", e, t, n);
 
-	                  return [Ip$1.resizeNearestNeighbor(_r91, [_a75[0], _a75[1]], _s62, _o42)];
+	                  return [Bp$1.resizeNearestNeighbor(_r91, [_a75[0], _a75[1]], _s62, _o42)];
 	                }
 
 	              case "CropAndResize":
 	                {
-	                  var _r92 = $p$1("image", e, t, n),
-	                      _a76 = $p$1("boxes", e, t, n),
-	                      _s63 = $p$1("boxInd", e, t, n),
-	                      _o43 = $p$1("cropSize", e, t, n),
-	                      _i24 = $p$1("method", e, t, n),
-	                      _u16 = $p$1("extrapolationValue", e, t, n);
+	                  var _r92 = qp$1("image", e, t, n),
+	                      _a76 = qp$1("boxes", e, t, n),
+	                      _s63 = qp$1("boxInd", e, t, n),
+	                      _o43 = qp$1("cropSize", e, t, n),
+	                      _i24 = qp$1("method", e, t, n),
+	                      _u16 = qp$1("extrapolationValue", e, t, n);
 
-	                  return [Ip$1.cropAndResize(_r92, _a76, _s63, _o43, _i24, _u16)];
+	                  return [Bp$1.cropAndResize(_r92, _a76, _s63, _o43, _i24, _u16)];
 	                }
 
 	              default:
@@ -94933,55 +95164,55 @@
 	        });
 
 	      case "graph":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Const":
 	                return t[e.name];
 
 	              case "PlaceholderWithDefault":
-	                var _r93 = $p$1("default", e, t, n);
+	                var _r93 = qp$1("default", e, t, n);
 
-	                return [Fp$1(e.name, t, n) || _r93];
+	                return [Gp$1(e.name, t, n) || _r93];
 
 	              case "Placeholder":
-	                return [Fp$1(e.name, t, n)];
+	                return [Gp$1(e.name, t, n)];
 
 	              case "Identity":
 	              case "StopGradient":
 	              case "FakeQuantWithMinMaxVars":
-	                return [Vp$1($p$1("x", e, t, n))];
+	                return [Jp$1(qp$1("x", e, t, n))];
 
 	              case "IdentityN":
-	                return $p$1("x", e, t, n).map(function (e) {
-	                  return Vp$1(e);
+	                return qp$1("x", e, t, n).map(function (e) {
+	                  return Jp$1(e);
 	                });
 
 	              case "Snapshot":
-	                return [Vp$1($p$1("x", e, t, n))];
+	                return [Jp$1(qp$1("x", e, t, n))];
 
 	              case "Shape":
-	                return [Fl$1($p$1("x", e, t, n).shape, "int32")];
+	                return [Gl$1(qp$1("x", e, t, n).shape, "int32")];
 
 	              case "ShapeN":
-	                return $p$1("x", e, t, n).map(function (e) {
-	                  return Fl$1(e.shape);
+	                return qp$1("x", e, t, n).map(function (e) {
+	                  return Gl$1(e.shape);
 	                });
 
 	              case "Size":
-	                return [yl$1($p$1("x", e, t, n).size, "int32")];
+	                return [Ol$1(qp$1("x", e, t, n).size, "int32")];
 
 	              case "Rank":
-	                return [yl$1($p$1("x", e, t, n).rank, "int32")];
+	                return [Ol$1(qp$1("x", e, t, n).rank, "int32")];
 
 	              case "NoOp":
-	                return [yl$1(1)];
+	                return [Ol$1(1)];
 
 	              case "Print":
-	                var _a77 = $p$1("x", e, t, n),
-	                    _s64 = $p$1("data", e, t, n),
-	                    _o44 = $p$1("message", e, t, n),
-	                    _i25 = $p$1("summarize", e, t, n);
+	                var _a77 = qp$1("x", e, t, n),
+	                    _s64 = qp$1("data", e, t, n),
+	                    _o44 = qp$1("message", e, t, n),
+	                    _i25 = qp$1("summarize", e, t, n);
 
 	                console.warn("The graph has a tf.print() operation,usually used for debugging, which slows down performance."), console.log(_o44);
 
@@ -94998,39 +95229,39 @@
 	        });
 
 	      case "logical":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Equal":
-	                return [Xu$1($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [uc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "NotEqual":
-	                return [Uc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [nl$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Greater":
-	                return [lc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [kc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "GreaterEqual":
-	                return [pc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [_c$1(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Less":
-	                return [fc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [Sc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "LessEqual":
-	                return [gc$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [Ic$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "LogicalAnd":
-	                return [Ic$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [Bc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "LogicalNot":
-	                return [Oc$2($p$1("a", e, t, n))];
+	                return [Vc$2(qp$1("a", e, t, n))];
 
 	              case "LogicalOr":
-	                return [Ac$2($p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [jc$2(qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              case "Select":
 	              case "SelectV2":
-	                return [Qu$1($p$1("condition", e, t, n), $p$1("a", e, t, n), $p$1("b", e, t, n))];
+	                return [cc$2(qp$1("condition", e, t, n), qp$1("a", e, t, n), qp$1("b", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -95039,45 +95270,45 @@
 	        });
 
 	      case "matrices":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "BatchMatMul":
 	              case "BatchMatMulV2":
 	              case "MatMul":
-	                return [qi$2($p$1("a", e, t, n), $p$1("b", e, t, n), $p$1("transposeA", e, t, n), $p$1("transposeB", e, t, n))];
+	                return [su$1(qp$1("a", e, t, n), qp$1("b", e, t, n), qp$1("transposeA", e, t, n), qp$1("transposeB", e, t, n))];
 
 	              case "Einsum":
-	                return [ec$2.apply(void 0, [$p$1("equation", e, t, n)].concat(_toConsumableArray($p$1("tensors", e, t, n))))];
+	                return [dc$2.apply(void 0, [qp$1("equation", e, t, n)].concat(_toConsumableArray(qp$1("tensors", e, t, n))))];
 
 	              case "Transpose":
-	                return [Yi$2($p$1("x", e, t, n), $p$1("perm", e, t, n))];
+	                return [iu$1(qp$1("x", e, t, n), qp$1("perm", e, t, n))];
 
 	              case "_FusedMatMul":
-	                var _$p5 = $p$1("fusedOps", e, t, n),
-	                    _$p6 = _slicedToArray(_$p5, 2),
-	                    _r94 = _$p6[0],
-	                    _a78 = _$p6[1],
+	                var _qp5 = qp$1("fusedOps", e, t, n),
+	                    _qp6 = _slicedToArray(_qp5, 2),
+	                    _r94 = _qp6[0],
+	                    _a78 = _qp6[1],
 	                    _s65 = "biasadd" === _r94,
 	                    _o45 = "prelu" === _a78,
-	                    _i26 = $p$1("numArgs", e, t, n),
-	                    _u17 = $p$1("leakyreluAlpha", e, t, n);
+	                    _i26 = qp$1("numArgs", e, t, n),
+	                    _u17 = qp$1("leakyreluAlpha", e, t, n);
 
 	                if (_s65) {
 	                  if (_o45 && 2 !== _i26) throw new Error("Fused MatMul with BiasAdd and Prelu must have two extra arguments: bias and alpha.");
 	                  if (!_o45 && 1 !== _i26) throw new Error("Fused MatMul with BiasAdd must have one extra argument: bias.");
 	                }
 
-	                var _$p7 = $p$1("args", e, t, n),
-	                    _$p8 = _slicedToArray(_$p7, 2),
-	                    _c9 = _$p8[0],
-	                    _l6 = _$p8[1];
+	                var _qp7 = qp$1("args", e, t, n),
+	                    _qp8 = _slicedToArray(_qp7, 2),
+	                    _c9 = _qp8[0],
+	                    _l6 = _qp8[1];
 
-	                return [ep$1({
-	                  a: $p$1("a", e, t, n),
-	                  b: $p$1("b", e, t, n),
-	                  transposeA: $p$1("transposeA", e, t, n),
-	                  transposeB: $p$1("transposeB", e, t, n),
+	                return [dp$1({
+	                  a: qp$1("a", e, t, n),
+	                  b: qp$1("b", e, t, n),
+	                  transposeA: qp$1("transposeA", e, t, n),
+	                  transposeB: qp$1("transposeB", e, t, n),
 	                  bias: _c9,
 	                  activation: _a78,
 	                  preluActivationWeights: _l6,
@@ -95091,25 +95322,25 @@
 	        });
 
 	      case "normalization":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "FusedBatchNorm":
 	              case "FusedBatchNormV2":
 	              case "FusedBatchNormV3":
-	                return [Mu$1($p$1("x", e, t, n), $p$1("mean", e, t, n), $p$1("variance", e, t, n), $p$1("offset", e, t, n), $p$1("scale", e, t, n), $p$1("epsilon", e, t, n))];
+	                return [Uu$1(qp$1("x", e, t, n), qp$1("mean", e, t, n), qp$1("variance", e, t, n), qp$1("offset", e, t, n), qp$1("scale", e, t, n), qp$1("epsilon", e, t, n))];
 
 	              case "LRN":
-	                return [bc$2($p$1("x", e, t, n), $p$1("radius", e, t, n), $p$1("bias", e, t, n), $p$1("alpha", e, t, n), $p$1("beta", e, t, n))];
+	                return [Ac$2(qp$1("x", e, t, n), qp$1("radius", e, t, n), qp$1("bias", e, t, n), qp$1("alpha", e, t, n), qp$1("beta", e, t, n))];
 
 	              case "Softmax":
-	                return [_l$1($p$1("x", e, t, n))];
+	                return [$l$1(qp$1("x", e, t, n))];
 
 	              case "LogSoftmax":
-	                return [Sc$2($p$1("x", e, t, n))];
+	                return [Lc$2(qp$1("x", e, t, n))];
 
 	              case "SparseToDense":
-	                return [Wl$1($p$1("sparseIndices", e, t, n), $p$1("outputShape", e, t, n), $p$1("sparseValues", e, t, n), $p$1("defaultValue", e, t, n))];
+	                return [tp$1(qp$1("sparseIndices", e, t, n), qp$1("outputShape", e, t, n), qp$1("sparseValues", e, t, n), qp$1("defaultValue", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -95118,103 +95349,103 @@
 	        });
 
 	      case "reduction":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Max":
 	                {
-	                  var _r96 = $p$1("axis", e, t, n),
-	                      _a80 = $p$1("keepDims", e, t, n);
+	                  var _r96 = qp$1("axis", e, t, n),
+	                      _a80 = qp$1("keepDims", e, t, n);
 
-	                  return [Nc$2($p$1("x", e, t, n), _r96, _a80)];
+	                  return [Fc$2(qp$1("x", e, t, n), _r96, _a80)];
 	                }
 
 	              case "Mean":
 	                {
-	                  var _r97 = $p$1("axis", e, t, n),
-	                      _a81 = $p$1("keepDims", e, t, n);
+	                  var _r97 = qp$1("axis", e, t, n),
+	                      _a81 = qp$1("keepDims", e, t, n);
 
-	                  return [$c$2($p$1("x", e, t, n), _r97, _a81)];
+	                  return [qc$2(qp$1("x", e, t, n), _r97, _a81)];
 	                }
 
 	              case "Min":
 	                {
-	                  var _r98 = $p$1("axis", e, t, n),
-	                      _a82 = $p$1("keepDims", e, t, n);
+	                  var _r98 = qp$1("axis", e, t, n),
+	                      _a82 = qp$1("keepDims", e, t, n);
 
-	                  return [Pc$2($p$1("x", e, t, n), _r98, _a82)];
+	                  return [Xc$1(qp$1("x", e, t, n), _r98, _a82)];
 	                }
 
 	              case "Sum":
 	                {
-	                  var _r99 = $p$1("axis", e, t, n),
-	                      _a83 = $p$1("keepDims", e, t, n);
+	                  var _r99 = qp$1("axis", e, t, n),
+	                      _a83 = qp$1("keepDims", e, t, n);
 
-	                  return [Tc$2($p$1("x", e, t, n), _r99, _a83)];
+	                  return [Pc$2(qp$1("x", e, t, n), _r99, _a83)];
 	                }
 
 	              case "All":
 	                {
-	                  var _r100 = $p$1("axis", e, t, n),
-	                      _a84 = $p$1("keepDims", e, t, n);
+	                  var _r100 = qp$1("axis", e, t, n),
+	                      _a84 = qp$1("keepDims", e, t, n);
 
-	                  return [cu$1($p$1("x", e, t, n), _r100, _a84)];
+	                  return [xu$1(qp$1("x", e, t, n), _r100, _a84)];
 	                }
 
 	              case "Any":
 	                {
-	                  var _r101 = $p$1("axis", e, t, n),
-	                      _a85 = $p$1("keepDims", e, t, n);
+	                  var _r101 = qp$1("axis", e, t, n),
+	                      _a85 = qp$1("keepDims", e, t, n);
 
-	                  return [lu$1($p$1("x", e, t, n), _r101, _a85)];
+	                  return [ku$1(qp$1("x", e, t, n), _r101, _a85)];
 	                }
 
 	              case "ArgMax":
 	                {
-	                  var _r102 = $p$1("axis", e, t, n);
+	                  var _r102 = qp$1("axis", e, t, n);
 
-	                  return [pu$1($p$1("x", e, t, n), _r102)];
+	                  return [_u$1(qp$1("x", e, t, n), _r102)];
 	                }
 
 	              case "ArgMin":
 	                {
-	                  var _r103 = $p$1("axis", e, t, n);
+	                  var _r103 = qp$1("axis", e, t, n);
 
-	                  return [du$1($p$1("x", e, t, n), _r103)];
+	                  return [Nu$1(qp$1("x", e, t, n), _r103)];
 	                }
 
 	              case "Prod":
 	                {
-	                  var _r104 = $p$1("axis", e, t, n),
-	                      _a86 = $p$1("keepDims", e, t, n);
+	                  var _r104 = qp$1("axis", e, t, n),
+	                      _a86 = qp$1("keepDims", e, t, n);
 
-	                  return [Xc$1($p$1("x", e, t, n), _r104, _a86)];
+	                  return [ul$1(qp$1("x", e, t, n), _r104, _a86)];
 	                }
 
 	              case "Cumsum":
 	                {
-	                  var _r105 = $p$1("axis", e, t, n),
-	                      _a87 = $p$1("exclusive", e, t, n),
-	                      _s67 = $p$1("reverse", e, t, n);
+	                  var _r105 = qp$1("axis", e, t, n),
+	                      _a87 = qp$1("exclusive", e, t, n),
+	                      _s67 = qp$1("reverse", e, t, n);
 
-	                  return [Uu$1($p$1("x", e, t, n), _r105, _a87, _s67)];
+	                  return [nc$2(qp$1("x", e, t, n), _r105, _a87, _s67)];
 	                }
 
 	              case "Bincount":
-	                var _r95 = $p$1("x", e, t, n),
-	                    _a79 = $p$1("weights", e, t, n),
-	                    _s66 = $p$1("size", e, t, n);
+	                var _r95 = qp$1("x", e, t, n),
+	                    _a79 = qp$1("weights", e, t, n),
+	                    _s66 = qp$1("size", e, t, n);
 
-	                return [Cu$1(_r95, _a79, _s66)];
+	                return [Ku$1(_r95, _a79, _s66)];
 
 	              case "DenseBincount":
 	                {
-	                  var _r106 = $p$1("x", e, t, n),
-	                      _a88 = $p$1("weights", e, t, n),
-	                      _s68 = $p$1("size", e, t, n),
-	                      _o46 = $p$1("binaryOutput", e, t, n);
+	                  var _r106 = qp$1("x", e, t, n),
+	                      _a88 = qp$1("weights", e, t, n),
+	                      _s68 = qp$1("size", e, t, n),
+	                      _o46 = qp$1("binaryOutput", e, t, n);
 
-	                  return [Ku$1(_r106, _a88, _s68, _o46)];
+	                  return [rc$2(_r106, _a88, _s68, _o46)];
 	                }
 
 	              default:
@@ -95224,147 +95455,147 @@
 	        });
 
 	      case "slice_join":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "ConcatV2":
 	              case "Concat":
 	                {
-	                  var _r107 = $p$1("n", e, t, n),
-	                      _a89 = $p$1("axis", e, t, n);
+	                  var _r107 = qp$1("n", e, t, n),
+	                      _a89 = qp$1("axis", e, t, n);
 
-	                  var _s69 = $p$1("tensors", e, t, n);
+	                  var _s69 = qp$1("tensors", e, t, n);
 
-	                  return _s69 = _s69.slice(0, _r107), [Su$1(_s69, _a89)];
+	                  return _s69 = _s69.slice(0, _r107), [Lu$1(_s69, _a89)];
 	                }
 
 	              case "Gather":
 	                {
-	                  var _r108 = $p$1("x", e, t, n),
-	                      _a90 = $p$1("indices", e, t, n);
+	                  var _r108 = qp$1("x", e, t, n),
+	                      _a90 = qp$1("indices", e, t, n);
 
-	                  return [cc$2(_r108, Li$2(_a90, "int32"), 0)];
+	                  return [xc$2(_r108, Qi$2(_a90, "int32"), 0)];
 	                }
 
 	              case "GatherV2":
 	                {
-	                  var _r109 = $p$1("axis", e, t, n),
-	                      _a91 = $p$1("batchDims", e, t, n),
-	                      _s70 = $p$1("x", e, t, n),
-	                      _o47 = $p$1("indices", e, t, n);
+	                  var _r109 = qp$1("axis", e, t, n),
+	                      _a91 = qp$1("batchDims", e, t, n),
+	                      _s70 = qp$1("x", e, t, n),
+	                      _o47 = qp$1("indices", e, t, n);
 
-	                  return [cc$2(_s70, Li$2(_o47, "int32"), _r109, _a91)];
+	                  return [xc$2(_s70, Qi$2(_o47, "int32"), _r109, _a91)];
 	                }
 
 	              case "Reverse":
 	                {
-	                  var _r110 = $p$1("dims", e, t, n),
+	                  var _r110 = qp$1("dims", e, t, n),
 	                      _a92 = [];
 
 	                  for (var _e67 = 0; _e67 < _r110.length; _e67++) {
 	                    _r110[_e67] && _a92.push(_e67);
 	                  }
 
-	                  var _s71 = $p$1("x", e, t, n);
+	                  var _s71 = qp$1("x", e, t, n);
 
-	                  return [hl$1(_s71, _a92)];
+	                  return [Tl$1(_s71, _a92)];
 	                }
 
 	              case "ReverseV2":
 	                {
-	                  var _r111 = $p$1("axis", e, t, n),
-	                      _a93 = $p$1("x", e, t, n);
+	                  var _r111 = qp$1("axis", e, t, n),
+	                      _a93 = qp$1("x", e, t, n);
 
-	                  return [hl$1(_a93, _r111)];
+	                  return [Tl$1(_a93, _r111)];
 	                }
 
 	              case "Slice":
 	                {
-	                  var _r112 = $p$1("begin", e, t, n),
-	                      _a94 = $p$1("size", e, t, n);
+	                  var _r112 = qp$1("begin", e, t, n),
+	                      _a94 = qp$1("size", e, t, n);
 
-	                  return [Ou$1($p$1("x", e, t, n), _r112, _a94)];
+	                  return [Vu$1(qp$1("x", e, t, n), _r112, _a94)];
 	                }
 
 	              case "StridedSlice":
 	                {
-	                  var _r113 = $p$1("begin", e, t, n),
-	                      _a95 = $p$1("end", e, t, n),
-	                      _s72 = $p$1("strides", e, t, n),
-	                      _o48 = $p$1("beginMask", e, t, n),
-	                      _i27 = $p$1("endMask", e, t, n),
-	                      _u18 = $p$1("ellipsisMask", e, t, n),
-	                      _c10 = $p$1("newAxisMask", e, t, n),
-	                      _l7 = $p$1("shrinkAxisMask", e, t, n),
-	                      _p6 = $p$1("x", e, t, n);
+	                  var _r113 = qp$1("begin", e, t, n),
+	                      _a95 = qp$1("end", e, t, n),
+	                      _s72 = qp$1("strides", e, t, n),
+	                      _o48 = qp$1("beginMask", e, t, n),
+	                      _i27 = qp$1("endMask", e, t, n),
+	                      _u18 = qp$1("ellipsisMask", e, t, n),
+	                      _c10 = qp$1("newAxisMask", e, t, n),
+	                      _l7 = qp$1("shrinkAxisMask", e, t, n),
+	                      _p6 = qp$1("x", e, t, n);
 
-	                  return [Rl$1(_p6, _r113, _a95, _s72, _o48, _i27, _u18, _c10, _l7)];
+	                  return [Hl$1(_p6, _r113, _a95, _s72, _o48, _i27, _u18, _c10, _l7)];
 	                }
 
 	              case "Pack":
-	                return Ji$2(function () {
-	                  var r = $p$1("axis", e, t, n),
-	                      a = $p$1("tensors", e, t, n),
+	                return pu$1(function () {
+	                  var r = qp$1("axis", e, t, n),
+	                      a = qp$1("tensors", e, t, n),
 	                      s = a[0].shape,
-	                      o = Dl$1(a[0]).shape,
+	                      o = Wl$1(a[0]).shape,
 	                      i = a.map(function (e) {
-	                    var t = qs$1(e.shape, s);
-	                    if (!t && !qs$1(Dl$1(e).shape, o)) throw new Error("the input tensors shape does not match");
-	                    return t ? e : Nu$1(e, s);
+	                    var t = so$1(e.shape, s);
+	                    if (!t && !so$1(Wl$1(e).shape, o)) throw new Error("the input tensors shape does not match");
+	                    return t ? e : Fu$1(e, s);
 	                  });
-	                  return [Ml$1(i, r)];
+	                  return [Ul$1(i, r)];
 	                });
 
 	              case "Unpack":
 	                {
-	                  var _r114 = $p$1("axis", e, t, n),
-	                      _a96 = $p$1("tensor", e, t, n);
+	                  var _r114 = qp$1("axis", e, t, n),
+	                      _a96 = qp$1("tensor", e, t, n);
 
-	                  return Bl$1(_a96, _r114);
+	                  return Zl$1(_a96, _r114);
 	                }
 
 	              case "Tile":
 	                {
-	                  var _r115 = $p$1("reps", e, t, n);
+	                  var _r115 = qp$1("reps", e, t, n);
 
-	                  return [oc$2($p$1("x", e, t, n), _r115)];
+	                  return [bc$2(qp$1("x", e, t, n), _r115)];
 	                }
 
 	              case "Split":
 	              case "SplitV":
 	                {
-	                  var _r116 = $p$1("axis", e, t, n),
-	                      _a97 = $p$1("numOrSizeSplits", e, t, n),
-	                      _s73 = $p$1("x", e, t, n);
+	                  var _r116 = qp$1("axis", e, t, n),
+	                      _a97 = qp$1("numOrSizeSplits", e, t, n),
+	                      _s73 = qp$1("x", e, t, n);
 
-	                  return Sl$1(_s73, _a97, _r116);
+	                  return Ll$1(_s73, _a97, _r116);
 	                }
 
 	              case "ScatterNd":
 	                {
-	                  var _r117 = $p$1("indices", e, t, n),
-	                      _a98 = $p$1("values", e, t, n),
-	                      _s74 = $p$1("shape", e, t, n);
+	                  var _r117 = qp$1("indices", e, t, n),
+	                      _a98 = qp$1("values", e, t, n),
+	                      _s74 = qp$1("shape", e, t, n);
 
-	                  return [jl$1(_r117, _a98, _s74)];
+	                  return [ep$1(_r117, _a98, _s74)];
 	                }
 
 	              case "GatherNd":
 	                {
-	                  var _r118 = $p$1("x", e, t, n),
-	                      _a99 = $p$1("indices", e, t, n);
+	                  var _r118 = qp$1("x", e, t, n),
+	                      _a99 = qp$1("indices", e, t, n);
 
-	                  return [Ul$1(_r118, _a99)];
+	                  return [np$1(_r118, _a99)];
 	                }
 
 	              case "SparseToDense":
 	                {
-	                  var _r119 = $p$1("sparseIndices", e, t, n),
-	                      _a100 = $p$1("outputShape", e, t, n),
-	                      _s75 = $p$1("sparseValues", e, t, n),
-	                      _o49 = $p$1("defaultValue", e, t, n);
+	                  var _r119 = qp$1("sparseIndices", e, t, n),
+	                      _a100 = qp$1("outputShape", e, t, n),
+	                      _s75 = qp$1("sparseValues", e, t, n),
+	                      _o49 = qp$1("defaultValue", e, t, n);
 
-	                  return [Wl$1(_r119, _s75, _a100, _s75.dtype === _o49.dtype ? _o49 : Li$2(_o49, _s75.dtype))];
+	                  return [tp$1(_r119, _s75, _a100, _s75.dtype === _o49.dtype ? _o49 : Qi$2(_o49, _s75.dtype))];
 	                }
 
 	              default:
@@ -95374,34 +95605,34 @@
 	        });
 
 	      case "sparse":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "SparseFillEmptyRows":
 	                {
-	                  var _Op$sparseFillEmptyRo = Op$1.sparseFillEmptyRows($p$1("indices", e, t, n), $p$1("values", e, t, n), $p$1("denseShape", e, t, n), $p$1("defaultValue", e, t, n)),
-	                      _r120 = _Op$sparseFillEmptyRo.outputIndices,
-	                      _a101 = _Op$sparseFillEmptyRo.outputValues,
-	                      _s76 = _Op$sparseFillEmptyRo.emptyRowIndicator,
-	                      _o50 = _Op$sparseFillEmptyRo.reverseIndexMap;
+	                  var _Vp$sparseFillEmptyRo = Vp$1.sparseFillEmptyRows(qp$1("indices", e, t, n), qp$1("values", e, t, n), qp$1("denseShape", e, t, n), qp$1("defaultValue", e, t, n)),
+	                      _r120 = _Vp$sparseFillEmptyRo.outputIndices,
+	                      _a101 = _Vp$sparseFillEmptyRo.outputValues,
+	                      _s76 = _Vp$sparseFillEmptyRo.emptyRowIndicator,
+	                      _o50 = _Vp$sparseFillEmptyRo.reverseIndexMap;
 
 	                  return [_r120, _a101, _s76, _o50];
 	                }
 
 	              case "SparseReshape":
 	                {
-	                  var _Op$sparseReshape = Op$1.sparseReshape($p$1("inputIndices", e, t, n), $p$1("inputShape", e, t, n), $p$1("newShape", e, t, n)),
-	                      _r121 = _Op$sparseReshape.outputIndices,
-	                      _a102 = _Op$sparseReshape.outputShape;
+	                  var _Vp$sparseReshape = Vp$1.sparseReshape(qp$1("inputIndices", e, t, n), qp$1("inputShape", e, t, n), qp$1("newShape", e, t, n)),
+	                      _r121 = _Vp$sparseReshape.outputIndices,
+	                      _a102 = _Vp$sparseReshape.outputShape;
 
 	                  return [_r121, _a102];
 	                }
 
 	              case "SparseSegmentMean":
-	                return [Op$1.sparseSegmentMean($p$1("data", e, t, n), $p$1("indices", e, t, n), $p$1("segmentIds", e, t, n))];
+	                return [Vp$1.sparseSegmentMean(qp$1("data", e, t, n), qp$1("indices", e, t, n), qp$1("segmentIds", e, t, n))];
 
 	              case "SparseSegmentSum":
-	                return [Op$1.sparseSegmentSum($p$1("data", e, t, n), $p$1("indices", e, t, n), $p$1("segmentIds", e, t, n))];
+	                return [Vp$1.sparseSegmentSum(qp$1("data", e, t, n), qp$1("indices", e, t, n), qp$1("segmentIds", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -95410,20 +95641,20 @@
 	        });
 
 	      case "spectral":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "FFT":
-	                return [Nl$1($p$1("x", e, t, n))];
+	                return [Fl$1(qp$1("x", e, t, n))];
 
 	              case "IFFT":
-	                return [El$1($p$1("x", e, t, n))];
+	                return [zl$1(qp$1("x", e, t, n))];
 
 	              case "RFFT":
-	                return [Il$1($p$1("x", e, t, n))];
+	                return [Bl$1(qp$1("x", e, t, n))];
 
 	              case "IRFFT":
-	                return [Tl$1($p$1("x", e, t, n))];
+	                return [Pl$1(qp$1("x", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -95432,30 +95663,30 @@
 	        });
 
 	      case "string":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "StringNGrams":
 	                {
-	                  var _Ap$stringNGrams = Ap$1.stringNGrams($p$1("data", e, t, n), $p$1("dataSplits", e, t, n), $p$1("separator", e, t, n), $p$1("nGramWidths", e, t, n), $p$1("leftPad", e, t, n), $p$1("rightPad", e, t, n), $p$1("padWidth", e, t, n), $p$1("preserveShortSequences", e, t, n)),
-	                      _r122 = _Ap$stringNGrams.nGrams,
-	                      _a103 = _Ap$stringNGrams.nGramsSplits;
+	                  var _jp$stringNGrams = jp$1.stringNGrams(qp$1("data", e, t, n), qp$1("dataSplits", e, t, n), qp$1("separator", e, t, n), qp$1("nGramWidths", e, t, n), qp$1("leftPad", e, t, n), qp$1("rightPad", e, t, n), qp$1("padWidth", e, t, n), qp$1("preserveShortSequences", e, t, n)),
+	                      _r122 = _jp$stringNGrams.nGrams,
+	                      _a103 = _jp$stringNGrams.nGramsSplits;
 
 	                  return [_r122, _a103];
 	                }
 
 	              case "StringSplit":
 	                {
-	                  var _Ap$stringSplit = Ap$1.stringSplit($p$1("input", e, t, n), $p$1("delimiter", e, t, n), $p$1("skipEmpty", e, t, n)),
-	                      _r123 = _Ap$stringSplit.indices,
-	                      _a104 = _Ap$stringSplit.values,
-	                      _s77 = _Ap$stringSplit.shape;
+	                  var _jp$stringSplit = jp$1.stringSplit(qp$1("input", e, t, n), qp$1("delimiter", e, t, n), qp$1("skipEmpty", e, t, n)),
+	                      _r123 = _jp$stringSplit.indices,
+	                      _a104 = _jp$stringSplit.values,
+	                      _s77 = _jp$stringSplit.shape;
 
 	                  return [_r123, _a104, _s77];
 	                }
 
 	              case "StringToHashBucketFast":
-	                return [Ap$1.stringToHashBucketFast($p$1("input", e, t, n), $p$1("numBuckets", e, t, n))];
+	                return [jp$1.stringToHashBucketFast(qp$1("input", e, t, n), qp$1("numBuckets", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -95464,62 +95695,62 @@
 	        });
 
 	      case "transformation":
-	        return Ji$2(function () {
+	        return pu$1(function () {
 	          return function (e, t, n) {
 	            switch (e.op) {
 	              case "Cast":
-	                return [Li$2($p$1("x", e, t, n), $p$1("dtype", e, t, n))];
+	                return [Qi$2(qp$1("x", e, t, n), qp$1("dtype", e, t, n))];
 
 	              case "ExpandDims":
 	                {
-	                  var _r124 = $p$1("axis", e, t, n);
+	                  var _r124 = qp$1("axis", e, t, n);
 
-	                  return [ac$2($p$1("x", e, t, n), _r124)];
+	                  return [gc$2(qp$1("x", e, t, n), _r124)];
 	                }
 
 	              case "Squeeze":
 	                {
-	                  var _r125 = $p$1("axis", e, t, n);
+	                  var _r125 = qp$1("axis", e, t, n);
 
-	                  return [Dl$1($p$1("x", e, t, n), _r125)];
+	                  return [Wl$1(qp$1("x", e, t, n), _r125)];
 	                }
 
 	              case "Reshape":
-	                return [Nu$1($p$1("x", e, t, n), $p$1("shape", e, t, n))];
+	                return [Fu$1(qp$1("x", e, t, n), qp$1("shape", e, t, n))];
 
 	              case "MirrorPad":
-	                return [Bc$2($p$1("x", e, t, n), $p$1("padding", e, t, n), $p$1("mode", e, t, n))];
+	                return [Zc$2(qp$1("x", e, t, n), qp$1("padding", e, t, n), qp$1("mode", e, t, n))];
 
 	              case "PadV2":
 	              case "Pad":
-	                return [Hc$2($p$1("x", e, t, n), $p$1("padding", e, t, n), $p$1("constantValue", e, t, n))];
+	                return [al$1(qp$1("x", e, t, n), qp$1("padding", e, t, n), qp$1("constantValue", e, t, n))];
 
 	              case "SpaceToBatchND":
 	                {
-	                  var _r126 = $p$1("blockShape", e, t, n),
-	                      _a105 = $p$1("paddings", e, t, n);
+	                  var _r126 = qp$1("blockShape", e, t, n),
+	                      _a105 = qp$1("paddings", e, t, n);
 
-	                  return [qc$2($p$1("x", e, t, n), _r126, _a105)];
+	                  return [sl$1(qp$1("x", e, t, n), _r126, _a105)];
 	                }
 
 	              case "BatchToSpaceND":
 	                {
-	                  var _r127 = $p$1("blockShape", e, t, n),
-	                      _a106 = $p$1("crops", e, t, n);
+	                  var _r127 = qp$1("blockShape", e, t, n),
+	                      _a106 = qp$1("crops", e, t, n);
 
-	                  return [Du$1($p$1("x", e, t, n), _r127, _a106)];
+	                  return [Wu$1(qp$1("x", e, t, n), _r127, _a106)];
 	                }
 
 	              case "DepthToSpace":
 	                {
-	                  var _r128 = $p$1("blockSize", e, t, n),
-	                      _a107 = $p$1("dataFormat", e, t, n).toUpperCase();
+	                  var _r128 = qp$1("blockSize", e, t, n),
+	                      _a107 = qp$1("dataFormat", e, t, n).toUpperCase();
 
-	                  return [Hu$1($p$1("x", e, t, n), _r128, _a107)];
+	                  return [ac$2(qp$1("x", e, t, n), _r128, _a107)];
 	                }
 
 	              case "BroadcastTo":
-	                return [Ru$1($p$1("x", e, t, n), $p$1("shape", e, t, n))];
+	                return [Hu$1(qp$1("x", e, t, n), qp$1("shape", e, t, n))];
 
 	              default:
 	                throw TypeError("Node type ".concat(e.op, " is not implemented"));
@@ -95541,11 +95772,11 @@
 	                    break;
 
 	                  case 3:
-	                    _a108 = $p$1("keyDType", e, t, n), _s78 = $p$1("valueDType", e, t, n), _o51 = new Md$2(_a108, _s78);
+	                    _a108 = qp$1("keyDType", e, t, n), _s78 = qp$1("valueDType", e, t, n), _o51 = new Ud$2(_a108, _s78);
 	                    return _context34.abrupt("return", (r.addHashTable(e.name, _o51), [_o51.handle]));
 
 	                  case 5:
-	                    _a109 = $p$1("tableHandle", e, t, n, r), _s79 = $p$1("keys", e, t, n), _o52 = $p$1("values", e, t, n), _i28 = r.getHashTableById(_a109.id);
+	                    _a109 = qp$1("tableHandle", e, t, n, r), _s79 = qp$1("keys", e, t, n), _o52 = qp$1("values", e, t, n), _i28 = r.getHashTableById(_a109.id);
 	                    _context34.next = 8;
 	                    return _i28["import"](_s79, _o52);
 
@@ -95554,7 +95785,7 @@
 	                    return _context34.abrupt("return", [_context34.t1]);
 
 	                  case 10:
-	                    _a110 = $p$1("tableHandle", e, t, n, r), _s80 = $p$1("keys", e, t, n), _o53 = $p$1("defaultValue", e, t, n), _i29 = r.getHashTableById(_a110.id);
+	                    _a110 = qp$1("tableHandle", e, t, n, r), _s80 = qp$1("keys", e, t, n), _o53 = qp$1("defaultValue", e, t, n), _i29 = r.getHashTableById(_a110.id);
 	                    _context34.next = 13;
 	                    return _i29.find(_s80, _o53);
 
@@ -95563,7 +95794,7 @@
 	                    return _context34.abrupt("return", [_context34.t2]);
 
 	                  case 15:
-	                    _a111 = $p$1("tableHandle", e, t, n, r);
+	                    _a111 = qp$1("tableHandle", e, t, n, r);
 	                    return _context34.abrupt("return", [r.getHashTableById(_a111.id).tensorSize()]);
 
 	                  case 17:
@@ -95583,9 +95814,9 @@
 	        }()(e, t, n, r);
 
 	      case "custom":
-	        var _a49 = Rp$1(e.op);
+	        var _a49 = Hp$1(e.op);
 
-	        if (_a49 && _a49.customExecutor) return _a49.customExecutor(new kd$2(e, t, n));
+	        if (_a49 && _a49.customExecutor) return _a49.customExecutor(new Rd$2(e, t, n));
 	        throw TypeError("Custom op ".concat(e.op, " is not registered."));
 
 	      default:
@@ -95593,19 +95824,19 @@
 	    }
 	  }(e, t, n);
 
-	  return uo$1(a) ? a.then(function (e) {
+	  return xo$1(a) ? a.then(function (e) {
 	    return [].concat(e);
 	  }) : [].concat(a);
 	}
 
-	var Rd$2 = /*#__PURE__*/function () {
-	  function Rd() {
+	var Hd$2 = /*#__PURE__*/function () {
+	  function Hd() {
 	    var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 	    var n = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
 	    var r = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
 
-	    _classCallCheck(this, Rd);
+	    _classCallCheck(this, Hd);
 
 	    this.weightMap = e, this.tensorArrayMap = t, this.tensorListMap = n, this.functionMap = r, this.rootContext = {
 	      id: 0,
@@ -95614,7 +95845,7 @@
 	    }, this.contexts = [this.rootContext], this.lastId = 0, this.generateCurrentContextIds();
 	  }
 
-	  _createClass(Rd, [{
+	  _createClass(Hd, [{
 	    key: "newFrame",
 	    value: function newFrame(e, t) {
 	      return {
@@ -95722,7 +95953,7 @@
 	    }
 	  }]);
 
-	  return Rd;
+	  return Hd;
 	}();
 	/**
 	 * @license
@@ -95742,18 +95973,18 @@
 	 */
 
 
-	function $d$2(e, t, n, r) {
+	function qd$2(e, t, n, r) {
 	  var a = new Set(),
 	      s = [];
 	  var o = null,
 	      i = null;
 	  var u = new Set(),
 	      c = Object.keys(e).map(function (e) {
-	    return Lp$1(e)[0];
+	    return Qp$1(e)[0];
 	  });
 	  var l = [];
 	  null != r && (l = r.map(function (e) {
-	    return Lp$1(e.name)[0];
+	    return Qp$1(e.name)[0];
 	  }));
 
 	  var p = _toConsumableArray(t);
@@ -95761,7 +95992,7 @@
 	  for (; p.length > 0;) {
 	    var _e69 = p.pop();
 
-	    (Ld$2(_e69) || Bd$2(_e69) || Vd$2(_e69)) && null == o && (o = _e69, i = o.children.map(function (e) {
+	    (Qd$2(_e69) || Zd$2(_e69) || Jd$2(_e69)) && null == o && (o = _e69, i = o.children.map(function (e) {
 	      return e.name;
 	    }).filter(function (e) {
 	      return a.has(e);
@@ -95780,20 +96011,20 @@
 	  };
 	}
 
-	var Fd$2 = ["Switch", "Merge", "Enter", "Exit", "NextIteration", "StatelessIf", "StatelessWhile", "if", "While"],
-	    zd$2 = ["NonMaxSuppressionV2", "NonMaxSuppressionV3", "NonMaxSuppressionV5", "Where"],
-	    Pd$2 = ["HashTable", "HashTableV2", "LookupTableImport", "LookupTableImportV2", "LookupTableFind", "LookupTableFindV2", "LookupTableSize", "LookupTableSizeV2"];
+	var Gd$2 = ["Switch", "Merge", "Enter", "Exit", "NextIteration", "StatelessIf", "StatelessWhile", "if", "While"],
+	    Yd$2 = ["NonMaxSuppressionV2", "NonMaxSuppressionV3", "NonMaxSuppressionV5", "Where"],
+	    Xd$2 = ["HashTable", "HashTableV2", "LookupTableImport", "LookupTableImportV2", "LookupTableFind", "LookupTableFindV2", "LookupTableSize", "LookupTableSizeV2"];
 
-	function Ld$2(e) {
-	  return Fd$2.indexOf(e.op) >= 0;
+	function Qd$2(e) {
+	  return Gd$2.indexOf(e.op) >= 0;
 	}
 
-	function Bd$2(e) {
-	  return zd$2.indexOf(e.op) >= 0;
+	function Zd$2(e) {
+	  return Yd$2.indexOf(e.op) >= 0;
 	}
 
-	function Vd$2(e) {
-	  return Pd$2.indexOf(e.op) >= 0;
+	function Jd$2(e) {
+	  return Xd$2.indexOf(e.op) >= 0;
 	}
 	/**
 	 * @license
@@ -95813,18 +96044,18 @@
 	 */
 
 
-	var jd$2 = /*#__PURE__*/function () {
-	  function jd(e, t) {
+	var em$1 = /*#__PURE__*/function () {
+	  function em(e, t) {
 	    var _this34 = this;
 
-	    _classCallCheck(this, jd);
+	    _classCallCheck(this, em);
 
 	    this.graph = e, this.parent = t, this.compiledMap = new Map(), this._weightMap = {}, this.SEPERATOR = ",", this._functions = {}, this._functionExecutorMap = {}, this._outputs = e.outputs, this._inputs = e.inputs, this._initNodes = e.initNodes, this._signature = e.signature, this._functions = e.functions, null != e.functions && Object.keys(e.functions).forEach(function (t) {
-	      _this34._functionExecutorMap[t] = new jd(e.functions[t], _this34);
+	      _this34._functionExecutorMap[t] = new em(e.functions[t], _this34);
 	    });
 	  }
 
-	  _createClass(jd, [{
+	  _createClass(em, [{
 	    key: "weightIds",
 	    get: function get() {
 	      return this.parent ? this.parent.weightIds : this._weightIds;
@@ -95914,7 +96145,7 @@
 	  }, {
 	    key: "compile",
 	    value: function compile(e, t) {
-	      var n = $d$2(e, t, this.weightMap, this._initNodes),
+	      var n = qd$2(e, t, this.weightMap, this._initNodes),
 	          r = n.missingInputs,
 	          a = n.dynamicNode,
 	          s = n.syncInputs;
@@ -95934,7 +96165,7 @@
 	            a = n.inputs,
 	            s = [],
 	            o = Object.keys(a).map(function (e) {
-	          return Lp$1(e)[0];
+	          return Qp$1(e)[0];
 	        }).map(function (t) {
 	          return e.nodes[t];
 	        }),
@@ -95971,10 +96202,10 @@
 	      var n = Object.keys(e).sort();
 	      this.checkInputs(e), this.checkInputShapeAndType(e), t = this.mapOutputs(t), this.checkOutputs(t);
 	      var r = n.map(function (e) {
-	        return _this36.graph.nodes[Lp$1(e)[0]];
+	        return _this36.graph.nodes[Qp$1(e)[0]];
 	      }),
 	          a = t.map(function (e) {
-	        return Lp$1(e)[0];
+	        return Qp$1(e)[0];
 	      });
 	      var s = a.map(function (e) {
 	        return _this36.graph.nodes[e];
@@ -95985,14 +96216,14 @@
 	      null == i && (i = this.compile(e, s), this.compiledMap.set(o, i));
 	      var u = {},
 	          c = {};
-	      return Ji$2(function () {
-	        var n = new Rd$2(_this36.weightMap, u, c, _this36.functionExecutorMap),
+	      return pu$1(function () {
+	        var n = new Hd$2(_this36.weightMap, u, c, _this36.functionExecutorMap),
 	            r = Object.assign({}, _this36.weightMap);
 	        Object.keys(e).forEach(function (t) {
-	          var _Lp5 = Lp$1(t),
-	              _Lp6 = _slicedToArray(_Lp5, 2),
-	              n = _Lp6[0],
-	              a = _Lp6[1],
+	          var _Qp5 = Qp$1(t),
+	              _Qp6 = _slicedToArray(_Qp5, 2),
+	              n = _Qp6[0],
+	              a = _Qp6[1],
 	              s = [];
 
 	          s[a] = e[t], r[n] = s;
@@ -96005,15 +96236,15 @@
 	          var _t64 = i[_e71];
 
 	          if (!r[_t64.name]) {
-	            var _e72 = Cd$2(_t64, r, n, _this36._resourceManager);
+	            var _e72 = Kd$2(_t64, r, n, _this36._resourceManager);
 
-	            if (uo$1(_e72)) throw new Error("The execution of the op '".concat(_t64.op, "' returned a promise. Please use model.executeAsync() instead."));
+	            if (xo$1(_e72)) throw new Error("The execution of the op '".concat(_t64.op, "' returned a promise. Please use model.executeAsync() instead."));
 	            r[_t64.name] = _e72, _this36.checkTensorForDisposal(_t64.name, _t64, r, n, s, a, o);
 	          }
 	        }
 
 	        return null == _this36.parent && n.dispose(s), t.map(function (e) {
-	          return Fp$1(e, r, n);
+	          return Gp$1(e, r, n);
 	        });
 	      });
 	    }
@@ -96037,7 +96268,7 @@
 	      }), t.inputs.forEach(function (e) {
 	        if ("control" !== e.category) {
 	          var _t65 = function (e, t, n) {
-	            return t[Pp$1(e, n.currentContextId)];
+	            return t[Xp$1(e, n.currentContextId)];
 	          }(e.name, n, r);
 
 	          null != _t65 && _t65.forEach(function (e) {
@@ -96095,14 +96326,14 @@
 	                r = _args36.length > 3 && _args36[3] !== undefined ? _args36[3] : {};
 	                a = _args36.length > 4 && _args36[4] !== undefined ? _args36[4] : {};
 	                n || (e = this.mapInputs(e), this.checkInputs(e), this.checkInputShapeAndType(e), t = this.mapOutputs(t), this.checkOutputs(t));
-	                s = new Rd$2(this.weightMap, r, a, this.functionExecutorMap);
+	                s = new Hd$2(this.weightMap, r, a, this.functionExecutorMap);
 	                _context36.next = 7;
 	                return this.executeWithControlFlow(e, s, t, n);
 
 	              case 7:
 	                o = _context36.sent;
 	                i = t.map(function (e) {
-	                  return Fp$1(e, o, s);
+	                  return Gp$1(e, o, s);
 	                });
 	                u = i.map(function (e) {
 	                  return e.id;
@@ -96167,32 +96398,32 @@
 	      var _executeWithControlFlow = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee37(e, t, n, r) {
 	        var _this38 = this;
 
-	        var a, s, o, i, _$d, u, c, l, p, d, m, h, f, g, _e73, y, _e74;
+	        var a, s, o, i, _qd, u, c, l, p, d, m, h, f, g, _e73, y, _e74;
 
 	        return regeneratorRuntime.wrap(function _callee37$(_context38) {
 	          while (1) {
 	            switch (_context38.prev = _context38.next) {
 	              case 0:
 	                a = Object.keys(e), s = a.map(function (e) {
-	                  return _this38.graph.nodes[Lp$1(e)[0]];
+	                  return _this38.graph.nodes[Qp$1(e)[0]];
 	                }), o = n.map(function (e) {
-	                  return Lp$1(e)[0];
+	                  return Qp$1(e)[0];
 	                });
 	                i = o.map(function (e) {
 	                  return _this38.graph.nodes[e];
 	                });
 	                0 === i.length && (i = this._outputs);
-	                _$d = $d$2(e, i, this.weightMap, this._initNodes), u = _$d.usedNodes, c = _$d.missingInputs, l = _$d.dynamicNode, p = _$d.syncInputs, d = [].concat(_toConsumableArray(s), _toConsumableArray(this.graph.weights), _toConsumableArray(this._initNodes || [])).map(function (e) {
+	                _qd = qd$2(e, i, this.weightMap, this._initNodes), u = _qd.usedNodes, c = _qd.missingInputs, l = _qd.dynamicNode, p = _qd.syncInputs, d = [].concat(_toConsumableArray(s), _toConsumableArray(this.graph.weights), _toConsumableArray(this._initNodes || [])).map(function (e) {
 	                  return {
 	                    node: e,
 	                    contexts: t.currentContext
 	                  };
 	                }), m = Object.assign({}, this.weightMap);
 	                Object.keys(e).forEach(function (t) {
-	                  var _Lp7 = Lp$1(t),
-	                      _Lp8 = _slicedToArray(_Lp7, 2),
-	                      n = _Lp8[0],
-	                      r = _Lp8[1],
+	                  var _Qp7 = Qp$1(t),
+	                      _Qp8 = _slicedToArray(_Qp7, 2),
+	                      n = _Qp8[0],
+	                      r = _Qp8[1],
 	                      a = [];
 
 	                  a[r] = e[t], m[n] = a;
@@ -96216,7 +96447,7 @@
 	              case 12:
 	                null != l || r || console.warn("This model execution did not contain any nodes with control flow or dynamic output shapes. You can use model.execute() instead.");
 	                y = i.filter(function (e) {
-	                  return !Ld$2(e) && !Fp$1(e.name, m, t);
+	                  return !Qd$2(e) && !Gp$1(e.name, m, t);
 	                }).map(function (e) {
 	                  return e.name;
 	                });
@@ -96254,20 +96485,20 @@
 	      var c = [];
 
 	      var _loop6 = function _loop6() {
-	        var _zp13, _zp14;
+	        var _Yp13, _Yp14;
 
 	        var e = t.pop();
 	        n.currentContext = e.contexts;
 	        var l = "";
 
-	        if ("Enter" === e.node.op && $p$1("isConstant", e.node, r, n) && (_zp13 = zp$1(e.node.name, n), _zp14 = _slicedToArray(_zp13, 1), l = _zp14[0], _zp13), null == r[e.node.name]) {
-	          var _zp15, _zp16;
+	        if ("Enter" === e.node.op && qp$1("isConstant", e.node, r, n) && (_Yp13 = Yp$1(e.node.name, n), _Yp14 = _slicedToArray(_Yp13, 1), l = _Yp14[0], _Yp13), null == r[e.node.name]) {
+	          var _Yp15, _Yp16;
 
-	          var _p7 = Cd$2(e.node, r, n, _this39._resourceManager);
+	          var _p7 = Kd$2(e.node, r, n, _this39._resourceManager);
 
-	          l || (_zp15 = zp$1(e.node.name, n), _zp16 = _slicedToArray(_zp15, 1), l = _zp16[0], _zp15);
+	          l || (_Yp15 = Yp$1(e.node.name, n), _Yp16 = _slicedToArray(_Yp15, 1), l = _Yp16[0], _Yp15);
 	          var _d5 = n.currentContext;
-	          uo$1(_p7) ? c.push(_p7.then(function (c) {
+	          xo$1(_p7) ? c.push(_p7.then(function (c) {
 	            return r[l] = c, n.currentContext = _d5, _this39.checkTensorForDisposal(l, e.node, r, n, s, o, i), _this39.processChildNodes(e.node, t, n, r, a, u), c;
 	          })) : (r[l] = _p7, _this39.checkTensorForDisposal(l, e.node, r, n, s, o, i), _this39.processChildNodes(e.node, t, n, r, a, u));
 	        } else _this39.processChildNodes(e.node, t, n, r, a, u);
@@ -96283,17 +96514,17 @@
 	    key: "processChildNodes",
 	    value: function processChildNodes(e, t, n, r, a, s) {
 	      e.children.forEach(function (e) {
-	        var _zp17 = zp$1(e.name, n),
-	            _zp18 = _slicedToArray(_zp17, 1),
-	            o = _zp18[0];
+	        var _Yp17 = Yp$1(e.name, n),
+	            _Yp18 = _slicedToArray(_Yp17, 1),
+	            o = _Yp18[0];
 
 	        !a[o] && s.has(e.name) && ("Merge" === e.op ? e.inputNames.some(function (e) {
-	          return !!Fp$1(e, r, n);
+	          return !!Gp$1(e, r, n);
 	        }) && (a[o] = !0, t.push({
 	          contexts: n.currentContext,
 	          node: e
 	        })) : e.inputNames.every(function (e) {
-	          return !!Fp$1(e, r, n);
+	          return !!Gp$1(e, r, n);
 	        }) && (a[o] = !0, t.push({
 	          contexts: n.currentContext,
 	          node: e
@@ -96318,21 +96549,21 @@
 
 	      Object.keys(e).forEach(function (t) {
 	        var n = e[t],
-	            _Lp9 = Lp$1(t),
-	            _Lp10 = _slicedToArray(_Lp9, 1),
-	            r = _Lp10[0],
+	            _Qp9 = Qp$1(t),
+	            _Qp10 = _slicedToArray(_Qp9, 1),
+	            r = _Qp10[0],
 	            a = _this41.graph.nodes[r];
 
 	        if (a.attrParams.shape && a.attrParams.shape.value) {
 	          var _e75 = a.attrParams.shape.value;
-	          Ws$1(_e75.length === n.shape.length && n.shape.every(function (t, n) {
+	          to$1(_e75.length === n.shape.length && n.shape.every(function (t, n) {
 	            return -1 === _e75[n] || _e75[n] === t;
 	          }), function () {
 	            return "The shape of dict['".concat(a.name, "'] provided in model.execute(dict) must be [").concat(_e75, "], but was [").concat(n.shape, "]");
 	          });
 	        }
 
-	        a.attrParams.dtype && a.attrParams.dtype.value && Ws$1(n.dtype === a.attrParams.dtype.value, function () {
+	        a.attrParams.dtype && a.attrParams.dtype.value && to$1(n.dtype === a.attrParams.dtype.value, function () {
 	          return "The dtype of dict['".concat(a.name, "'] provided in model.execute(dict) must be ").concat(a.attrParams.dtype.value, ", but was ").concat(n.dtype);
 	        });
 	      });
@@ -96356,9 +96587,9 @@
 	      var _this42 = this;
 
 	      var t = Object.keys(e).filter(function (e) {
-	        var _Lp11 = Lp$1(e),
-	            _Lp12 = _slicedToArray(_Lp11, 1),
-	            t = _Lp12[0];
+	        var _Qp11 = Qp$1(e),
+	            _Qp12 = _slicedToArray(_Qp11, 1),
+	            t = _Qp12[0];
 
 	        return null == _this42.graph.nodes[t];
 	      });
@@ -96383,29 +96614,29 @@
 	      var _this44 = this;
 
 	      e.forEach(function (e) {
-	        var _Lp13 = Lp$1(e),
-	            _Lp14 = _slicedToArray(_Lp13, 1),
-	            t = _Lp14[0];
+	        var _Qp13 = Qp$1(e),
+	            _Qp14 = _slicedToArray(_Qp13, 1),
+	            t = _Qp14[0];
 
 	        if (!_this44.graph.nodes[t]) throw new Error("The output '".concat(e, "' is not found in the graph"));
 	      });
 	    }
 	  }]);
 
-	  return jd;
+	  return em;
 	}();
 
-	var Wd$2 = /*#__PURE__*/function () {
-	  function Wd() {
+	var tm$1 = /*#__PURE__*/function () {
+	  function tm() {
 	    var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-	    _classCallCheck(this, Wd);
+	    _classCallCheck(this, tm);
 
 	    this.hashTableNameToHandle = e, this.hashTableMap = t;
 	  }
 
-	  _createClass(Wd, [{
+	  _createClass(tm, [{
 	    key: "addHashTable",
 	    value: function addHashTable(e, t) {
 	      this.hashTableNameToHandle[e] = t.handle, this.hashTableMap[t.id] = t;
@@ -96433,7 +96664,7 @@
 	    }
 	  }]);
 
-	  return Wd;
+	  return tm;
 	}();
 	/**
 	 * @license
@@ -96453,16 +96684,16 @@
 	 */
 
 
-	var Ud$2 = /*#__PURE__*/function () {
-	  function Ud(e) {
+	var nm$1 = /*#__PURE__*/function () {
+	  function nm(e) {
 	    var t = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
-	    _classCallCheck(this, Ud);
+	    _classCallCheck(this, nm);
 
-	    this.modelUrl = e, this.loadOptions = t, this.version = "n/a", null == t && (this.loadOptions = {}), this.resourceManager = new Wd$2();
+	    this.modelUrl = e, this.loadOptions = t, this.version = "n/a", null == t && (this.loadOptions = {}), this.resourceManager = new tm$1();
 	  }
 
-	  _createClass(Ud, [{
+	  _createClass(nm, [{
 	    key: "modelVersion",
 	    get: function get() {
 	      return this.version;
@@ -96506,10 +96737,10 @@
 	    key: "findIOHandler",
 	    value: function findIOHandler() {
 	      var e = this.modelUrl;
-	      if (null != e.load) this.handler = e;else if (null != this.loadOptions.requestInit) this.handler = Hi$2(e, this.loadOptions);else {
-	        var _r129 = (t = e, n = this.loadOptions, fi$2.getLoadHandlers(t, n));
+	      if (null != e.load) this.handler = e;else if (null != this.loadOptions.requestInit) this.handler = au$1(e, this.loadOptions);else {
+	        var _r129 = (t = e, n = this.loadOptions, Si$2.getLoadHandlers(t, n));
 
-	        if (0 === _r129.length) _r129.push(Hi$2(e, this.loadOptions));else if (_r129.length > 1) throw new Error("Found more than one (".concat(_r129.length, ") load handlers for URL '").concat([e], "'"));
+	        if (0 === _r129.length) _r129.push(au$1(e, this.loadOptions));else if (_r129.length > 1) throw new Error("Found more than one (".concat(_r129.length, ") load handlers for URL '").concat([e], "'"));
 	        this.handler = _r129[0];
 	      }
 	      var t, n;
@@ -96591,7 +96822,7 @@
 	            var _t67 = _s81.name,
 	                _o54 = _s81.dtype,
 	                _i30 = _s81.shape,
-	                _u19 = Hs$1(_i30);
+	                _u19 = ao$1(_i30);
 
 	            var _c11 = void 0;
 
@@ -96605,7 +96836,7 @@
 	                if ("float32" !== _o54) throw new Error("Weight ".concat(_s81.name, " is quantized with ").concat(_n35.dtype, " which only supports weights of type float32 not ").concat(_o54, "."));
 	              }
 
-	              var _i31 = ci$2[_n35.dtype],
+	              var _i31 = xi$2[_n35.dtype],
 	                  _l8 = e.slice(a, a + _u19 * _i31),
 	                  _p8 = "uint8" === _n35.dtype ? new Uint8Array(_l8) : new Uint16Array(_l8);
 
@@ -96619,7 +96850,7 @@
 	                  }
 	                } else {
 	                  if ("float16" !== _n35.dtype) throw new Error("Unsupported quantization type ".concat(_n35.dtype, " for weight type float32."));
-	                  void 0 === r && (r = hi$3()), _c11 = r(_p8);
+	                  void 0 === r && (r = Ti$2()), _c11 = r(_p8);
 	                }
 	              } else {
 	                if ("int32" !== _o54) throw new Error("Unsupported dtype in weight '".concat(_t67, "': ").concat(_o54));
@@ -96633,7 +96864,7 @@
 	              }
 	              a += _u19 * _i31;
 	            } else if ("string" === _o54) {
-	              var _t70 = Hs$1(_s81.shape);
+	              var _t70 = ao$1(_s81.shape);
 
 	              _c11 = [];
 
@@ -96646,7 +96877,7 @@
 	                _c11.push(_n37), a += _t71;
 	              }
 	            } else {
-	              var _r130 = ci$2[_o54],
+	              var _r130 = xi$2[_o54],
 	                  _s82 = e.slice(a, a + _u19 * _r130);
 
 	              if ("float32" === _o54) _c11 = new Float32Array(_s82);else if ("int32" === _o54) _c11 = new Int32Array(_s82);else if ("bool" === _o54) _c11 = new Uint8Array(_s82);else {
@@ -96661,16 +96892,16 @@
 	                    _e80[_t72] = _c11[2 * _t72], _r131[_t72] = _c11[2 * _t72 + 1];
 	                  }
 
-	                  var _a113 = ui$2(_e80, _i30, "float32"),
-	                      _o55 = ui$2(_r131, _i30, "float32");
+	                  var _a113 = wi$2(_e80, _i30, "float32"),
+	                      _o55 = wi$2(_r131, _i30, "float32");
 
-	                  n[_t67] = oi$2(_a113, _o55), _a113.dispose(), _o55.dispose();
+	                  n[_t67] = bi$2(_a113, _o55), _a113.dispose(), _o55.dispose();
 	                }
 	              }
 	              a += _u19 * _r130;
 	            }
 
-	            "complex64" !== _o54 && (n[_t67] = ui$2(_c11, _i30, _o54));
+	            "complex64" !== _o54 && (n[_t67] = wi$2(_c11, _i30, _o54));
 	          }
 	        } catch (err) {
 	          _iterator8.e(err);
@@ -96681,10 +96912,10 @@
 	        return n;
 	      }(this.artifacts.weightData, this.artifacts.weightSpecs);
 
-	      if (this.executor = new jd$2(id$4.Instance.transformGraph(t, this.signature)), this.executor.weightMap = this.convertTensorMapToTensorsMap(r), this.executor.resourceManager = this.resourceManager, null != e.modelInitializer && null != e.modelInitializer.node) {
-	        var _t73 = id$4.Instance.transformGraph(e.modelInitializer);
+	      if (this.executor = new em$1(vd$2.Instance.transformGraph(t, this.signature)), this.executor.weightMap = this.convertTensorMapToTensorsMap(r), this.executor.resourceManager = this.resourceManager, null != e.modelInitializer && null != e.modelInitializer.node) {
+	        var _t73 = vd$2.Instance.transformGraph(e.modelInitializer);
 
-	        this.initializer = new jd$2(_t73), this.initializer.weightMap = this.executor.weightMap, this.initializer.resourceManager = this.resourceManager, this.initializer.executeAsync({}, []);
+	        this.initializer = new em$1(_t73), this.initializer.weightMap = this.executor.weightMap, this.initializer.resourceManager = this.resourceManager, this.initializer.executeAsync({}, []);
 	      }
 
 	      return !0;
@@ -96704,7 +96935,7 @@
 	                  break;
 	                }
 
-	                _t74 = (n = e, fi$2.getSaveHandlers(n));
+	                _t74 = (n = e, Si$2.getSaveHandlers(n));
 
 	                if (!(0 === _t74.length)) {
 	                  _context40.next = 4;
@@ -96757,7 +96988,7 @@
 	  }, {
 	    key: "normalizeInputs",
 	    value: function normalizeInputs(e) {
-	      if (!(e instanceof Fo$1 || Array.isArray(e))) return e;
+	      if (!(e instanceof Go$1 || Array.isArray(e))) return e;
 	      if ((e = Array.isArray(e) ? e : [e]).length !== this.inputNodes.length) throw new Error("Input tensor count mismatch,the graph model has ".concat(this.inputNodes.length, " placeholders, while there are ").concat(e.length, " input tensors."));
 	      return this.inputNodes.reduce(function (t, n, r) {
 	        return t[n] = e[r], t;
@@ -96820,15 +97051,15 @@
 	    }
 	  }]);
 
-	  return Ud;
+	  return nm;
 	}();
 
-	function Kd$2(_x58) {
-	  return _Kd.apply(this, arguments);
+	function rm$1(_x58) {
+	  return _rm.apply(this, arguments);
 	}
 
-	function _Kd() {
-	  _Kd = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee41(e) {
+	function _rm() {
+	  _rm = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee41(e) {
 	    var t,
 	        n,
 	        _args42 = arguments;
@@ -96847,7 +97078,7 @@
 
 	          case 3:
 	            null == t && (t = {}), t.fromTFHub && null == e.load && (e.endsWith("/") || (e += "/"), e = "".concat(e, "model.json?tfjs-format=file"));
-	            n = new Ud$2(e, t);
+	            n = new nm$1(e, t);
 	            _context42.next = 7;
 	            return n.load();
 
@@ -96861,12 +97092,12 @@
 	      }
 	    }, _callee41);
 	  }));
-	  return _Kd.apply(this, arguments);
+	  return _rm.apply(this, arguments);
 	}
 
-	var Hd$2 = "https://unpkg.com/tv-model-prod@1.0.3/web_model/web_model_bilinear/320x320/float16/model.json",
-	    qd$2 = "https://unpkg.com/tv-model-prod@1.0.2/libs/opencv.js",
-	    Gd$2 = {
+	var am$1 = "https://unpkg.com/tv-model-prod@1.0.3/web_model/web_model_bilinear/320x320/float16/model.json",
+	    sm$1 = "https://unpkg.com/tv-model-prod@1.0.2/libs/opencv.js",
+	    om$1 = {
 	  0: "top-left",
 	  1: "top-right",
 	  2: "bottom-right",
@@ -96881,7 +97112,7 @@
 	  11: "cccd_new.back"
 	};
 
-	function Yd$2(e) {
+	function im$1(e) {
 	  var t,
 	      n,
 	      r,
@@ -96987,23 +97218,23 @@
 	    x: (n.x + a.x) / 2,
 	    y: (n.y + a.y) / 2
 	  },
-	      g = Ts$1(c, h),
-	      y = Ts$1(c, f);
+	      g = Ps$1(c, h),
+	      y = Ps$1(c, f);
 	  return Math.sqrt(g) > (l + p) / 8 || Math.sqrt(y) > (l + p) / 8 ? (console.debug("Not qualified, not close enough"), !1) : (console.debug("Qualified"), !0);
 	}
 
-	function Xd$2(e) {
-	  return Qd$2.apply(this, arguments);
+	function um$1(e) {
+	  return cm$1.apply(this, arguments);
 	}
 
-	function Qd$2() {
-	  return (Qd$2 = M$4(regeneratorRuntime.mark(function e(t) {
+	function cm$1() {
+	  return (cm$1 = C$4(regeneratorRuntime.mark(function e(t) {
 	    var n, r;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
 	        switch (e.prev = e.next) {
 	          case 0:
-	            if (n = t.url, r = void 0 === n ? qd$2 : n, !window.cv) {
+	            if (n = t.url, r = void 0 === n ? sm$1 : n, !window.cv) {
 	              e.next = 3;
 	              break;
 	            }
@@ -97029,7 +97260,7 @@
 	  }))).apply(this, arguments);
 	}
 
-	var Zd$2 = function () {
+	var lm$1 = function () {
 	  function e() {
 	    !function (e, t) {
 	      if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
@@ -97039,7 +97270,7 @@
 	  var t, n, a, s, o, i, u;
 	  return t = e, (n = [{
 	    key: "load",
-	    value: (u = M$4(regeneratorRuntime.mark(function e() {
+	    value: (u = C$4(regeneratorRuntime.mark(function e() {
 	      var t,
 	          n,
 	          r,
@@ -97049,7 +97280,7 @@
 	        for (;;) {
 	          switch (e.prev = e.next) {
 	            case 0:
-	              return t = s.length > 0 && void 0 !== s[0] ? s[0] : {}, n = t.opencvUrl, r = t.modelUrl, a = t.tfjsWasmRoot, e.next = 3, Promise.all([Xd$2({
+	              return t = s.length > 0 && void 0 !== s[0] ? s[0] : {}, n = t.opencvUrl, r = t.modelUrl, a = t.tfjsWasmRoot, e.next = 3, Promise.all([um$1({
 	                url: n
 	              }), this.loadModel({
 	                modelUrl: r,
@@ -97067,7 +97298,7 @@
 	    })
 	  }, {
 	    key: "loadModel",
-	    value: (i = M$4(regeneratorRuntime.mark(function e() {
+	    value: (i = C$4(regeneratorRuntime.mark(function e() {
 	      var t,
 	          n,
 	          r,
@@ -97079,13 +97310,13 @@
 	        for (;;) {
 	          switch (e.prev = e.next) {
 	            case 0:
-	              return t = i.length > 0 && void 0 !== i[0] ? i[0] : {}, n = t.modelUrl, r = void 0 === n ? Hd$2 : n, a = t.tfjsWasmRoot, e.next = 3, kC.initTensorFlow({
+	              return t = i.length > 0 && void 0 !== i[0] ? i[0] : {}, n = t.modelUrl, r = void 0 === n ? am$1 : n, a = t.tfjsWasmRoot, e.next = 3, kC.initTensorFlow({
 	                preferredBackends: ["wasm", "webgl", "cpu"],
 	                tfjsWasmRoot: a
 	              });
 
 	            case 3:
-	              return e.next = 5, Kd$2(r, {
+	              return e.next = 5, rm$1(r, {
 	                fetchFunc: qt.fetchWithDecryption
 	              });
 
@@ -97109,7 +97340,7 @@
 	    })
 	  }, {
 	    key: "dispose",
-	    value: (o = M$4(regeneratorRuntime.mark(function e() {
+	    value: (o = C$4(regeneratorRuntime.mark(function e() {
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
 	          switch (e.prev = e.next) {
@@ -97127,7 +97358,7 @@
 	    })
 	  }, {
 	    key: "predict",
-	    value: (s = M$4(regeneratorRuntime.mark(function e(t) {
+	    value: (s = C$4(regeneratorRuntime.mark(function e(t) {
 	      var n,
 	          r,
 	          a,
@@ -97161,7 +97392,7 @@
 	        for (;;) {
 	          switch (e.prev = e.next) {
 	            case 0:
-	              return n = O.length > 1 && void 0 !== O[1] ? O[1] : {}, r = n.imgMargin, a = void 0 === r ? .5 : r, s = n.detectThreshold, o = void 0 === s ? .3 : s, i = n.maxNumReturns, u = void 0 === i ? 100 : i, c = window, l = c.cv, p = {}, d = t.width, m = t.height, p.originalWidth = d, p.originalHeight = m, h = Is$1({
+	              return n = O.length > 1 && void 0 !== O[1] ? O[1] : {}, r = n.imgMargin, a = void 0 === r ? .5 : r, s = n.detectThreshold, o = void 0 === s ? .3 : s, i = n.maxNumReturns, u = void 0 === i ? 100 : i, c = window, l = c.cv, p = {}, d = t.width, m = t.height, p.originalWidth = d, p.originalHeight = m, h = Bs$1({
 	                canvas: t,
 	                imgMargin: a
 	              }), f = h.margin, g = h.mat, y = L$4(this.inputSize, 2), b = y[0], v = y[1], w = new l.Mat(), l.resize(g, w, new l.Size(b, v), 0, 0, l.INTER_AREA), x = g.cols / b, k = g.rows / v, (_ = document.createElement("canvas")).width = b, _.height = v, _.getContext("2d").putImageData(new ImageData(new Uint8ClampedArray(w.data), w.cols, w.rows), 0, 0), g["delete"](), w["delete"](), p.canvas = _, p.margin = f, e.next = 24, this.detect(_, {
@@ -97184,17 +97415,17 @@
 	                  label: e.label,
 	                  score: e.score,
 	                  location: {
-	                    x: Vs$1(Math.floor((s + r) / 2 * x - f), 0, d),
-	                    y: Vs$1(Math.floor((n + a) / 2 * k - f), 0, m)
+	                    x: Js$1(Math.floor((s + r) / 2 * x - f), 0, d),
+	                    y: Js$1(Math.floor((n + a) / 2 * k - f), 0, m)
 	                  },
 	                  scaledLocation: {
-	                    x: Vs$1(Math.floor((s + r) / 2), 0, _.width),
-	                    y: Vs$1(Math.floor((n + a) / 2), 0, _.height)
+	                    x: Js$1(Math.floor((s + r) / 2), 0, _.width),
+	                    y: Js$1(Math.floor((n + a) / 2), 0, _.height)
 	                  }
 	                }) : S.push({
 	                  label: e.label,
 	                  score: e.score,
-	                  box: [Vs$1(Math.floor(n * k - f), 0, m), Vs$1(Math.floor(r * x - f), 0, d), Vs$1(Math.floor(a * k - f), 0, m), Vs$1(Math.floor(s * x - f), 0, d)]
+	                  box: [Js$1(Math.floor(n * k - f), 0, m), Js$1(Math.floor(r * x - f), 0, d), Js$1(Math.floor(a * k - f), 0, m), Js$1(Math.floor(s * x - f), 0, d)]
 	                });
 	              }), T.sort(function (e, t) {
 	                return t.score - e.score;
@@ -97205,7 +97436,7 @@
 	                break;
 	              }
 
-	              if (Yd$2({
+	              if (im$1({
 	                card: I = S[0],
 	                corners: T
 	              })) {
@@ -97234,7 +97465,7 @@
 	    })
 	  }, {
 	    key: "detect",
-	    value: (a = M$4(regeneratorRuntime.mark(function e(t) {
+	    value: (a = C$4(regeneratorRuntime.mark(function e(t) {
 	      var n,
 	          r,
 	          a,
@@ -97263,14 +97494,14 @@
 	        for (;;) {
 	          switch (e.prev = e.next) {
 	            case 0:
-	              return n = N.length > 1 && void 0 !== N[1] ? N[1] : {}, r = n.detectThreshold, a = n.maxNumReturns, s = t.width, o = t.height, i = Ji$2(function () {
+	              return n = N.length > 1 && void 0 !== N[1] ? N[1] : {}, r = n.detectThreshold, a = n.maxNumReturns, s = t.width, o = t.height, i = pu$1(function () {
 	                var e = t;
-	                return e instanceof Fo$1 || (e = Qi$2(e)), ac$2(Li$2(e, "float32"), 0);
+	                return e instanceof Go$1 || (e = cu$1(e)), gc$2(Qi$2(e, "float32"), 0);
 	              }), u = this.model.execute(i), i.dispose(), e.next = 8, Promise.all([u[this.boxesIndex].array(), u[this.classesIndex].data(), u[this.scoresIndex].data()]);
 
 	            case 8:
 	              for (c = e.sent, l = L$4(c, 3), p = L$4(l[0], 1), d = p[0], m = l[1], h = l[2], f = [], g = Math.min(h.length, a), y = 0; y < g; y++) {
-	                (b = h[y]) > r && (w = m[y], x = null !== (v = Gd$2[Math.round(w)]) && void 0 !== v ? v : "NA", k = d[y], _ = [k[0] * o, k[3] * s, k[2] * o, k[1] * s], f.push({
+	                (b = h[y]) > r && (w = m[y], x = null !== (v = om$1[Math.round(w)]) && void 0 !== v ? v : "NA", k = d[y], _ = [k[0] * o, k[3] * s, k[2] * o, k[1] * s], f.push({
 	                  score: b,
 	                  clazz: w,
 	                  box: _,
@@ -97289,15 +97520,15 @@
 	    })), function (e) {
 	      return a.apply(this, arguments);
 	    })
-	  }]) && C$4(t.prototype, n), e;
+	  }]) && M$4(t.prototype, n), e;
 	}();
 
-	function Jd$2(e) {
-	  return em$1.apply(this, arguments);
+	function pm$1(e) {
+	  return dm$1.apply(this, arguments);
 	}
 
-	function em$1() {
-	  return (em$1 = M$4(regeneratorRuntime.mark(function e(t) {
+	function dm$1() {
+	  return (dm$1 = C$4(regeneratorRuntime.mark(function e(t) {
 	    var n;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
@@ -97317,12 +97548,12 @@
 	  }))).apply(this, arguments);
 	}
 
-	function tm$1(e) {
-	  return nm$1.apply(this, arguments);
+	function mm$1(e) {
+	  return hm$1.apply(this, arguments);
 	}
 
-	function nm$1() {
-	  return (nm$1 = M$4(regeneratorRuntime.mark(function e(t) {
+	function hm$1() {
+	  return (hm$1 = C$4(regeneratorRuntime.mark(function e(t) {
 	    var n, r;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
@@ -97330,7 +97561,7 @@
 	          case 0:
 	            return n = t.idCardModel, r = !0, e.prev = 2, window.addLog({
 	              event: "start second run"
-	            }), e.next = 6, Jd$2({
+	            }), e.next = 6, pm$1({
 	              idCardModel: n
 	            });
 
@@ -97357,8 +97588,8 @@
 	  }))).apply(this, arguments);
 	}
 
-	function rm$1() {
-	  return (rm$1 = M$4(regeneratorRuntime.mark(function e() {
+	function fm$1() {
+	  return (fm$1 = C$4(regeneratorRuntime.mark(function e() {
 	    var t,
 	        n,
 	        r,
@@ -97377,7 +97608,7 @@
 	      for (;;) {
 	        switch (e.prev = e.next) {
 	          case 0:
-	            return t = h.length > 0 && void 0 !== h[0] ? h[0] : {}, n = t.opencvUrl, r = t.modelUrl, a = t.blazefaceRoot, s = t.tfjsWasmRoot, o = new Zd$2(), e.next = 4, Promise.all([kC.loadBlazeface({
+	            return t = h.length > 0 && void 0 !== h[0] ? h[0] : {}, n = t.opencvUrl, r = t.modelUrl, a = t.blazefaceRoot, s = t.tfjsWasmRoot, o = new lm$1(), e.next = 4, Promise.all([kC.loadBlazeface({
 	              modelUrl: a
 	            }), o.load({
 	              opencvUrl: n,
@@ -97393,7 +97624,7 @@
 	          case 13:
 	            return window.addLog({
 	              event: "end first run"
-	            }), e.next = 16, tm$1({
+	            }), e.next = 16, mm$1({
 	              idCardModel: o
 	            });
 
@@ -97420,16 +97651,16 @@
 	  }))).apply(this, arguments);
 	}
 
-	var am$1 = Ls$1(function () {
-	  return rm$1.apply(this, arguments);
+	var gm$1 = Qs$1(function () {
+	  return fm$1.apply(this, arguments);
 	}),
-	    sm$1 = s.Errors,
-	    om$1 = ut$1(function (e) {
+	    ym$1 = s.Errors,
+	    bm$1 = ut$1(function (e) {
 	  window.addLog(e);
 	}, 1500);
 
-	function im$1() {
-	  return (im$1 = Object.assign || function (e) {
+	function vm$1() {
+	  return (vm$1 = Object.assign || function (e) {
 	    for (var t = 1; t < arguments.length; t++) {
 	      var n = arguments[t];
 
@@ -97442,10 +97673,10 @@
 	  }).apply(this, arguments);
 	}
 
-	var um$1,
-	    cm$1,
-	    lm$1 = "undefined" != typeof window ? react.useLayoutEffect : react.useEffect,
-	    pm$1 = {
+	var wm$1,
+	    xm$1,
+	    km$1 = "undefined" != typeof window ? react.useLayoutEffect : react.useEffect,
+	    _m$1 = {
 	  popupContent: {
 	    tooltip: {
 	      position: "absolute",
@@ -97484,8 +97715,8 @@
 	    }
 	  }
 	},
-	    dm$1 = ["top left", "top center", "top right", "right top", "right center", "right bottom", "bottom left", "bottom center", "bottom right", "left top", "left center", "left bottom"],
-	    mm$1 = function mm(e, t, n, r, a) {
+	    Nm$1 = ["top left", "top center", "top right", "right top", "right center", "right bottom", "bottom left", "bottom center", "bottom right", "left top", "left center", "left bottom"],
+	    Em$1 = function Em(e, t, n, r, a) {
 	  var s = a.offsetX,
 	      o = a.offsetY,
 	      i = r ? 8 : 0,
@@ -97542,7 +97773,7 @@
 	    arrowTop: g
 	  };
 	},
-	    hm$1 = function hm(e, t, n, r, a, s) {
+	    Tm$1 = function Tm(e, t, n, r, a, s) {
 	  var o = a.offsetX,
 	      i = a.offsetY,
 	      u = {
@@ -97570,9 +97801,9 @@
 	  }(s),
 	      p = Array.isArray(n) ? n : [n];
 
-	  for ((s || Array.isArray(n)) && (p = [].concat(p, dm$1)); c < p.length;) {
+	  for ((s || Array.isArray(n)) && (p = [].concat(p, Nm$1)); c < p.length;) {
 	    var d = {
-	      top: (u = mm$1(e, t, p[c], r, {
+	      top: (u = Em$1(e, t, p[c], r, {
 	        offsetX: o,
 	        offsetY: i
 	      })).top,
@@ -97586,8 +97817,8 @@
 
 	  return u;
 	},
-	    fm$1 = 0,
-	    gm$1 = /*#__PURE__*/react.forwardRef(function (r, s) {
+	    Sm$1 = 0,
+	    Im$1 = /*#__PURE__*/react.forwardRef(function (r, s) {
 	  var o = r.trigger,
 	      i = void 0 === o ? null : o,
 	      c = r.onOpen,
@@ -97612,8 +97843,8 @@
 	      I = void 0 === S ? ["click"] : S,
 	      A = r.contentStyle,
 	      D = void 0 === A ? {} : A,
-	      M = r.arrowStyle,
-	      C = void 0 === M ? {} : M,
+	      C = r.arrowStyle,
+	      M = void 0 === C ? {} : C,
 	      R = r.overlayStyle,
 	      $ = void 0 === R ? {} : R,
 	      F = r.className,
@@ -97644,10 +97875,10 @@
 	      ie = react.useRef(null),
 	      ue = react.useRef(null),
 	      ce = react.useRef(null),
-	      le = react.useRef("popup-" + ++fm$1),
+	      le = react.useRef("popup-" + ++Sm$1),
 	      pe = !!V || !i,
 	      de = react.useRef(0);
-	  lm$1(function () {
+	  km$1(function () {
 	    return ae ? (ce.current = document.activeElement, ke(), xe(), ve()) : we(), function () {
 	      clearTimeout(de.current);
 	    };
@@ -97715,11 +97946,11 @@
 	          t,
 	          n = oe.current.getBoundingClientRect(),
 	          r = ie.current.getBoundingClientRect(),
-	          a = hm$1(n, r, L, K, {
+	          a = Tm$1(n, r, L, K, {
 	        offsetX: q,
 	        offsetY: Y
 	      }, te);
-	      if (ie.current.style.top = a.top + window.scrollY + "px", ie.current.style.left = a.left + window.scrollX + "px", K && ue.current) ue.current.style.transform = a.transform, ue.current.style.setProperty("-ms-transform", a.transform), ue.current.style.setProperty("-webkit-transform", a.transform), ue.current.style.top = (null === (e = C.top) || void 0 === e ? void 0 : e.toString()) || a.arrowTop, ue.current.style.left = (null === (t = C.left) || void 0 === t ? void 0 : t.toString()) || a.arrowLeft;
+	      if (ie.current.style.top = a.top + window.scrollY + "px", ie.current.style.left = a.left + window.scrollX + "px", K && ue.current) ue.current.style.transform = a.transform, ue.current.style.setProperty("-ms-transform", a.transform), ue.current.style.setProperty("-webkit-transform", a.transform), ue.current.style.top = (null === (e = M.top) || void 0 === e ? void 0 : e.toString()) || a.arrowTop, ue.current.style.left = (null === (t = M.left) || void 0 === t ? void 0 : t.toString()) || a.arrowLeft;
 	    }
 	  };
 
@@ -97787,11 +98018,11 @@
 
 	  var _e,
 	      Ne = function Ne() {
-	    return /*#__PURE__*/react.createElement("div", Object.assign({}, (t = pe ? pm$1.popupContent.modal : pm$1.popupContent.tooltip, n = {
+	    return /*#__PURE__*/react.createElement("div", Object.assign({}, (t = pe ? _m$1.popupContent.modal : _m$1.popupContent.tooltip, n = {
 	      className: "popup-content " + ("" !== z ? z.split(" ").map(function (e) {
 	        return e + "-content";
 	      }).join(" ") : ""),
-	      style: im$1({}, t, D, {
+	      style: vm$1({}, t, D, {
 	        pointerEvents: "auto"
 	      }),
 	      ref: ie,
@@ -97804,16 +98035,16 @@
 	      id: le.current
 	    }), K && !pe && /*#__PURE__*/react.createElement("div", {
 	      ref: ue,
-	      style: pm$1.popupArrow
+	      style: _m$1.popupArrow
 	    }, /*#__PURE__*/react.createElement("svg", {
 	      "data-testid": "arrow",
 	      className: "popup-arrow " + ("" !== z ? z.split(" ").map(function (e) {
 	        return e + "-arrow";
 	      }).join(" ") : ""),
 	      viewBox: "0 0 32 16",
-	      style: im$1({
+	      style: vm$1({
 	        position: "absolute"
-	      }, C)
+	      }, M)
 	    }, /*#__PURE__*/react.createElement("path", {
 	      d: "M16 0l16 16H0z",
 	      fill: "currentcolor"
@@ -97821,7 +98052,7 @@
 	    var t, n;
 	  },
 	      Ee = !(I.indexOf("hover") >= 0),
-	      Te = pe ? pm$1.overlay.modal : pm$1.overlay.tooltip,
+	      Te = pe ? _m$1.overlay.modal : _m$1.overlay.tooltip,
 	      Se = [Ee && /*#__PURE__*/react.createElement("div", {
 	    key: "O",
 	    "data-testid": "overlay",
@@ -97829,7 +98060,7 @@
 	    className: "popup-overlay " + ("" !== z ? z.split(" ").map(function (e) {
 	      return e + "-overlay";
 	    }).join(" ") : ""),
-	    style: im$1({}, Te, $, {
+	    style: vm$1({}, Te, $, {
 	      pointerEvents: k && w || pe ? "auto" : "none"
 	    }),
 	    onClick: k && w ? he : void 0,
@@ -97868,11 +98099,11 @@
 	    return !!i && /*#__PURE__*/react.cloneElement(i, t);
 	  }(), ae && /*#__PURE__*/reactDom.createPortal(Se, (null === (_e = document.getElementById("popup-root")) && ((_e = document.createElement("div")).setAttribute("id", "popup-root"), document.body.appendChild(_e)), _e)));
 	}),
-	    ym$1 = $e$1(um$1 || (um$1 = P$4(["\n  .popup-content {\n    margin: auto;\n    background: #fff;\n    width: 100%;\n    padding: 5px;\n    border: 1px solid #d7d7d7;\n    max-width: 568px;\n    border-radius: 0.25rem;\n  }\n\n  [role=tooltip].popup-content {\n    width: 200px;\n    box-shadow: 0 0 3px rgba(0, 0, 0, .16);\n    border-radius: 5px\n  }\n\n  .popup-overlay {\n    background: rgba(0, 0, 0, .5);\n    padding: 10px;\n  }\n\n  [data-popup=tooltip].popup-overlay {\n    background: transparent\n  }\n\n  .popup-arrow {\n    -webkit-filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));\n    filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));\n    color: #fff;\n    stroke-width: 2px;\n    stroke: #d7d7d7;\n    stroke-dasharray: 30px;\n    stroke-dashoffset: -54px;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0\n  }\n"]))),
-	    bm$1 = function bm(t) {
+	    Om$1 = $e$1(wm$1 || (wm$1 = P$4(["\n  .popup-content {\n    margin: auto;\n    background: #fff;\n    width: 100%;\n    padding: 5px;\n    border: 1px solid #d7d7d7;\n    max-width: 568px;\n    border-radius: 0.25rem;\n  }\n\n  [role=tooltip].popup-content {\n    width: 200px;\n    box-shadow: 0 0 3px rgba(0, 0, 0, .16);\n    border-radius: 5px\n  }\n\n  .popup-overlay {\n    background: rgba(0, 0, 0, .5);\n    padding: 10px;\n  }\n\n  [data-popup=tooltip].popup-overlay {\n    background: transparent\n  }\n\n  .popup-arrow {\n    -webkit-filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));\n    filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));\n    color: #fff;\n    stroke-width: 2px;\n    stroke: #d7d7d7;\n    stroke-dasharray: 30px;\n    stroke-dashoffset: -54px;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0\n  }\n"]))),
+	    Am$1 = function Am(t) {
 	  var n = t.open,
 	      r = t.children;
-	  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(gm$1, {
+	  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Im$1, {
 	    overlayStyle: {
 	      zIndex: 2e3
 	    },
@@ -97880,39 +98111,39 @@
 	    closeOnEscape: !1,
 	    modal: !0,
 	    open: n
-	  }, r), /*#__PURE__*/react.createElement(ym$1, null));
+	  }, r), /*#__PURE__*/react.createElement(Om$1, null));
 	};
 
-	bm$1.propTypes = {
+	Am$1.propTypes = {
 	  open: propTypes.bool,
 	  children: propTypes.node
-	}, bm$1.defaultProps = {
+	}, Am$1.defaultProps = {
 	  open: !1,
 	  children: null
 	};
-	var vm$1 = "default",
-	    wm$1 = "error",
-	    xm$1 = (R$3(cm$1 = {}, vm$1, {
+	var Dm$1 = "default",
+	    Cm$1 = "error",
+	    Mm$1 = (R$3(xm$1 = {}, Dm$1, {
 	  fill: "none",
 	  strokeWidth: 2,
 	  stroke: "#f4f4f4",
 	  strokeDasharray: "7, 4",
 	  opacity: .6
-	}), R$3(cm$1, wm$1, {
+	}), R$3(xm$1, Cm$1, {
 	  fill: "rgba(234,50,35, 0.1)",
 	  strokeWidth: 2,
 	  stroke: "#ea3223"
-	}), cm$1),
-	    km$1 = {
+	}), xm$1),
+	    Rm$1 = {
 	  fill: "rgba(0,0,0, 0.6)"
 	};
 
-	function _m$1(t) {
+	function $m$1(t) {
 	  var n = t.className,
 	      r = t.width,
 	      a = t.height,
 	      s = t.type,
-	      o = xm$1[s];
+	      o = Mm$1[s];
 	  return /*#__PURE__*/react.createElement("svg", {
 	    width: r,
 	    height: a,
@@ -97927,44 +98158,32 @@
 	    style: o
 	  }), /*#__PURE__*/react.createElement("path", {
 	    d: "M0,".concat(12, " Q0,0 ").concat(12, ",0 L0,0 Z"),
-	    style: km$1
+	    style: Rm$1
 	  }), /*#__PURE__*/react.createElement("path", {
 	    d: "M0,".concat(a - 12, " Q0,").concat(a, " ").concat(12, ",").concat(a, " L0,").concat(a, " Z"),
-	    style: km$1
+	    style: Rm$1
 	  }), /*#__PURE__*/react.createElement("path", {
 	    d: "M".concat(r - 12, ",").concat(a, " Q").concat(r, ",").concat(a, " ").concat(r, ",").concat(a - 12, " L").concat(r, ",").concat(a, " Z"),
-	    style: km$1
+	    style: Rm$1
 	  }), /*#__PURE__*/react.createElement("path", {
 	    d: "M".concat(r - 12, ",0 Q").concat(r, ",0 ").concat(r, ",").concat(12, " L").concat(r, ",0 Z"),
-	    style: km$1
+	    style: Rm$1
 	  }));
 	}
 
-	_m$1.propTypes = {
+	$m$1.propTypes = {
 	  className: propTypes.string,
 	  width: propTypes.number,
 	  height: propTypes.number,
-	  type: propTypes.oneOf([vm$1, wm$1])
-	}, _m$1.defaultProps = {
+	  type: propTypes.oneOf([Dm$1, Cm$1])
+	}, $m$1.defaultProps = {
 	  className: "",
 	  width: 300,
 	  height: 200,
-	  type: vm$1
+	  type: Dm$1
 	};
 
-	var Nm$1,
-	    Em$1,
-	    Tm$1,
-	    Sm$1,
-	    Im$1,
-	    Om$1,
-	    Am$1,
-	    Dm$1,
-	    Mm$1,
-	    Cm$1,
-	    Rm$1,
-	    $m$1,
-	    Fm$1,
+	var Fm$1,
 	    zm$1,
 	    Pm$1,
 	    Lm$1,
@@ -97976,35 +98195,47 @@
 	    Km$1,
 	    Hm$1,
 	    qm$1,
-	    Gm$1 = We$1(["from{transform:perspective(400px);}to{transform:perspective(400px) rotateY(90deg);}"]),
-	    Ym$1 = We$1(["from{transform:perspective(400px) rotateY(-90deg);}to{transform:perspective(400px);}"]),
-	    Xm$1 = Ae$1([".flipY-exit{animation-name:", ";animation-duration:", "ms;animation-timing-function:ease-in;}.flipY-enter{animation-name:", ";animation-duration:", "ms;animation-timing-function:ease-out;}"], Gm$1, 500, Ym$1, 500),
-	    Qm$1 = Object.freeze({
+	    Gm$1,
+	    Ym$1,
+	    Xm$1,
+	    Qm$1,
+	    Zm$1,
+	    Jm$1,
+	    eh$2,
+	    th$2,
+	    nh$2,
+	    rh$2,
+	    ah$2,
+	    sh$2,
+	    oh$2 = We$1(["from{transform:perspective(400px);}to{transform:perspective(400px) rotateY(90deg);}"]),
+	    ih$2 = We$1(["from{transform:perspective(400px) rotateY(-90deg);}to{transform:perspective(400px);}"]),
+	    uh$2 = Ae$1([".flipY-exit{animation-name:", ";animation-duration:", "ms;animation-timing-function:ease-in;}.flipY-enter{animation-name:", ";animation-duration:", "ms;animation-timing-function:ease-out;}"], oh$2, 500, ih$2, 500),
+	    ch$2 = Object.freeze({
 	  __proto__: null,
 	  animationDuration: 500,
-	  "default": Xm$1
+	  "default": uh$2
 	}),
-	    Zm$1 = We$1(["from,to{transform:translate3d(-", "px,0,0);}50%{transform:translate3d(", "px,0,0);}"], 20, 20),
-	    Jm$1 = We$1(["from,to{transform:translate3d(0,-", "px,0);}50%{transform:translate3d(0,", "px,0);}"], 20, 20),
-	    eh$2 = Ae$1([".slide-horizontal{animation-name:", ";animation-iteration-count:infinite;animation-duration:2000ms;animation-timing-function:linear;}.slide-vertical{animation-name:", ";animation-iteration-count:infinite;animation-duration:2000ms;animation-timing-function:linear;}"], Zm$1, Jm$1),
-	    th$2 = Object.freeze({
+	    lh$2 = We$1(["from,to{transform:translate3d(-", "px,0,0);}50%{transform:translate3d(", "px,0,0);}"], 20, 20),
+	    ph$2 = We$1(["from,to{transform:translate3d(0,-", "px,0);}50%{transform:translate3d(0,", "px,0);}"], 20, 20),
+	    dh$2 = Ae$1([".slide-horizontal{animation-name:", ";animation-iteration-count:infinite;animation-duration:2000ms;animation-timing-function:linear;}.slide-vertical{animation-name:", ";animation-iteration-count:infinite;animation-duration:2000ms;animation-timing-function:linear;}"], lh$2, ph$2),
+	    mh$2 = Object.freeze({
 	  __proto__: null,
-	  "default": eh$2
+	  "default": dh$2
 	}),
-	    nh$2 = We$1(["from,to{opacity:1;}50%{opacity:0;}"]),
-	    rh$2 = Ae$1([".blink{animation-name:", ";animation-iteration-count:infinite;animation-duration:2000ms;animation-timing-function:linear;}"], nh$2),
-	    ah$2 = Object.freeze({
+	    hh$2 = We$1(["from,to{opacity:1;}50%{opacity:0;}"]),
+	    fh$2 = Ae$1([".blink{animation-name:", ";animation-iteration-count:infinite;animation-duration:2000ms;animation-timing-function:linear;}"], hh$2),
+	    gh$2 = Object.freeze({
 	  __proto__: null,
-	  "default": rh$2
+	  "default": fh$2
 	}),
-	    sh$2 = qe$1.div(Nm$1 || (Nm$1 = P$4(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: ", "; // must be higher than BASE_Z_INDEX and lower than other layers\n"])), 1001),
-	    oh$2 = We$1(["from{background:#000;}to{}"]),
-	    ih$2 = Ae$1([".splash-enter{animation-name:", ";animation-duration:", "ms;animation-timing-function:ease-in;}"], oh$2, 300),
-	    uh$2 = qe$1.div(Em$1 || (Em$1 = P$4(["\n  ", "\n"])), ih$2),
-	    ch$2 = function ch(t) {
+	    yh$2 = qe$1.div(Fm$1 || (Fm$1 = P$4(["\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: ", "; // must be higher than BASE_Z_INDEX and lower than other layers\n"])), 1001),
+	    bh$2 = We$1(["from{background:#000;}to{}"]),
+	    vh$2 = Ae$1([".splash-enter{animation-name:", ";animation-duration:", "ms;animation-timing-function:ease-in;}"], bh$2, 300),
+	    wh$2 = qe$1.div(zm$1 || (zm$1 = P$4(["\n  ", "\n"])), vh$2),
+	    xh$2 = function xh(t) {
 	  var n = t.keyForTransition,
 	      r = void 0 === n ? 0 : n;
-	  return /*#__PURE__*/react.createElement(uh$2, null, /*#__PURE__*/react.createElement(Ns$1, null, /*#__PURE__*/react.createElement(bs$1, {
+	  return /*#__PURE__*/react.createElement(wh$2, null, /*#__PURE__*/react.createElement(Ns$1, null, /*#__PURE__*/react.createElement(bs$1, {
 	    key: r,
 	    timeout: {
 	      enter: 300,
@@ -98012,48 +98243,48 @@
 	    },
 	    classNames: "splash",
 	    unmountOnExit: !1
-	  }, /*#__PURE__*/react.createElement(sh$2, null))));
+	  }, /*#__PURE__*/react.createElement(yh$2, null))));
 	},
-	    lh$2 = Object.freeze({
+	    kh$2 = Object.freeze({
 	  __proto__: null,
-	  "default": ch$2
+	  "default": xh$2
 	}),
-	    ph$2 = We$1(["from{transform:rotate(0deg);}to{transform:rotate(360deg);}"]),
-	    dh$2 = Ae$1([".spin{animation-name:", ";animation-iteration-count:infinite;animation-duration:1000ms;animation-timing-function:linear;}"], ph$2),
-	    mh$2 = Object.freeze({
+	    _h$1 = We$1(["from{transform:rotate(0deg);}to{transform:rotate(360deg);}"]),
+	    Nh$2 = Ae$1([".spin{animation-name:", ";animation-iteration-count:infinite;animation-duration:1000ms;animation-timing-function:linear;}"], _h$1),
+	    Eh$2 = Object.freeze({
 	  __proto__: null,
-	  "default": dh$2
+	  "default": Nh$2
 	}),
-	    hh$2 = Object.freeze({
+	    Th$2 = Object.freeze({
 	  __proto__: null,
-	  flipY: Qm$1,
-	  slide: th$2,
-	  blink: ah$2,
-	  splash: lh$2,
-	  spin: mh$2
+	  flipY: ch$2,
+	  slide: mh$2,
+	  blink: gh$2,
+	  splash: kh$2,
+	  spin: Eh$2
 	}),
-	    fh$2 = ch$2,
-	    gh$2 = qe$1.div(Tm$1 || (Tm$1 = P$4(["\n  ", "\n  ", "\n"])), Xm$1, dh$2),
-	    yh$2 = qe$1.img(Sm$1 || (Sm$1 = P$4(["\n  border-radius: 5px;\n  opacity: 0.7;\n  height: 38px;\n"]))),
-	    bh$2 = qe$1.div(Im$1 || (Im$1 = P$4(["\n  cursor: pointer;\n  text-align: center;\n  width: ", "px;\n\n  img {\n    width: 100%;\n  }\n\n  z-index: ", ";\n  position: fixed;\n  bottom: ", "px;\n"])), 60, 1020, 10),
-	    vh$2 = qe$1.div(Om$1 || (Om$1 = P$4(["\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  margin: auto;\n  width: ", "px;\n  height: ", "px;\n  img {\n    width: 100%;\n  }\n"])), 100, 100),
-	    wh$2 = qe$1.div(Am$1 || (Am$1 = P$4(["\n  color: #fff;\n  text-align: center;\n"]))),
-	    xh$2 = qe$1.div(Dm$1 || (Dm$1 = P$4(["\n  transform: translateZ(1000px); // to fix rotating bug on safari\n  transform-style: preserve-3d;\n  position: absolute;\n  top: ", ";\n  z-index: ", ";\n"])), function (e) {
+	    Sh$2 = xh$2,
+	    Ih$2 = qe$1.div(Pm$1 || (Pm$1 = P$4(["\n  ", "\n  ", "\n"])), uh$2, Nh$2),
+	    Oh$2 = qe$1.img(Lm$1 || (Lm$1 = P$4(["\n  border-radius: 5px;\n  opacity: 0.7;\n  height: 38px;\n"]))),
+	    Ah$2 = qe$1.div(Bm$1 || (Bm$1 = P$4(["\n  cursor: pointer;\n  text-align: center;\n  width: ", "px;\n\n  img {\n    width: 100%;\n  }\n\n  z-index: ", ";\n  position: fixed;\n  bottom: ", "px;\n"])), 60, 1020, 10),
+	    Dh$2 = qe$1.div(Vm$1 || (Vm$1 = P$4(["\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  position: absolute;\n  margin: auto;\n  width: ", "px;\n  height: ", "px;\n  img {\n    width: 100%;\n  }\n"])), 100, 100),
+	    Ch$2 = qe$1.div(jm$1 || (jm$1 = P$4(["\n  color: #fff;\n  text-align: center;\n"]))),
+	    Mh$2 = qe$1.div(Wm$1 || (Wm$1 = P$4(["\n  transform: translateZ(1000px); // to fix rotating bug on safari\n  transform-style: preserve-3d;\n  position: absolute;\n  top: ", ";\n  z-index: ", ";\n"])), function (e) {
 	  return e.y;
 	}, 1020),
-	    kh$2 = qe$1.div(Mm$1 || (Mm$1 = P$4(["\n  display: flex;\n  align-items: center;\n"]))),
-	    _h$1 = qe$1(wh$2)(Cm$1 || (Cm$1 = P$4(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: #fff;\n"]))),
-	    Nh$2 = qe$1(wh$2)(Rm$1 || (Rm$1 = P$4(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: green;\n  position: absolute;\n  left: 0;\n  top: 10px;\n  background: white;\n  z-index: ", ";\n"])), 1030),
-	    Eh$2 = qe$1(wh$2)($m$1 || ($m$1 = P$4(["\n  position: absolute;\n  font-size: 16px;\n  text-align: center;\n  color: #fff;\n  top: ", ";\n  z-index: ", ";\n"])), function (e) {
+	    Rh$2 = qe$1.div(Um$1 || (Um$1 = P$4(["\n  display: flex;\n  align-items: center;\n"]))),
+	    $h$2 = qe$1(Ch$2)(Km$1 || (Km$1 = P$4(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: #fff;\n"]))),
+	    Fh$2 = qe$1(Ch$2)(Hm$1 || (Hm$1 = P$4(["\n  font-size: 20px;\n  margin-left: 10px;\n  color: green;\n  position: absolute;\n  left: 0;\n  top: 10px;\n  background: white;\n  z-index: ", ";\n"])), 1030),
+	    zh$2 = qe$1(Ch$2)(qm$1 || (qm$1 = P$4(["\n  position: absolute;\n  font-size: 16px;\n  text-align: center;\n  color: #fff;\n  top: ", ";\n  z-index: ", ";\n"])), function (e) {
 	  return e.y;
 	}, 1020),
-	    Th$2 = qe$1(Eh$2)(Fm$1 || (Fm$1 = P$4(["\n  background: #ea3223;\n  padding: 5px 10px;\n  border-radius: 3px;\n"]))),
-	    Sh$2 = qe$1(wh$2)(zm$1 || (zm$1 = P$4(["\n  position: absolute;\n  font-size: 18px;\n  text-align: center;\n  border-radius: 3px;\n  padding: 5px 10px;\n  background: #ea3223;\n  color: #fff;\n  margin: 0 10px;\n  top: ", ";\n  z-index: ", ";\n"])), function (e) {
+	    Ph$2 = qe$1(zh$2)(Gm$1 || (Gm$1 = P$4(["\n  background: #ea3223;\n  padding: 5px 10px;\n  border-radius: 3px;\n"]))),
+	    Lh$2 = qe$1(Ch$2)(Ym$1 || (Ym$1 = P$4(["\n  position: absolute;\n  font-size: 18px;\n  text-align: center;\n  border-radius: 3px;\n  padding: 5px 10px;\n  background: #ea3223;\n  color: #fff;\n  margin: 0 10px;\n  top: ", ";\n  z-index: ", ";\n"])), function (e) {
 	  return e.y;
 	}, 1020),
-	    Ih$2 = qe$1.div(Pm$1 || (Pm$1 = P$4(["\n  font-size: 18px;\n  text-align: center;\n  padding: 10px;\n"]))),
-	    Oh$2 = qe$1(_m$1)(Lm$1 || (Lm$1 = P$4(["\n  position: absolute;\n  top: 0;\n  left: 0;\n"]))),
-	    Ah$2 = {
+	    Bh$2 = qe$1.div(Xm$1 || (Xm$1 = P$4(["\n  font-size: 18px;\n  text-align: center;\n  padding: 10px;\n"]))),
+	    Vh$2 = qe$1($m$1)(Qm$1 || (Qm$1 = P$4(["\n  position: absolute;\n  top: 0;\n  left: 0;\n"]))),
+	    jh$2 = {
 	  BTN_OK: {
 	    en: "OK",
 	    vi: "Tôi đã hiểu"
@@ -98075,44 +98306,44 @@
 	    vi: "Thử lại"
 	  }
 	},
-	    Dh$2 = {
+	    Wh$2 = {
 	  WARMUP_INTRO: {
 	    en: "Warming up... Please wait a moment",
 	    vi: "Đang khởi động, vui lòng chờ trong giây lát..."
 	  }
 	},
-	    Mh$2 = s.IDCardMessage,
-	    Ch$2 = qe$1.div(Bm$1 || (Bm$1 = P$4(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  padding: 10px;\n"]))),
-	    Rh$2 = qe$1.div(Vm$1 || (Vm$1 = P$4(["\n  text-align: center;\n  font-size: 1rem;\n"]))),
-	    $h$2 = qe$1.button(jm$1 || (jm$1 = P$4(["\n  margin-top: 20px;\n  width: 100%;\n  max-width: 160px;\n  height: 50px;\n  background-color: #007bff;\n  border: 0;\n  outline: none;\n  border-radius: 0.25rem;\n  color: #fff;\n  font-weight: 400;\n  cursor: pointer;\n  font-size: 1rem;\n"]))),
-	    Fh$2 = function Fh(t) {
+	    Uh$2 = s.IDCardMessage,
+	    Kh$2 = qe$1.div(Zm$1 || (Zm$1 = P$4(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  padding: 10px;\n"]))),
+	    Hh$2 = qe$1.div(Jm$1 || (Jm$1 = P$4(["\n  text-align: center;\n  font-size: 1rem;\n"]))),
+	    qh$2 = qe$1.button(eh$2 || (eh$2 = P$4(["\n  margin-top: 20px;\n  width: 100%;\n  max-width: 160px;\n  height: 50px;\n  background-color: #007bff;\n  border: 0;\n  outline: none;\n  border-radius: 0.25rem;\n  color: #fff;\n  font-weight: 400;\n  cursor: pointer;\n  font-size: 1rem;\n"]))),
+	    Gh$2 = function Gh(t) {
 	  var n = t.onOk,
 	      r = t.maxSessionTime,
 	      a = l$1.useSDKSettings().lang;
-	  return /*#__PURE__*/react.createElement(Ch$2, null, /*#__PURE__*/react.createElement(Rh$2, {
+	  return /*#__PURE__*/react.createElement(Kh$2, null, /*#__PURE__*/react.createElement(Hh$2, {
 	    className: "popup-message"
-	  }, tr$1(Mh$2.TIMEOUT_INSTRUCTION[a])({
+	  }, tr$1(Uh$2.TIMEOUT_INSTRUCTION[a])({
 	    x: r
-	  })), /*#__PURE__*/react.createElement($h$2, {
+	  })), /*#__PURE__*/react.createElement(qh$2, {
 	    className: "popup-button",
 	    onClick: n
-	  }, Ah$2.BTN_OK[a]));
+	  }, jh$2.BTN_OK[a]));
 	};
 
-	Fh$2.propTypes = {
+	Gh$2.propTypes = {
 	  onOk: propTypes.func,
 	  maxSessionTime: propTypes.number
-	}, Fh$2.defaultProps = {
+	}, Gh$2.defaultProps = {
 	  onOk: function onOk() {},
 	  maxSessionTime: 30
 	};
 
-	var zh$2 = qe$1.div(Wm$1 || (Wm$1 = P$4(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  padding: 10px;\n"]))),
-	    Ph$2 = qe$1.div(Um$1 || (Um$1 = P$4(["\n  text-align: center;\n  font-size: 1rem;\n  color: #ea3223;\n  margin-top: 10px;\n"]))),
-	    Lh$2 = qe$1.button(Km$1 || (Km$1 = P$4(["\n  margin-top: 20px;\n  width: 100%;\n  max-width: 160px;\n  height: 50px;\n  background-color: #007bff;\n  border: 0;\n  outline: none;\n  border-radius: 0.25rem;\n  color: #fff;\n  font-weight: 400;\n  cursor: pointer;\n  font-size: 1rem;\n"]))),
-	    Bh$2 = qe$1.img(Hm$1 || (Hm$1 = P$4(["\n  width: 100%;\n  border-radius: 5px;\n"]))),
-	    Vh$2 = qe$1.div(qm$1 || (qm$1 = P$4(["\n  margin: 20px 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-evenly;\n  gap: 10px;\n"]))),
-	    jh$2 = function jh(n) {
+	var Yh$2 = qe$1.div(th$2 || (th$2 = P$4(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  padding: 10px;\n"]))),
+	    Xh$2 = qe$1.div(nh$2 || (nh$2 = P$4(["\n  text-align: center;\n  font-size: 1rem;\n  color: #ea3223;\n  margin-top: 10px;\n"]))),
+	    Qh$2 = qe$1.button(rh$2 || (rh$2 = P$4(["\n  margin-top: 20px;\n  width: 100%;\n  max-width: 160px;\n  height: 50px;\n  background-color: #007bff;\n  border: 0;\n  outline: none;\n  border-radius: 0.25rem;\n  color: #fff;\n  font-weight: 400;\n  cursor: pointer;\n  font-size: 1rem;\n"]))),
+	    Zh$2 = qe$1.img(ah$2 || (ah$2 = P$4(["\n  width: 100%;\n  border-radius: 5px;\n"]))),
+	    Jh$2 = qe$1.div(sh$2 || (sh$2 = P$4(["\n  margin: 20px 0;\n  width: 100%;\n  display: flex;\n  justify-content: space-evenly;\n  gap: 10px;\n"]))),
+	    ef$2 = function ef(n) {
 	  var r = n.imageBlobTaken,
 	      s = n.onConfirm,
 	      o = n.onTryAgain,
@@ -98126,74 +98357,74 @@
 	    return r && (e = URL.createObjectURL(r), l(e)), function () {
 	      URL.revokeObjectURL(e);
 	    };
-	  }, [r]), /*#__PURE__*/react.createElement(zh$2, null, /*#__PURE__*/react.createElement(Bh$2, {
+	  }, [r]), /*#__PURE__*/react.createElement(Yh$2, null, /*#__PURE__*/react.createElement(Zh$2, {
 	    src: c
-	  }), i && /*#__PURE__*/react.createElement(Ph$2, {
+	  }), i && /*#__PURE__*/react.createElement(Xh$2, {
 	    className: "confirm-popup-error-message"
-	  }, i.msg[p]), /*#__PURE__*/react.createElement(Vh$2, null, /*#__PURE__*/react.createElement(Lh$2, {
+	  }, i.msg[p]), /*#__PURE__*/react.createElement(Jh$2, null, /*#__PURE__*/react.createElement(Qh$2, {
 	    onClick: s
-	  }, Ah$2.BTN_USE_THIS_PICTURE[p]), /*#__PURE__*/react.createElement(Lh$2, {
+	  }, jh$2.BTN_USE_THIS_PICTURE[p]), /*#__PURE__*/react.createElement(Qh$2, {
 	    onClick: o
-	  }, Ah$2.BTN_TRY_AGAIN[p])));
+	  }, jh$2.BTN_TRY_AGAIN[p])));
 	};
 
-	jh$2.propTypes = {
+	ef$2.propTypes = {
 	  imageBlobTaken: propTypes.shape({}),
 	  error: propTypes.shape({
 	    msg: propTypes.shape({})
 	  }),
 	  onConfirm: propTypes.func,
 	  onTryAgain: propTypes.func
-	}, jh$2.defaultProps = {
+	}, ef$2.defaultProps = {
 	  imageBlobTaken: {},
 	  error: null,
 	  onConfirm: function onConfirm() {},
 	  onTryAgain: function onTryAgain() {}
 	};
 
-	var Wh$2 = function Wh() {
+	var tf$2 = function tf() {
 	  this.__data__ = new _r$1(), this.size = 0;
 	};
 
-	var Uh$2 = function Uh(e) {
+	var nf$2 = function nf(e) {
 	  var t = this.__data__,
 	      n = t["delete"](e);
 	  return this.size = t.size, n;
 	};
 
-	var Kh$2 = function Kh(e) {
+	var rf$2 = function rf(e) {
 	  return this.__data__.get(e);
 	};
 
-	var Hh$2 = function Hh(e) {
+	var af$2 = function af(e) {
 	  return this.__data__.has(e);
 	};
 
-	var qh$2 = function qh(e, t) {
+	var sf$2 = function sf(e, t) {
 	  var n = this.__data__;
 
 	  if (n instanceof _r$1) {
 	    var r = n.__data__;
 	    if (!Nr$1 || r.length < 199) return r.push([e, t]), this.size = ++n.size, this;
-	    n = this.__data__ = new Cr$1(r);
+	    n = this.__data__ = new Mr$1(r);
 	  }
 
 	  return n.set(e, t), this.size = n.size, this;
 	};
 
-	function Gh$2(e) {
+	function of$2(e) {
 	  var t = this.__data__ = new _r$1(e);
 	  this.size = t.size;
 	}
 
-	Gh$2.prototype.clear = Wh$2, Gh$2.prototype["delete"] = Uh$2, Gh$2.prototype.get = Kh$2, Gh$2.prototype.has = Hh$2, Gh$2.prototype.set = qh$2;
-	var Yh$2 = Gh$2;
+	of$2.prototype.clear = tf$2, of$2.prototype["delete"] = nf$2, of$2.prototype.get = rf$2, of$2.prototype.has = af$2, of$2.prototype.set = sf$2;
+	var uf$2 = of$2;
 
-	var Xh$2 = function Xh(e, t, n) {
+	var cf$2 = function cf(e, t, n) {
 	  (void 0 !== n && !It$1(e[t], n) || void 0 === n && !(t in e)) && St$1(e, t, n);
 	};
 
-	var Qh$2 = function (e) {
+	var lf$2 = function (e) {
 	  return function (t, n, r) {
 	    for (var a = -1, s = Object(t), o = r(t), i = o.length; i--;) {
 	      var u = o[e ? i : ++a];
@@ -98203,7 +98434,7 @@
 	    return t;
 	  };
 	}(),
-	    Zh$2 = K$4(function (e, t) {
+	    pf$2 = K$4(function (e, t) {
 	  var n = t && !t.nodeType && t,
 	      r = n && e && !e.nodeType && e,
 	      a = r && r.exports === n ? Be$3.Buffer : void 0,
@@ -98216,19 +98447,19 @@
 	    return e.copy(r), r;
 	  };
 	}),
-	    Jh$2 = Be$3.Uint8Array;
+	    df$2 = Be$3.Uint8Array;
 
-	var ef$2 = function ef(e) {
+	var mf$2 = function mf(e) {
 	  var t = new e.constructor(e.byteLength);
-	  return new Jh$2(t).set(new Jh$2(e)), t;
+	  return new df$2(t).set(new df$2(e)), t;
 	};
 
-	var tf$2 = function tf(e, t) {
-	  var n = t ? ef$2(e.buffer) : e.buffer;
+	var hf$2 = function hf(e, t) {
+	  var n = t ? mf$2(e.buffer) : e.buffer;
 	  return new e.constructor(n, e.byteOffset, e.length);
 	};
 
-	var nf$2 = function nf(e, t) {
+	var ff$2 = function ff(e, t) {
 	  var n = -1,
 	      r = e.length;
 
@@ -98238,40 +98469,40 @@
 
 	  return t;
 	},
-	    rf$2 = Object.create,
-	    af$2 = function () {
+	    gf$2 = Object.create,
+	    yf$2 = function () {
 	  function e() {}
 
 	  return function (t) {
 	    if (!ze$3(t)) return {};
-	    if (rf$2) return rf$2(t);
+	    if (gf$2) return gf$2(t);
 	    e.prototype = t;
 	    var n = new e();
 	    return e.prototype = void 0, n;
 	  };
 	}();
 
-	var sf$2 = function sf(e) {
-	  return "function" != typeof e.constructor || dn$1(e) ? {} : af$2(vn$1(e));
+	var bf$2 = function bf(e) {
+	  return "function" != typeof e.constructor || dn$1(e) ? {} : yf$2(vn$1(e));
 	};
 
-	var of$2 = function of(e) {
+	var vf$2 = function vf(e) {
 	  return Ze$2(e) && jt$1(e);
 	};
 
-	var uf$2 = function uf(e, t) {
+	var wf$2 = function wf(e, t) {
 	  if (("constructor" !== t || "function" != typeof e[t]) && "__proto__" != t) return e[t];
 	};
 
-	var cf$2 = function cf(e) {
+	var xf$2 = function xf(e) {
 	  return Dt$1(e, gn$1(e));
 	};
 
-	var lf$2 = function lf(e, t, n, r, a, s, o) {
-	  var i = uf$2(e, n),
-	      u = uf$2(t, n),
+	var kf$2 = function kf(e, t, n, r, a, s, o) {
+	  var i = wf$2(e, n),
+	      u = wf$2(t, n),
 	      c = o.get(u);
-	  if (c) Xh$2(e, n, c);else {
+	  if (c) cf$2(e, n, c);else {
 	    var l = s ? s(i, u, n + "", e, t, o) : void 0,
 	        p = void 0 === l;
 
@@ -98279,25 +98510,25 @@
 	      var d = Jt$1(u),
 	          m = !d && tn$1(u),
 	          h = !d && !m && un$1(u);
-	      l = u, d || m || h ? Jt$1(i) ? l = i : of$2(i) ? l = nf$2(i) : m ? (p = !1, l = Zh$2(u, !0)) : h ? (p = !1, l = tf$2(u, !0)) : l = [] : En$1(u) || Zt$1(u) ? (l = i, Zt$1(i) ? l = cf$2(i) : ze$3(i) && !pt$1(i) || (l = sf$2(u))) : p = !1;
+	      l = u, d || m || h ? Jt$1(i) ? l = i : vf$2(i) ? l = ff$2(i) : m ? (p = !1, l = pf$2(u, !0)) : h ? (p = !1, l = hf$2(u, !0)) : l = [] : En$1(u) || Zt$1(u) ? (l = i, Zt$1(i) ? l = xf$2(i) : ze$3(i) && !pt$1(i) || (l = bf$2(u))) : p = !1;
 	    }
 
-	    p && (o.set(u, l), a(l, u, r, s, o), o["delete"](u)), Xh$2(e, n, l);
+	    p && (o.set(u, l), a(l, u, r, s, o), o["delete"](u)), cf$2(e, n, l);
 	  }
 	};
 
-	var pf$2 = function e(t, n, r, a, s) {
-	  t !== n && Qh$2(n, function (o, i) {
-	    if (s || (s = new Yh$2()), ze$3(o)) lf$2(t, n, i, r, e, a, s);else {
-	      var u = a ? a(uf$2(t, i), o, i + "", t, n, s) : void 0;
-	      void 0 === u && (u = o), Xh$2(t, i, u);
+	var _f$1 = function e(t, n, r, a, s) {
+	  t !== n && lf$2(n, function (o, i) {
+	    if (s || (s = new uf$2()), ze$3(o)) kf$2(t, n, i, r, e, a, s);else {
+	      var u = a ? a(wf$2(t, i), o, i + "", t, n, s) : void 0;
+	      void 0 === u && (u = o), cf$2(t, i, u);
 	    }
 	  }, gn$1);
 	},
-	    df$2 = Ht$1(function (e, t, n) {
-	  pf$2(e, t, n);
+	    Nf$2 = Ht$1(function (e, t, n) {
+	  _f$1(e, t, n);
 	}),
-	    mf$2 = {
+	    Ef$2 = {
 	  data: {
 	    settings: {
 	      sdk_settings: {
@@ -98335,14 +98566,14 @@
 	  }
 	};
 
-	var hf$2 = "SESSION_TIMEOUT",
-	    ff$2 = "CONFIRM",
-	    gf$2 = s.IDCardMessage,
-	    yf$2 = s.IDCardSide,
-	    bf$2 = s.IDCardType,
-	    vf$2 = s.Errors;
+	var Tf$2 = "SESSION_TIMEOUT",
+	    Sf$2 = "CONFIRM",
+	    If$2 = s.IDCardMessage,
+	    Of$2 = s.IDCardSide,
+	    Af$2 = s.IDCardType,
+	    Df$2 = s.Errors;
 
-	function wf$2(s) {
+	function Cf$2(s) {
 	  var o = s.frontCamera,
 	      i = s.title,
 	      u = s.description,
@@ -98360,9 +98591,9 @@
 	      T = L$4(react.useState(0), 2),
 	      O = T[0],
 	      A = T[1],
-	      D = m === yf$2.FRONT,
-	      C = s.titleIcon || (D ? "id_card_front.svg" : "id_card_back.svg"),
-	      R = p$2.useAsset(C),
+	      D = m === Of$2.FRONT,
+	      M = s.titleIcon || (D ? "id_card_front.svg" : "id_card_back.svg"),
+	      R = p$2.useAsset(M),
 	      $ = L$4(react.useState({}), 2),
 	      F = $[0],
 	      P = $[1],
@@ -98428,7 +98659,7 @@
 	        u = o[1];
 	    return react.useEffect(function () {
 	      function e() {
-	        return (e = M$4(regeneratorRuntime.mark(function e() {
+	        return (e = C$4(regeneratorRuntime.mark(function e() {
 	          var t, a, o, i, c, l, p, d, m, h, f, g, y, b;
 	          return regeneratorRuntime.wrap(function (e) {
 	            for (;;) {
@@ -98445,7 +98676,7 @@
 	                  t = e.sent;
 
 	                case 5:
-	                  a = df$2(mf$2, r, t), o = jr$1(a, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.enable"), i = jr$1(a, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.frames_interval_ms"), c = jr$1(a, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.quality_web"), l = jr$1(a, "data.settings.sdk_settings.id_detection_settings.limit_time_settings.enable"), p = jr$1(a, "data.settings.sdk_settings.id_detection_settings.limit_time_settings.limit_time_second"), d = jr$1(a, "data.settings.sdk_settings.id_detection_settings.limit_time_settings.video_partial_length_seconds"), m = jr$1(a, "data.settings.sdk_settings.id_detection_settings.auto_capture.enable"), h = jr$1(a, "data.settings.sdk_settings.id_detection_settings.auto_capture.wait_for_best_image_time_ms"), f = jr$1(a, "data.settings.sdk_settings.id_detection_settings.blur_check.enable"), g = jr$1(a, "data.settings.sdk_settings.id_detection_settings.blur_check.threshold"), y = jr$1(a, "data.settings.sdk_settings.id_detection_settings.disable_capture_button_if_alert"), b = jr$1(a, "data.settings.sdk_settings.id_detection_settings.id_detection.enable"), u({
+	                  a = Nf$2(Ef$2, r, t), o = jr$1(a, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.enable"), i = jr$1(a, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.frames_interval_ms"), c = jr$1(a, "data.settings.sdk_settings.id_detection_settings.save_frame_settings.quality_web"), l = jr$1(a, "data.settings.sdk_settings.id_detection_settings.limit_time_settings.enable"), p = jr$1(a, "data.settings.sdk_settings.id_detection_settings.limit_time_settings.limit_time_second"), d = jr$1(a, "data.settings.sdk_settings.id_detection_settings.limit_time_settings.video_partial_length_seconds"), m = jr$1(a, "data.settings.sdk_settings.id_detection_settings.auto_capture.enable"), h = jr$1(a, "data.settings.sdk_settings.id_detection_settings.auto_capture.wait_for_best_image_time_ms"), f = jr$1(a, "data.settings.sdk_settings.id_detection_settings.blur_check.enable"), g = jr$1(a, "data.settings.sdk_settings.id_detection_settings.blur_check.threshold"), y = jr$1(a, "data.settings.sdk_settings.id_detection_settings.disable_capture_button_if_alert"), b = jr$1(a, "data.settings.sdk_settings.id_detection_settings.id_detection.enable"), u({
 	                    enableRecording: o,
 	                    frameCaptureIntervalMs: i,
 	                    sessionTime: p,
@@ -98486,11 +98717,11 @@
 
 	  var Te = react.useCallback(function (e) {
 	    ae(null === e ? "" : tr$1(e.msg[X])({
-	      side: D ? Ah$2.FRONT[X] : Ah$2.BACK[X]
+	      side: D ? jh$2.FRONT[X] : jh$2.BACK[X]
 	    }));
 	  }, [X, D]),
 	      Se = react.useCallback(function () {
-	    var e = M$4(regeneratorRuntime.mark(function e(t) {
+	    var e = C$4(regeneratorRuntime.mark(function e(t) {
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
 	          switch (e.prev = e.next) {
@@ -98541,12 +98772,12 @@
 	        O = react.useRef({}),
 	        A = l$1.useSDKSettings(),
 	        D = A.tfjsWasmRoot,
-	        C = A.blazefaceRoot,
+	        M = A.blazefaceRoot,
 	        R = A.opencvUrl,
 	        $ = A.idCardModelUrl;
 	    react.useEffect(function () {
 	      function e() {
-	        return (e = M$4(regeneratorRuntime.mark(function e() {
+	        return (e = C$4(regeneratorRuntime.mark(function e() {
 	          return regeneratorRuntime.wrap(function (e) {
 	            for (;;) {
 	              switch (e.prev = e.next) {
@@ -98561,10 +98792,10 @@
 	                    break;
 	                  }
 
-	                  return e.next = 4, am$1({
+	                  return e.next = 4, gm$1({
 	                    opencvUrl: R,
 	                    modelUrl: $,
-	                    blazefaceRoot: C,
+	                    blazefaceRoot: M,
 	                    tfjsWasmRoot: D
 	                  });
 
@@ -98590,12 +98821,12 @@
 	      !function () {
 	        e.apply(this, arguments);
 	      }();
-	    }, [y, u, D, C, R, $]);
+	    }, [y, u, D, M, R, $]);
 	    var F = react.useCallback(function () {
 	      !0 === m.current && (m.current = !1);
 	    }, []),
 	        z = react.useCallback(function () {
-	      var e = M$4(regeneratorRuntime.mark(function e(t) {
+	      var e = C$4(regeneratorRuntime.mark(function e(t) {
 	        var n, r, a, s;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -98637,7 +98868,7 @@
 	      };
 	    }(), [u]),
 	        P = react.useCallback(function () {
-	      var e = M$4(regeneratorRuntime.mark(function e(t) {
+	      var e = C$4(regeneratorRuntime.mark(function e(t) {
 	        var n, r;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -98669,7 +98900,7 @@
 	        return e.apply(this, arguments);
 	      };
 	    }(), []),
-	        B = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	        B = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	      var t, n;
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
@@ -98708,7 +98939,7 @@
 	        }, 150);
 	      });
 	    }, []),
-	        W = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	        W = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
 	          switch (e.prev = e.next) {
@@ -98718,7 +98949,7 @@
 	                    n = x.current;
 	                T.current ? (V(), setTimeout(function () {
 	                  j().then(function () {
-	                    K$1.hasBetterCardBlurScore(n.blurScore, t) || (n.error = sm$1.id_detector_error_blur), e(n);
+	                    K$1.hasBetterCardBlurScore(n.blurScore, t) || (n.error = ym$1.id_detector_error_blur), e(n);
 	                  });
 	                }, 3e3)) : Q$1.takePicture({
 	                  canvas: d.current
@@ -98734,8 +98965,8 @@
 	        }
 	      }, e);
 	    })), [u, V, j]),
-	        U = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
-	      var t, n, r, a, o, i, p, f, g, b, v, N, T, A, D, M, C, R, $, F, L, V, j;
+	        U = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
+	      var t, n, r, a, o, i, p, f, g, b, v, N, T, A, D, C, M, R, $, F, L, V, j;
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
 	          switch (e.prev = e.next) {
@@ -98756,7 +98987,7 @@
 	                imageBlob: null,
 	                blurScore: null,
 	                error: null
-	              }, t = u.enableAutoCapture, n = u.enableBlurCheck, r = u.enableIdDetection, a = O.current, o = a.idCardModel, i = a.blazefaceModel, p = a.ableToUseModel, f = h.current, g = s.current, m.current = !0, b = d.current, v = b.getContext("2d"), N = f.cropX, T = f.cropY, A = f.cropWidth, D = f.cropHeight, M = document.createElement("canvas"), C = M.getContext("2d"), R = r && p ? 15 : 700;
+	              }, t = u.enableAutoCapture, n = u.enableBlurCheck, r = u.enableIdDetection, a = O.current, o = a.idCardModel, i = a.blazefaceModel, p = a.ableToUseModel, f = h.current, g = s.current, m.current = !0, b = d.current, v = b.getContext("2d"), N = f.cropX, T = f.cropY, A = f.cropWidth, D = f.cropHeight, C = document.createElement("canvas"), M = C.getContext("2d"), R = r && p ? 15 : 700;
 
 	            case 15:
 	              if (v.drawImage(g, N, T, A, D, 0, 0, A, D), I.current = !1, !r || !p) {
@@ -98774,9 +99005,9 @@
 	                break;
 	              }
 
-	              if (om$1({
+	              if (bm$1({
 	                event: "card label detected: ".concat(F.card.label)
-	              }), !As$1({
+	              }), !js$1({
 	                corners: F.card.corners,
 	                width: A,
 	                height: D
@@ -98785,12 +99016,12 @@
 	                break;
 	              }
 
-	              if (!Cs$1(F.card.corners)) {
+	              if (!Ks$1(F.card.corners)) {
 	                e.next = 63;
 	                break;
 	              }
 
-	              if (L = Os$1(b, F.card.corners), !((V = re$1.rectAreaRatio({
+	              if (L = Vs$1(b, F.card.corners), !((V = re$1.rectAreaRatio({
 	                small: {
 	                  area: L.width * L.height
 	                },
@@ -98802,7 +99033,7 @@
 	                break;
 	              }
 
-	              $ = sm$1.id_detector_card_too_small, e.next = 61;
+	              $ = ym$1.id_detector_card_too_small, e.next = 61;
 	              break;
 
 	            case 35:
@@ -98811,12 +99042,12 @@
 	                break;
 	              }
 
-	              $ = sm$1.id_detector_error_incomplete, e.next = 61;
+	              $ = ym$1.id_detector_error_incomplete, e.next = 61;
 	              break;
 
 	            case 39:
-	              return M.width = L.width, M.height = L.height, C.putImageData(L, 0, 0), e.next = 44, Ds$1({
-	                canvas: M
+	              return C.width = L.width, C.height = L.height, M.putImageData(L, 0, 0), e.next = 44, Ws$1({
+	                canvas: C
 	              });
 
 	            case 44:
@@ -98825,13 +99056,13 @@
 	                break;
 	              }
 
-	              $ = sm$1.glare_detected, e.next = 61;
+	              $ = ym$1.glare_detected, e.next = 61;
 	              break;
 
 	            case 49:
-	              return e.next = 51, Rs$1({
+	              return e.next = 51, Hs$1({
 	                blazefaceModel: i,
-	                predictedIdCardCanvas: M,
+	                predictedIdCardCanvas: C,
 	                frontSide: l
 	              });
 
@@ -98847,7 +99078,7 @@
 	              }
 
 	              if (j = K$1.calculateIdCardBlurScore({
-	                canvas: M
+	                canvas: C
 	              }), !k.current) {
 	                e.next = 58;
 	                break;
@@ -98872,21 +99103,21 @@
 	              break;
 
 	            case 63:
-	              $ = sm$1.id_detector_validate_angle_error;
+	              $ = ym$1.id_detector_validate_angle_error;
 
 	            case 64:
 	              e.next = 67;
 	              break;
 
 	            case 66:
-	              $ = sm$1.id_detector_error_incomplete;
+	              $ = ym$1.id_detector_error_incomplete;
 
 	            case 67:
 	              e.next = 70;
 	              break;
 
 	            case 69:
-	              $ = sm$1.id_detector_no_cards;
+	              $ = ym$1.id_detector_no_cards;
 
 	            case 70:
 	              return c($), e.next = 73, B();
@@ -98917,7 +99148,7 @@
 	      var e = s.current;
 
 	      function t() {
-	        return (t = M$4(regeneratorRuntime.mark(function t() {
+	        return (t = C$4(regeneratorRuntime.mark(function t() {
 	          var n, r, a, s;
 	          return regeneratorRuntime.wrap(function (t) {
 	            for (;;) {
@@ -98962,8 +99193,8 @@
 	  }),
 	      Ae = Ie.refWorkingCanvas,
 	      De = Ie.stopCheckFrame,
-	      Me = Ie.checkFrame,
-	      Ce = Ie.warmupDone,
+	      Ce = Ie.checkFrame,
+	      Me = Ie.warmupDone,
 	      Re = Ie.takePictureManually,
 	      Fe = Ie.refAbleToRunBurstMode,
 	      ze = function (e) {
@@ -98999,7 +99230,7 @@
 	      });
 	    }, []),
 	        g = react.useCallback(function () {
-	      var e = M$4(regeneratorRuntime.mark(function e(t) {
+	      var e = C$4(regeneratorRuntime.mark(function e(t) {
 	        var n, r, a, s, o;
 	        return regeneratorRuntime.wrap(function (e) {
 	          for (;;) {
@@ -99022,7 +99253,7 @@
 	        return e.apply(this, arguments);
 	      };
 	    }(), [i]),
-	        y = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	        y = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	      var n, r, a, s, o, l, p, m, h, f, y;
 	      return regeneratorRuntime.wrap(function (e) {
 	        for (;;) {
@@ -99099,7 +99330,7 @@
 	      var e = t.current;
 
 	      function n() {
-	        return (n = M$4(regeneratorRuntime.mark(function t() {
+	        return (n = C$4(regeneratorRuntime.mark(function t() {
 	          var n, r, a, s;
 	          return regeneratorRuntime.wrap(function (t) {
 	            for (;;) {
@@ -99179,7 +99410,7 @@
 	  var We = p$2.useAsset("ic_loading.png"),
 	      Ue = react.useCallback(function () {
 	    Pe(), De(), Ve(), te(""), ge({
-	      popupType: hf$2
+	      popupType: Tf$2
 	    });
 	  }, [Ve, Pe, De, ge]),
 	      Ke = react.useCallback(function () {
@@ -99187,7 +99418,7 @@
 	  }, [Be]),
 	      He = react.useCallback(function (e) {
 	    var t = e.curTimeLeft;
-	    te(tr$1(gf$2.REMAINING_TIME[X])({
+	    te(tr$1(If$2.REMAINING_TIME[X])({
 	      x: t
 	    }));
 	  }, [X]),
@@ -99241,18 +99472,18 @@
 	    onSessionTimeout: Ue,
 	    onVideoTimeLimitReached: Ke,
 	    settings: Ee,
-	    warmupDone: Ce
+	    warmupDone: Me
 	  }),
 	      Ge = qe.stopTimers,
 	      Ye = qe.startTimers,
-	      Xe = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	      Xe = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
 	        switch (e.prev = e.next) {
 	          case 0:
 	            return ge({
 	              popupType: null
-	            }), _e(null), Ne.current = !1, Ye(), e.next = 6, Promise.all([je(), Me()]);
+	            }), _e(null), Ne.current = !1, Ye(), e.next = 6, Promise.all([je(), Ce()]);
 
 	          case 6:
 	          case "end":
@@ -99260,7 +99491,7 @@
 	        }
 	      }
 	    }, e);
-	  })), [je, Me, Ye, ge]),
+	  })), [je, Ce, Ye, ge]),
 	      Qe = react.useCallback(function (e) {
 	    var t,
 	        n,
@@ -99290,26 +99521,38 @@
 	      yMessage: r
 	    }), ue(!0);
 	  }, [l]),
-	      Ze = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	      Ze = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	    var t, n, r;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
 	        switch (e.prev = e.next) {
 	          case 0:
-	            he(!0), ge({
+	            if (he(!0), ge({
 	              popupType: null
 	            }), t = ve.current, n = {
 	              image: t,
 	              recordedVideos: null != Ee && Ee.enableRecording ? Le.current : []
-	            }, e.next = 19;
-	            break;
+	            }, !h) {
+	              e.next = 19;
+	              break;
+	            }
+
+	            return r = null, e.prev = 6, x(), e.next = 10, $s$1({
+	              image: t,
+	              cardSide: m,
+	              frontCardId: v,
+	              onError: p,
+	              apiClient: G,
+	              cardType: d,
+	              recordedVideos: Le.current
+	            });
 
 	          case 10:
 	            r = e.sent, e.next = 16;
 	            break;
 
 	          case 13:
-	            e.prev = 13, e.t0 = e["catch"](6), p(z$6(z$6({}, vf$2.api_call_error), {}, {
+	            e.prev = 13, e.t0 = e["catch"](6), p(z$6(z$6({}, Df$2.api_call_error), {}, {
 	              details: e.t0
 	            }));
 
@@ -99334,7 +99577,7 @@
 	      }
 	    }, e, null, [[6, 13]]);
 	  })), [h, G, Ee, d, m, v, p, f, x, Le, ge]),
-	      Je = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	      Je = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	    var t,
 	        n,
 	        r = arguments;
@@ -99353,7 +99596,7 @@
 	            Ne.current = !0, he(!0), Pe(), De(), Ge(), te(""), ae(""), A(function (e) {
 	              return e + 1;
 	            }), ve.current = n, k ? ge({
-	              popupType: ff$2
+	              popupType: Sf$2
 	            }) : Ze(), he(!1);
 
 	          case 14:
@@ -99365,7 +99608,7 @@
 	  })), [Pe, De, Ge, ge, k, Ze]);
 
 	  we.current = Je;
-	  var et = react.useCallback(M$4(regeneratorRuntime.mark(function e() {
+	  var et = react.useCallback(C$4(regeneratorRuntime.mark(function e() {
 	    var t, n, r;
 	    return regeneratorRuntime.wrap(function (e) {
 	      for (;;) {
@@ -99388,18 +99631,18 @@
 	      }
 	    }, e);
 	  })), [Re, Je, Ge, Fe, Pe, De]);
-	  return /*#__PURE__*/react.createElement(gh$2, null, /*#__PURE__*/react.createElement(Oe$3, {
+	  return /*#__PURE__*/react.createElement(Ih$2, null, /*#__PURE__*/react.createElement(Oe$3, {
 	    frontCamera: o,
 	    onVideoPlayed: Qe,
 	    onClose: c,
 	    flipHorizontal: o,
 	    ref: Z,
 	    onError: p
-	  }, !Ce && /*#__PURE__*/react.createElement(bm$1, {
+	  }, !Me && /*#__PURE__*/react.createElement(Am$1, {
 	    open: !0
-	  }, /*#__PURE__*/react.createElement(Ih$2, {
+	  }, /*#__PURE__*/react.createElement(Bh$2, {
 	    className: "warmup-message"
-	  }, Dh$2.WARMUP_INTRO[X])), ie ? /*#__PURE__*/react.createElement(react.Fragment, null, Y && /*#__PURE__*/react.createElement(Nh$2, null, K), /*#__PURE__*/react.createElement(fh$2, {
+	  }, Wh$2.WARMUP_INTRO[X])), ie ? /*#__PURE__*/react.createElement(react.Fragment, null, Y && /*#__PURE__*/react.createElement(Fh$2, null, K), /*#__PURE__*/react.createElement(Sh$2, {
 	    keyForTransition: O
 	  }), le ? /*#__PURE__*/react.createElement($e$3, {
 	    x: "".concat(le.x, "px"),
@@ -99407,15 +99650,15 @@
 	    width: "".concat(le.width, "px"),
 	    height: "".concat(le.height, "px"),
 	    surroundStyle: le.surroundStyle
-	  }, /*#__PURE__*/react.createElement(Oh$2, {
+	  }, /*#__PURE__*/react.createElement(Vh$2, {
 	    width: le.width,
 	    height: le.height,
-	    type: re ? wm$1 : vm$1
-	  }), me && /*#__PURE__*/react.createElement(vh$2, null, /*#__PURE__*/react.createElement("img", {
+	    type: re ? Cm$1 : Dm$1
+	  }), me && /*#__PURE__*/react.createElement(Dh$2, null, /*#__PURE__*/react.createElement("img", {
 	    src: We,
 	    alt: "",
 	    className: "spin"
-	  }))) : null, /*#__PURE__*/react.createElement(xh$2, {
+	  }))) : null, /*#__PURE__*/react.createElement(Mh$2, {
 	    y: "".concat(B, "px")
 	  }, /*#__PURE__*/react.createElement(Ns$1, null, /*#__PURE__*/react.createElement(bs$1, {
 	    key: i,
@@ -99425,31 +99668,31 @@
 	    },
 	    classNames: "flipY",
 	    unmountOnExit: !0
-	  }, /*#__PURE__*/react.createElement(kh$2, null, /*#__PURE__*/react.createElement(yh$2, {
+	  }, /*#__PURE__*/react.createElement(Rh$2, null, /*#__PURE__*/react.createElement(Oh$2, {
 	    src: R,
 	    alt: ""
-	  }), /*#__PURE__*/react.createElement(_h$1, {
+	  }), /*#__PURE__*/react.createElement($h$2, {
 	    className: "title"
-	  }, i))))), !re && /*#__PURE__*/react.createElement(Eh$2, {
+	  }, i))))), !re && /*#__PURE__*/react.createElement(zh$2, {
 	    y: "".concat(V, "px"),
 	    className: "description"
-	  }, u), re && /*#__PURE__*/react.createElement(Th$2, {
+	  }, u), re && /*#__PURE__*/react.createElement(Ph$2, {
 	    y: "".concat(V, "px")
-	  }, re), !me && (!(null != Ee && Ee.disableCaptureButtonIfAlert) || !re) && /*#__PURE__*/react.createElement(bh$2, {
+	  }, re), !me && (!(null != Ee && Ee.disableCaptureButtonIfAlert) || !re) && /*#__PURE__*/react.createElement(Ah$2, {
 	    onClick: et
 	  }, /*#__PURE__*/react.createElement("img", {
 	    src: W,
 	    alt: ""
-	  })), ee && /*#__PURE__*/react.createElement(Sh$2, {
+	  })), ee && /*#__PURE__*/react.createElement(Lh$2, {
 	    key: ee,
 	    className: "message",
 	    y: "".concat(j, "px")
-	  }, ee)) : null), /*#__PURE__*/react.createElement(bm$1, {
+	  }, ee)) : null), /*#__PURE__*/react.createElement(Am$1, {
 	    open: ye
-	  }, be === hf$2 && /*#__PURE__*/react.createElement(Fh$2, {
+	  }, be === Tf$2 && /*#__PURE__*/react.createElement(Gh$2, {
 	    onOk: Xe,
 	    maxSessionTime: null == Ee ? void 0 : Ee.sessionTime
-	  }), be === ff$2 && /*#__PURE__*/react.createElement(jh$2, {
+	  }), be === Sf$2 && /*#__PURE__*/react.createElement(ef$2, {
 	    imageBlobTaken: ve.current,
 	    error: ke,
 	    onConfirm: Ze,
@@ -99471,7 +99714,7 @@
 	  return window.logs.forEach(function (t) {
 	    e += "".concat(t.time, " ").concat(t.event, "\n");
 	  }), e;
-	}, wf$2.propTypes = {
+	}, Cf$2.propTypes = {
 	  frontCamera: propTypes.bool,
 	  usePortraitMask: propTypes.bool,
 	  cardType: propTypes.string,
@@ -99487,11 +99730,11 @@
 	  onApiCheck: propTypes.func,
 	  enableConfirmPopup: propTypes.bool,
 	  clientSettings: propTypes.shape({})
-	}, wf$2.defaultProps = {
+	}, Cf$2.defaultProps = {
 	  frontCamera: !0,
 	  usePortraitMask: !1,
-	  cardType: bf$2.VN,
-	  cardSide: yf$2.FRONT,
+	  cardType: Af$2.VN,
+	  cardSide: Of$2.FRONT,
 	  title: "",
 	  titleIcon: null,
 	  description: "",
@@ -99504,29 +99747,29 @@
 	  enableConfirmPopup: !0,
 	  clientSettings: {}
 	};
-	var xf$2,
-	    kf$2 = Object.freeze({
+	var Mf$2,
+	    Rf$2 = Object.freeze({
 	  __proto__: null,
 	  Camera: Fe$3
 	}),
-	    _f$1 = "landscape",
-	    Nf$2 = "portrait",
-	    Ef$2 = "desktop",
-	    Tf$2 = s.Errors,
-	    Sf$2 = qe$1.div(xf$2 || (xf$2 = P$4(["\n  text-align: center;\n  font-size: 20px;\n  font-weight: 600;\n"])));
+	    $f$2 = "landscape",
+	    Ff$2 = "portrait",
+	    zf$2 = "desktop",
+	    Pf$2 = s.Errors,
+	    Lf$2 = qe$1.div(Mf$2 || (Mf$2 = P$4(["\n  text-align: center;\n  font-size: 20px;\n  font-weight: 600;\n"])));
 
-	function If$2(r) {
+	function Bf$2(r) {
 	  var s = $$2({}, r),
 	      o = l$1.useSDKSettings().lang,
-	      i = Tf$2.wrong_orientation.msg[o],
+	      i = Pf$2.wrong_orientation.msg[o],
 	      u = function () {
-	    var e = react.useRef(window.innerWidth > window.innerHeight ? _f$1 : Nf$2),
+	    var e = react.useRef(window.innerWidth > window.innerHeight ? $f$2 : Ff$2),
 	        r = L$4(react.useState(e.current), 2),
 	        s = r[0],
 	        o = r[1];
 	    return react.useEffect(function () {
 	      function e() {
-	        window.innerWidth > window.innerHeight ? o(_f$1) : o(Nf$2);
+	        window.innerWidth > window.innerHeight ? o($f$2) : o(Ff$2);
 	      }
 
 	      return window.addEventListener("resize", e), function () {
@@ -99536,17 +99779,17 @@
 	      curOrientation: s,
 	      initOrientation: e.current
 	    } : {
-	      curOrientation: Ef$2
+	      curOrientation: zf$2
 	    };
 	  }().curOrientation;
 
-	  return /*#__PURE__*/react.createElement(react.Fragment, null, u === _f$1 && /*#__PURE__*/react.createElement(bm$1, {
+	  return /*#__PURE__*/react.createElement(react.Fragment, null, u === $f$2 && /*#__PURE__*/react.createElement(Am$1, {
 	    open: !0
-	  }, /*#__PURE__*/react.createElement(Sf$2, null, i)), (u === Nf$2 || u === Ef$2) && /*#__PURE__*/react.createElement(ns$1, s));
+	  }, /*#__PURE__*/react.createElement(Lf$2, null, i)), (u === Ff$2 || u === zf$2) && /*#__PURE__*/react.createElement(ns$1, s));
 	}
 
-	var Of$2 = sa$2,
-	    Af$2 = function (e, t) {
+	var Vf$2 = sa$2,
+	    jf$2 = function (e, t) {
 	  if (null == e) return {};
 
 	  var n,
@@ -99694,7 +99937,7 @@
 	          switch (_context.prev = _context.next) {
 	            case 0:
 	              _this$commonSettings = _this.commonSettings, tfjsWasmRoot = _this$commonSettings.tfjsWasmRoot, blazefaceRoot = _this$commonSettings.blazefaceRoot, opencvUrl = _this$commonSettings.opencvUrl, idCardModelUrl = _this$commonSettings.idCardModelUrl;
-	              return _context.abrupt("return", am$1({
+	              return _context.abrupt("return", gm$1({
 	                opencvUrl: opencvUrl,
 	                modelUrl: idCardModelUrl,
 	                blazefaceRoot: blazefaceRoot,
@@ -99747,7 +99990,7 @@
 	          // todo: create script for this mode
 	          enableAntiDebug: this.enableAntiDebug
 	        })
-	      }, /*#__PURE__*/react.createElement(wf$2, _extends({
+	      }, /*#__PURE__*/react.createElement(Cf$2, _extends({
 	        onClose: this.destroyView
 	      }, rest))), this.container);
 	    }
@@ -99770,7 +100013,7 @@
 	        value: _objectSpread2(_objectSpread2({}, this.commonSettings), {}, {
 	          apiClient: apiClient
 	        })
-	      }, /*#__PURE__*/react.createElement(If$2 // eslint-disable-next-line react/jsx-props-no-spreading
+	      }, /*#__PURE__*/react.createElement(Bf$2 // eslint-disable-next-line react/jsx-props-no-spreading
 	      , _extends({}, props, {
 	        apiCheck: apiCheck,
 	        mode: mode,
@@ -99812,7 +100055,7 @@
 	}();
 
 	exports.APIUtils = Bt;
-	exports.Animations = hh$2;
+	exports.Animations = Th$2;
 	exports.AntiDebugUtils = IC;
 	exports.AssetUtils = p$2;
 	exports.AsyncUtils = f$9;
@@ -99826,22 +100069,22 @@
 	exports.CropAreaOverlayWrapper = $e$3;
 	exports.FaceUtils = de;
 	exports.GlareUtils = Ct;
-	exports.Icons = kf$2;
+	exports.Icons = Rf$2;
 	exports.ImageUtils = Nt;
-	exports.LivenessDetection = If$2;
-	exports.LivenessDetectionComponents = Af$2;
+	exports.LivenessDetection = Bf$2;
+	exports.LivenessDetectionComponents = jf$2;
 	exports.LoadResourceUtils = qt;
 	exports.MobileDetect = ie$3;
 	exports.ModelUtils = kC;
 	exports.PlacementArea = Re$3;
 	exports.PredictionUtils = me;
 	exports.ProgressCircle = Fa$2;
-	exports.ReadIDCard = wf$2;
+	exports.ReadIDCard = Cf$2;
 	exports.SDK = TVWebSDK;
 	exports.SettingsContext = l$1;
 	exports.UserAgentUtils = Et;
-	exports.useLivenessDetection = Of$2;
-	exports.warmUpReadIdCard = am$1;
+	exports.useLivenessDetection = Vf$2;
+	exports.warmUpReadIdCard = gm$1;
 
 	Object.defineProperty(exports, '__esModule', { value: true });
 
