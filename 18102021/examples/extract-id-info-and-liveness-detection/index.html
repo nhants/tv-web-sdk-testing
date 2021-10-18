@@ -228,6 +228,7 @@
             id: imageId,
           }
         });
+        alert(JSON.stringify(resultDetect));
         return _.get(resultDetect, 'data.image.cards.0')
       }
 
