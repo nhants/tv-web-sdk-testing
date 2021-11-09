@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="description" content="Vanilla JS demo"/>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<h2>Native Camera</h2>
+<button id="btn-open-camera">Open camera</button>
+<div id="container"></div>
+<img id="img-result" width="300" />
+<script src="../../build/tvweb-sdk.standalone.min.js"></script>
+<script type="text/javascript">
+  const tv = new TVWebSDK.SDK({
+    container: document.getElementById('container'),
+    lang: 'vi',
+    assetRoot: 'https://unpkg.com/@tsocial/tvweb-sdk@latest/assets',
+  })
+  const buttonOpenCamera = document.getElementById('btn-open-camera')
+  const imgResultEl = document.getElementById('img-result')
+
+  function handleCaptureDone ({ file }) {
+    imgResultEl.src = URL.createObjectURL(file)
+    imgResultEl.onload = function () {
+      URL.revokeObjectURL(this.src)
+    }
+  }
+
+  const { openCamera } = tv.initNativeCamera({ frontCamera: false, onCaptureDone: handleCaptureDone })
+
+  buttonOpenCamera.onclick = openCamera
+</script>
+</body>
+</html>
